@@ -259,16 +259,10 @@ Raw 或客户端缓存可能返回旧内容。`manifest.json` 记录来源提交
 | 想让一个服务走指定地区 | 先把地区组加入服务候选，再选择；不能直接选未声明的候选 |
 | 语音、直播或部分 App 不通 | UDP 443、STUN 限制及节点 UDP 能力，依据连接日志判断 |
 
-## 来源、兼容性与备份
+## 来源、兼容性与验证
 
 唯一直接规则上游为 [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) 完整版，使用完整 geosite classical 与 geoip 分类，不使用 geo-lite。MetaCubeX 聚合多份社区数据，来源和许可见 [第三方说明](THIRD_PARTY_NOTICES.md)。配置策略由本项目维护。
 
 Mihomo 保留原生域名正则；小火箭使用明确列出的客户端适配，少数通配替代范围更宽。来源版本、完整性与差异见 [manifest.json](manifest.json)，未知规则或未审查的适配会阻止构建，不静默删规则。
-
-默认按 URL 导入。以下 Mihomo 包仅供备份，包含主配置和分类文件；默认配置仍刷新远程规则，不提供节点，也不是完全离线启动包：
-
-```text
-https://raw.githubusercontent.com/leon4z/proxy-routing/main/downloads/mihomo.zip
-```
 
 已有验证覆盖生成、规则完整性、Mihomo 原生加载、无缓存域名解析／HTTP 下载及测试节点绑定。小火箭真机导入、Clash 一键唤起和持久扩展界面、实际 App 访问仍需设备验收。
