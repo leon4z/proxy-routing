@@ -10,6 +10,8 @@
 | Mihomo / Clash Meta | [下载配置包](https://raw.githubusercontent.com/leon4z/proxy-routing/main/downloads/mihomo.zip) | 解压，选择一种模式，保留 config.yaml 和 rules/；在该模式目录的 local/nodes.yaml 放置原生 proxies 列表 |
 | Karing | [下载规则集](https://raw.githubusercontent.com/leon4z/proxy-routing/main/downloads/karing.zip) | 规则集和分流绑定说明，需要在应用内手动绑定；不提供完整客户端配置 |
 
+小火箭主配置使用 `RULE-SET` 从本仓库的 [分类规则集](shadowrocket/rules/) 加载规则，文件约 10 KB。主配置保留 DNS、策略组和少量特殊规则；完整域名/IP 规则按分类独立下载，无须把十几万条规则写入主配置。三个模式引用同一份分类规则集。
+
 建议先用 **手动选择模式**。故障转移和混合模式的 AI / Google 使用独立稳定组；通用配置初始为 REJECT，须将该组中的 REJECT 改为自己的可信稳定节点再使用。直接导入这两种模式不会自动为你挑选稳定节点。
 
 ## 模式区别
@@ -27,6 +29,7 @@ Apple、Microsoft、Game、PayPal、Amazon、BiliBili、Spotify 默认直连。�
 - 本仓库仅发布生成后的通用配置、使用说明与来源报告。生成器和个人配置保存在私密仓库。
 - 当前规则版本与小火箭正则适配差异见 [来源与差异报告](manifest.json)；许可见 [第三方说明](THIRD_PARTY_NOTICES.md)。
 - 小火箭对少数域名正则使用显式通配替代，范围差异逐条记录。Mihomo 保留原生正则。
-- 当前配置为首次发布版本；后续自动发布链路尚待接入。旧设备使用的配置地址仍然保留，尚未切换到本仓库。
+- 规则集更新与主配置更新分开：可在小火箭刷新远程规则集；DNS 或策略组改变时再更新主配置。跨仓库自动发布链路尚待接入，当前为人工验证后发布的版本。
+- 旧设备使用的配置地址仍然保留，尚未切换到本仓库。
 
 配置已通过构建和 Mihomo 核心规则加载检查。小火箭真机导入、Karing 手动绑定和各客户端实际出口仍需验证。
