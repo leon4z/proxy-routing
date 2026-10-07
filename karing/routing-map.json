@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "kind": "manual-binding-plan",
+  "rules": [
+    {
+      "file": "rulesets/custom-0.json",
+      "outbound": "AI"
+    },
+    {
+      "file": "rulesets/custom-1.json",
+      "outbound": "AI"
+    },
+    {
+      "file": "rulesets/custom-2.json",
+      "outbound": "AI"
+    },
+    {
+      "file": "rulesets/custom-3.json",
+      "outbound": "AI"
+    },
+    {
+      "file": "rulesets/custom-4.json",
+      "outbound": "AI"
+    },
+    {
+      "file": "rulesets/custom-5.json",
+      "outbound": "AI"
+    },
+    {
+      "file": "rulesets/custom-6.json",
+      "outbound": "AI"
+    },
+    {
+      "file": "rulesets/site-private.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/ip-private.json",
+      "outbound": "DIRECT",
+      "no_resolve": true
+    },
+    {
+      "file": "rulesets/site-category-ai-!cn.json",
+      "outbound": "AI",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-anthropic.json",
+      "outbound": "AI",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-openai.json",
+      "outbound": "AI",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-google-gemini.json",
+      "outbound": "AI",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-github-copilot.json",
+      "outbound": "AI",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-cursor.json",
+      "outbound": "AI",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-youtube.json",
+      "outbound": "YouTube",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-netflix.json",
+      "outbound": "Netflix",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-disney.json",
+      "outbound": "Disney+",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-hbo.json",
+      "outbound": "Max",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-spotify.json",
+      "outbound": "Spotify",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-telegram.json",
+      "outbound": "Telegram",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-paypal.json",
+      "outbound": "PayPal",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-twitter.json",
+      "outbound": "Twitter",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-facebook.json",
+      "outbound": "Facebook",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-amazon.json",
+      "outbound": "Amazon",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-sony.json",
+      "outbound": "Game",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-nintendo.json",
+      "outbound": "Game",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-epicgames.json",
+      "outbound": "Game",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-steam@cn.json",
+      "outbound": "Game",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-steam.json",
+      "outbound": "Game",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-category-games.json",
+      "outbound": "Game",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-github.json",
+      "outbound": "PROXY",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-microsoft.json",
+      "outbound": "Microsoft",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-google.json",
+      "outbound": "Google",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-apple.json",
+      "outbound": "Apple",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-bilibili.json",
+      "outbound": "BiliBili",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-netease.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-baidu.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-douban.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-tencent.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-sina.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-zhihu.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-xiaohongshu.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-douyin.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-tiktok.json",
+      "outbound": "TikTok",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-cn.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/ip-telegram.json",
+      "outbound": "Telegram",
+      "no_resolve": true
+    },
+    {
+      "file": "rulesets/ip-netflix.json",
+      "outbound": "Netflix",
+      "no_resolve": true
+    },
+    {
+      "file": "rulesets/ip-facebook.json",
+      "outbound": "Facebook",
+      "no_resolve": true
+    },
+    {
+      "file": "rulesets/ip-twitter.json",
+      "outbound": "Twitter",
+      "no_resolve": true
+    },
+    {
+      "file": "rulesets/ip-google.json",
+      "outbound": "Google",
+      "no_resolve": true
+    },
+    {
+      "file": "rulesets/ip-cn.json",
+      "outbound": "DIRECT",
+      "no_resolve": false
+    },
+    {
+      "file": "rulesets/site-geolocation-!cn.json",
+      "outbound": "PROXY",
+      "no_resolve": false
+    }
+  ],
+  "final": "PROXY",
+  "required_app_settings": [
+    "Reject UDP destination port 443",
+    "Reject STUN domain keyword and UDP destination port 3478",
+    "Configure domestic direct DNS and proxied foreign DNS",
+    "Disable IPv6"
+  ],
+  "limitations": [
+    "Named service groups and ordered node candidates must be bound in Karing; this file is not a complete VPN configuration."
+  ]
+}

@@ -1,0 +1,631 @@
+"mixed-port": 7890
+"allow-lan": false
+"mode": "rule"
+"ipv6": false
+"log-level": "info"
+"dns":
+  "enable": true
+  "listen": "127.0.0.1:1053"
+  "ipv6": false
+  "enhanced-mode": "fake-ip"
+  "fake-ip-range": "198.18.0.1/16"
+  "respect-rules": true
+  "default-nameserver":
+    - "223.5.5.5"
+    - "119.29.29.29"
+  "proxy-server-nameserver":
+    - "tls://223.5.5.5:853"
+    - "tls://120.53.53.53:853"
+  "nameserver":
+    - "https://1.1.1.1/dns-query"
+    - "https://8.8.8.8/dns-query"
+  "nameserver-policy":
+    "rule-set:dns-site-cn,dns-site-private":
+      - "tls://223.5.5.5:853"
+      - "tls://120.53.53.53:853"
+  "fake-ip-filter":
+    - "*.lan"
+    - "*.local"
+    - "localhost"
+    - "+.pool.ntp.org"
+    - "time.*.com"
+    - "ntp.*.com"
+    - "msftconnecttest.com"
+    - "msftncsi.com"
+"proxy-providers":
+  "nodes":
+    "type": "file"
+    "path": "./local/nodes.yaml"
+"proxies": []
+"proxy-groups":
+  -
+    "name": "香港节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "香港|Hong Kong|HK"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "台湾节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "台湾|Taiwan|TW"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "日本节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "日本|Japan|JP"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "新加坡节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "新加坡|Singapore|SG"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "美国节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "美国|United States|USA|US"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "英国节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "英国|United Kingdom|UK"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "德国节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "德国|Germany|DE"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "韩国节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "韩国|Korea|KR"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "澳大利亚节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "澳大利亚|Australia|AU"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "马来西亚节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "马来西亚|Malaysia|MY"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "法国节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "法国|France|FR"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "加拿大节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "加拿大|Canada|CA"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "荷兰节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "荷兰|Netherlands|NL"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "土耳其节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "土耳其|Turkey|TR"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "泰国节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "泰国|Thailand|TH"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "爱沙尼亚节点"
+    "type": "url-test"
+    "use":
+      - "nodes"
+    "filter": "爱沙尼亚|Estonia|EE"
+    "empty-fallback": "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+    "tolerance": 50
+  -
+    "name": "PROXY"
+    "type": "select"
+    "use":
+      - "nodes"
+    "filter": ".*"
+    "empty-fallback": "REJECT"
+    "proxies":
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "美国节点"
+      - "英国节点"
+      - "德国节点"
+      - "韩国节点"
+      - "澳大利亚节点"
+      - "马来西亚节点"
+      - "法国节点"
+      - "加拿大节点"
+      - "荷兰节点"
+      - "土耳其节点"
+      - "泰国节点"
+      - "爱沙尼亚节点"
+  -
+    "name": "AI"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "YouTube"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "Netflix"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "Disney+"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "Max"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "Spotify"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "Telegram"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "PayPal"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "Twitter"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "Facebook"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "Amazon"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "Game"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "Microsoft"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "Google"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "Apple"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "BiliBili"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "TikTok"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+"rule-providers":
+  "site-private":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-private.yaml"
+  "ip-private":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-private.yaml"
+  "site-category-ai-!cn":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-category-ai-!cn.yaml"
+  "site-anthropic":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-anthropic.yaml"
+  "site-openai":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-openai.yaml"
+  "site-google-gemini":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-google-gemini.yaml"
+  "site-github-copilot":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-github-copilot.yaml"
+  "site-cursor":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-cursor.yaml"
+  "site-youtube":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-youtube.yaml"
+  "site-netflix":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-netflix.yaml"
+  "site-disney":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-disney.yaml"
+  "site-hbo":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-hbo.yaml"
+  "site-spotify":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-spotify.yaml"
+  "site-telegram":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-telegram.yaml"
+  "site-paypal":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-paypal.yaml"
+  "site-twitter":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-twitter.yaml"
+  "site-facebook":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-facebook.yaml"
+  "site-amazon":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-amazon.yaml"
+  "site-sony":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-sony.yaml"
+  "site-nintendo":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-nintendo.yaml"
+  "site-epicgames":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-epicgames.yaml"
+  "site-steam@cn":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-steam@cn.yaml"
+  "site-steam":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-steam.yaml"
+  "site-category-games":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-category-games.yaml"
+  "site-github":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-github.yaml"
+  "site-microsoft":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-microsoft.yaml"
+  "site-google":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-google.yaml"
+  "site-apple":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-apple.yaml"
+  "site-bilibili":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-bilibili.yaml"
+  "site-netease":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-netease.yaml"
+  "site-baidu":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-baidu.yaml"
+  "site-douban":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-douban.yaml"
+  "site-tencent":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-tencent.yaml"
+  "site-sina":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-sina.yaml"
+  "site-zhihu":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-zhihu.yaml"
+  "site-xiaohongshu":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-xiaohongshu.yaml"
+  "site-douyin":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-douyin.yaml"
+  "site-tiktok":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-tiktok.yaml"
+  "site-cn":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-cn.yaml"
+  "ip-telegram":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-telegram.yaml"
+  "ip-netflix":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-netflix.yaml"
+  "ip-facebook":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-facebook.yaml"
+  "ip-twitter":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-twitter.yaml"
+  "ip-google":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-google.yaml"
+  "ip-cn":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-cn.yaml"
+  "site-geolocation-!cn":
+    "type": "file"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-geolocation-!cn.yaml"
+  "dns-site-cn":
+    "type": "file"
+    "behavior": "domain"
+    "format": "yaml"
+    "path": "./rules/dns-site-cn.yaml"
+  "dns-site-private":
+    "type": "file"
+    "behavior": "domain"
+    "format": "yaml"
+    "path": "./rules/dns-site-private.yaml"
+"rules":
+  - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
+  - "DOMAIN-KEYWORD,stun,REJECT"
+  - "AND,((NETWORK,udp),(DST-PORT,3478)),REJECT"
+  - "DOMAIN-SUFFIX,diabrowser.engineering,AI"
+  - "DOMAIN-SUFFIX,claude.dev,AI"
+  - "DOMAIN-SUFFIX,cursor.com,AI"
+  - "DOMAIN-SUFFIX,cursor.sh,AI"
+  - "DOMAIN-SUFFIX,cursorapi.com,AI"
+  - "DOMAIN-SUFFIX,cursor-cdn.com,AI"
+  - "DOMAIN-SUFFIX,cursorvm.com,AI"
+  - "RULE-SET,site-private,DIRECT"
+  - "RULE-SET,ip-private,DIRECT,no-resolve"
+  - "RULE-SET,site-category-ai-!cn,AI"
+  - "RULE-SET,site-anthropic,AI"
+  - "RULE-SET,site-openai,AI"
+  - "RULE-SET,site-google-gemini,AI"
+  - "RULE-SET,site-github-copilot,AI"
+  - "RULE-SET,site-cursor,AI"
+  - "RULE-SET,site-youtube,YouTube"
+  - "RULE-SET,site-netflix,Netflix"
+  - "RULE-SET,site-disney,Disney+"
+  - "RULE-SET,site-hbo,Max"
+  - "RULE-SET,site-spotify,Spotify"
+  - "RULE-SET,site-telegram,Telegram"
+  - "RULE-SET,site-paypal,PayPal"
+  - "RULE-SET,site-twitter,Twitter"
+  - "RULE-SET,site-facebook,Facebook"
+  - "RULE-SET,site-amazon,Amazon"
+  - "RULE-SET,site-sony,Game"
+  - "RULE-SET,site-nintendo,Game"
+  - "RULE-SET,site-epicgames,Game"
+  - "RULE-SET,site-steam@cn,Game"
+  - "RULE-SET,site-steam,Game"
+  - "RULE-SET,site-category-games,Game"
+  - "RULE-SET,site-github,PROXY"
+  - "RULE-SET,site-microsoft,Microsoft"
+  - "RULE-SET,site-google,Google"
+  - "RULE-SET,site-apple,Apple"
+  - "RULE-SET,site-bilibili,BiliBili"
+  - "RULE-SET,site-netease,DIRECT"
+  - "RULE-SET,site-baidu,DIRECT"
+  - "RULE-SET,site-douban,DIRECT"
+  - "RULE-SET,site-tencent,DIRECT"
+  - "RULE-SET,site-sina,DIRECT"
+  - "RULE-SET,site-zhihu,DIRECT"
+  - "RULE-SET,site-xiaohongshu,DIRECT"
+  - "RULE-SET,site-douyin,DIRECT"
+  - "RULE-SET,site-tiktok,TikTok"
+  - "RULE-SET,site-cn,DIRECT"
+  - "RULE-SET,ip-telegram,Telegram,no-resolve"
+  - "RULE-SET,ip-netflix,Netflix,no-resolve"
+  - "RULE-SET,ip-facebook,Facebook,no-resolve"
+  - "RULE-SET,ip-twitter,Twitter,no-resolve"
+  - "RULE-SET,ip-google,Google,no-resolve"
+  - "RULE-SET,ip-cn,DIRECT"
+  - "RULE-SET,site-geolocation-!cn,PROXY"
+  - "MATCH,PROXY"
