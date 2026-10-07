@@ -231,7 +231,7 @@
     "lazy": false
     "tolerance": 50
   -
-    "name": "稳定"
+    "name": "稳定节点"
     "type": "fallback"
     "proxies":
       - "REJECT"
@@ -265,7 +265,7 @@
     "name": "AI"
     "type": "select"
     "proxies":
-      - "稳定"
+      - "稳定节点"
   -
     "name": "YouTube"
     "type": "select"
@@ -335,7 +335,7 @@
     "name": "Google"
     "type": "select"
     "proxies":
-      - "稳定"
+      - "稳定节点"
   -
     "name": "Apple"
     "type": "select"

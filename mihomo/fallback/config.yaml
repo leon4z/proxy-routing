@@ -231,7 +231,7 @@
     "lazy": false
     "tolerance": 50
   -
-    "name": "稳定"
+    "name": "稳定节点"
     "type": "fallback"
     "proxies":
       - "REJECT"
@@ -239,7 +239,7 @@
     "interval": 600
     "lazy": false
   -
-    "name": "速度"
+    "name": "自动切换"
     "type": "fallback"
     "filter": "(?:香港|Hong Kong|HK)|(?:台湾|Taiwan|TW)|(?:日本|Japan|JP)|(?:新加坡|Singapore|SG)|(?:美国|United States|USA|US)|(?:英国|United Kingdom|UK)|(?:德国|Germany|DE)|(?:韩国|Korea|KR)|(?:澳大利亚|Australia|AU)|(?:马来西亚|Malaysia|MY)|(?:法国|France|FR)|(?:加拿大|Canada|CA)|(?:荷兰|Netherlands|NL)|(?:土耳其|Turkey|TR)|(?:泰国|Thailand|TH)|(?:爱沙尼亚|Estonia|EE)"
     "empty-fallback": "REJECT"
@@ -253,7 +253,7 @@
     "name": "PROXY"
     "type": "select"
     "proxies":
-      - "速度"
+      - "自动切换"
       - "香港节点"
       - "台湾节点"
       - "日本节点"
@@ -274,7 +274,7 @@
     "name": "AI"
     "type": "select"
     "proxies":
-      - "稳定"
+      - "稳定节点"
   -
     "name": "YouTube"
     "type": "select"
@@ -344,7 +344,7 @@
     "name": "Google"
     "type": "select"
     "proxies":
-      - "稳定"
+      - "稳定节点"
   -
     "name": "Apple"
     "type": "select"
