@@ -1,0 +1,14 @@
+{
+  "fallback": {
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/config.yaml",
+    "clash_install_uri": "clash://install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fleon4z%2Fproxy-routing%2Fmain%2Fmihomo%2Ffallback%2Fconfig.yaml"
+  },
+  "hybrid": {
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/config.yaml",
+    "clash_install_uri": "clash://install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fleon4z%2Fproxy-routing%2Fmain%2Fmihomo%2Fhybrid%2Fconfig.yaml"
+  },
+  "select": {
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/config.yaml",
+    "clash_install_uri": "clash://install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fleon4z%2Fproxy-routing%2Fmain%2Fmihomo%2Fselect%2Fconfig.yaml"
+  }
+}

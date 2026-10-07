@@ -16,6 +16,9 @@
   "proxy-server-nameserver":
     - "tls://223.5.5.5:853"
     - "tls://120.53.53.53:853"
+  "direct-nameserver":
+    - "tls://223.5.5.5:853#DIRECT"
+    - "tls://120.53.53.53:853#DIRECT"
   "nameserver":
     - "https://1.1.1.1/dns-query"
     - "https://8.8.8.8/dns-query"
@@ -32,19 +35,17 @@
     - "ntp.*.com"
     - "msftconnecttest.com"
     - "msftncsi.com"
-"proxy-providers":
-  "nodes":
-    "type": "file"
-    "path": "./local/nodes.yaml"
+"proxy-providers": {}
 "proxies": []
 "proxy-groups":
   -
     "name": "香港节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "香港|Hong Kong|HK"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -52,10 +53,11 @@
   -
     "name": "台湾节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "台湾|Taiwan|TW"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -63,10 +65,11 @@
   -
     "name": "日本节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "日本|Japan|JP"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -74,10 +77,11 @@
   -
     "name": "新加坡节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "新加坡|Singapore|SG"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -85,10 +89,11 @@
   -
     "name": "美国节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "美国|United States|USA|US"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -96,10 +101,11 @@
   -
     "name": "英国节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "英国|United Kingdom|UK"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -107,10 +113,11 @@
   -
     "name": "德国节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "德国|Germany|DE"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -118,10 +125,11 @@
   -
     "name": "韩国节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "韩国|Korea|KR"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -129,10 +137,11 @@
   -
     "name": "澳大利亚节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "澳大利亚|Australia|AU"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -140,10 +149,11 @@
   -
     "name": "马来西亚节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "马来西亚|Malaysia|MY"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -151,10 +161,11 @@
   -
     "name": "法国节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "法国|France|FR"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -162,10 +173,11 @@
   -
     "name": "加拿大节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "加拿大|Canada|CA"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -173,10 +185,11 @@
   -
     "name": "荷兰节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "荷兰|Netherlands|NL"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -184,10 +197,11 @@
   -
     "name": "土耳其节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "土耳其|Turkey|TR"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -195,10 +209,11 @@
   -
     "name": "泰国节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "泰国|Thailand|TH"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -206,10 +221,11 @@
   -
     "name": "爱沙尼亚节点"
     "type": "url-test"
-    "use":
-      - "nodes"
     "filter": "爱沙尼亚|Estonia|EE"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
     "url": "https://www.gstatic.com/generate_204"
     "interval": 600
     "lazy": false
@@ -217,10 +233,9 @@
   -
     "name": "PROXY"
     "type": "select"
-    "use":
-      - "nodes"
     "filter": ".*"
     "empty-fallback": "REJECT"
+    "include-all-providers": true
     "proxies":
       - "香港节点"
       - "台湾节点"
@@ -332,245 +347,389 @@
       - "PROXY"
 "rule-providers":
   "site-private":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-private.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-private.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "ip-private":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/ip-private.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/ip-private.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-category-ai-!cn":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-category-ai-!cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-category-ai-!cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-anthropic":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-anthropic.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-anthropic.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-openai":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-openai.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-openai.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-google-gemini":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-google-gemini.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-google-gemini.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-github-copilot":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-github-copilot.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-github-copilot.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-cursor":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-cursor.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-cursor.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-youtube":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-youtube.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-youtube.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-netflix":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-netflix.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-netflix.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-disney":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-disney.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-disney.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-hbo":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-hbo.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-hbo.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-spotify":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-spotify.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-spotify.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-telegram":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-telegram.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-telegram.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-paypal":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-paypal.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-paypal.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-twitter":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-twitter.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-twitter.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-facebook":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-facebook.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-facebook.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-amazon":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-amazon.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-amazon.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-sony":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-sony.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-sony.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-nintendo":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-nintendo.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-nintendo.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-epicgames":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-epicgames.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-epicgames.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-steam@cn":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-steam@cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-steam@cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-steam":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-steam.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-steam.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-category-games":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-category-games.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-category-games.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-github":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-github.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-github.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-microsoft":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-microsoft.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-microsoft.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-google":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-google.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-google.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-apple":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-apple.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-apple.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-bilibili":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-bilibili.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-bilibili.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-netease":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-netease.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-netease.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-baidu":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-baidu.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-baidu.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-douban":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-douban.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-douban.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-tencent":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-tencent.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-tencent.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-sina":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-sina.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-sina.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-zhihu":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-zhihu.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-zhihu.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-xiaohongshu":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-xiaohongshu.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-xiaohongshu.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-douyin":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-douyin.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-douyin.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-tiktok":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-tiktok.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-tiktok.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-cn":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "ip-telegram":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/ip-telegram.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/ip-telegram.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "ip-netflix":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/ip-netflix.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/ip-netflix.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "ip-facebook":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/ip-facebook.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/ip-facebook.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "ip-twitter":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/ip-twitter.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/ip-twitter.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "ip-google":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/ip-google.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/ip-google.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "ip-cn":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/ip-cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/ip-cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-geolocation-!cn":
-    "type": "file"
+    "type": "http"
     "behavior": "classical"
     "format": "yaml"
     "path": "./rules/site-geolocation-!cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-geolocation-!cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "dns-site-cn":
-    "type": "file"
+    "type": "http"
     "behavior": "domain"
     "format": "yaml"
     "path": "./rules/dns-site-cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/dns-site-cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "dns-site-private":
-    "type": "file"
+    "type": "http"
     "behavior": "domain"
     "format": "yaml"
     "path": "./rules/dns-site-private.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/dns-site-private.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
 "rules":
   - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
   - "DOMAIN-KEYWORD,stun,REJECT"
