@@ -281,21 +281,6 @@
     "proxies":
       - "PROXY"
   -
-    "name": "Netflix"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "Disney+"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "Max"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
     "name": "Spotify"
     "type": "select"
     "proxies":
@@ -324,12 +309,6 @@
       - "PROXY"
   -
     "name": "Amazon"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "Game"
     "type": "select"
     "proxies":
       - "DIRECT"
@@ -433,30 +412,6 @@
     "format": "yaml"
     "path": "./rules/site-youtube.yaml"
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-youtube.yaml"
-    "interval": 86400
-    "proxy": "DIRECT"
-  "site-netflix":
-    "type": "http"
-    "behavior": "classical"
-    "format": "yaml"
-    "path": "./rules/site-netflix.yaml"
-    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-netflix.yaml"
-    "interval": 86400
-    "proxy": "DIRECT"
-  "site-disney":
-    "type": "http"
-    "behavior": "classical"
-    "format": "yaml"
-    "path": "./rules/site-disney.yaml"
-    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-disney.yaml"
-    "interval": 86400
-    "proxy": "DIRECT"
-  "site-hbo":
-    "type": "http"
-    "behavior": "classical"
-    "format": "yaml"
-    "path": "./rules/site-hbo.yaml"
-    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-hbo.yaml"
     "interval": 86400
     "proxy": "DIRECT"
   "site-spotify":
@@ -683,14 +638,6 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/ip-telegram.yaml"
     "interval": 86400
     "proxy": "DIRECT"
-  "ip-netflix":
-    "type": "http"
-    "behavior": "classical"
-    "format": "yaml"
-    "path": "./rules/ip-netflix.yaml"
-    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/ip-netflix.yaml"
-    "interval": 86400
-    "proxy": "DIRECT"
   "ip-facebook":
     "type": "http"
     "behavior": "classical"
@@ -767,21 +714,18 @@
   - "RULE-SET,site-github-copilot,AI"
   - "RULE-SET,site-cursor,AI"
   - "RULE-SET,site-youtube,YouTube"
-  - "RULE-SET,site-netflix,Netflix"
-  - "RULE-SET,site-disney,Disney+"
-  - "RULE-SET,site-hbo,Max"
   - "RULE-SET,site-spotify,Spotify"
   - "RULE-SET,site-telegram,Telegram"
   - "RULE-SET,site-paypal,PayPal"
   - "RULE-SET,site-twitter,Twitter"
   - "RULE-SET,site-facebook,Facebook"
   - "RULE-SET,site-amazon,Amazon"
-  - "RULE-SET,site-sony,Game"
-  - "RULE-SET,site-nintendo,Game"
-  - "RULE-SET,site-epicgames,Game"
-  - "RULE-SET,site-steam@cn,Game"
-  - "RULE-SET,site-steam,Game"
-  - "RULE-SET,site-category-games,Game"
+  - "RULE-SET,site-sony,DIRECT"
+  - "RULE-SET,site-nintendo,DIRECT"
+  - "RULE-SET,site-epicgames,DIRECT"
+  - "RULE-SET,site-steam@cn,DIRECT"
+  - "RULE-SET,site-steam,DIRECT"
+  - "RULE-SET,site-category-games,DIRECT"
   - "RULE-SET,site-github,PROXY"
   - "RULE-SET,site-microsoft,Microsoft"
   - "RULE-SET,site-google,Google"
@@ -798,7 +742,6 @@
   - "RULE-SET,site-tiktok,TikTok"
   - "RULE-SET,site-cn,DIRECT"
   - "RULE-SET,ip-telegram,Telegram,no-resolve"
-  - "RULE-SET,ip-netflix,Netflix,no-resolve"
   - "RULE-SET,ip-facebook,Facebook,no-resolve"
   - "RULE-SET,ip-twitter,Twitter,no-resolve"
   - "RULE-SET,ip-google,Google,no-resolve"

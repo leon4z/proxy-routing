@@ -20,7 +20,7 @@
 
 手动版没有「自动切换」和「稳定节点」组；故障转移版都有；混合版只有「稳定节点」组。三个模式的地区组均为 `url-test`：选择某个地区后，由该组自动选择节点。「自动切换」和「稳定节点」组为 `fallback`，按成员顺序选择可用节点，**不等于始终选最低延迟**。
 
-“普通代理流量”指按规则需要代理的请求。Apple、Microsoft、Game、PayPal、Amazon、BiliBili、Spotify 默认 DIRECT，国内和局域网规则也保持直连。
+“普通代理流量”指按规则需要代理的请求。Apple、Microsoft、PayPal、Amazon、BiliBili、Spotify 默认 DIRECT，游戏分类固定 DIRECT，国内和局域网规则也保持直连。
 
 先导入一份即可。同一时刻启用一份主配置；分组设置属于各自的配置，切换模式后需要重新检查。**本项目显式定义了 PROXY 组，不能直接沿用旧配置“在首页换节点就改变所有代理出口”的用法。**
 
@@ -131,7 +131,7 @@ PROXY 通过名称筛选收集节点。节点未出现时，检查首页订阅�
 
 ## Mihomo：导入与绑定节点
 
-按 URL 导入，无需解压 ZIP 或手工放置规则目录。主配置会下载 **46 个分流分类和 2 个 DNS 分类**，`path` 是自动下载后的缓存位置。
+按 URL 导入，无需解压 ZIP 或手工放置规则目录。主配置会下载 **42 个分流分类和 2 个 DNS 分类**，`path` 是自动下载后的缓存位置。
 
 ### 1. 导入远程配置
 
@@ -199,7 +199,7 @@ function main(config) {
 
 ## 规则覆盖与网络设置
 
-服务分类包括 AI、Google、YouTube、Netflix、Disney+、Max、Telegram、Twitter、Facebook、TikTok，以及上述默认直连服务。宽泛海外分类和末尾规则使用 PROXY；更靠前的服务、局域网和国内规则优先匹配。
+服务分组包括 AI、Google、YouTube、Telegram、Twitter、Facebook、TikTok，以及上述默认直连服务。游戏分类保留并直接使用 DIRECT，不显示 Game 分组。Netflix、Disney+、Max 不设置独立分组或专属规则：请求继续匹配其余规则，未命中的最终使用 PROXY；命中国内规则仍直连。宽泛海外分类和末尾规则使用 PROXY；更靠前的服务、局域网和国内规则优先匹配。
 
 AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor 等。此前补充的规则也进入全部公开模式：Dia 的 `diabrowser.engineering`、Claude 的 `claude.dev`，以及 Cursor 的 `cursor.com`、`cursor.sh`、`cursorapi.com`、`cursor-cdn.com`、`cursorvm.com`，均使用 AI，匹配根域及子域并优先于远程分类规则。命中 AI 不代表地区限制已解除。
 

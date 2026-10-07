@@ -2,7 +2,7 @@
   "schema_version": 1,
   "audience": "public",
   "source_commit": "d21da06ea15a87cb09c5f9c8b9103fe0b10af20e",
-  "sources_sha256": "8db09c591a649011d0ac7bfec69df267838c3adcd600d1e96f11dadca479c4b2",
+  "sources_sha256": "949a6f94bd372f74d21bbd167cb5c7f9964799b11b95d96172c2b94c3d5f9009",
   "coverage": {
     "claude.com": "AI",
     "api.claude.com": "AI",
@@ -14,10 +14,10 @@
   },
   "outputs": {
     "mihomo/select": {
-      "rules": 165031,
-      "groups": 34,
+      "rules": 164591,
+      "groups": 30,
       "inventory_bound": false,
-      "regex": 171,
+      "regex": 166,
       "remote_rule_sets": [
         {
           "id": "site-private",
@@ -90,30 +90,6 @@
           "behavior": "classical",
           "rules": 178,
           "sha256": "87b8fc9febbdd02524818605a388ef80ed38e32a011c83650a22aab45ab09e4c"
-        },
-        {
-          "id": "site-netflix",
-          "path": "mihomo/select/rules/site-netflix.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-netflix.yaml",
-          "behavior": "classical",
-          "rules": 28,
-          "sha256": "446cfc97c776aa5bce0aa02b2ba50ed4a9c1b64064d5c5cc8af448fc1698911b"
-        },
-        {
-          "id": "site-disney",
-          "path": "mihomo/select/rules/site-disney.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-disney.yaml",
-          "behavior": "classical",
-          "rules": 225,
-          "sha256": "198db812fc2e0e2701ff2ce320f72f34c64cb8e3f4738ae747eaefb5ed2d6e17"
-        },
-        {
-          "id": "site-hbo",
-          "path": "mihomo/select/rules/site-hbo.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-hbo.yaml",
-          "behavior": "classical",
-          "rules": 65,
-          "sha256": "c2158de7cda50fa397aecfc3f3c44b8f981b738c54b091b6b1d5ee22f34651b8"
         },
         {
           "id": "site-spotify",
@@ -340,14 +316,6 @@
           "sha256": "5c7a086ad7ad93882d47c6425f005de11582b7c5392ee3e2f407f885fd1f6c70"
         },
         {
-          "id": "ip-netflix",
-          "path": "mihomo/select/rules/ip-netflix.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/ip-netflix.yaml",
-          "behavior": "classical",
-          "rules": 122,
-          "sha256": "b03b475f62c774d6fdee8f502ad7ed10b6eaaad1e6ec8d0edb6cda4739d87e9a"
-        },
-        {
           "id": "ip-facebook",
           "path": "mihomo/select/rules/ip-facebook.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/ip-facebook.yaml",
@@ -406,10 +374,10 @@
       ]
     },
     "mihomo/fallback": {
-      "rules": 165031,
-      "groups": 36,
+      "rules": 164591,
+      "groups": 32,
       "inventory_bound": false,
-      "regex": 171,
+      "regex": 166,
       "remote_rule_sets": [
         {
           "id": "site-private",
@@ -482,30 +450,6 @@
           "behavior": "classical",
           "rules": 178,
           "sha256": "87b8fc9febbdd02524818605a388ef80ed38e32a011c83650a22aab45ab09e4c"
-        },
-        {
-          "id": "site-netflix",
-          "path": "mihomo/fallback/rules/site-netflix.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-netflix.yaml",
-          "behavior": "classical",
-          "rules": 28,
-          "sha256": "446cfc97c776aa5bce0aa02b2ba50ed4a9c1b64064d5c5cc8af448fc1698911b"
-        },
-        {
-          "id": "site-disney",
-          "path": "mihomo/fallback/rules/site-disney.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-disney.yaml",
-          "behavior": "classical",
-          "rules": 225,
-          "sha256": "198db812fc2e0e2701ff2ce320f72f34c64cb8e3f4738ae747eaefb5ed2d6e17"
-        },
-        {
-          "id": "site-hbo",
-          "path": "mihomo/fallback/rules/site-hbo.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-hbo.yaml",
-          "behavior": "classical",
-          "rules": 65,
-          "sha256": "c2158de7cda50fa397aecfc3f3c44b8f981b738c54b091b6b1d5ee22f34651b8"
         },
         {
           "id": "site-spotify",
@@ -732,14 +676,6 @@
           "sha256": "5c7a086ad7ad93882d47c6425f005de11582b7c5392ee3e2f407f885fd1f6c70"
         },
         {
-          "id": "ip-netflix",
-          "path": "mihomo/fallback/rules/ip-netflix.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/ip-netflix.yaml",
-          "behavior": "classical",
-          "rules": 122,
-          "sha256": "b03b475f62c774d6fdee8f502ad7ed10b6eaaad1e6ec8d0edb6cda4739d87e9a"
-        },
-        {
           "id": "ip-facebook",
           "path": "mihomo/fallback/rules/ip-facebook.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/ip-facebook.yaml",
@@ -798,10 +734,10 @@
       ]
     },
     "mihomo/hybrid": {
-      "rules": 165031,
-      "groups": 35,
+      "rules": 164591,
+      "groups": 31,
       "inventory_bound": false,
-      "regex": 171,
+      "regex": 166,
       "remote_rule_sets": [
         {
           "id": "site-private",
@@ -874,30 +810,6 @@
           "behavior": "classical",
           "rules": 178,
           "sha256": "87b8fc9febbdd02524818605a388ef80ed38e32a011c83650a22aab45ab09e4c"
-        },
-        {
-          "id": "site-netflix",
-          "path": "mihomo/hybrid/rules/site-netflix.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-netflix.yaml",
-          "behavior": "classical",
-          "rules": 28,
-          "sha256": "446cfc97c776aa5bce0aa02b2ba50ed4a9c1b64064d5c5cc8af448fc1698911b"
-        },
-        {
-          "id": "site-disney",
-          "path": "mihomo/hybrid/rules/site-disney.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-disney.yaml",
-          "behavior": "classical",
-          "rules": 225,
-          "sha256": "198db812fc2e0e2701ff2ce320f72f34c64cb8e3f4738ae747eaefb5ed2d6e17"
-        },
-        {
-          "id": "site-hbo",
-          "path": "mihomo/hybrid/rules/site-hbo.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-hbo.yaml",
-          "behavior": "classical",
-          "rules": 65,
-          "sha256": "c2158de7cda50fa397aecfc3f3c44b8f981b738c54b091b6b1d5ee22f34651b8"
         },
         {
           "id": "site-spotify",
@@ -1124,14 +1036,6 @@
           "sha256": "5c7a086ad7ad93882d47c6425f005de11582b7c5392ee3e2f407f885fd1f6c70"
         },
         {
-          "id": "ip-netflix",
-          "path": "mihomo/hybrid/rules/ip-netflix.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/ip-netflix.yaml",
-          "behavior": "classical",
-          "rules": 122,
-          "sha256": "b03b475f62c774d6fdee8f502ad7ed10b6eaaad1e6ec8d0edb6cda4739d87e9a"
-        },
-        {
           "id": "ip-facebook",
           "path": "mihomo/hybrid/rules/ip-facebook.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/ip-facebook.yaml",
@@ -1190,9 +1094,9 @@
       ]
     },
     "shadowrocket/select": {
-      "rules": 165925,
-      "config_rules": 56,
-      "groups": 34,
+      "rules": 165474,
+      "config_rules": 52,
+      "groups": 30,
       "remote_rule_sets": [
         {
           "id": "site-private",
@@ -1267,30 +1171,6 @@
           "sha256": "ff1bc1631adc9c139ab19bf509a59507871b8f0663ade80dffa9f2b1665e41b9"
         },
         {
-          "id": "site-netflix",
-          "path": "shadowrocket/rules/site-netflix.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-netflix.list",
-          "policy": "Netflix",
-          "rules": 32,
-          "sha256": "0ee533c94ed0c84046bd37ea216d3f573b1556d7f9e64da88d14b37c83d0e8cd"
-        },
-        {
-          "id": "site-disney",
-          "path": "shadowrocket/rules/site-disney.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-disney.list",
-          "policy": "Disney+",
-          "rules": 232,
-          "sha256": "3b67ce9905c93b965555fd4a7326fc2fdff255200cbdbc9496b78e3794ad49a9"
-        },
-        {
-          "id": "site-hbo",
-          "path": "shadowrocket/rules/site-hbo.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-hbo.list",
-          "policy": "Max",
-          "rules": 65,
-          "sha256": "41216947f4d820c755285ed0fce2aea4cfabaa076b0214b586eb4eb3c8aa76e5"
-        },
-        {
           "id": "site-spotify",
           "path": "shadowrocket/rules/site-spotify.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-spotify.list",
@@ -1342,7 +1222,7 @@
           "id": "site-sony",
           "path": "shadowrocket/rules/site-sony.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-sony.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 115,
           "sha256": "45b6ff63aec1ae1ff4c25da043121c6d6c2ce8ff5eb900a76ae521290cd0ba52"
         },
@@ -1350,7 +1230,7 @@
           "id": "site-nintendo",
           "path": "shadowrocket/rules/site-nintendo.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-nintendo.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 124,
           "sha256": "66f455920f7644dc6cfce6cc20f745fa0206f9d81d11b6f84ad23417520ed68d"
         },
@@ -1358,7 +1238,7 @@
           "id": "site-epicgames",
           "path": "shadowrocket/rules/site-epicgames.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-epicgames.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 60,
           "sha256": "b871c08f00af19b94adfd5e56eaf0bcbd811f21e4d4b10cda062de00162e89e1"
         },
@@ -1366,7 +1246,7 @@
           "id": "site-steam@cn",
           "path": "shadowrocket/rules/site-steam@cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-steam@cn.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 19,
           "sha256": "4ae2540001216910ec89a3c035b209654cbacfe4bc329996a775336791655602"
         },
@@ -1374,7 +1254,7 @@
           "id": "site-steam",
           "path": "shadowrocket/rules/site-steam.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-steam.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 60,
           "sha256": "2e3117f30009c26d558fa7ae044f31f2d743e60ca67742785633fa1e0a08b5ca"
         },
@@ -1382,7 +1262,7 @@
           "id": "site-category-games",
           "path": "shadowrocket/rules/site-category-games.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-games.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 1154,
           "sha256": "a664be3577206a5cf58957c3326c714757ee9d23d8e2e1253ead0f6a0d028418"
         },
@@ -1515,14 +1395,6 @@
           "sha256": "fa1a676cc3741cc0158ba430ef1e2dd635972cc38fa020fb282f99e3a04dceed"
         },
         {
-          "id": "ip-netflix",
-          "path": "shadowrocket/rules/ip-netflix.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/ip-netflix.list",
-          "policy": "Netflix",
-          "rules": 122,
-          "sha256": "9a461d28ff4c5e268de9894464c168c63aa0fd0a7baf99793e2e8e009af519c5"
-        },
-        {
           "id": "ip-facebook",
           "path": "shadowrocket/rules/ip-facebook.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/ip-facebook.list",
@@ -1614,62 +1486,6 @@
           "note": "Only the named OpenAI Azure WebPubSub prefix; wildcard segments are not restricted to digits/non-whitespace.",
           "wildcards": [
             "chatgpt-async-webps-prod-*-*.webpubsub.azure.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "apiproxy-device-prod-nlb-*.amazonaws.com",
-            "*.apiproxy-device-prod-nlb-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)apiproxy-website-nlb-prod-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "apiproxy-website-nlb-prod-*.amazonaws.com",
-            "*.apiproxy-website-nlb-prod-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)dualstack\\.apiproxy-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "dualstack.apiproxy-*.amazonaws.com",
-            "*.dualstack.apiproxy-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)dualstack\\.ichnaea-web-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "dualstack.ichnaea-web-*.amazonaws.com",
-            "*.dualstack.ichnaea-web-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-disney",
-          "regex": "^hses[1-7]?\\.akamaized\\.net$",
-          "resolution": "exact-finite-expansion",
-          "note": "Eight concrete hostnames, including the absent optional digit.",
-          "wildcards": [
-            "hses.akamaized.net",
-            "hses1.akamaized.net",
-            "hses2.akamaized.net",
-            "hses3.akamaized.net",
-            "hses4.akamaized.net",
-            "hses5.akamaized.net",
-            "hses6.akamaized.net",
-            "hses7.akamaized.net"
           ]
         },
         {
@@ -3535,9 +3351,9 @@
       ]
     },
     "shadowrocket/fallback": {
-      "rules": 165925,
-      "config_rules": 56,
-      "groups": 36,
+      "rules": 165474,
+      "config_rules": 52,
+      "groups": 32,
       "remote_rule_sets": [
         {
           "id": "site-private",
@@ -3612,30 +3428,6 @@
           "sha256": "ff1bc1631adc9c139ab19bf509a59507871b8f0663ade80dffa9f2b1665e41b9"
         },
         {
-          "id": "site-netflix",
-          "path": "shadowrocket/rules/site-netflix.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-netflix.list",
-          "policy": "Netflix",
-          "rules": 32,
-          "sha256": "0ee533c94ed0c84046bd37ea216d3f573b1556d7f9e64da88d14b37c83d0e8cd"
-        },
-        {
-          "id": "site-disney",
-          "path": "shadowrocket/rules/site-disney.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-disney.list",
-          "policy": "Disney+",
-          "rules": 232,
-          "sha256": "3b67ce9905c93b965555fd4a7326fc2fdff255200cbdbc9496b78e3794ad49a9"
-        },
-        {
-          "id": "site-hbo",
-          "path": "shadowrocket/rules/site-hbo.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-hbo.list",
-          "policy": "Max",
-          "rules": 65,
-          "sha256": "41216947f4d820c755285ed0fce2aea4cfabaa076b0214b586eb4eb3c8aa76e5"
-        },
-        {
           "id": "site-spotify",
           "path": "shadowrocket/rules/site-spotify.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-spotify.list",
@@ -3687,7 +3479,7 @@
           "id": "site-sony",
           "path": "shadowrocket/rules/site-sony.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-sony.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 115,
           "sha256": "45b6ff63aec1ae1ff4c25da043121c6d6c2ce8ff5eb900a76ae521290cd0ba52"
         },
@@ -3695,7 +3487,7 @@
           "id": "site-nintendo",
           "path": "shadowrocket/rules/site-nintendo.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-nintendo.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 124,
           "sha256": "66f455920f7644dc6cfce6cc20f745fa0206f9d81d11b6f84ad23417520ed68d"
         },
@@ -3703,7 +3495,7 @@
           "id": "site-epicgames",
           "path": "shadowrocket/rules/site-epicgames.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-epicgames.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 60,
           "sha256": "b871c08f00af19b94adfd5e56eaf0bcbd811f21e4d4b10cda062de00162e89e1"
         },
@@ -3711,7 +3503,7 @@
           "id": "site-steam@cn",
           "path": "shadowrocket/rules/site-steam@cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-steam@cn.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 19,
           "sha256": "4ae2540001216910ec89a3c035b209654cbacfe4bc329996a775336791655602"
         },
@@ -3719,7 +3511,7 @@
           "id": "site-steam",
           "path": "shadowrocket/rules/site-steam.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-steam.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 60,
           "sha256": "2e3117f30009c26d558fa7ae044f31f2d743e60ca67742785633fa1e0a08b5ca"
         },
@@ -3727,7 +3519,7 @@
           "id": "site-category-games",
           "path": "shadowrocket/rules/site-category-games.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-games.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 1154,
           "sha256": "a664be3577206a5cf58957c3326c714757ee9d23d8e2e1253ead0f6a0d028418"
         },
@@ -3860,14 +3652,6 @@
           "sha256": "fa1a676cc3741cc0158ba430ef1e2dd635972cc38fa020fb282f99e3a04dceed"
         },
         {
-          "id": "ip-netflix",
-          "path": "shadowrocket/rules/ip-netflix.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/ip-netflix.list",
-          "policy": "Netflix",
-          "rules": 122,
-          "sha256": "9a461d28ff4c5e268de9894464c168c63aa0fd0a7baf99793e2e8e009af519c5"
-        },
-        {
           "id": "ip-facebook",
           "path": "shadowrocket/rules/ip-facebook.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/ip-facebook.list",
@@ -3959,62 +3743,6 @@
           "note": "Only the named OpenAI Azure WebPubSub prefix; wildcard segments are not restricted to digits/non-whitespace.",
           "wildcards": [
             "chatgpt-async-webps-prod-*-*.webpubsub.azure.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "apiproxy-device-prod-nlb-*.amazonaws.com",
-            "*.apiproxy-device-prod-nlb-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)apiproxy-website-nlb-prod-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "apiproxy-website-nlb-prod-*.amazonaws.com",
-            "*.apiproxy-website-nlb-prod-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)dualstack\\.apiproxy-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "dualstack.apiproxy-*.amazonaws.com",
-            "*.dualstack.apiproxy-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)dualstack\\.ichnaea-web-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "dualstack.ichnaea-web-*.amazonaws.com",
-            "*.dualstack.ichnaea-web-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-disney",
-          "regex": "^hses[1-7]?\\.akamaized\\.net$",
-          "resolution": "exact-finite-expansion",
-          "note": "Eight concrete hostnames, including the absent optional digit.",
-          "wildcards": [
-            "hses.akamaized.net",
-            "hses1.akamaized.net",
-            "hses2.akamaized.net",
-            "hses3.akamaized.net",
-            "hses4.akamaized.net",
-            "hses5.akamaized.net",
-            "hses6.akamaized.net",
-            "hses7.akamaized.net"
           ]
         },
         {
@@ -5880,9 +5608,9 @@
       ]
     },
     "shadowrocket/hybrid": {
-      "rules": 165925,
-      "config_rules": 56,
-      "groups": 35,
+      "rules": 165474,
+      "config_rules": 52,
+      "groups": 31,
       "remote_rule_sets": [
         {
           "id": "site-private",
@@ -5957,30 +5685,6 @@
           "sha256": "ff1bc1631adc9c139ab19bf509a59507871b8f0663ade80dffa9f2b1665e41b9"
         },
         {
-          "id": "site-netflix",
-          "path": "shadowrocket/rules/site-netflix.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-netflix.list",
-          "policy": "Netflix",
-          "rules": 32,
-          "sha256": "0ee533c94ed0c84046bd37ea216d3f573b1556d7f9e64da88d14b37c83d0e8cd"
-        },
-        {
-          "id": "site-disney",
-          "path": "shadowrocket/rules/site-disney.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-disney.list",
-          "policy": "Disney+",
-          "rules": 232,
-          "sha256": "3b67ce9905c93b965555fd4a7326fc2fdff255200cbdbc9496b78e3794ad49a9"
-        },
-        {
-          "id": "site-hbo",
-          "path": "shadowrocket/rules/site-hbo.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-hbo.list",
-          "policy": "Max",
-          "rules": 65,
-          "sha256": "41216947f4d820c755285ed0fce2aea4cfabaa076b0214b586eb4eb3c8aa76e5"
-        },
-        {
           "id": "site-spotify",
           "path": "shadowrocket/rules/site-spotify.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-spotify.list",
@@ -6032,7 +5736,7 @@
           "id": "site-sony",
           "path": "shadowrocket/rules/site-sony.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-sony.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 115,
           "sha256": "45b6ff63aec1ae1ff4c25da043121c6d6c2ce8ff5eb900a76ae521290cd0ba52"
         },
@@ -6040,7 +5744,7 @@
           "id": "site-nintendo",
           "path": "shadowrocket/rules/site-nintendo.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-nintendo.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 124,
           "sha256": "66f455920f7644dc6cfce6cc20f745fa0206f9d81d11b6f84ad23417520ed68d"
         },
@@ -6048,7 +5752,7 @@
           "id": "site-epicgames",
           "path": "shadowrocket/rules/site-epicgames.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-epicgames.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 60,
           "sha256": "b871c08f00af19b94adfd5e56eaf0bcbd811f21e4d4b10cda062de00162e89e1"
         },
@@ -6056,7 +5760,7 @@
           "id": "site-steam@cn",
           "path": "shadowrocket/rules/site-steam@cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-steam@cn.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 19,
           "sha256": "4ae2540001216910ec89a3c035b209654cbacfe4bc329996a775336791655602"
         },
@@ -6064,7 +5768,7 @@
           "id": "site-steam",
           "path": "shadowrocket/rules/site-steam.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-steam.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 60,
           "sha256": "2e3117f30009c26d558fa7ae044f31f2d743e60ca67742785633fa1e0a08b5ca"
         },
@@ -6072,7 +5776,7 @@
           "id": "site-category-games",
           "path": "shadowrocket/rules/site-category-games.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-games.list",
-          "policy": "Game",
+          "policy": "DIRECT",
           "rules": 1154,
           "sha256": "a664be3577206a5cf58957c3326c714757ee9d23d8e2e1253ead0f6a0d028418"
         },
@@ -6205,14 +5909,6 @@
           "sha256": "fa1a676cc3741cc0158ba430ef1e2dd635972cc38fa020fb282f99e3a04dceed"
         },
         {
-          "id": "ip-netflix",
-          "path": "shadowrocket/rules/ip-netflix.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/ip-netflix.list",
-          "policy": "Netflix",
-          "rules": 122,
-          "sha256": "9a461d28ff4c5e268de9894464c168c63aa0fd0a7baf99793e2e8e009af519c5"
-        },
-        {
           "id": "ip-facebook",
           "path": "shadowrocket/rules/ip-facebook.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/ip-facebook.list",
@@ -6304,62 +6000,6 @@
           "note": "Only the named OpenAI Azure WebPubSub prefix; wildcard segments are not restricted to digits/non-whitespace.",
           "wildcards": [
             "chatgpt-async-webps-prod-*-*.webpubsub.azure.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "apiproxy-device-prod-nlb-*.amazonaws.com",
-            "*.apiproxy-device-prod-nlb-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)apiproxy-website-nlb-prod-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "apiproxy-website-nlb-prod-*.amazonaws.com",
-            "*.apiproxy-website-nlb-prod-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)dualstack\\.apiproxy-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "dualstack.apiproxy-*.amazonaws.com",
-            "*.dualstack.apiproxy-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-netflix",
-          "regex": "(^|\\.)dualstack\\.ichnaea-web-.+\\.amazonaws\\.com$",
-          "resolution": "bounded-widening",
-          "note": "Netflix-specific AWS hostname prefix; * also permits an empty suffix.",
-          "wildcards": [
-            "dualstack.ichnaea-web-*.amazonaws.com",
-            "*.dualstack.ichnaea-web-*.amazonaws.com"
-          ]
-        },
-        {
-          "source": "site-disney",
-          "regex": "^hses[1-7]?\\.akamaized\\.net$",
-          "resolution": "exact-finite-expansion",
-          "note": "Eight concrete hostnames, including the absent optional digit.",
-          "wildcards": [
-            "hses.akamaized.net",
-            "hses1.akamaized.net",
-            "hses2.akamaized.net",
-            "hses3.akamaized.net",
-            "hses4.akamaized.net",
-            "hses5.akamaized.net",
-            "hses6.akamaized.net",
-            "hses7.akamaized.net"
           ]
         },
         {
