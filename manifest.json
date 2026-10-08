@@ -2,7 +2,7 @@
   "schema_version": 1,
   "audience": "public",
   "source_commit": "32bbb6c45c63a491c571f98cd9d863d7fd6771dc",
-  "sources_sha256": "edbcf554f7726a5496f502f5ad1914fd3723ca7b529801242723cc856f51b3f5",
+  "sources_sha256": "538c415856d81b5431d0a6b05211eef8f627a9224d0b129b25786dd8fe65bdf8",
   "coverage": {
     "claude.com": "AI",
     "api.claude.com": "AI",
@@ -14,11 +14,19 @@
   },
   "outputs": {
     "mihomo/select": {
-      "rules": 164567,
+      "rules": 165478,
       "groups": 30,
       "inventory_bound": false,
-      "regex": 166,
+      "regex": 167,
       "remote_rule_sets": [
+        {
+          "id": "site-category-ads-all",
+          "path": "mihomo/select/rules/site-category-ads-all.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-category-ads-all.yaml",
+          "behavior": "classical",
+          "rules": 911,
+          "sha256": "6a855848fa83c0cd437309cb6c606a93a1b7996d92baf88802718f6d7d65a842"
+        },
         {
           "id": "site-private",
           "path": "mihomo/select/rules/site-private.yaml",
@@ -374,11 +382,19 @@
       ]
     },
     "mihomo/fallback": {
-      "rules": 164567,
+      "rules": 165478,
       "groups": 32,
       "inventory_bound": false,
-      "regex": 166,
+      "regex": 167,
       "remote_rule_sets": [
+        {
+          "id": "site-category-ads-all",
+          "path": "mihomo/fallback/rules/site-category-ads-all.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-category-ads-all.yaml",
+          "behavior": "classical",
+          "rules": 911,
+          "sha256": "6a855848fa83c0cd437309cb6c606a93a1b7996d92baf88802718f6d7d65a842"
+        },
         {
           "id": "site-private",
           "path": "mihomo/fallback/rules/site-private.yaml",
@@ -734,11 +750,19 @@
       ]
     },
     "mihomo/hybrid": {
-      "rules": 164567,
+      "rules": 165478,
       "groups": 31,
       "inventory_bound": false,
-      "regex": 166,
+      "regex": 167,
       "remote_rule_sets": [
+        {
+          "id": "site-category-ads-all",
+          "path": "mihomo/hybrid/rules/site-category-ads-all.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-category-ads-all.yaml",
+          "behavior": "classical",
+          "rules": 911,
+          "sha256": "6a855848fa83c0cd437309cb6c606a93a1b7996d92baf88802718f6d7d65a842"
+        },
         {
           "id": "site-private",
           "path": "mihomo/hybrid/rules/site-private.yaml",
@@ -1094,10 +1118,18 @@
       ]
     },
     "shadowrocket/select": {
-      "rules": 165444,
-      "config_rules": 46,
+      "rules": 166356,
+      "config_rules": 47,
       "groups": 30,
       "remote_rule_sets": [
+        {
+          "id": "site-category-ads-all",
+          "path": "shadowrocket/rules/site-category-ads-all.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ads-all.list",
+          "policy": "REJECT",
+          "rules": 912,
+          "sha256": "d3f5013037c3134cfdaf043c62744fcd50c14ee368383327dddc2f4b960ed808"
+        },
         {
           "id": "site-private",
           "path": "shadowrocket/rules/site-private.list",
@@ -1436,6 +1468,16 @@
         }
       ],
       "adaptations": [
+        {
+          "source": "site-category-ads-all",
+          "regex": "^speed\\.(coe|open)\\.ad\\.[a-z]{2,6}\\.prod\\.hosts\\.ooklaserver\\.net$",
+          "resolution": "bounded-widening",
+          "note": "Only the two speed.coe/open.ad.*.prod.hosts.ooklaserver.net advertising prefixes. The wildcard also accepts labels outside 2-6 lowercase letters and multiple labels; ordinary speed-test hostnames without the .ad. prefix are not covered.",
+          "wildcards": [
+            "speed.coe.ad.*.prod.hosts.ooklaserver.net",
+            "speed.open.ad.*.prod.hosts.ooklaserver.net"
+          ]
+        },
         {
           "source": "site-private",
           "regex": "^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$",
@@ -3351,10 +3393,18 @@
       ]
     },
     "shadowrocket/fallback": {
-      "rules": 165444,
-      "config_rules": 46,
+      "rules": 166356,
+      "config_rules": 47,
       "groups": 32,
       "remote_rule_sets": [
+        {
+          "id": "site-category-ads-all",
+          "path": "shadowrocket/rules/site-category-ads-all.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ads-all.list",
+          "policy": "REJECT",
+          "rules": 912,
+          "sha256": "d3f5013037c3134cfdaf043c62744fcd50c14ee368383327dddc2f4b960ed808"
+        },
         {
           "id": "site-private",
           "path": "shadowrocket/rules/site-private.list",
@@ -3693,6 +3743,16 @@
         }
       ],
       "adaptations": [
+        {
+          "source": "site-category-ads-all",
+          "regex": "^speed\\.(coe|open)\\.ad\\.[a-z]{2,6}\\.prod\\.hosts\\.ooklaserver\\.net$",
+          "resolution": "bounded-widening",
+          "note": "Only the two speed.coe/open.ad.*.prod.hosts.ooklaserver.net advertising prefixes. The wildcard also accepts labels outside 2-6 lowercase letters and multiple labels; ordinary speed-test hostnames without the .ad. prefix are not covered.",
+          "wildcards": [
+            "speed.coe.ad.*.prod.hosts.ooklaserver.net",
+            "speed.open.ad.*.prod.hosts.ooklaserver.net"
+          ]
+        },
         {
           "source": "site-private",
           "regex": "^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$",
@@ -5608,10 +5668,18 @@
       ]
     },
     "shadowrocket/hybrid": {
-      "rules": 165444,
-      "config_rules": 46,
+      "rules": 166356,
+      "config_rules": 47,
       "groups": 31,
       "remote_rule_sets": [
+        {
+          "id": "site-category-ads-all",
+          "path": "shadowrocket/rules/site-category-ads-all.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ads-all.list",
+          "policy": "REJECT",
+          "rules": 912,
+          "sha256": "d3f5013037c3134cfdaf043c62744fcd50c14ee368383327dddc2f4b960ed808"
+        },
         {
           "id": "site-private",
           "path": "shadowrocket/rules/site-private.list",
@@ -5950,6 +6018,16 @@
         }
       ],
       "adaptations": [
+        {
+          "source": "site-category-ads-all",
+          "regex": "^speed\\.(coe|open)\\.ad\\.[a-z]{2,6}\\.prod\\.hosts\\.ooklaserver\\.net$",
+          "resolution": "bounded-widening",
+          "note": "Only the two speed.coe/open.ad.*.prod.hosts.ooklaserver.net advertising prefixes. The wildcard also accepts labels outside 2-6 lowercase letters and multiple labels; ordinary speed-test hostnames without the .ad. prefix are not covered.",
+          "wildcards": [
+            "speed.coe.ad.*.prod.hosts.ooklaserver.net",
+            "speed.open.ad.*.prod.hosts.ooklaserver.net"
+          ]
+        },
         {
           "source": "site-private",
           "regex": "^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$",

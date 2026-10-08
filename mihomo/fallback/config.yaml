@@ -342,6 +342,14 @@
     "lazy": false
     "tolerance": 50
 "rule-providers":
+  "site-category-ads-all":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-category-ads-all.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-category-ads-all.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-private":
     "type": "http"
     "behavior": "classical"
@@ -698,6 +706,7 @@
   - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
   - "DOMAIN-KEYWORD,stun,REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,3478)),REJECT"
+  - "RULE-SET,site-category-ads-all,REJECT"
   - "DOMAIN-SUFFIX,cursorvm.com,AI"
   - "RULE-SET,site-private,DIRECT"
   - "RULE-SET,ip-private,DIRECT,no-resolve"

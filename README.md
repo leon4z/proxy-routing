@@ -131,7 +131,7 @@ PROXY 通过名称筛选收集节点。节点未出现时，检查首页订阅�
 
 ## Mihomo：导入与绑定节点
 
-按 URL 导入，无需解压 ZIP 或手工放置规则目录。主配置会下载 **42 个分流分类和 2 个 DNS 分类**，`path` 是自动下载后的缓存位置。
+按 URL 导入，无需解压 ZIP 或手工放置规则目录。主配置会下载 **43 个分流分类和 2 个 DNS 分类**，`path` 是自动下载后的缓存位置。
 
 ### 1. 导入远程配置
 
@@ -201,7 +201,11 @@ function main(config) {
 
 服务分组包括 AI、Google、YouTube、Telegram、Twitter、Facebook、TikTok，以及上述默认直连服务。游戏分类保留并直接使用 DIRECT，不显示 Game 分组。Netflix、Disney+、Max 不设置独立分组或专属规则：请求继续匹配其余规则，未命中的最终使用 PROXY；命中国内规则仍直连。宽泛海外分类和末尾规则使用 PROXY；更靠前的服务、局域网和国内规则优先匹配。
 
-规则优先级为：拒绝与显式自定义规则 → 局域网 → CN 域名直连 → 各服务分类 → 专门服务 IP → CN IP 直连 → 普通海外分类与最终 PROXY。CN 域名与 CN IP 是独立规则集，均直接使用 DIRECT，不额外建立 CN 策略组。命中 CN 域名时优先直连，包括与 Google、Apple、Microsoft、AI 等分类重叠的域名；这些请求不会再进入对应服务组。确需代理的个别域名应放入更靠前的显式自定义规则。
+规则优先级为：网络拒绝 → 基础广告拦截 → 显式自定义规则 → 局域网 → CN 域名直连 → 各服务分类 → 专门服务 IP → CN IP 直连 → 普通海外分类与最终 PROXY。CN 域名与 CN IP 是独立规则集，均直接使用 DIRECT，不额外建立 CN 策略组。命中 CN 域名时优先直连，包括与 Google、Apple、Microsoft、AI 等分类重叠的域名；这些请求不会再进入对应服务组。确需代理的个别域名应放入更靠前的显式自定义规则。
+
+基础广告拦截使用 MetaCubeX 完整版 `category-ads-all`，小火箭通过远程规则集、Mihomo 通过 HTTP provider 加载，匹配后直接 REJECT，不新增广告策略组。广告规则优先于 CN 和服务规则。它不需要证书、HTTPS 解密或脚本，不能保证删除与正常内容共用域名的开屏广告、视频广告。
+
+小火箭不能原样表达上游的一条测速广告正则，因此仅对 `speed.coe.ad.*.prod.hosts.ooklaserver.net` 和 `speed.open.ad.*.prod.hosts.ooklaserver.net` 使用通配替代；相较正则，允许不符合 2–6 位小写字母限制的中间标签，差异写入 manifest。普通测速域名不因这条替代被整体封锁。Mihomo 保留原正则。若出现疑似误拦截，应查看实际命中的广告域名，再审查规则；不要直接关闭所有分流。
 
 AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor 等。Dia 的 `diabrowser.engineering`、Claude 的 `claude.dev`，以及 Cursor 的 `cursor.com`、`cursor.sh`、`cursorapi.com`、`cursor-cdn.com` 均由上游分类覆盖，根域及子域使用 AI；不再重复内嵌规则。上游尚未覆盖的 `cursorvm.com` 保留显式 AI 规则。命中 AI 不代表地区限制已解除。
 
