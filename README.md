@@ -201,6 +201,8 @@ function main(config) {
 
 服务分组包括 AI、Google、YouTube、Telegram、Twitter、Facebook、TikTok，以及上述默认直连服务。游戏分类保留并直接使用 DIRECT，不显示 Game 分组。Netflix、Disney+、Max 不设置独立分组或专属规则：请求继续匹配其余规则，未命中的最终使用 PROXY；命中国内规则仍直连。宽泛海外分类和末尾规则使用 PROXY；更靠前的服务、局域网和国内规则优先匹配。
 
+规则优先级为：拒绝与显式自定义规则 → 局域网 → CN 域名直连 → 各服务分类 → 专门服务 IP → CN IP 直连 → 普通海外分类与最终 PROXY。CN 域名与 CN IP 是独立规则集，均直接使用 DIRECT，不额外建立 CN 策略组。命中 CN 域名时优先直连，包括与 Google、Apple、Microsoft、AI 等分类重叠的域名；这些请求不会再进入对应服务组。确需代理的个别域名应放入更靠前的显式自定义规则。
+
 AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor 等。此前补充的规则也进入全部公开模式：Dia 的 `diabrowser.engineering`、Claude 的 `claude.dev`，以及 Cursor 的 `cursor.com`、`cursor.sh`、`cursorapi.com`、`cursor-cdn.com`、`cursorvm.com`，均使用 AI，匹配根域及子域并优先于远程分类规则。命中 AI 不代表地区限制已解除。
 
 `kimi.ai`、`moonshot.ai`、`minimax.io` 及其子域默认直连，显式规则优先于 AI 分类；需要代理的具体接口可单独调整。地区组排在服务组之后，作为 PROXY 等组的候选并方便手动选择地区；展示顺序不改变候选顺序或分流规则优先级。

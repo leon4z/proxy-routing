@@ -36,6 +36,14 @@
           "sha256": "c1c10efce5b195240007de8295078384dc7e6b1d300b26f76aafd691ff396484"
         },
         {
+          "id": "site-cn",
+          "path": "mihomo/select/rules/site-cn.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-cn.yaml",
+          "behavior": "classical",
+          "rules": 111224,
+          "sha256": "642f0c2ba66e401dc78ce1e6480acda6188137b87b3d26675a7271f1d127b207"
+        },
+        {
           "id": "site-category-ai-!cn",
           "path": "mihomo/select/rules/site-category-ai-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-category-ai-!cn.yaml",
@@ -300,14 +308,6 @@
           "sha256": "4dc34940d8221148c96f8c4f1a758a7ec030cf5d3fd74b904449ecac1ac0d52b"
         },
         {
-          "id": "site-cn",
-          "path": "mihomo/select/rules/site-cn.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-cn.yaml",
-          "behavior": "classical",
-          "rules": 111224,
-          "sha256": "642f0c2ba66e401dc78ce1e6480acda6188137b87b3d26675a7271f1d127b207"
-        },
-        {
           "id": "ip-telegram",
           "path": "mihomo/select/rules/ip-telegram.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/ip-telegram.yaml",
@@ -394,6 +394,14 @@
           "behavior": "classical",
           "rules": 18,
           "sha256": "c1c10efce5b195240007de8295078384dc7e6b1d300b26f76aafd691ff396484"
+        },
+        {
+          "id": "site-cn",
+          "path": "mihomo/fallback/rules/site-cn.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-cn.yaml",
+          "behavior": "classical",
+          "rules": 111224,
+          "sha256": "642f0c2ba66e401dc78ce1e6480acda6188137b87b3d26675a7271f1d127b207"
         },
         {
           "id": "site-category-ai-!cn",
@@ -660,14 +668,6 @@
           "sha256": "4dc34940d8221148c96f8c4f1a758a7ec030cf5d3fd74b904449ecac1ac0d52b"
         },
         {
-          "id": "site-cn",
-          "path": "mihomo/fallback/rules/site-cn.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-cn.yaml",
-          "behavior": "classical",
-          "rules": 111224,
-          "sha256": "642f0c2ba66e401dc78ce1e6480acda6188137b87b3d26675a7271f1d127b207"
-        },
-        {
           "id": "ip-telegram",
           "path": "mihomo/fallback/rules/ip-telegram.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/ip-telegram.yaml",
@@ -754,6 +754,14 @@
           "behavior": "classical",
           "rules": 18,
           "sha256": "c1c10efce5b195240007de8295078384dc7e6b1d300b26f76aafd691ff396484"
+        },
+        {
+          "id": "site-cn",
+          "path": "mihomo/hybrid/rules/site-cn.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-cn.yaml",
+          "behavior": "classical",
+          "rules": 111224,
+          "sha256": "642f0c2ba66e401dc78ce1e6480acda6188137b87b3d26675a7271f1d127b207"
         },
         {
           "id": "site-category-ai-!cn",
@@ -1020,14 +1028,6 @@
           "sha256": "4dc34940d8221148c96f8c4f1a758a7ec030cf5d3fd74b904449ecac1ac0d52b"
         },
         {
-          "id": "site-cn",
-          "path": "mihomo/hybrid/rules/site-cn.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-cn.yaml",
-          "behavior": "classical",
-          "rules": 111224,
-          "sha256": "642f0c2ba66e401dc78ce1e6480acda6188137b87b3d26675a7271f1d127b207"
-        },
-        {
           "id": "ip-telegram",
           "path": "mihomo/hybrid/rules/ip-telegram.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/ip-telegram.yaml",
@@ -1113,6 +1113,14 @@
           "policy": "DIRECT",
           "rules": 18,
           "sha256": "27a0e48253a2c46af36f3310aa07433a29b656060d668b5d7c877436b4346083"
+        },
+        {
+          "id": "site-cn",
+          "path": "shadowrocket/rules/site-cn.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cn.list",
+          "policy": "DIRECT",
+          "rules": 111224,
+          "sha256": "f6a3c48094b7a09e0f1aa6a6b9cdfe9d405b5679b424834430676c7a8775c679"
         },
         {
           "id": "site-category-ai-!cn",
@@ -1377,14 +1385,6 @@
           "policy": "TikTok",
           "rules": 37,
           "sha256": "69ab6466561c7a5e231ce4c986f17d724e060f19cc888fa826bc552e7aae221c"
-        },
-        {
-          "id": "site-cn",
-          "path": "shadowrocket/rules/site-cn.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cn.list",
-          "policy": "DIRECT",
-          "rules": 111224,
-          "sha256": "f6a3c48094b7a09e0f1aa6a6b9cdfe9d405b5679b424834430676c7a8775c679"
         },
         {
           "id": "ip-telegram",
@@ -3372,6 +3372,14 @@
           "sha256": "27a0e48253a2c46af36f3310aa07433a29b656060d668b5d7c877436b4346083"
         },
         {
+          "id": "site-cn",
+          "path": "shadowrocket/rules/site-cn.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cn.list",
+          "policy": "DIRECT",
+          "rules": 111224,
+          "sha256": "f6a3c48094b7a09e0f1aa6a6b9cdfe9d405b5679b424834430676c7a8775c679"
+        },
+        {
           "id": "site-category-ai-!cn",
           "path": "shadowrocket/rules/site-category-ai-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ai-!cn.list",
@@ -3634,14 +3642,6 @@
           "policy": "TikTok",
           "rules": 37,
           "sha256": "69ab6466561c7a5e231ce4c986f17d724e060f19cc888fa826bc552e7aae221c"
-        },
-        {
-          "id": "site-cn",
-          "path": "shadowrocket/rules/site-cn.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cn.list",
-          "policy": "DIRECT",
-          "rules": 111224,
-          "sha256": "f6a3c48094b7a09e0f1aa6a6b9cdfe9d405b5679b424834430676c7a8775c679"
         },
         {
           "id": "ip-telegram",
@@ -5629,6 +5629,14 @@
           "sha256": "27a0e48253a2c46af36f3310aa07433a29b656060d668b5d7c877436b4346083"
         },
         {
+          "id": "site-cn",
+          "path": "shadowrocket/rules/site-cn.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cn.list",
+          "policy": "DIRECT",
+          "rules": 111224,
+          "sha256": "f6a3c48094b7a09e0f1aa6a6b9cdfe9d405b5679b424834430676c7a8775c679"
+        },
+        {
           "id": "site-category-ai-!cn",
           "path": "shadowrocket/rules/site-category-ai-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ai-!cn.list",
@@ -5891,14 +5899,6 @@
           "policy": "TikTok",
           "rules": 37,
           "sha256": "69ab6466561c7a5e231ce4c986f17d724e060f19cc888fa826bc552e7aae221c"
-        },
-        {
-          "id": "site-cn",
-          "path": "shadowrocket/rules/site-cn.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cn.list",
-          "policy": "DIRECT",
-          "rules": 111224,
-          "sha256": "f6a3c48094b7a09e0f1aa6a6b9cdfe9d405b5679b424834430676c7a8775c679"
         },
         {
           "id": "ip-telegram",

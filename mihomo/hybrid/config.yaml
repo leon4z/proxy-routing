@@ -349,6 +349,14 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/ip-private.yaml"
     "interval": 86400
     "proxy": "DIRECT"
+  "site-cn":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-category-ai-!cn":
     "type": "http"
     "behavior": "classical"
@@ -613,14 +621,6 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-tiktok.yaml"
     "interval": 86400
     "proxy": "DIRECT"
-  "site-cn":
-    "type": "http"
-    "behavior": "classical"
-    "format": "yaml"
-    "path": "./rules/site-cn.yaml"
-    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-cn.yaml"
-    "interval": 86400
-    "proxy": "DIRECT"
   "ip-telegram":
     "type": "http"
     "behavior": "classical"
@@ -701,6 +701,7 @@
   - "DOMAIN-SUFFIX,cursorvm.com,AI"
   - "RULE-SET,site-private,DIRECT"
   - "RULE-SET,ip-private,DIRECT,no-resolve"
+  - "RULE-SET,site-cn,DIRECT"
   - "RULE-SET,site-category-ai-!cn,AI"
   - "RULE-SET,site-anthropic,AI"
   - "RULE-SET,site-openai,AI"
@@ -734,7 +735,6 @@
   - "RULE-SET,site-xiaohongshu,DIRECT"
   - "RULE-SET,site-douyin,DIRECT"
   - "RULE-SET,site-tiktok,TikTok"
-  - "RULE-SET,site-cn,DIRECT"
   - "RULE-SET,ip-telegram,Telegram,no-resolve"
   - "RULE-SET,ip-facebook,Facebook,no-resolve"
   - "RULE-SET,ip-twitter,Twitter,no-resolve"
