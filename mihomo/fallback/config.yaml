@@ -39,6 +39,117 @@
 "proxies": []
 "proxy-groups":
   -
+    "name": "稳定节点"
+    "type": "fallback"
+    "proxies":
+      - "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+  -
+    "name": "自动切换"
+    "type": "fallback"
+    "filter": "(?:香港|Hong Kong|HK)|(?:台湾|Taiwan|TW)|(?:日本|Japan|JP)|(?:新加坡|Singapore|SG)|(?:美国|United States|USA|US)|(?:英国|United Kingdom|UK)|(?:德国|Germany|DE)|(?:韩国|Korea|KR)|(?:澳大利亚|Australia|AU)|(?:马来西亚|Malaysia|MY)|(?:法国|France|FR)|(?:加拿大|Canada|CA)|(?:荷兰|Netherlands|NL)|(?:土耳其|Turkey|TR)|(?:泰国|Thailand|TH)|(?:爱沙尼亚|Estonia|EE)"
+    "empty-fallback": "REJECT"
+    "include-all-providers": true
+    "proxies":
+      - "REJECT"
+    "url": "https://www.gstatic.com/generate_204"
+    "interval": 600
+    "lazy": false
+  -
+    "name": "PROXY"
+    "type": "select"
+    "proxies":
+      - "自动切换"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "美国节点"
+      - "英国节点"
+      - "德国节点"
+      - "韩国节点"
+      - "澳大利亚节点"
+      - "马来西亚节点"
+      - "法国节点"
+      - "加拿大节点"
+      - "荷兰节点"
+      - "土耳其节点"
+      - "泰国节点"
+      - "爱沙尼亚节点"
+  -
+    "name": "AI"
+    "type": "select"
+    "proxies":
+      - "稳定节点"
+  -
+    "name": "YouTube"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "Spotify"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "Telegram"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "PayPal"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "Twitter"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "Facebook"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
+    "name": "Amazon"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "Microsoft"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "Google"
+    "type": "select"
+    "proxies":
+      - "稳定节点"
+  -
+    "name": "Apple"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "BiliBili"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "PROXY"
+  -
+    "name": "TikTok"
+    "type": "select"
+    "proxies":
+      - "PROXY"
+  -
     "name": "香港节点"
     "type": "url-test"
     "filter": "香港|Hong Kong|HK"
@@ -230,117 +341,6 @@
     "interval": 600
     "lazy": false
     "tolerance": 50
-  -
-    "name": "稳定节点"
-    "type": "fallback"
-    "proxies":
-      - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-  -
-    "name": "自动切换"
-    "type": "fallback"
-    "filter": "(?:香港|Hong Kong|HK)|(?:台湾|Taiwan|TW)|(?:日本|Japan|JP)|(?:新加坡|Singapore|SG)|(?:美国|United States|USA|US)|(?:英国|United Kingdom|UK)|(?:德国|Germany|DE)|(?:韩国|Korea|KR)|(?:澳大利亚|Australia|AU)|(?:马来西亚|Malaysia|MY)|(?:法国|France|FR)|(?:加拿大|Canada|CA)|(?:荷兰|Netherlands|NL)|(?:土耳其|Turkey|TR)|(?:泰国|Thailand|TH)|(?:爱沙尼亚|Estonia|EE)"
-    "empty-fallback": "REJECT"
-    "include-all-providers": true
-    "proxies":
-      - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-  -
-    "name": "PROXY"
-    "type": "select"
-    "proxies":
-      - "自动切换"
-      - "香港节点"
-      - "台湾节点"
-      - "日本节点"
-      - "新加坡节点"
-      - "美国节点"
-      - "英国节点"
-      - "德国节点"
-      - "韩国节点"
-      - "澳大利亚节点"
-      - "马来西亚节点"
-      - "法国节点"
-      - "加拿大节点"
-      - "荷兰节点"
-      - "土耳其节点"
-      - "泰国节点"
-      - "爱沙尼亚节点"
-  -
-    "name": "AI"
-    "type": "select"
-    "proxies":
-      - "稳定节点"
-  -
-    "name": "YouTube"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "Spotify"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "Telegram"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "PayPal"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "Twitter"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "Facebook"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "Amazon"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "Microsoft"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "Google"
-    "type": "select"
-    "proxies":
-      - "稳定节点"
-  -
-    "name": "Apple"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "BiliBili"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "TikTok"
-    "type": "select"
-    "proxies":
-      - "PROXY"
 "rule-providers":
   "site-private":
     "type": "http"
@@ -698,6 +698,9 @@
   - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
   - "DOMAIN-KEYWORD,stun,REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,3478)),REJECT"
+  - "DOMAIN-SUFFIX,kimi.ai,DIRECT"
+  - "DOMAIN-SUFFIX,moonshot.ai,DIRECT"
+  - "DOMAIN-SUFFIX,minimax.io,DIRECT"
   - "DOMAIN-SUFFIX,diabrowser.engineering,AI"
   - "DOMAIN-SUFFIX,claude.dev,AI"
   - "DOMAIN-SUFFIX,cursor.com,AI"

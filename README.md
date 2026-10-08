@@ -203,6 +203,8 @@ function main(config) {
 
 AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor 等。此前补充的规则也进入全部公开模式：Dia 的 `diabrowser.engineering`、Claude 的 `claude.dev`，以及 Cursor 的 `cursor.com`、`cursor.sh`、`cursorapi.com`、`cursor-cdn.com`、`cursorvm.com`，均使用 AI，匹配根域及子域并优先于远程分类规则。命中 AI 不代表地区限制已解除。
 
+`kimi.ai`、`moonshot.ai`、`minimax.io` 及其子域默认直连，显式规则优先于 AI 分类；需要代理的具体接口可单独调整。地区组排在服务组之后，作为 PROXY 等组的候选并方便手动选择地区；展示顺序不改变候选顺序或分流规则优先级。
+
 两客户端共享以下网络策略，具体语法分别适配：
 
 - 关闭 IPv6；拒绝 UDP 443（QUIC）。支持回退的应用使用 TCP，其他 UDP 不因此全部关闭。
