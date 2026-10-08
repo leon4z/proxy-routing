@@ -2,7 +2,7 @@
   "schema_version": 1,
   "audience": "public",
   "source_commit": "32bbb6c45c63a491c571f98cd9d863d7fd6771dc",
-  "sources_sha256": "538c415856d81b5431d0a6b05211eef8f627a9224d0b129b25786dd8fe65bdf8",
+  "sources_sha256": "d05a45b81544047a9d2781bfe4f87382d0e20cdbb0e85ad9c9251a372cca4d4b",
   "coverage": {
     "claude.com": "AI",
     "api.claude.com": "AI",
