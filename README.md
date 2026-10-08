@@ -203,9 +203,9 @@ function main(config) {
 
 规则优先级为：拒绝与显式自定义规则 → 局域网 → CN 域名直连 → 各服务分类 → 专门服务 IP → CN IP 直连 → 普通海外分类与最终 PROXY。CN 域名与 CN IP 是独立规则集，均直接使用 DIRECT，不额外建立 CN 策略组。命中 CN 域名时优先直连，包括与 Google、Apple、Microsoft、AI 等分类重叠的域名；这些请求不会再进入对应服务组。确需代理的个别域名应放入更靠前的显式自定义规则。
 
-AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor 等。此前补充的规则也进入全部公开模式：Dia 的 `diabrowser.engineering`、Claude 的 `claude.dev`，以及 Cursor 的 `cursor.com`、`cursor.sh`、`cursorapi.com`、`cursor-cdn.com`、`cursorvm.com`，均使用 AI，匹配根域及子域并优先于远程分类规则。命中 AI 不代表地区限制已解除。
+AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor 等。Dia 的 `diabrowser.engineering`、Claude 的 `claude.dev`，以及 Cursor 的 `cursor.com`、`cursor.sh`、`cursorapi.com`、`cursor-cdn.com` 均由上游分类覆盖，根域及子域使用 AI；不再重复内嵌规则。上游尚未覆盖的 `cursorvm.com` 保留显式 AI 规则。命中 AI 不代表地区限制已解除。
 
-`kimi.ai`、`moonshot.ai`、`minimax.io` 及其子域默认直连，显式规则优先于 AI 分类；需要代理的具体接口可单独调整。地区组排在服务组之后，作为 PROXY 等组的候选并方便手动选择地区；展示顺序不改变候选顺序或分流规则优先级。
+`kimi.ai`、`moonshot.ai`、`minimax.io` 及其子域默认直连，由前置 CN 域名规则判定，无需额外直连例外；需要代理的具体接口可单独调整。地区组排在服务组之后，作为 PROXY 等组的候选并方便手动选择地区；展示顺序不改变候选顺序或分流规则优先级。
 
 两客户端共享以下网络策略，具体语法分别适配：
 
