@@ -707,6 +707,7 @@
   - "DOMAIN-KEYWORD,stun,REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,3478)),REJECT"
   - "RULE-SET,site-category-ads-all,REJECT"
+  - "DOMAIN-SUFFIX,claude.app,AI"
   - "DOMAIN-SUFFIX,cursorvm.com,AI"
   - "RULE-SET,site-private,DIRECT"
   - "RULE-SET,ip-private,DIRECT,no-resolve"

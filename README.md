@@ -207,7 +207,7 @@ function main(config) {
 
 小火箭不能原样表达上游的一条测速广告正则，因此仅对 `speed.coe.ad.*.prod.hosts.ooklaserver.net` 和 `speed.open.ad.*.prod.hosts.ooklaserver.net` 使用通配替代；相较正则，允许不符合 2–6 位小写字母限制的中间标签，差异写入 manifest。普通测速域名不因这条替代被整体封锁。Mihomo 保留原正则。若出现疑似误拦截，应查看实际命中的广告域名，再审查规则；不要直接关闭所有分流。
 
-AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor 等。Dia 的 `diabrowser.engineering`、Claude 的 `claude.dev`，以及 Cursor 的 `cursor.com`、`cursor.sh`、`cursorapi.com`、`cursor-cdn.com` 均由上游分类覆盖，根域及子域使用 AI；不再重复内嵌规则。上游尚未覆盖的 `cursorvm.com` 保留显式 AI 规则。命中 AI 不代表地区限制已解除。
+AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor 等。Dia 的 `diabrowser.engineering`、Claude 的 `claude.dev`，以及 Cursor 的 `cursor.com`、`cursor.sh`、`cursorapi.com`、`cursor-cdn.com` 均由上游分类覆盖，根域及子域使用 AI；不再重复内嵌规则。上游尚未覆盖的 `cursorvm.com` 与 `claude.app` 保留显式 AI 规则；后者覆盖 Claude 桌面端的 `*.livepreview.claude.app`，依据 [官方网络要求](https://code.claude.com/docs/en/desktop#network-access-requirements)。命中 AI 不代表地区限制已解除。
 
 `kimi.ai`、`moonshot.ai`、`minimax.io` 及其子域默认直连，由前置 CN 域名规则判定，无需额外直连例外；需要代理的具体接口可单独调整。地区组排在服务组之后，作为 PROXY 等组的候选并方便手动选择地区；展示顺序不改变候选顺序或分流规则优先级。
 
