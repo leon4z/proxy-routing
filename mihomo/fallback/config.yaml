@@ -752,3 +752,5 @@
   - "RULE-SET,ip-cn,DIRECT"
   - "RULE-SET,site-geolocation-!cn,PROXY"
   - "MATCH,PROXY"
+"profile":
+  "store-selected": true

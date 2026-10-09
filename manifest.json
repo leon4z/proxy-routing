@@ -17,7 +17,7 @@
   "outputs": {
     "mihomo/select": {
       "rules": 165477,
-      "groups": 30,
+      "groups": 17,
       "inventory_bound": false,
       "regex": 167,
       "remote_rule_sets": [
@@ -1122,7 +1122,7 @@
     "shadowrocket/select": {
       "rules": 166356,
       "config_rules": 48,
-      "groups": 30,
+      "groups": 16,
       "remote_rule_sets": [
         {
           "id": "site-category-ads-all",
@@ -1160,7 +1160,7 @@
           "id": "site-category-ai-!cn",
           "path": "shadowrocket/rules/site-category-ai-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ai-!cn.list",
-          "policy": "AI",
+          "policy": "PROXY",
           "rules": 189,
           "sha256": "068db4cb7c48a5e169575991f602b0ab13c48cd16576c629b05e169e3136be31"
         },
@@ -1168,7 +1168,7 @@
           "id": "site-anthropic",
           "path": "shadowrocket/rules/site-anthropic.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-anthropic.list",
-          "policy": "AI",
+          "policy": "PROXY",
           "rules": 9,
           "sha256": "b2b8e9a3a14980d2bcf8ef4e2ec231894855089533f6f3054af50b8d6636f64f"
         },
@@ -1176,7 +1176,7 @@
           "id": "site-openai",
           "path": "shadowrocket/rules/site-openai.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-openai.list",
-          "policy": "AI",
+          "policy": "PROXY",
           "rules": 23,
           "sha256": "5496cd81fe6b594a344ce752497d85dc0f58d0bc3d8592187bc75a210750a912"
         },
@@ -1184,7 +1184,7 @@
           "id": "site-google-gemini",
           "path": "shadowrocket/rules/site-google-gemini.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-google-gemini.list",
-          "policy": "AI",
+          "policy": "PROXY",
           "rules": 46,
           "sha256": "11f2c91b20c87030128d799e072e30679917f808dcb481acb5e48cb28e9aa881"
         },
@@ -1192,7 +1192,7 @@
           "id": "site-github-copilot",
           "path": "shadowrocket/rules/site-github-copilot.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-github-copilot.list",
-          "policy": "AI",
+          "policy": "PROXY",
           "rules": 6,
           "sha256": "d6a66525d89677b2e99344dd4a7c6ae582a302365d712dbb00707e095b51bc6f"
         },
@@ -1200,7 +1200,7 @@
           "id": "site-cursor",
           "path": "shadowrocket/rules/site-cursor.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cursor.list",
-          "policy": "AI",
+          "policy": "PROXY",
           "rules": 4,
           "sha256": "5c6d8418ed48e513a8b5697bea5948ee954fca9f5f683d5ee9234b1258111ad2"
         },
@@ -1208,7 +1208,7 @@
           "id": "site-youtube",
           "path": "shadowrocket/rules/site-youtube.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-youtube.list",
-          "policy": "YouTube",
+          "policy": "PROXY",
           "rules": 178,
           "sha256": "ff1bc1631adc9c139ab19bf509a59507871b8f0663ade80dffa9f2b1665e41b9"
         },
@@ -1216,7 +1216,7 @@
           "id": "site-spotify",
           "path": "shadowrocket/rules/site-spotify.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-spotify.list",
-          "policy": "Spotify",
+          "policy": "DIRECT",
           "rules": 28,
           "sha256": "bbdf8eb50559fc69c2654f3890182cefaae64df7215b1a7cf6ab1ac679abffe0"
         },
@@ -1224,7 +1224,7 @@
           "id": "site-telegram",
           "path": "shadowrocket/rules/site-telegram.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-telegram.list",
-          "policy": "Telegram",
+          "policy": "PROXY",
           "rules": 21,
           "sha256": "a1a39e45b89ce8da3def2ed862bdeef0fa67acb9ca50ea3cb017b9a2dd4623d8"
         },
@@ -1232,7 +1232,7 @@
           "id": "site-paypal",
           "path": "shadowrocket/rules/site-paypal.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-paypal.list",
-          "policy": "PayPal",
+          "policy": "DIRECT",
           "rules": 245,
           "sha256": "c3ce515bd613f6011d1eef530bbd717f9eeb551d411db6ccacfbdf5bf7c159b8"
         },
@@ -1240,7 +1240,7 @@
           "id": "site-twitter",
           "path": "shadowrocket/rules/site-twitter.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-twitter.list",
-          "policy": "Twitter",
+          "policy": "PROXY",
           "rules": 24,
           "sha256": "74f3f9f4a004ce32af096e45fdc9dcb54c781f3719d0763e2bb9778078e0256c"
         },
@@ -1248,7 +1248,7 @@
           "id": "site-facebook",
           "path": "shadowrocket/rules/site-facebook.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-facebook.list",
-          "policy": "Facebook",
+          "policy": "PROXY",
           "rules": 397,
           "sha256": "17143948fcde5a168d4ad140c834791a5c5af8c00440881ef48ebbac6fe44e50"
         },
@@ -1256,7 +1256,7 @@
           "id": "site-amazon",
           "path": "shadowrocket/rules/site-amazon.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-amazon.list",
-          "policy": "Amazon",
+          "policy": "DIRECT",
           "rules": 1196,
           "sha256": "a8f2d8c5f17335933a32c23be685bb8ed312bca60f82317f110db72f86da27ef"
         },
@@ -1320,7 +1320,7 @@
           "id": "site-microsoft",
           "path": "shadowrocket/rules/site-microsoft.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-microsoft.list",
-          "policy": "Microsoft",
+          "policy": "DIRECT",
           "rules": 752,
           "sha256": "1f276ca593a08586cbcd1a5c45369fed023f5c0fc3e613a3b0dcedb5c41d051f"
         },
@@ -1328,7 +1328,7 @@
           "id": "site-google",
           "path": "shadowrocket/rules/site-google.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-google.list",
-          "policy": "Google",
+          "policy": "PROXY",
           "rules": 1075,
           "sha256": "9c5286c98a1bc16f0aa70a3989070c13679f6ec76f5bb1cb820dec1c6d5a8672"
         },
@@ -1336,7 +1336,7 @@
           "id": "site-apple",
           "path": "shadowrocket/rules/site-apple.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-apple.list",
-          "policy": "Apple",
+          "policy": "DIRECT",
           "rules": 1792,
           "sha256": "1e32c28077868afa541fdd3ed56a54a8e38113bf60430d69173bfb7fb45c84b2"
         },
@@ -1344,7 +1344,7 @@
           "id": "site-bilibili",
           "path": "shadowrocket/rules/site-bilibili.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-bilibili.list",
-          "policy": "BiliBili",
+          "policy": "DIRECT",
           "rules": 53,
           "sha256": "5dc2e71949df2ef508fda2b2e500d74cfa985a3d622989267a29ca54b9be24f8"
         },
@@ -1416,7 +1416,7 @@
           "id": "site-tiktok",
           "path": "shadowrocket/rules/site-tiktok.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-tiktok.list",
-          "policy": "TikTok",
+          "policy": "PROXY",
           "rules": 37,
           "sha256": "69ab6466561c7a5e231ce4c986f17d724e060f19cc888fa826bc552e7aae221c"
         },
@@ -1424,7 +1424,7 @@
           "id": "ip-telegram",
           "path": "shadowrocket/rules/ip-telegram.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/ip-telegram.list",
-          "policy": "Telegram",
+          "policy": "PROXY",
           "rules": 12,
           "sha256": "fa1a676cc3741cc0158ba430ef1e2dd635972cc38fa020fb282f99e3a04dceed"
         },
@@ -1432,7 +1432,7 @@
           "id": "ip-facebook",
           "path": "shadowrocket/rules/ip-facebook.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/ip-facebook.list",
-          "policy": "Facebook",
+          "policy": "PROXY",
           "rules": 119,
           "sha256": "ab8b2c5f1caf79ba42e5cd969100309549481d3384d6afed0274295588340f79"
         },
@@ -1440,7 +1440,7 @@
           "id": "ip-twitter",
           "path": "shadowrocket/rules/ip-twitter.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/ip-twitter.list",
-          "policy": "Twitter",
+          "policy": "PROXY",
           "rules": 19,
           "sha256": "97e7af82e64e9d3887c255b61523d00a0d8fa3a16c661c6b0f538dff434bf1aa"
         },
@@ -1448,7 +1448,7 @@
           "id": "ip-google",
           "path": "shadowrocket/rules/ip-google.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/ip-google.list",
-          "policy": "Google",
+          "policy": "PROXY",
           "rules": 8495,
           "sha256": "664e1f8f2c824e59043950471447a6d2923a1811ddf40038af7ae939818d62b1"
         },

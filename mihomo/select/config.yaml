@@ -45,285 +45,135 @@
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
-      - "香港节点"
-      - "台湾节点"
-      - "日本节点"
-      - "新加坡节点"
-      - "美国节点"
-      - "英国节点"
-      - "德国节点"
-      - "韩国节点"
-      - "澳大利亚节点"
-      - "马来西亚节点"
-      - "法国节点"
-      - "加拿大节点"
-      - "荷兰节点"
-      - "土耳其节点"
-      - "泰国节点"
-      - "爱沙尼亚节点"
-  -
-    "name": "AI"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "YouTube"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "Spotify"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "Telegram"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "PayPal"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "Twitter"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "Facebook"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "Amazon"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "Microsoft"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "Google"
-    "type": "select"
-    "proxies":
-      - "PROXY"
-  -
-    "name": "Apple"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "BiliBili"
-    "type": "select"
-    "proxies":
-      - "DIRECT"
-      - "PROXY"
-  -
-    "name": "TikTok"
-    "type": "select"
-    "proxies":
-      - "PROXY"
+      - "REJECT"
   -
     "name": "香港节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "香港|Hong Kong|HK"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "台湾节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "台湾|Taiwan|TW"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "日本节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "日本|Japan|JP"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "新加坡节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "新加坡|Singapore|SG"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "美国节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "美国|United States|USA|US"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "英国节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "英国|United Kingdom|UK"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "德国节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "德国|Germany|DE"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "韩国节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "韩国|Korea|KR"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "澳大利亚节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "澳大利亚|Australia|AU"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "马来西亚节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "马来西亚|Malaysia|MY"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "法国节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "法国|France|FR"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "加拿大节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "加拿大|Canada|CA"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "荷兰节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "荷兰|Netherlands|NL"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "土耳其节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "土耳其|Turkey|TR"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "泰国节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "泰国|Thailand|TH"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
   -
     "name": "爱沙尼亚节点"
-    "type": "url-test"
+    "type": "select"
     "filter": "爱沙尼亚|Estonia|EE"
     "empty-fallback": "REJECT"
     "include-all-providers": true
     "proxies":
       - "REJECT"
-    "url": "https://www.gstatic.com/generate_204"
-    "interval": 600
-    "lazy": false
-    "tolerance": 50
 "rule-providers":
   "site-category-ads-all":
     "type": "http"
@@ -690,24 +540,24 @@
   - "DOMAIN-KEYWORD,stun,REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,3478)),REJECT"
   - "RULE-SET,site-category-ads-all,REJECT"
-  - "DOMAIN-SUFFIX,claude.app,AI"
-  - "DOMAIN-SUFFIX,cursorvm.com,AI"
+  - "DOMAIN-SUFFIX,claude.app,PROXY"
+  - "DOMAIN-SUFFIX,cursorvm.com,PROXY"
   - "RULE-SET,site-private,DIRECT"
   - "RULE-SET,ip-private,DIRECT,no-resolve"
   - "RULE-SET,site-cn,DIRECT"
-  - "RULE-SET,site-category-ai-!cn,AI"
-  - "RULE-SET,site-anthropic,AI"
-  - "RULE-SET,site-openai,AI"
-  - "RULE-SET,site-google-gemini,AI"
-  - "RULE-SET,site-github-copilot,AI"
-  - "RULE-SET,site-cursor,AI"
-  - "RULE-SET,site-youtube,YouTube"
-  - "RULE-SET,site-spotify,Spotify"
-  - "RULE-SET,site-telegram,Telegram"
-  - "RULE-SET,site-paypal,PayPal"
-  - "RULE-SET,site-twitter,Twitter"
-  - "RULE-SET,site-facebook,Facebook"
-  - "RULE-SET,site-amazon,Amazon"
+  - "RULE-SET,site-category-ai-!cn,PROXY"
+  - "RULE-SET,site-anthropic,PROXY"
+  - "RULE-SET,site-openai,PROXY"
+  - "RULE-SET,site-google-gemini,PROXY"
+  - "RULE-SET,site-github-copilot,PROXY"
+  - "RULE-SET,site-cursor,PROXY"
+  - "RULE-SET,site-youtube,PROXY"
+  - "RULE-SET,site-spotify,DIRECT"
+  - "RULE-SET,site-telegram,PROXY"
+  - "RULE-SET,site-paypal,DIRECT"
+  - "RULE-SET,site-twitter,PROXY"
+  - "RULE-SET,site-facebook,PROXY"
+  - "RULE-SET,site-amazon,DIRECT"
   - "RULE-SET,site-sony,DIRECT"
   - "RULE-SET,site-nintendo,DIRECT"
   - "RULE-SET,site-epicgames,DIRECT"
@@ -715,10 +565,10 @@
   - "RULE-SET,site-steam,DIRECT"
   - "RULE-SET,site-category-games,DIRECT"
   - "RULE-SET,site-github,PROXY"
-  - "RULE-SET,site-microsoft,Microsoft"
-  - "RULE-SET,site-google,Google"
-  - "RULE-SET,site-apple,Apple"
-  - "RULE-SET,site-bilibili,BiliBili"
+  - "RULE-SET,site-microsoft,DIRECT"
+  - "RULE-SET,site-google,PROXY"
+  - "RULE-SET,site-apple,DIRECT"
+  - "RULE-SET,site-bilibili,DIRECT"
   - "RULE-SET,site-netease,DIRECT"
   - "RULE-SET,site-baidu,DIRECT"
   - "RULE-SET,site-douban,DIRECT"
@@ -727,11 +577,13 @@
   - "RULE-SET,site-zhihu,DIRECT"
   - "RULE-SET,site-xiaohongshu,DIRECT"
   - "RULE-SET,site-douyin,DIRECT"
-  - "RULE-SET,site-tiktok,TikTok"
-  - "RULE-SET,ip-telegram,Telegram,no-resolve"
-  - "RULE-SET,ip-facebook,Facebook,no-resolve"
-  - "RULE-SET,ip-twitter,Twitter,no-resolve"
-  - "RULE-SET,ip-google,Google,no-resolve"
+  - "RULE-SET,site-tiktok,PROXY"
+  - "RULE-SET,ip-telegram,PROXY,no-resolve"
+  - "RULE-SET,ip-facebook,PROXY,no-resolve"
+  - "RULE-SET,ip-twitter,PROXY,no-resolve"
+  - "RULE-SET,ip-google,PROXY,no-resolve"
   - "RULE-SET,ip-cn,DIRECT"
   - "RULE-SET,site-geolocation-!cn,PROXY"
   - "MATCH,PROXY"
+"profile":
+  "store-selected": true
