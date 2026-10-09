@@ -60,6 +60,7 @@
   - "DOMAIN-SUFFIX,npmjs.com"
   - "DOMAIN-SUFFIX,npmjs.org"
   - "DOMAIN-SUFFIX,githubcopilot.com"
+  - "DOMAIN-SUFFIX,cafe.github.com"
   - "DOMAIN-SUFFIX,collector.github.com"
   - "DOMAIN,copilot-telemetry-service.githubusercontent.com"
   - "DOMAIN,copilot-telemetry.githubusercontent.com"
