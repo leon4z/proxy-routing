@@ -201,7 +201,7 @@ function main(config) {
 
 服务分组仅在故障转移版、混合版存在，包括 AI、Google、YouTube、Telegram、Twitter、Facebook、TikTok，以及上述默认直连服务。游戏分类保留并直接使用 DIRECT，不显示 Game 分组。Netflix、Disney+、Max 不设置独立分组或专属规则：请求继续匹配其余规则，未命中的最终使用 PROXY；命中国内规则仍直连。宽泛海外分类和末尾规则使用 PROXY；更靠前的服务、局域网和国内规则优先匹配。
 
-规则优先级为：网络拒绝 → 基础广告拦截 → 显式自定义规则 → 局域网 → CN 域名直连 → 各服务分类 → 专门服务 IP → CN IP 直连 → 普通海外分类与最终 PROXY。CN 域名与 CN IP 是独立规则集，均直接使用 DIRECT，不额外建立 CN 策略组。命中 CN 域名时优先直连，包括与 Google、Apple、Microsoft、AI 等分类重叠的域名；这些请求不会再进入对应服务组。确需代理的个别域名应放入更靠前的显式自定义规则。
+规则优先级为：STUN / UDP 3478 拒绝 → 基础广告拦截 → AI/Google UDP 443 拒绝 → 国内 UDP 443 直连 → 其余 UDP 443 拒绝 → 两个精确域名直连 → 显式自定义规则 → 局域网 → CN 域名直连 → 各服务分类 → 专门服务 IP → CN IP 直连 → 普通海外分类与最终 PROXY。CN 域名与 CN IP 是独立规则集，均直接使用 DIRECT，不额外建立 CN 策略组。命中 CN 域名时优先直连，包括与 Google、Apple、Microsoft、AI 等分类重叠的域名；这些请求不会再进入对应服务组。确需代理的个别域名应放入更靠前的显式自定义规则。
 
 基础广告拦截使用 MetaCubeX 完整版 `category-ads-all`，小火箭通过远程规则集、Mihomo 通过 HTTP provider 加载，匹配后直接 REJECT，不新增广告策略组。广告规则优先于 CN 和服务规则。它不需要证书、HTTPS 解密或脚本，不能保证删除与正常内容共用域名的开屏广告、视频广告。
 
@@ -213,9 +213,10 @@ AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor �
 
 两客户端共享以下网络策略，具体语法分别适配：
 
-- 关闭 IPv6；拒绝 UDP 443（QUIC）。支持回退的应用使用 TCP，其他 UDP 不因此全部关闭。
+- 关闭 IPv6；国内分类、国内 IP 与两个精确抖音接口域名的 UDP 443（QUIC）允许直连。AI、Google 和其余 UDP 443 仍拒绝，支持回退的应用使用 TCP。广告拒绝先于国内放行，不放行整个 `snssdk.com`。
 - 拒绝域名包含 stun 的请求及 UDP 3478；这不是完整 STUN 协议识别，语音、直播连麦等可能受影响。
 - 国内／直连解析使用国内 DNS；普通代理解析使用 Cloudflare / Google DNS，并按代理策略处理。Mihomo 的 DIRECT 出口有独立直连 DNS，避免下载依赖尚未准备好的规则或节点。
+- `ecomuser.snssdk.com`、`is.snssdk.com` 精确直连：Mihomo 指定国内 DNS，小火箭通过直连规则使用国内 `direct-dns-server`。小火箭 QUIC 由规则控制，配置模式下国内放行有效；客户端全局代理／直连模式或额外模块覆盖规则时，需按客户端实际设置判断。
 - 局域网、时间同步及 Windows 连通性检测等保留真实 IP 例外；应用自身设置仍需核对。
 
 地区组测试周期为 600 秒，切换公差为 50 毫秒；fallback 不使用该公差。测试访问 gstatic 的 HTTP 连通性地址，不是 ICMP ping、带宽测速或 Claude / 流媒体可用性检测。两次测试之间可能发生故障，切换不保证即时完成。

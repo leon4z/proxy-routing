@@ -26,6 +26,12 @@
     "rule-set:dns-site-cn,dns-site-private":
       - "tls://223.5.5.5:853"
       - "tls://120.53.53.53:853"
+    "ecomuser.snssdk.com":
+      - "tls://223.5.5.5:853"
+      - "tls://120.53.53.53:853"
+    "is.snssdk.com":
+      - "tls://223.5.5.5:853"
+      - "tls://120.53.53.53:853"
   "fake-ip-filter":
     - "*.lan"
     - "*.local"
@@ -694,10 +700,14 @@
     "interval": 86400
     "proxy": "DIRECT"
 "rules":
-  - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
   - "DOMAIN-KEYWORD,stun,REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,3478)),REJECT"
   - "RULE-SET,site-category-ads-all,REJECT"
+  - "AND,((NETWORK,udp),(DST-PORT,443),(OR,((RULE-SET,site-category-ai-!cn),(RULE-SET,site-anthropic),(RULE-SET,site-openai),(RULE-SET,site-google-gemini),(RULE-SET,site-github-copilot),(RULE-SET,site-cursor),(RULE-SET,site-google),(RULE-SET,ip-google,no-resolve),(DOMAIN-SUFFIX,claude.app),(DOMAIN-SUFFIX,cursorvm.com)))),REJECT"
+  - "AND,((NETWORK,udp),(DST-PORT,443),(OR,((DOMAIN,ecomuser.snssdk.com),(DOMAIN,is.snssdk.com),(RULE-SET,site-cn),(RULE-SET,site-bilibili),(RULE-SET,site-netease),(RULE-SET,site-baidu),(RULE-SET,site-douban),(RULE-SET,site-tencent),(RULE-SET,site-sina),(RULE-SET,site-zhihu),(RULE-SET,site-xiaohongshu),(RULE-SET,site-douyin),(RULE-SET,ip-cn)))),DIRECT"
+  - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
+  - "DOMAIN,ecomuser.snssdk.com,DIRECT"
+  - "DOMAIN,is.snssdk.com,DIRECT"
   - "DOMAIN-SUFFIX,claude.app,AI"
   - "DOMAIN-SUFFIX,cursorvm.com,AI"
   - "RULE-SET,site-private,DIRECT"
