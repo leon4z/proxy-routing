@@ -15,23 +15,23 @@
     - "119.29.29.29"
   "proxy-server-nameserver":
     - "tls://223.5.5.5:853"
-    - "tls://120.53.53.53:853"
+    - "https://doh.pub/dns-query"
   "direct-nameserver":
     - "tls://223.5.5.5:853#DIRECT"
-    - "tls://120.53.53.53:853#DIRECT"
+    - "https://doh.pub/dns-query#DIRECT"
   "nameserver":
     - "https://1.1.1.1/dns-query"
     - "https://8.8.8.8/dns-query"
   "nameserver-policy":
     "rule-set:dns-site-cn,dns-site-private":
       - "tls://223.5.5.5:853"
-      - "tls://120.53.53.53:853"
+      - "https://doh.pub/dns-query"
     "ecomuser.snssdk.com":
       - "tls://223.5.5.5:853"
-      - "tls://120.53.53.53:853"
+      - "https://doh.pub/dns-query"
     "is.snssdk.com":
       - "tls://223.5.5.5:853"
-      - "tls://120.53.53.53:853"
+      - "https://doh.pub/dns-query"
   "fake-ip-filter":
     - "*.lan"
     - "*.local"

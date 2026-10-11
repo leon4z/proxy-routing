@@ -215,7 +215,7 @@ AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor �
 
 - 关闭 IPv6；国内分类、国内 IP 与两个精确抖音接口域名的 UDP 443（QUIC）允许直连。AI、Google 和其余 UDP 443 仍拒绝，支持回退的应用使用 TCP。广告拒绝先于国内放行，不放行整个 `snssdk.com`。
 - 拒绝域名包含 stun 的请求及 UDP 3478；这不是完整 STUN 协议识别，语音、直播连麦等可能受影响。
-- 国内／直连解析使用国内 DNS；普通代理解析使用 Cloudflare / Google DNS，并按代理策略处理。Mihomo 的 DIRECT 出口有独立直连 DNS，避免下载依赖尚未准备好的规则或节点。
+- 国内／直连及代理节点入口解析使用阿里 DoT（`tls://223.5.5.5:853`）与腾讯官方 DoH（`https://doh.pub/dns-query`）；普通代理解析使用 Cloudflare / Google DNS，并按代理策略处理。Mihomo 的 DIRECT 出口有独立直连 DNS，避免下载依赖尚未准备好的规则或节点。此传输调整保留原域名分流、节点组及选择方式。
 - `ecomuser.snssdk.com`、`is.snssdk.com` 精确直连：Mihomo 指定国内 DNS，小火箭通过直连规则使用国内 `direct-dns-server`。小火箭 QUIC 由规则控制，配置模式下国内放行有效；客户端全局代理／直连模式或额外模块覆盖规则时，需按客户端实际设置判断。
 - 局域网、时间同步及 Windows 连通性检测等保留真实 IP 例外；应用自身设置仍需核对。
 
