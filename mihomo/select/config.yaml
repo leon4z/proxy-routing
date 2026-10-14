@@ -269,6 +269,30 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-youtube.yaml"
     "interval": 86400
     "proxy": "DIRECT"
+  "site-netflix":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-netflix.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-netflix.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-disney":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-disney.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-disney.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-hbo":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-hbo.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-hbo.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-spotify":
     "type": "http"
     "behavior": "classical"
@@ -562,6 +586,9 @@
   - "RULE-SET,site-github-copilot,PROXY"
   - "RULE-SET,site-cursor,PROXY"
   - "RULE-SET,site-youtube,PROXY"
+  - "RULE-SET,site-netflix,PROXY"
+  - "RULE-SET,site-disney,PROXY"
+  - "RULE-SET,site-hbo,PROXY"
   - "RULE-SET,site-spotify,DIRECT"
   - "RULE-SET,site-telegram,PROXY"
   - "RULE-SET,site-paypal,DIRECT"
