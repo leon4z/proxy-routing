@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "audience": "public",
-  "source_commit": "48fce8a7df81e254ee1dc8b64d2d34f840208849",
-  "sources_sha256": "ce490acad7e2a617e46ef4845369f44fef901336fb6408a79bcf5b675df05541",
+  "source_commit": "7c782352439ce9ccaba53519ec816f82f52b6285",
+  "sources_sha256": "96ce44d566c60a7325355daf1bb3a7cc390017e5790ab8fa73de05b3b058c1cf",
   "coverage": {
     "claude.com": "AI",
     "api.claude.com": "AI",
@@ -16,7 +16,7 @@
   },
   "outputs": {
     "mihomo/select": {
-      "rules": 165660,
+      "rules": 165595,
       "groups": 17,
       "inventory_bound": false,
       "regex": 172,
@@ -27,15 +27,15 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-category-ads-all.yaml",
           "behavior": "classical",
           "rules": 903,
-          "sha256": "af03c393d8f608121cfa2662f31294c0d1316355dd37b40972307fc61aae1245"
+          "sha256": "19e11a9c1d122edca674d1c6b74485ab1701b047280f550ef4a70a260de4673d"
         },
         {
           "id": "site-private",
           "path": "mihomo/select/rules/site-private.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-private.yaml",
           "behavior": "classical",
-          "rules": 131,
-          "sha256": "0d8090009f71f4c2eb3240e07f40fcdbff0e1e270f7dee53df47ad644a22003a"
+          "rules": 133,
+          "sha256": "c1c8c6031a6ea16dd90c7be614f85d5d7b0dde1c58de98ae519b31feffa5c4d0"
         },
         {
           "id": "ip-private",
@@ -50,16 +50,16 @@
           "path": "mihomo/select/rules/site-cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-cn.yaml",
           "behavior": "classical",
-          "rules": 110534,
-          "sha256": "6357c34c255aed12549bbd29a30ced81843033ac84be29b9e6582c117a48aa8a"
+          "rules": 110446,
+          "sha256": "18aa66d812e9c518050423b19d58528e3e33039a74a65e6f5a40dbc6f499544a"
         },
         {
           "id": "site-category-ai-!cn",
           "path": "mihomo/select/rules/site-category-ai-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-category-ai-!cn.yaml",
           "behavior": "classical",
-          "rules": 190,
-          "sha256": "81fe7d1792e3887facfaa7aac5759720042069f4829359abb1d70aa77bf196d3"
+          "rules": 193,
+          "sha256": "7f68995667f25621f25ea955d61e1b0739b586814e06ebfdb1cad3f131890594"
         },
         {
           "id": "site-anthropic",
@@ -74,8 +74,8 @@
           "path": "mihomo/select/rules/site-openai.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-openai.yaml",
           "behavior": "classical",
-          "rules": 23,
-          "sha256": "ea9edfc294509918b98ab3f523816261cf6c4266c6659d8701ff42127876e93d"
+          "rules": 24,
+          "sha256": "d5fe07fe22b13123f68553dbffd16cf4522736bee8407308e216100bad56c055"
         },
         {
           "id": "site-google-gemini",
@@ -98,8 +98,8 @@
           "path": "mihomo/select/rules/site-cursor.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-cursor.yaml",
           "behavior": "classical",
-          "rules": 4,
-          "sha256": "dd4b56e03fe7768c931c37bdf88c080103edcc76bdb2f3bc2a2b0b768e9c0777"
+          "rules": 5,
+          "sha256": "612d09cdb94515d0f5abcaf227aa754f2c00c4d517adc2549dd454ff9fe2b9b0"
         },
         {
           "id": "site-youtube",
@@ -123,7 +123,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-disney.yaml",
           "behavior": "classical",
           "rules": 225,
-          "sha256": "ee300921fea50eaa0c16fba7af3192d1fb0a82285dfaba8bf3b1c8a1f8962b54"
+          "sha256": "aae694432f424776a50fc782e4c59f69c08e8b36b642b3a93bcedc9f99fd9ba2"
         },
         {
           "id": "site-hbo",
@@ -178,8 +178,8 @@
           "path": "mihomo/select/rules/site-amazon.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-amazon.yaml",
           "behavior": "classical",
-          "rules": 249,
-          "sha256": "5728b5a81afbf76e46e2579f8fd4e7c4084c3009fe20cfdfda10b8959edabf51"
+          "rules": 250,
+          "sha256": "a5bace1c72bf7490fa9ec47c711ab85268664d956b7465dcee728ca149691dee"
         },
         {
           "id": "site-sony",
@@ -227,7 +227,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-category-games.yaml",
           "behavior": "classical",
           "rules": 1128,
-          "sha256": "21bcb091242bc4c034fbf69a7563ef727777bda19f928f5987090b2b0796d9b8"
+          "sha256": "3bffe8fba01ef6030a4e60f37e12b86bffb663ebdf3c3c1b074a76d44bead886"
         },
         {
           "id": "site-github",
@@ -242,8 +242,8 @@
           "path": "mihomo/select/rules/site-microsoft.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-microsoft.yaml",
           "behavior": "classical",
-          "rules": 752,
-          "sha256": "7fc4617da828e9b401f681ddf4b9665563d7ba2f30909e356bb1c5da5a265419"
+          "rules": 749,
+          "sha256": "85e4d78e92e04aeaffad97556f72ce51d3becbfbbcedc7b059b355281f6f411b"
         },
         {
           "id": "site-google",
@@ -251,7 +251,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-google.yaml",
           "behavior": "classical",
           "rules": 1077,
-          "sha256": "39a873fa02cdcc6b09e27eeab016e9fbbaacb94cd4cdf36613a3c6c9e249a3cd"
+          "sha256": "221b8d12c32e4a96a750239fb1cc96d921d620aa004c2335ecbab21599912e98"
         },
         {
           "id": "site-apple",
@@ -259,7 +259,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-apple.yaml",
           "behavior": "classical",
           "rules": 1792,
-          "sha256": "937baeab64dbe049c9fd51e570499f88c603e6ca4b17f8c9ff140636a0cca0c7"
+          "sha256": "da5e3dc88531cae811da50ae7fb105dbe9a6e86033c81b249c3fc87a651786cd"
         },
         {
           "id": "site-bilibili",
@@ -299,7 +299,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-tencent.yaml",
           "behavior": "classical",
           "rules": 683,
-          "sha256": "f8700b8aa4beaa4a223fab5918c0382e1e9534a824ed22f70c99d13f95a2c32d"
+          "sha256": "3627e962ec1d8376e03fb6789ec715fc4061c9f872375aa3682deb7cd38ab450"
         },
         {
           "id": "site-sina",
@@ -386,29 +386,29 @@
           "path": "mihomo/select/rules/site-geolocation-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-geolocation-!cn.yaml",
           "behavior": "classical",
-          "rules": 27346,
-          "sha256": "5ab61c4480c29699817bae011fe7bd6da0f506e26e869958a94cd01ce8571445"
+          "rules": 27364,
+          "sha256": "157dd61be0825a09d3774ce3ae7c40d5045cdc0182696fa2603dbf2f76ad273c"
         },
         {
           "id": "dns-site-cn",
           "path": "mihomo/select/rules/dns-site-cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/dns-site-cn.yaml",
           "behavior": "domain",
-          "rules": 110534,
-          "sha256": "8b2e18ca43fbcacfbbb32f1bd94512c5f8084a1e89aa96b596f90a3fca97536b"
+          "rules": 110446,
+          "sha256": "7030d6ef8a05be3cecfa6acd4a40eb69bc6483d8d448d38d812476dbabd0112e"
         },
         {
           "id": "dns-site-private",
           "path": "mihomo/select/rules/dns-site-private.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/dns-site-private.yaml",
           "behavior": "domain",
-          "rules": 130,
-          "sha256": "04feb82f9ddbd69bd3d793ee2d5af839b14c6715aef2a73d3bce28ce44f28dd4"
+          "rules": 132,
+          "sha256": "a30cac4e896f18ce15dd17ac0b6483def67fd32aa224120f043b1c651d794f14"
         }
       ]
     },
     "mihomo/fallback": {
-      "rules": 165660,
+      "rules": 165595,
       "groups": 35,
       "inventory_bound": false,
       "regex": 172,
@@ -419,15 +419,15 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-category-ads-all.yaml",
           "behavior": "classical",
           "rules": 903,
-          "sha256": "af03c393d8f608121cfa2662f31294c0d1316355dd37b40972307fc61aae1245"
+          "sha256": "19e11a9c1d122edca674d1c6b74485ab1701b047280f550ef4a70a260de4673d"
         },
         {
           "id": "site-private",
           "path": "mihomo/fallback/rules/site-private.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-private.yaml",
           "behavior": "classical",
-          "rules": 131,
-          "sha256": "0d8090009f71f4c2eb3240e07f40fcdbff0e1e270f7dee53df47ad644a22003a"
+          "rules": 133,
+          "sha256": "c1c8c6031a6ea16dd90c7be614f85d5d7b0dde1c58de98ae519b31feffa5c4d0"
         },
         {
           "id": "ip-private",
@@ -442,16 +442,16 @@
           "path": "mihomo/fallback/rules/site-cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-cn.yaml",
           "behavior": "classical",
-          "rules": 110534,
-          "sha256": "6357c34c255aed12549bbd29a30ced81843033ac84be29b9e6582c117a48aa8a"
+          "rules": 110446,
+          "sha256": "18aa66d812e9c518050423b19d58528e3e33039a74a65e6f5a40dbc6f499544a"
         },
         {
           "id": "site-category-ai-!cn",
           "path": "mihomo/fallback/rules/site-category-ai-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-category-ai-!cn.yaml",
           "behavior": "classical",
-          "rules": 190,
-          "sha256": "81fe7d1792e3887facfaa7aac5759720042069f4829359abb1d70aa77bf196d3"
+          "rules": 193,
+          "sha256": "7f68995667f25621f25ea955d61e1b0739b586814e06ebfdb1cad3f131890594"
         },
         {
           "id": "site-anthropic",
@@ -466,8 +466,8 @@
           "path": "mihomo/fallback/rules/site-openai.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-openai.yaml",
           "behavior": "classical",
-          "rules": 23,
-          "sha256": "ea9edfc294509918b98ab3f523816261cf6c4266c6659d8701ff42127876e93d"
+          "rules": 24,
+          "sha256": "d5fe07fe22b13123f68553dbffd16cf4522736bee8407308e216100bad56c055"
         },
         {
           "id": "site-google-gemini",
@@ -490,8 +490,8 @@
           "path": "mihomo/fallback/rules/site-cursor.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-cursor.yaml",
           "behavior": "classical",
-          "rules": 4,
-          "sha256": "dd4b56e03fe7768c931c37bdf88c080103edcc76bdb2f3bc2a2b0b768e9c0777"
+          "rules": 5,
+          "sha256": "612d09cdb94515d0f5abcaf227aa754f2c00c4d517adc2549dd454ff9fe2b9b0"
         },
         {
           "id": "site-youtube",
@@ -515,7 +515,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-disney.yaml",
           "behavior": "classical",
           "rules": 225,
-          "sha256": "ee300921fea50eaa0c16fba7af3192d1fb0a82285dfaba8bf3b1c8a1f8962b54"
+          "sha256": "aae694432f424776a50fc782e4c59f69c08e8b36b642b3a93bcedc9f99fd9ba2"
         },
         {
           "id": "site-hbo",
@@ -570,8 +570,8 @@
           "path": "mihomo/fallback/rules/site-amazon.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-amazon.yaml",
           "behavior": "classical",
-          "rules": 249,
-          "sha256": "5728b5a81afbf76e46e2579f8fd4e7c4084c3009fe20cfdfda10b8959edabf51"
+          "rules": 250,
+          "sha256": "a5bace1c72bf7490fa9ec47c711ab85268664d956b7465dcee728ca149691dee"
         },
         {
           "id": "site-sony",
@@ -619,7 +619,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-category-games.yaml",
           "behavior": "classical",
           "rules": 1128,
-          "sha256": "21bcb091242bc4c034fbf69a7563ef727777bda19f928f5987090b2b0796d9b8"
+          "sha256": "3bffe8fba01ef6030a4e60f37e12b86bffb663ebdf3c3c1b074a76d44bead886"
         },
         {
           "id": "site-github",
@@ -634,8 +634,8 @@
           "path": "mihomo/fallback/rules/site-microsoft.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-microsoft.yaml",
           "behavior": "classical",
-          "rules": 752,
-          "sha256": "7fc4617da828e9b401f681ddf4b9665563d7ba2f30909e356bb1c5da5a265419"
+          "rules": 749,
+          "sha256": "85e4d78e92e04aeaffad97556f72ce51d3becbfbbcedc7b059b355281f6f411b"
         },
         {
           "id": "site-google",
@@ -643,7 +643,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-google.yaml",
           "behavior": "classical",
           "rules": 1077,
-          "sha256": "39a873fa02cdcc6b09e27eeab016e9fbbaacb94cd4cdf36613a3c6c9e249a3cd"
+          "sha256": "221b8d12c32e4a96a750239fb1cc96d921d620aa004c2335ecbab21599912e98"
         },
         {
           "id": "site-apple",
@@ -651,7 +651,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-apple.yaml",
           "behavior": "classical",
           "rules": 1792,
-          "sha256": "937baeab64dbe049c9fd51e570499f88c603e6ca4b17f8c9ff140636a0cca0c7"
+          "sha256": "da5e3dc88531cae811da50ae7fb105dbe9a6e86033c81b249c3fc87a651786cd"
         },
         {
           "id": "site-bilibili",
@@ -691,7 +691,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-tencent.yaml",
           "behavior": "classical",
           "rules": 683,
-          "sha256": "f8700b8aa4beaa4a223fab5918c0382e1e9534a824ed22f70c99d13f95a2c32d"
+          "sha256": "3627e962ec1d8376e03fb6789ec715fc4061c9f872375aa3682deb7cd38ab450"
         },
         {
           "id": "site-sina",
@@ -778,29 +778,29 @@
           "path": "mihomo/fallback/rules/site-geolocation-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-geolocation-!cn.yaml",
           "behavior": "classical",
-          "rules": 27346,
-          "sha256": "5ab61c4480c29699817bae011fe7bd6da0f506e26e869958a94cd01ce8571445"
+          "rules": 27364,
+          "sha256": "157dd61be0825a09d3774ce3ae7c40d5045cdc0182696fa2603dbf2f76ad273c"
         },
         {
           "id": "dns-site-cn",
           "path": "mihomo/fallback/rules/dns-site-cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/dns-site-cn.yaml",
           "behavior": "domain",
-          "rules": 110534,
-          "sha256": "8b2e18ca43fbcacfbbb32f1bd94512c5f8084a1e89aa96b596f90a3fca97536b"
+          "rules": 110446,
+          "sha256": "7030d6ef8a05be3cecfa6acd4a40eb69bc6483d8d448d38d812476dbabd0112e"
         },
         {
           "id": "dns-site-private",
           "path": "mihomo/fallback/rules/dns-site-private.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/dns-site-private.yaml",
           "behavior": "domain",
-          "rules": 130,
-          "sha256": "04feb82f9ddbd69bd3d793ee2d5af839b14c6715aef2a73d3bce28ce44f28dd4"
+          "rules": 132,
+          "sha256": "a30cac4e896f18ce15dd17ac0b6483def67fd32aa224120f043b1c651d794f14"
         }
       ]
     },
     "mihomo/hybrid": {
-      "rules": 165660,
+      "rules": 165595,
       "groups": 34,
       "inventory_bound": false,
       "regex": 172,
@@ -811,15 +811,15 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-category-ads-all.yaml",
           "behavior": "classical",
           "rules": 903,
-          "sha256": "af03c393d8f608121cfa2662f31294c0d1316355dd37b40972307fc61aae1245"
+          "sha256": "19e11a9c1d122edca674d1c6b74485ab1701b047280f550ef4a70a260de4673d"
         },
         {
           "id": "site-private",
           "path": "mihomo/hybrid/rules/site-private.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-private.yaml",
           "behavior": "classical",
-          "rules": 131,
-          "sha256": "0d8090009f71f4c2eb3240e07f40fcdbff0e1e270f7dee53df47ad644a22003a"
+          "rules": 133,
+          "sha256": "c1c8c6031a6ea16dd90c7be614f85d5d7b0dde1c58de98ae519b31feffa5c4d0"
         },
         {
           "id": "ip-private",
@@ -834,16 +834,16 @@
           "path": "mihomo/hybrid/rules/site-cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-cn.yaml",
           "behavior": "classical",
-          "rules": 110534,
-          "sha256": "6357c34c255aed12549bbd29a30ced81843033ac84be29b9e6582c117a48aa8a"
+          "rules": 110446,
+          "sha256": "18aa66d812e9c518050423b19d58528e3e33039a74a65e6f5a40dbc6f499544a"
         },
         {
           "id": "site-category-ai-!cn",
           "path": "mihomo/hybrid/rules/site-category-ai-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-category-ai-!cn.yaml",
           "behavior": "classical",
-          "rules": 190,
-          "sha256": "81fe7d1792e3887facfaa7aac5759720042069f4829359abb1d70aa77bf196d3"
+          "rules": 193,
+          "sha256": "7f68995667f25621f25ea955d61e1b0739b586814e06ebfdb1cad3f131890594"
         },
         {
           "id": "site-anthropic",
@@ -858,8 +858,8 @@
           "path": "mihomo/hybrid/rules/site-openai.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-openai.yaml",
           "behavior": "classical",
-          "rules": 23,
-          "sha256": "ea9edfc294509918b98ab3f523816261cf6c4266c6659d8701ff42127876e93d"
+          "rules": 24,
+          "sha256": "d5fe07fe22b13123f68553dbffd16cf4522736bee8407308e216100bad56c055"
         },
         {
           "id": "site-google-gemini",
@@ -882,8 +882,8 @@
           "path": "mihomo/hybrid/rules/site-cursor.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-cursor.yaml",
           "behavior": "classical",
-          "rules": 4,
-          "sha256": "dd4b56e03fe7768c931c37bdf88c080103edcc76bdb2f3bc2a2b0b768e9c0777"
+          "rules": 5,
+          "sha256": "612d09cdb94515d0f5abcaf227aa754f2c00c4d517adc2549dd454ff9fe2b9b0"
         },
         {
           "id": "site-youtube",
@@ -907,7 +907,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-disney.yaml",
           "behavior": "classical",
           "rules": 225,
-          "sha256": "ee300921fea50eaa0c16fba7af3192d1fb0a82285dfaba8bf3b1c8a1f8962b54"
+          "sha256": "aae694432f424776a50fc782e4c59f69c08e8b36b642b3a93bcedc9f99fd9ba2"
         },
         {
           "id": "site-hbo",
@@ -962,8 +962,8 @@
           "path": "mihomo/hybrid/rules/site-amazon.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-amazon.yaml",
           "behavior": "classical",
-          "rules": 249,
-          "sha256": "5728b5a81afbf76e46e2579f8fd4e7c4084c3009fe20cfdfda10b8959edabf51"
+          "rules": 250,
+          "sha256": "a5bace1c72bf7490fa9ec47c711ab85268664d956b7465dcee728ca149691dee"
         },
         {
           "id": "site-sony",
@@ -1011,7 +1011,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-category-games.yaml",
           "behavior": "classical",
           "rules": 1128,
-          "sha256": "21bcb091242bc4c034fbf69a7563ef727777bda19f928f5987090b2b0796d9b8"
+          "sha256": "3bffe8fba01ef6030a4e60f37e12b86bffb663ebdf3c3c1b074a76d44bead886"
         },
         {
           "id": "site-github",
@@ -1026,8 +1026,8 @@
           "path": "mihomo/hybrid/rules/site-microsoft.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-microsoft.yaml",
           "behavior": "classical",
-          "rules": 752,
-          "sha256": "7fc4617da828e9b401f681ddf4b9665563d7ba2f30909e356bb1c5da5a265419"
+          "rules": 749,
+          "sha256": "85e4d78e92e04aeaffad97556f72ce51d3becbfbbcedc7b059b355281f6f411b"
         },
         {
           "id": "site-google",
@@ -1035,7 +1035,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-google.yaml",
           "behavior": "classical",
           "rules": 1077,
-          "sha256": "39a873fa02cdcc6b09e27eeab016e9fbbaacb94cd4cdf36613a3c6c9e249a3cd"
+          "sha256": "221b8d12c32e4a96a750239fb1cc96d921d620aa004c2335ecbab21599912e98"
         },
         {
           "id": "site-apple",
@@ -1043,7 +1043,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-apple.yaml",
           "behavior": "classical",
           "rules": 1792,
-          "sha256": "937baeab64dbe049c9fd51e570499f88c603e6ca4b17f8c9ff140636a0cca0c7"
+          "sha256": "da5e3dc88531cae811da50ae7fb105dbe9a6e86033c81b249c3fc87a651786cd"
         },
         {
           "id": "site-bilibili",
@@ -1083,7 +1083,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-tencent.yaml",
           "behavior": "classical",
           "rules": 683,
-          "sha256": "f8700b8aa4beaa4a223fab5918c0382e1e9534a824ed22f70c99d13f95a2c32d"
+          "sha256": "3627e962ec1d8376e03fb6789ec715fc4061c9f872375aa3682deb7cd38ab450"
         },
         {
           "id": "site-sina",
@@ -1170,30 +1170,30 @@
           "path": "mihomo/hybrid/rules/site-geolocation-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-geolocation-!cn.yaml",
           "behavior": "classical",
-          "rules": 27346,
-          "sha256": "5ab61c4480c29699817bae011fe7bd6da0f506e26e869958a94cd01ce8571445"
+          "rules": 27364,
+          "sha256": "157dd61be0825a09d3774ce3ae7c40d5045cdc0182696fa2603dbf2f76ad273c"
         },
         {
           "id": "dns-site-cn",
           "path": "mihomo/hybrid/rules/dns-site-cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/dns-site-cn.yaml",
           "behavior": "domain",
-          "rules": 110534,
-          "sha256": "8b2e18ca43fbcacfbbb32f1bd94512c5f8084a1e89aa96b596f90a3fca97536b"
+          "rules": 110446,
+          "sha256": "7030d6ef8a05be3cecfa6acd4a40eb69bc6483d8d448d38d812476dbabd0112e"
         },
         {
           "id": "dns-site-private",
           "path": "mihomo/hybrid/rules/dns-site-private.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/dns-site-private.yaml",
           "behavior": "domain",
-          "rules": 130,
-          "sha256": "04feb82f9ddbd69bd3d793ee2d5af839b14c6715aef2a73d3bce28ce44f28dd4"
+          "rules": 132,
+          "sha256": "a30cac4e896f18ce15dd17ac0b6483def67fd32aa224120f043b1c651d794f14"
         }
       ]
     },
     "shadowrocket/select": {
-      "rules": 166555,
-      "config_rules": 56,
+      "rules": 166489,
+      "config_rules": 55,
       "groups": 16,
       "remote_rule_sets": [
         {
@@ -1202,15 +1202,15 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ads-all.list",
           "policy": "REJECT",
           "rules": 904,
-          "sha256": "2e24597543efe4e766a26bfaf046b9e4a8ade430dc414d978a2666a9c6844a89"
+          "sha256": "65503ef4dfc96210e32796cf99fb730a9822f6a6cd832c3dacf5c6f8c7dec221"
         },
         {
           "id": "site-private",
           "path": "shadowrocket/rules/site-private.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-private.list",
           "policy": "DIRECT",
-          "rules": 156,
-          "sha256": "57a07c453d0574452f4c27c609839f1ea5e87c65c2a1dff25b0cfd6ac7eb20bd"
+          "rules": 158,
+          "sha256": "0e54be4e82ba7f9ffcc0cad5c2e9dfa46b5de76b160f8341e2376022fc5b5ca6"
         },
         {
           "id": "ip-private",
@@ -1225,16 +1225,16 @@
           "path": "shadowrocket/rules/site-cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cn.list",
           "policy": "DIRECT",
-          "rules": 110534,
-          "sha256": "bf549486a2327f9f0c3bbb1b19f06c9d3a0dcf88ca7d0d8223726b96e3445bd1"
+          "rules": 110446,
+          "sha256": "3361cec3a97727547f3cb5b83fd50c6d172d68e901e894b9ab9c27c54dd79c7a"
         },
         {
           "id": "site-category-ai-!cn",
           "path": "shadowrocket/rules/site-category-ai-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ai-!cn.list",
           "policy": "PROXY",
-          "rules": 190,
-          "sha256": "120bfd5f73d230f08b0f94dd8e1228af81d1dc5d93cf19181933bdb5ea4e7801"
+          "rules": 193,
+          "sha256": "2cdb3010b92ea3ded1e7d9c2f0aac1060daff7f1ad4f532efeae4fc945a8f28e"
         },
         {
           "id": "site-anthropic",
@@ -1249,8 +1249,8 @@
           "path": "shadowrocket/rules/site-openai.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-openai.list",
           "policy": "PROXY",
-          "rules": 23,
-          "sha256": "5496cd81fe6b594a344ce752497d85dc0f58d0bc3d8592187bc75a210750a912"
+          "rules": 24,
+          "sha256": "8ca42675c16dc4c4d75a7c9c05bb0f1ec5ec3e9fbe27bbcf7e240b2d6bfd6b92"
         },
         {
           "id": "site-google-gemini",
@@ -1273,8 +1273,8 @@
           "path": "shadowrocket/rules/site-cursor.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cursor.list",
           "policy": "PROXY",
-          "rules": 4,
-          "sha256": "5c6d8418ed48e513a8b5697bea5948ee954fca9f5f683d5ee9234b1258111ad2"
+          "rules": 5,
+          "sha256": "c96090fa0c73a439a93440c22a8af0bad1bf15983651692fa00b90139b847114"
         },
         {
           "id": "site-youtube",
@@ -1298,7 +1298,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-disney.list",
           "policy": "PROXY",
           "rules": 232,
-          "sha256": "8be624a60099c67ada566e5bcd9bbb1df6dda8e90057e8e55fdfd203805c00ce"
+          "sha256": "03ef754f3c9084d1e2710d55bc13d811b3c86dfb034bd1a3b4b99d8049157cdb"
         },
         {
           "id": "site-hbo",
@@ -1353,8 +1353,8 @@
           "path": "shadowrocket/rules/site-amazon.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-amazon.list",
           "policy": "DIRECT",
-          "rules": 1196,
-          "sha256": "0ad0e38399347994f46a1c2fbc6e8c6217b51a7d740612a27dda0c7e5227080f"
+          "rules": 1197,
+          "sha256": "8c8a8af29b02f06fb3f0207e3270b347f9b37c33e6285da1f410546181bc61fd"
         },
         {
           "id": "site-sony",
@@ -1402,7 +1402,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-games.list",
           "policy": "DIRECT",
           "rules": 1155,
-          "sha256": "c131e979c251b6fac1ca6f0fca4f0a836d37545e36efd1a0afedb43599020208"
+          "sha256": "6e40177335ee6b5af20cdaaaf7982aafd6c6ba3a1dde07b25331e7bf5e393c52"
         },
         {
           "id": "site-github",
@@ -1417,8 +1417,8 @@
           "path": "shadowrocket/rules/site-microsoft.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-microsoft.list",
           "policy": "DIRECT",
-          "rules": 752,
-          "sha256": "800564e35aa675e7c318a7621be67ec2b6e352f4b847caa381404dc74154bb87"
+          "rules": 749,
+          "sha256": "15427ca6572eea83a6eeb4dfa3b0c690b2bcb290abd1ef12a3487d6f944e0dd4"
         },
         {
           "id": "site-google",
@@ -1426,7 +1426,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-google.list",
           "policy": "PROXY",
           "rules": 1075,
-          "sha256": "292a9e6342c3c8fac20d24d46b23d74ec49bac69629201079e08b5162825fe26"
+          "sha256": "1c4bbc50b5209a9c2ecf5b62eb2c174501b95ef545f6f3aae048aeb1c71763ef"
         },
         {
           "id": "site-apple",
@@ -1434,7 +1434,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-apple.list",
           "policy": "DIRECT",
           "rules": 1792,
-          "sha256": "4bae8f31facdb0ecef0e557a9ecbc9564170ca6122f900091a4d68605a25161c"
+          "sha256": "63284312f03b3e4c4fd004ebb0495c2f726843e0246dcd7ca6b6a9d21751d7ba"
         },
         {
           "id": "site-bilibili",
@@ -1474,7 +1474,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-tencent.list",
           "policy": "DIRECT",
           "rules": 683,
-          "sha256": "376f1bba7bf9cb2cb6a8d86d1014fef5ba420a75b90856e10c515a246edde422"
+          "sha256": "5633259014c2369938319cb5269185d6a51d29f183dfcd71d128824cfdbf0155"
         },
         {
           "id": "site-sina",
@@ -1561,8 +1561,8 @@
           "path": "shadowrocket/rules/site-geolocation-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-geolocation-!cn.list",
           "policy": "PROXY",
-          "rules": 27195,
-          "sha256": "40f0122aa985dd9c17e0543e6a731aae1bd878b82808e1037d26b9f81736aeb8"
+          "rules": 27213,
+          "sha256": "dc7b6ea2e8fbc86e3a30848c181d875c012cd6941f1adb0a0f8eb72251a78cef"
         }
       ],
       "adaptations": [
@@ -3547,8 +3547,8 @@
       ]
     },
     "shadowrocket/fallback": {
-      "rules": 166555,
-      "config_rules": 56,
+      "rules": 166489,
+      "config_rules": 55,
       "groups": 35,
       "remote_rule_sets": [
         {
@@ -3557,15 +3557,15 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ads-all.list",
           "policy": "REJECT",
           "rules": 904,
-          "sha256": "2e24597543efe4e766a26bfaf046b9e4a8ade430dc414d978a2666a9c6844a89"
+          "sha256": "65503ef4dfc96210e32796cf99fb730a9822f6a6cd832c3dacf5c6f8c7dec221"
         },
         {
           "id": "site-private",
           "path": "shadowrocket/rules/site-private.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-private.list",
           "policy": "DIRECT",
-          "rules": 156,
-          "sha256": "57a07c453d0574452f4c27c609839f1ea5e87c65c2a1dff25b0cfd6ac7eb20bd"
+          "rules": 158,
+          "sha256": "0e54be4e82ba7f9ffcc0cad5c2e9dfa46b5de76b160f8341e2376022fc5b5ca6"
         },
         {
           "id": "ip-private",
@@ -3580,16 +3580,16 @@
           "path": "shadowrocket/rules/site-cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cn.list",
           "policy": "DIRECT",
-          "rules": 110534,
-          "sha256": "bf549486a2327f9f0c3bbb1b19f06c9d3a0dcf88ca7d0d8223726b96e3445bd1"
+          "rules": 110446,
+          "sha256": "3361cec3a97727547f3cb5b83fd50c6d172d68e901e894b9ab9c27c54dd79c7a"
         },
         {
           "id": "site-category-ai-!cn",
           "path": "shadowrocket/rules/site-category-ai-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ai-!cn.list",
           "policy": "AI",
-          "rules": 190,
-          "sha256": "120bfd5f73d230f08b0f94dd8e1228af81d1dc5d93cf19181933bdb5ea4e7801"
+          "rules": 193,
+          "sha256": "2cdb3010b92ea3ded1e7d9c2f0aac1060daff7f1ad4f532efeae4fc945a8f28e"
         },
         {
           "id": "site-anthropic",
@@ -3604,8 +3604,8 @@
           "path": "shadowrocket/rules/site-openai.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-openai.list",
           "policy": "AI",
-          "rules": 23,
-          "sha256": "5496cd81fe6b594a344ce752497d85dc0f58d0bc3d8592187bc75a210750a912"
+          "rules": 24,
+          "sha256": "8ca42675c16dc4c4d75a7c9c05bb0f1ec5ec3e9fbe27bbcf7e240b2d6bfd6b92"
         },
         {
           "id": "site-google-gemini",
@@ -3628,8 +3628,8 @@
           "path": "shadowrocket/rules/site-cursor.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cursor.list",
           "policy": "AI",
-          "rules": 4,
-          "sha256": "5c6d8418ed48e513a8b5697bea5948ee954fca9f5f683d5ee9234b1258111ad2"
+          "rules": 5,
+          "sha256": "c96090fa0c73a439a93440c22a8af0bad1bf15983651692fa00b90139b847114"
         },
         {
           "id": "site-youtube",
@@ -3653,7 +3653,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-disney.list",
           "policy": "Disney+",
           "rules": 232,
-          "sha256": "8be624a60099c67ada566e5bcd9bbb1df6dda8e90057e8e55fdfd203805c00ce"
+          "sha256": "03ef754f3c9084d1e2710d55bc13d811b3c86dfb034bd1a3b4b99d8049157cdb"
         },
         {
           "id": "site-hbo",
@@ -3708,8 +3708,8 @@
           "path": "shadowrocket/rules/site-amazon.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-amazon.list",
           "policy": "Amazon",
-          "rules": 1196,
-          "sha256": "0ad0e38399347994f46a1c2fbc6e8c6217b51a7d740612a27dda0c7e5227080f"
+          "rules": 1197,
+          "sha256": "8c8a8af29b02f06fb3f0207e3270b347f9b37c33e6285da1f410546181bc61fd"
         },
         {
           "id": "site-sony",
@@ -3757,7 +3757,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-games.list",
           "policy": "DIRECT",
           "rules": 1155,
-          "sha256": "c131e979c251b6fac1ca6f0fca4f0a836d37545e36efd1a0afedb43599020208"
+          "sha256": "6e40177335ee6b5af20cdaaaf7982aafd6c6ba3a1dde07b25331e7bf5e393c52"
         },
         {
           "id": "site-github",
@@ -3772,8 +3772,8 @@
           "path": "shadowrocket/rules/site-microsoft.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-microsoft.list",
           "policy": "Microsoft",
-          "rules": 752,
-          "sha256": "800564e35aa675e7c318a7621be67ec2b6e352f4b847caa381404dc74154bb87"
+          "rules": 749,
+          "sha256": "15427ca6572eea83a6eeb4dfa3b0c690b2bcb290abd1ef12a3487d6f944e0dd4"
         },
         {
           "id": "site-google",
@@ -3781,7 +3781,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-google.list",
           "policy": "Google",
           "rules": 1075,
-          "sha256": "292a9e6342c3c8fac20d24d46b23d74ec49bac69629201079e08b5162825fe26"
+          "sha256": "1c4bbc50b5209a9c2ecf5b62eb2c174501b95ef545f6f3aae048aeb1c71763ef"
         },
         {
           "id": "site-apple",
@@ -3789,7 +3789,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-apple.list",
           "policy": "Apple",
           "rules": 1792,
-          "sha256": "4bae8f31facdb0ecef0e557a9ecbc9564170ca6122f900091a4d68605a25161c"
+          "sha256": "63284312f03b3e4c4fd004ebb0495c2f726843e0246dcd7ca6b6a9d21751d7ba"
         },
         {
           "id": "site-bilibili",
@@ -3829,7 +3829,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-tencent.list",
           "policy": "DIRECT",
           "rules": 683,
-          "sha256": "376f1bba7bf9cb2cb6a8d86d1014fef5ba420a75b90856e10c515a246edde422"
+          "sha256": "5633259014c2369938319cb5269185d6a51d29f183dfcd71d128824cfdbf0155"
         },
         {
           "id": "site-sina",
@@ -3916,8 +3916,8 @@
           "path": "shadowrocket/rules/site-geolocation-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-geolocation-!cn.list",
           "policy": "PROXY",
-          "rules": 27195,
-          "sha256": "40f0122aa985dd9c17e0543e6a731aae1bd878b82808e1037d26b9f81736aeb8"
+          "rules": 27213,
+          "sha256": "dc7b6ea2e8fbc86e3a30848c181d875c012cd6941f1adb0a0f8eb72251a78cef"
         }
       ],
       "adaptations": [
@@ -5902,8 +5902,8 @@
       ]
     },
     "shadowrocket/hybrid": {
-      "rules": 166555,
-      "config_rules": 56,
+      "rules": 166489,
+      "config_rules": 55,
       "groups": 34,
       "remote_rule_sets": [
         {
@@ -5912,15 +5912,15 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ads-all.list",
           "policy": "REJECT",
           "rules": 904,
-          "sha256": "2e24597543efe4e766a26bfaf046b9e4a8ade430dc414d978a2666a9c6844a89"
+          "sha256": "65503ef4dfc96210e32796cf99fb730a9822f6a6cd832c3dacf5c6f8c7dec221"
         },
         {
           "id": "site-private",
           "path": "shadowrocket/rules/site-private.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-private.list",
           "policy": "DIRECT",
-          "rules": 156,
-          "sha256": "57a07c453d0574452f4c27c609839f1ea5e87c65c2a1dff25b0cfd6ac7eb20bd"
+          "rules": 158,
+          "sha256": "0e54be4e82ba7f9ffcc0cad5c2e9dfa46b5de76b160f8341e2376022fc5b5ca6"
         },
         {
           "id": "ip-private",
@@ -5935,16 +5935,16 @@
           "path": "shadowrocket/rules/site-cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cn.list",
           "policy": "DIRECT",
-          "rules": 110534,
-          "sha256": "bf549486a2327f9f0c3bbb1b19f06c9d3a0dcf88ca7d0d8223726b96e3445bd1"
+          "rules": 110446,
+          "sha256": "3361cec3a97727547f3cb5b83fd50c6d172d68e901e894b9ab9c27c54dd79c7a"
         },
         {
           "id": "site-category-ai-!cn",
           "path": "shadowrocket/rules/site-category-ai-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-ai-!cn.list",
           "policy": "AI",
-          "rules": 190,
-          "sha256": "120bfd5f73d230f08b0f94dd8e1228af81d1dc5d93cf19181933bdb5ea4e7801"
+          "rules": 193,
+          "sha256": "2cdb3010b92ea3ded1e7d9c2f0aac1060daff7f1ad4f532efeae4fc945a8f28e"
         },
         {
           "id": "site-anthropic",
@@ -5959,8 +5959,8 @@
           "path": "shadowrocket/rules/site-openai.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-openai.list",
           "policy": "AI",
-          "rules": 23,
-          "sha256": "5496cd81fe6b594a344ce752497d85dc0f58d0bc3d8592187bc75a210750a912"
+          "rules": 24,
+          "sha256": "8ca42675c16dc4c4d75a7c9c05bb0f1ec5ec3e9fbe27bbcf7e240b2d6bfd6b92"
         },
         {
           "id": "site-google-gemini",
@@ -5983,8 +5983,8 @@
           "path": "shadowrocket/rules/site-cursor.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-cursor.list",
           "policy": "AI",
-          "rules": 4,
-          "sha256": "5c6d8418ed48e513a8b5697bea5948ee954fca9f5f683d5ee9234b1258111ad2"
+          "rules": 5,
+          "sha256": "c96090fa0c73a439a93440c22a8af0bad1bf15983651692fa00b90139b847114"
         },
         {
           "id": "site-youtube",
@@ -6008,7 +6008,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-disney.list",
           "policy": "Disney+",
           "rules": 232,
-          "sha256": "8be624a60099c67ada566e5bcd9bbb1df6dda8e90057e8e55fdfd203805c00ce"
+          "sha256": "03ef754f3c9084d1e2710d55bc13d811b3c86dfb034bd1a3b4b99d8049157cdb"
         },
         {
           "id": "site-hbo",
@@ -6063,8 +6063,8 @@
           "path": "shadowrocket/rules/site-amazon.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-amazon.list",
           "policy": "Amazon",
-          "rules": 1196,
-          "sha256": "0ad0e38399347994f46a1c2fbc6e8c6217b51a7d740612a27dda0c7e5227080f"
+          "rules": 1197,
+          "sha256": "8c8a8af29b02f06fb3f0207e3270b347f9b37c33e6285da1f410546181bc61fd"
         },
         {
           "id": "site-sony",
@@ -6112,7 +6112,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-category-games.list",
           "policy": "DIRECT",
           "rules": 1155,
-          "sha256": "c131e979c251b6fac1ca6f0fca4f0a836d37545e36efd1a0afedb43599020208"
+          "sha256": "6e40177335ee6b5af20cdaaaf7982aafd6c6ba3a1dde07b25331e7bf5e393c52"
         },
         {
           "id": "site-github",
@@ -6127,8 +6127,8 @@
           "path": "shadowrocket/rules/site-microsoft.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-microsoft.list",
           "policy": "Microsoft",
-          "rules": 752,
-          "sha256": "800564e35aa675e7c318a7621be67ec2b6e352f4b847caa381404dc74154bb87"
+          "rules": 749,
+          "sha256": "15427ca6572eea83a6eeb4dfa3b0c690b2bcb290abd1ef12a3487d6f944e0dd4"
         },
         {
           "id": "site-google",
@@ -6136,7 +6136,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-google.list",
           "policy": "Google",
           "rules": 1075,
-          "sha256": "292a9e6342c3c8fac20d24d46b23d74ec49bac69629201079e08b5162825fe26"
+          "sha256": "1c4bbc50b5209a9c2ecf5b62eb2c174501b95ef545f6f3aae048aeb1c71763ef"
         },
         {
           "id": "site-apple",
@@ -6144,7 +6144,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-apple.list",
           "policy": "Apple",
           "rules": 1792,
-          "sha256": "4bae8f31facdb0ecef0e557a9ecbc9564170ca6122f900091a4d68605a25161c"
+          "sha256": "63284312f03b3e4c4fd004ebb0495c2f726843e0246dcd7ca6b6a9d21751d7ba"
         },
         {
           "id": "site-bilibili",
@@ -6184,7 +6184,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-tencent.list",
           "policy": "DIRECT",
           "rules": 683,
-          "sha256": "376f1bba7bf9cb2cb6a8d86d1014fef5ba420a75b90856e10c515a246edde422"
+          "sha256": "5633259014c2369938319cb5269185d6a51d29f183dfcd71d128824cfdbf0155"
         },
         {
           "id": "site-sina",
@@ -6271,8 +6271,8 @@
           "path": "shadowrocket/rules/site-geolocation-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-geolocation-!cn.list",
           "policy": "PROXY",
-          "rules": 27195,
-          "sha256": "40f0122aa985dd9c17e0543e6a731aae1bd878b82808e1037d26b9f81736aeb8"
+          "rules": 27213,
+          "sha256": "dc7b6ea2e8fbc86e3a30848c181d875c012cd6941f1adb0a0f8eb72251a78cef"
         }
       ],
       "adaptations": [

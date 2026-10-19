@@ -575,7 +575,6 @@
   - "DOMAIN,ecomuser.snssdk.com,DIRECT"
   - "DOMAIN,is.snssdk.com,DIRECT"
   - "DOMAIN-SUFFIX,claude.app,PROXY"
-  - "DOMAIN-SUFFIX,cursorvm.com,PROXY"
   - "RULE-SET,site-private,DIRECT"
   - "RULE-SET,ip-private,DIRECT,no-resolve"
   - "RULE-SET,site-cn,DIRECT"
