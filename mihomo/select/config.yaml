@@ -574,7 +574,6 @@
   - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
   - "DOMAIN,ecomuser.snssdk.com,DIRECT"
   - "DOMAIN,is.snssdk.com,DIRECT"
-  - "DOMAIN-SUFFIX,claude.app,PROXY"
   - "RULE-SET,site-private,DIRECT"
   - "RULE-SET,ip-private,DIRECT,no-resolve"
   - "RULE-SET,site-cn,DIRECT"
