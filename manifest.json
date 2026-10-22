@@ -2,7 +2,7 @@
   "schema_version": 1,
   "audience": "public",
   "source_commit": "ca85be6b1ebf086ec2f6d6885e8b4eba959bede1",
-  "sources_sha256": "c9eab4351e81ae7b59caafe3c9e50fbe863979eaf1de1e5680e851987e636acc",
+  "sources_sha256": "303f8e3e9a6b11615d21b565671379ba5443dfd1ca01cfeddb78edb2bec4c9b7",
   "coverage": {
     "claude.com": "AI",
     "api.claude.com": "AI",
@@ -16,7 +16,7 @@
   },
   "outputs": {
     "mihomo/select": {
-      "rules": 165632,
+      "rules": 165651,
       "groups": 17,
       "inventory_bound": false,
       "regex": 172,
@@ -52,6 +52,14 @@
           "behavior": "classical",
           "rules": 110446,
           "sha256": "18aa66d812e9c518050423b19d58528e3e33039a74a65e6f5a40dbc6f499544a"
+        },
+        {
+          "id": "site-oracle",
+          "path": "mihomo/select/rules/site-oracle.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-oracle.yaml",
+          "behavior": "classical",
+          "rules": 19,
+          "sha256": "41039795ef78022c361acdd23edebdf48dda4bac2748b189ffd3a67f94699bee"
         },
         {
           "id": "site-category-ai-!cn",
@@ -408,7 +416,7 @@
       ]
     },
     "mihomo/fallback": {
-      "rules": 165632,
+      "rules": 165651,
       "groups": 35,
       "inventory_bound": false,
       "regex": 172,
@@ -444,6 +452,14 @@
           "behavior": "classical",
           "rules": 110446,
           "sha256": "18aa66d812e9c518050423b19d58528e3e33039a74a65e6f5a40dbc6f499544a"
+        },
+        {
+          "id": "site-oracle",
+          "path": "mihomo/fallback/rules/site-oracle.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-oracle.yaml",
+          "behavior": "classical",
+          "rules": 19,
+          "sha256": "41039795ef78022c361acdd23edebdf48dda4bac2748b189ffd3a67f94699bee"
         },
         {
           "id": "site-category-ai-!cn",
@@ -800,7 +816,7 @@
       ]
     },
     "mihomo/hybrid": {
-      "rules": 165632,
+      "rules": 165651,
       "groups": 34,
       "inventory_bound": false,
       "regex": 172,
@@ -836,6 +852,14 @@
           "behavior": "classical",
           "rules": 110446,
           "sha256": "18aa66d812e9c518050423b19d58528e3e33039a74a65e6f5a40dbc6f499544a"
+        },
+        {
+          "id": "site-oracle",
+          "path": "mihomo/hybrid/rules/site-oracle.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-oracle.yaml",
+          "behavior": "classical",
+          "rules": 19,
+          "sha256": "41039795ef78022c361acdd23edebdf48dda4bac2748b189ffd3a67f94699bee"
         },
         {
           "id": "site-category-ai-!cn",
@@ -1192,8 +1216,8 @@
       ]
     },
     "shadowrocket/select": {
-      "rules": 166525,
-      "config_rules": 54,
+      "rules": 166545,
+      "config_rules": 56,
       "groups": 16,
       "remote_rule_sets": [
         {
@@ -1227,6 +1251,14 @@
           "policy": "DIRECT",
           "rules": 110446,
           "sha256": "3361cec3a97727547f3cb5b83fd50c6d172d68e901e894b9ab9c27c54dd79c7a"
+        },
+        {
+          "id": "site-oracle",
+          "path": "shadowrocket/rules/site-oracle.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-oracle.list",
+          "policy": "DIRECT",
+          "rules": 19,
+          "sha256": "90cbecc4507c4ca08784520ea578aa27ecad9bf23aab8bec576fb1645eb520fc"
         },
         {
           "id": "site-category-ai-!cn",
@@ -3547,8 +3579,8 @@
       ]
     },
     "shadowrocket/fallback": {
-      "rules": 166525,
-      "config_rules": 54,
+      "rules": 166545,
+      "config_rules": 56,
       "groups": 35,
       "remote_rule_sets": [
         {
@@ -3582,6 +3614,14 @@
           "policy": "DIRECT",
           "rules": 110446,
           "sha256": "3361cec3a97727547f3cb5b83fd50c6d172d68e901e894b9ab9c27c54dd79c7a"
+        },
+        {
+          "id": "site-oracle",
+          "path": "shadowrocket/rules/site-oracle.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-oracle.list",
+          "policy": "DIRECT",
+          "rules": 19,
+          "sha256": "90cbecc4507c4ca08784520ea578aa27ecad9bf23aab8bec576fb1645eb520fc"
         },
         {
           "id": "site-category-ai-!cn",
@@ -5902,8 +5942,8 @@
       ]
     },
     "shadowrocket/hybrid": {
-      "rules": 166525,
-      "config_rules": 54,
+      "rules": 166545,
+      "config_rules": 56,
       "groups": 34,
       "remote_rule_sets": [
         {
@@ -5937,6 +5977,14 @@
           "policy": "DIRECT",
           "rules": 110446,
           "sha256": "3361cec3a97727547f3cb5b83fd50c6d172d68e901e894b9ab9c27c54dd79c7a"
+        },
+        {
+          "id": "site-oracle",
+          "path": "shadowrocket/rules/site-oracle.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/rules/site-oracle.list",
+          "policy": "DIRECT",
+          "rules": 19,
+          "sha256": "90cbecc4507c4ca08784520ea578aa27ecad9bf23aab8bec576fb1645eb520fc"
         },
         {
           "id": "site-category-ai-!cn",

@@ -213,6 +213,14 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-cn.yaml"
     "interval": 86400
     "proxy": "DIRECT"
+  "site-oracle":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-oracle.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-oracle.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-category-ai-!cn":
     "type": "http"
     "behavior": "classical"
@@ -574,9 +582,11 @@
   - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
   - "DOMAIN,ecomuser.snssdk.com,DIRECT"
   - "DOMAIN,is.snssdk.com,DIRECT"
+  - "DOMAIN-SUFFIX,oraclecloudapps.com,DIRECT"
   - "RULE-SET,site-private,DIRECT"
   - "RULE-SET,ip-private,DIRECT,no-resolve"
   - "RULE-SET,site-cn,DIRECT"
+  - "RULE-SET,site-oracle,DIRECT"
   - "RULE-SET,site-category-ai-!cn,PROXY"
   - "RULE-SET,site-anthropic,PROXY"
   - "RULE-SET,site-openai,PROXY"
