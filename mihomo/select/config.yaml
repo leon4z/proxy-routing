@@ -583,6 +583,7 @@
   - "DOMAIN,ecomuser.snssdk.com,DIRECT"
   - "DOMAIN,is.snssdk.com,DIRECT"
   - "DOMAIN-SUFFIX,oraclecloudapps.com,DIRECT"
+  - "DOMAIN,oracle.sc.omtrdc.net,DIRECT"
   - "RULE-SET,site-private,DIRECT"
   - "RULE-SET,ip-private,DIRECT,no-resolve"
   - "RULE-SET,site-cn,DIRECT"

@@ -1216,8 +1216,8 @@
       ]
     },
     "shadowrocket/select": {
-      "rules": 166545,
-      "config_rules": 56,
+      "rules": 166546,
+      "config_rules": 57,
       "groups": 16,
       "remote_rule_sets": [
         {
@@ -3579,8 +3579,8 @@
       ]
     },
     "shadowrocket/fallback": {
-      "rules": 166545,
-      "config_rules": 56,
+      "rules": 166546,
+      "config_rules": 57,
       "groups": 35,
       "remote_rule_sets": [
         {
@@ -5942,8 +5942,8 @@
       ]
     },
     "shadowrocket/hybrid": {
-      "rules": 166545,
-      "config_rules": 56,
+      "rules": 166546,
+      "config_rules": 57,
       "groups": 34,
       "remote_rule_sets": [
         {
