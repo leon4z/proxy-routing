@@ -16,9 +16,6 @@
   "proxy-server-nameserver":
     - "tls://223.5.5.5:853"
     - "https://doh.pub/dns-query"
-  "direct-nameserver":
-    - "tls://223.5.5.5:853#DIRECT"
-    - "https://doh.pub/dns-query#DIRECT"
   "nameserver":
     - "https://1.1.1.1/dns-query"
     - "https://8.8.8.8/dns-query"

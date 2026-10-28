@@ -215,8 +215,8 @@ AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor �
 
 - 关闭 IPv6；国内分类、国内 IP 与两个精确抖音接口域名的 UDP 443（QUIC）允许直连。AI、Google 和其余 UDP 443 仍拒绝，支持回退的应用使用 TCP。广告拒绝先于国内放行，不放行整个 `snssdk.com`。
 - 拒绝域名包含 stun 的请求及 UDP 3478；这不是完整 STUN 协议识别，语音、直播连麦等可能受影响。
-- 国内／直连及代理节点入口解析使用阿里 DoT（`tls://223.5.5.5:853`）与腾讯官方 DoH（`https://doh.pub/dns-query`）；普通代理解析使用 Cloudflare / Google DNS，并按代理策略处理。Mihomo 的 DIRECT 出口有独立直连 DNS，避免下载依赖尚未准备好的规则或节点。此传输调整保留原域名分流、节点组及选择方式。
-- `ecomuser.snssdk.com`、`is.snssdk.com` 精确直连：Mihomo 指定国内 DNS，小火箭通过直连规则使用国内 `direct-dns-server`。小火箭 QUIC 由规则控制，配置模式下国内放行有效；客户端全局代理／直连模式或额外模块覆盖规则时，需按客户端实际设置判断。
+- Mihomo 不配置独立 DIRECT DNS：国内分类使用阿里 DoT（`tls://223.5.5.5:853`）与腾讯 DoH（`https://doh.pub/dns-query`），其他域名使用 Cloudflare / Google DoH；DIRECT 出口复用普通解析结果。小火箭保留 `direct-dns-server`，命中 DIRECT 域名规则时使用国内 DNS；主 DNS 与备用 DNS 使用 Cloudflare / Google DoH `#proxy`。DIRECT 域名规则包括部分国外服务的直连例外，并不等同于中国域名集合。两端代理节点域名仍由国内加密 DNS 解析，避免代理启动循环依赖。
+- `ecomuser.snssdk.com`、`is.snssdk.com` 精确直连；Mihomo 同时指定国内域名 DNS 策略。小火箭 QUIC 由规则控制，配置模式下国内放行有效；客户端全局代理／直连模式或额外模块覆盖规则时，需按客户端实际设置判断。DNS 选项不能保证所有客户端故障时都不会回退系统 DNS，需另行验证客户端实际行为。
 - 局域网、时间同步及 Windows 连通性检测等保留真实 IP 例外；应用自身设置仍需核对。
 
 地区组测试周期为 600 秒，切换公差为 50 毫秒；fallback 不使用该公差。测试访问 gstatic 的 HTTP 连通性地址，不是 ICMP ping、带宽测速或 Claude / 流媒体可用性检测。两次测试之间可能发生故障，切换不保证即时完成。
