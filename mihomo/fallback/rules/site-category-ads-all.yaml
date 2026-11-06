@@ -733,7 +733,7 @@
   - "DOMAIN-SUFFIX,browser.events.data.msn.com"
   - "DOMAIN,ads-img.mozilla.org"
   - "DOMAIN,ads.mozilla.org"
-  - "DOMAIN-REGEX,\"^speed\\.(coe|open)\\.ad\\.[a-z]{2,6}\\.prod\\.hosts\\.ooklaserver\\.net$\""
+  - "DOMAIN-REGEX,^speed\\.(coe|open)\\.ad\\.[a-z]{2,6}\\.prod\\.hosts\\.ooklaserver\\.net$"
   - "DOMAIN,sentry.iptv.rt.ru"
   - "DOMAIN-SUFFIX,adx.36kr.com"
   - "DOMAIN-SUFFIX,amazon-adsystem.com"

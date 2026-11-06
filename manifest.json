@@ -27,7 +27,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-category-ads-all.yaml",
           "behavior": "classical",
           "rules": 905,
-          "sha256": "6889f9ef9d793ddba42251a9c02545d4c699cd05d568dc1c09c7725fb5608caf"
+          "sha256": "a673acfe8d574fbf7306fabe207fb8747d9f3b5918ed4da61271d3ea1b96f3fe"
         },
         {
           "id": "site-private",
@@ -35,7 +35,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-private.yaml",
           "behavior": "classical",
           "rules": 133,
-          "sha256": "c1c8c6031a6ea16dd90c7be614f85d5d7b0dde1c58de98ae519b31feffa5c4d0"
+          "sha256": "1c5f93fadd9bec29e5c5353c46ced7ce3e098b922688ce1f00923e95da50e084"
         },
         {
           "id": "ip-private",
@@ -395,7 +395,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/rules/site-geolocation-!cn.yaml",
           "behavior": "classical",
           "rules": 27449,
-          "sha256": "8140cd01b826663535dd926679e7ff11cfd44de547fd321fc82bd84ef7a255bb"
+          "sha256": "3748ce2270e67d3064e6afc7ef2170a5d6e53fa4d4150d7f090c7ee73ae16ffe"
         },
         {
           "id": "dns-site-cn",
@@ -427,7 +427,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-category-ads-all.yaml",
           "behavior": "classical",
           "rules": 905,
-          "sha256": "6889f9ef9d793ddba42251a9c02545d4c699cd05d568dc1c09c7725fb5608caf"
+          "sha256": "a673acfe8d574fbf7306fabe207fb8747d9f3b5918ed4da61271d3ea1b96f3fe"
         },
         {
           "id": "site-private",
@@ -435,7 +435,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-private.yaml",
           "behavior": "classical",
           "rules": 133,
-          "sha256": "c1c8c6031a6ea16dd90c7be614f85d5d7b0dde1c58de98ae519b31feffa5c4d0"
+          "sha256": "1c5f93fadd9bec29e5c5353c46ced7ce3e098b922688ce1f00923e95da50e084"
         },
         {
           "id": "ip-private",
@@ -795,7 +795,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/rules/site-geolocation-!cn.yaml",
           "behavior": "classical",
           "rules": 27449,
-          "sha256": "8140cd01b826663535dd926679e7ff11cfd44de547fd321fc82bd84ef7a255bb"
+          "sha256": "3748ce2270e67d3064e6afc7ef2170a5d6e53fa4d4150d7f090c7ee73ae16ffe"
         },
         {
           "id": "dns-site-cn",
@@ -827,7 +827,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-category-ads-all.yaml",
           "behavior": "classical",
           "rules": 905,
-          "sha256": "6889f9ef9d793ddba42251a9c02545d4c699cd05d568dc1c09c7725fb5608caf"
+          "sha256": "a673acfe8d574fbf7306fabe207fb8747d9f3b5918ed4da61271d3ea1b96f3fe"
         },
         {
           "id": "site-private",
@@ -835,7 +835,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-private.yaml",
           "behavior": "classical",
           "rules": 133,
-          "sha256": "c1c8c6031a6ea16dd90c7be614f85d5d7b0dde1c58de98ae519b31feffa5c4d0"
+          "sha256": "1c5f93fadd9bec29e5c5353c46ced7ce3e098b922688ce1f00923e95da50e084"
         },
         {
           "id": "ip-private",
@@ -1195,7 +1195,7 @@
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/rules/site-geolocation-!cn.yaml",
           "behavior": "classical",
           "rules": 27449,
-          "sha256": "8140cd01b826663535dd926679e7ff11cfd44de547fd321fc82bd84ef7a255bb"
+          "sha256": "3748ce2270e67d3064e6afc7ef2170a5d6e53fa4d4150d7f090c7ee73ae16ffe"
         },
         {
           "id": "dns-site-cn",
