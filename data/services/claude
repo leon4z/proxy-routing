@@ -1,0 +1,27 @@
+ant.dev
+anthropic.com
+anthropic.team
+antspace.dev
+chatbotclaude.com
+clau.de
+claude.ai
+claude.app
+claude.com
+claude.dev
+claude.new
+claude.site
+claudeacademy.com
+claudemcpclient.com
+claudemcpcontent.com
+claudepages.dev
+claudestudio.com
+claudeusercontent.com
+full:servd-anthropic-website.b-cdn.net
+full:http-intake.logs.us5.datadoghq.com @telemetry
+full:o1158394.ingest.us.sentry.io @telemetry
+full:anthropic.auth0.com
+full:anthropic.com.cdn.cloudflare.net
+full:anthropic-com.ghost.io
+ip-cidr:160.79.104.0/21
+ip-cidr6:2607:6bc0::/32
+ip-asn:399358

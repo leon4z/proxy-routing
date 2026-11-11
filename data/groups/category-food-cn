@@ -1,0 +1,60 @@
+include:services/bestore
+include:services/lkcoffee
+include:services/mcdonalds @cn
+include:services/starbucks @cn
+
+3songshu.com
+vipbcw.com
+haidilao.com
+hdlcdns.com
+kiwa-tech.com
+heytea.com
+anlaiye.com
+anlaiye.com.cn
+imcoming.com
+imcome.net
+meican.com
+meicanstatic.com
+nongfuspring.com
+yst.com.cn
+wahaha.com.cn
+whhhealth.com
+shuxinyc.com
+mxbc.com
+mxbc.net
+hophing.cn
+hophing.com.cn
+bkchina.cn
+hwwt8.com
+kfc.com.cn
+yumchina.com
+qmai.com
+qmai.cn
+qmimg.cn
+dicos.com.cn
+kemen.cn
+chinatea.com.cn
+cofco.com
+greatwallwine.com.cn
+chinabdh.com
+hacl.cn
+4008117117.com
+brightdairy.com
+brighticecream.com
+chinacow.com
+yili.com
+mengniu.com.cn
+telunsu.net
+junlebaoruye.com
+yihaikerry.net.cn
+luhua.cn
+shuanghui.net
+micun.com
+qiaqiafood.com
+busyming.com
+hnlshm.com
+zymls.com
+logger.qmai.cn @ads @telemetry
+tracking.mcdonalds.com.cn @ads @telemetry
+trackingprd.hwwt8.com @ads @telemetry
+trackserver.shuxinyc.com @ads @telemetry

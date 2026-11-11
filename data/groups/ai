@@ -1,0 +1,6 @@
+include:services/claude
+include:services/openai
+include:services/gemini
+include:services/copilot
+include:services/cursor
+include:groups/category-ai-!cn

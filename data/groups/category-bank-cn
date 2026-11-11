@@ -1,0 +1,51 @@
+include:services/boc @-!cn
+include:services/ccb @-!cn
+include:services/citic @-!cn
+include:services/cmb @-!cn
+include:services/hsbc-cn
+include:services/icbc @-!cn
+include:services/unionpay
+
+95508.com
+abchina.com
+bankcomm.cn
+bankcomm.com
+bankofbeijing.com.cn
+bocd.com.cn
+bosc.cn
+bsb.com.cn
+cdrcb.com
+cdrcbank.com
+cebbank.com
+cgbchina.com.cn
+cib.com.cn
+citibank.com.cn
+cmbc.com.cn
+hxb.com.cn
+ibangbank.com
+njcb.com.cn
+psbc.com
+spdb.com.cn
+whccb.com
+kcbebank.com
+shrbank.com
+mybank.cn
+ms-bank.cn
+tctpwebankcdn.net
+wbweilicai.com
+webank.com
+webankcdn.net
+csxbank.com
+fbank.com
+xwbank.com
+zgcbank.com
+yillionbank.com
+z-bank.com
+onebank.com.cn
+wegobank.cn
+suningbank.com
+kshbank.cn
+xa-bank.com
+newupbank.com
+ymbank.com
+wxsbank.com

@@ -1,0 +1,28 @@
+captive.apple.com @cn
+full:ping.archlinux.org
+full:redirect.archlinux.org
+cp.cloudflare.com
+network-test.debian.org
+detectportal.firefox.com
+firefox-portal-detection.com
+full:nmcheck.gnome.org
+full:connectivitycheck.gstatic.com
+full:www.gstatic.com @cn
+full:connectivitycheck.platform.hihonorcloud.com @cn
+full:connectivitycheck.platform.hicloud.com @cn
+full:networkcheck.kde.org
+kuketz.de
+full:edge-http.microsoft.com
+full:connect.rom.miui.com @cn
+full:conn1.oppomobile.com @cn
+full:conn2.oppomobile.com @cn
+full:www.qualcomm.cn @cn
+full:www.qualcomm.com
+full:connectivity.samsung.com.cn @cn
+ipv6check-http.steamserver.net
+ipv6check-udp.steamserver.net
+test.steampowered.com
+full:connectivity-check.ubuntu.com
+full:wifi.vivo.com.cn @cn
+msftconnecttest.com
+msftncsi.com

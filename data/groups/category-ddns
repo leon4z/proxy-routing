@@ -1,0 +1,9 @@
+include:services/cloudns
+include:services/dynu
+include:services/noip
+
+dpdns.org
+duckdns.org
+nip.io
+sslip.io
+traefik.me

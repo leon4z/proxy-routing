@@ -1,0 +1,16 @@
+include:services/baishancloud
+include:services/bootcdn
+include:services/cloudflare-cn
+include:services/dwion
+include:services/qiniu
+include:services/upai
+include:services/wangsu
+
+aocde.com
+chuangcache.com
+chuangcdn.com
+dfyun.com.cn
+funcdn.com
+hydun.com
+jiashule.com
+jiasule.com

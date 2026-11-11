@@ -1,0 +1,6 @@
+include:services/dropbox
+include:services/mega
+include:services/onedrive
+include:services/pikpak
+include:services/terabox
+include:services/usersdrive

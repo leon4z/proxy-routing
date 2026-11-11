@@ -1,0 +1,5 @@
+{
+  "name": "Proxy Routing",
+  "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/config/Mihomo/Proxy-Routing.yaml",
+  "clash_install_uri": "clash://install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fleon4z%2Fproxy-routing%2Fmain%2Fconfig%2FMihomo%2FProxy-Routing.yaml"
+}

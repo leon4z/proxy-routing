@@ -1,0 +1,10 @@
+include:services/4plebs
+include:services/archivetoday
+include:services/internet-archive
+
+eotarchive.org
+ghostarchive.org
+megalodon.jp
+mementoweb.org
+perma.cc
+webcitation.org

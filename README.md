@@ -1,277 +1,32 @@
 # Proxy Routing
 
-面向 **Shadowrocket（小火箭）和 Mihomo / Clash Meta** 的分流配置。使用 MetaCubeX 完整规则集，提供手动选择、自动故障转移和混合模式，按域名、IP 和服务分类选择出口。
+同一套公开分流策略提供 [Mihomo 配置](config/Mihomo/Proxy-Routing.yaml) 和 [Shadowrocket 配置](config/Shadowrocket/Proxy-Routing.conf)。配置内没有节点或订阅凭据。Mihomo 通过客户端覆写添加自己的节点订阅，Shadowrocket 使用客户端中已导入的节点。
 
-本项目提供规则、DNS 设置和策略组，**不提供代理节点**。请先准备自己的节点或 Clash 格式节点订阅。公开仓库只保存生成后的通用配置与规则；生成器和个人配置保存在私密仓库。当前不提供 Karing 配置。
+AI、Google、影音社交和兜底默认跟随默认代理；金融初始选择 DIRECT，保留代理出口供手选，直连失败不自动切换，已有有效手选不因初始默认值变化而重置；OpenAI 和 Claude 默认跟随 AI，也可以独立选出口。IBKR、BBAE、富途等服务命中金融。券商不单独设组。通用境外分类和最终未命中流量进入兜底，以保持 Shadowrocket 既有终结正则适配的语义。
 
-小火箭使用 `.conf`；基于 Mihomo 内核的客户端共用标准 `.yaml`，但导入入口、扩展设置和一键唤起协议可能不同。旧 Clash 内核的兼容性不在当前验证范围内。
+默认代理和各服务组可以选择香港、台湾、日本、新加坡、韩国、美国、其他地区或全部节点。地区组按名称筛选节点，全部节点包含未识别地区的节点。所有组都是手选，不自动测速切换。引用同一地区组的服务共享该组手选。公开配置不按 VPS、机场或住宅分类。Shadowrocket 默认代理初始跟随首页 PROXY，Mihomo 初次导入需手选可用节点；有效手选随客户端更新保留。
 
-## 先选一个模式
+地区识别包含常见中文、繁体、英文、国旗、两字母代码及 `HKG/TWN/JPN/SGP/KOR`，并覆盖部分常见城市名。英文不区分大小写，地区代码保留字母边界，避免把 Australia/Russia 误归美国。其他地区是上述六区的补集，包含未识别名称。名称同时提及多个地区时可能进入多个组；分类不验证真实出口 IP，也不推断中转与落地关系。编辑组成员属于配置内容，更新整份远程配置会替换这些编辑；选择已有成员与编辑成员列表是两回事。
 
-首次使用建议选择 **手动版**。三份配置使用相同的分流规则，区别是节点选择方式。
+Mihomo 默认开启 HTTP、TLS 和 QUIC 域名嗅探，辅助缺少域名的连接匹配服务规则。`override-destination: false` 保留原连接目标。Shadowrocket 使用客户端内置的域名识别机制。
 
-| 模式 | 普通代理流量 | AI / Google | 适合谁 |
-| --- | --- | --- | --- |
-| 手动 `select` | 小火箭选首页具体节点；Mihomo 在 PROXY 选具体节点 | 使用同一个手动出口 | 想先用起来，或自己决定出口 |
-| 故障转移 `fallback` | PROXY 默认使用「自动切换」组，按可用性切换 | 独立「稳定节点」组 | 普通流量故障时切换，AI 使用指定出口 |
-| 混合 `hybrid` | 在 PROXY 组手动选择 | 独立「稳定节点」组 | 普通流量经常换出口，AI 保持指定线路 |
+Mihomo 启用 `profile.store-selected` 和 `profile.store-fake-ip`，保存手选与 Fake-IP 映射缓存。
 
-**故障转移版和混合版必须先配置「稳定节点」组。** 通用版「稳定节点」组初始为 REJECT，AI / Google 在设置完成前会被拒绝，不会自动改走「自动切换」组或直连。
+从旧版三模式配置迁移时，请重新导入上述新入口；现在每个客户端只提供一份完整配置。迁移前可导出自己的旧配置及节点，个人编辑不会自动合并到新模板。
 
-手动版没有服务组、「自动切换」或「稳定节点」组；地区组只用于手动浏览，不参与自动选择，个人版另按订阅来源整理节点。故障转移版、混合版的地区组为 `url-test`；「自动切换」和「稳定节点」组为 `fallback`，按成员顺序选择可用节点。
+[全量规则索引](data/README.md)按用途归类，来源和项目补充记录在构建清单中。规则库与完整配置分开交付。完整配置只加载其分流策略引用的规则集。
 
-“普通代理流量”指按规则需要代理的请求。Apple、Microsoft、PayPal、Amazon、BiliBili、Spotify 默认 DIRECT，游戏分类固定 DIRECT，国内和局域网规则也保持直连。
-
-先导入一份即可。同一时刻启用一份主配置。小火箭手动版使用内置 PROXY，代理请求跟随首页选中的具体节点；故障转移版、混合版仍由显式 PROXY／服务组控制出口。Mihomo 手动版只有一个 PROXY 出口选择，初始 REJECT；节点失效时不自动换出口。
-
-## 复制配置地址
-
-每个代码块只包含一个完整地址，可直接复制。主配置和分类规则均使用 GitHub Raw；首次下载需要网络能够访问该地址。缓存可能延迟显示新版，不保证所有网络都可直连。
-
-### 小火箭
-
-手动版：
-
-```text
-https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/Shadowrocket-select.conf
-```
-
-故障转移版：
-
-```text
-https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/Shadowrocket-fallback.conf
-```
-
-混合版：
-
-```text
-https://raw.githubusercontent.com/leon4z/proxy-routing/main/shadowrocket/Shadowrocket-hybrid.conf
-```
-
-### Mihomo / Clash Meta
-
-手动版：
-
-```text
-https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/select/config.yaml
-```
-
-故障转移版：
-
-```text
-https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/fallback/config.yaml
-```
-
-混合版：
-
-```text
-https://raw.githubusercontent.com/leon4z/proxy-routing/main/mihomo/hybrid/config.yaml
-```
-
-### Clash Verge Rev 一键导入
-
-以下使用官方支持的 `clash://install-config` 格式，已对 YAML URL 做 URI 编码。复制后通过支持外部协议的浏览器打开；能否唤起应用取决于协议注册和浏览器行为。没有唤起时，把上方 HTTPS 地址粘贴到客户端的远程配置入口即可。
-
-手动版：
-
-```text
-clash://install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fleon4z%2Fproxy-routing%2Fmain%2Fmihomo%2Fselect%2Fconfig.yaml
-```
-
-故障转移版：
-
-```text
-clash://install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fleon4z%2Fproxy-routing%2Fmain%2Fmihomo%2Ffallback%2Fconfig.yaml
-```
-
-混合版：
-
-```text
-clash://install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fleon4z%2Fproxy-routing%2Fmain%2Fmihomo%2Fhybrid%2Fconfig.yaml
-```
-
-一键导入只下载配置，不会添加节点或开启代理。普通 URL 和协议地址也保存在 `mihomo/import-links.json`。协议格式参考 [Clash Verge Rev 官方说明](https://www.clashverge.dev/guide/url_schemes.html)。
-
-## 小火箭：导入、设置与检查
-
-以下使用中文界面名称，不同版本的位置可能略有差异。应用入口参考原仓库教程和 [Shadowrocket 社区使用手册](https://github.com/LOWERTOP/Shadowrocket/wiki)，新配置仍需真机验收。
-
-### 1. 添加节点，再下载配置
-
-1. 在首页添加自己的节点或节点订阅。节点订阅填服务商地址，不能填本项目的 `.conf` 地址。
-2. 复制所选模式的小火箭地址，进入「配置」→ 右上角「+」→ URL 栏粘贴 → 下载。
-3. 下载后先设置分组，再点文件名称 →「使用配置」。文件右侧 ⓘ 进入编辑页；分组名称用于查看、选择成员，分组右侧 ⓘ 用于编辑类型和成员。
-
-### 2. 手动版：在首页选具体节点
-
-在首页展开节点订阅并选择一个具体节点。AI、Google、YouTube 等需要代理的请求直接使用内置 PROXY，跟随这个节点；默认 DIRECT 的规则仍直连。没有第二个 PROXY 或服务组需要设置。
-
-来源、地区组便于浏览节点；地区名称不代表实际出口属地或目标服务可用性。手动选择具体节点，不选择自动测试组作为出口。
-
-### 3. 故障转移版、混合版：设置「稳定节点」组
-
-编辑成员前，先按后文「更新时保留自己的设置」复制配置并处理自动更新，再编辑副本。
-
-1. 在首页打开选定节点右侧 ⓘ，复制完整「备注」。这里需要节点名称，不是订阅 URL 或服务器地址。
-2. 进入配置副本右侧 ⓘ →「代理分组」→ 稳定节点右侧 ⓘ，保持类型 fallback，关闭「订阅」，清空筛选正则（如有）。
-3. 删除初始 REJECT 成员，在策略添加输入框粘贴备注，点左侧「+」插入，确认成为列表的一行后保存。仅填写输入框不等于添加成功。
-4. 至少添加一个可用节点。有备用线路可添加多个，用拖动手柄把优先线路排在前面，保存后返回「稳定节点」组检查。
-5. 保持 AI / Google 选择稳定节点。故障转移版检查「自动切换」组有成员、PROXY 选择自动切换；混合版在 PROXY 组选普通流量的节点或地区组。
-
-稳定节点由你决定，不依据公开测速自动指定。备注必须完整匹配，包含旗帜、空格和符号；订阅改名后需要同步成员。不要把 DIRECT、PROXY 或「自动切换」组作为稳定候选。
-
-### 4. 启用并确认分流
-
-1. 回到配置列表，点准备好的文件名称 →「使用配置」，等待规则加载，检查当前使用标记。
-2. 首页「全局路由」选择「配置」，再开启连接；选择「代理」不会按本项目规则分流。
-3. 在该配置的「测试规则」输入实际域名，例如 `claude.com`、`www.youtube.com`，检查是否命中 AI、YouTube 等预期策略。
-4. 检查策略组选中的出口，再实际访问目标 App。规则命中不能证明节点地区、登录或服务可用。
-
-若要单独改变某个服务的出口，需要先编辑该服务组的候选成员，再选择它。当前 YouTube 等组默认只有 PROXY，未列出的地区组不会直接出现在菜单。故障转移版和混合版的 AI / Google 保持「稳定节点」组绑定。
-
-## Mihomo：导入与绑定节点
-
-按 URL 导入，无需解压 ZIP 或手工放置规则目录。主配置会下载 **43 个分流分类和 2 个 DNS 分类**，`path` 是自动下载后的缓存位置。
-
-### 1. 导入远程配置
-
-在客户端远程配置／订阅入口粘贴对应 YAML 地址，下载并选中。下文以 Clash Verge Rev 为例，其他 Mihomo 客户端使用自己的覆写或合并入口。
-
-公开模板没有节点。仅导入 YAML 后，代理请求会被拒绝；客户端中另一份机场订阅不会自动合并过来。
-
-### 2. 用持久扩展添加订阅
-
-右键这份配置卡片 → 编辑扩展配置，加入以下内容，并替换 URL 占位文字：
-
-```yaml
-proxy-providers:
-  nodes:
-    type: http
-    url: "在本机填写你的Clash格式节点订阅地址"
-    path: ./proxy-providers/nodes.yaml
-    interval: 86400
-    proxy: DIRECT
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 600
-```
-
-订阅须返回 Clash 格式的 `proxies` 列表，不能直接填任意 V2Ray 文本订阅。实际 URL 只保存在自己的设备或私密存储中，不上传公共仓库。示例经 DIRECT 下载订阅，网络需要能访问该地址。
-
-保存扩展并重新加载，确认 provider 和分组节点已加载，再在 PROXY 组选出口。手动版需要代理的规则都指向 PROXY，没有独立 AI / Google 组；来源、地区组只用于浏览。
-
-扩展独立保存，主配置刷新后继续应用。不要只修改临时运行配置，也不要用只写「稳定节点」组的 `proxy-groups` 列表覆写整个列表，会丢失其他组。合并规则及应用设置优先级见 [Clash Verge Rev 扩展说明](https://www.clashverge.dev/guide/extend.html)。
-
-### 3. 故障转移版、混合版的稳定出口
-
-添加普通订阅不会自动设置「稳定节点」组，需要绑定自己选定的节点。不会根据节点名称或测速自动判断它适合 AI。
-
-<details>
-<summary>Clash Verge Rev：用订阅扩展脚本筛选稳定候选</summary>
-
-以下只用于故障转移版、混合版，且假定上一步 provider 名为 nodes。右键这份配置卡片 → 编辑扩展脚本，把名称替换成客户端显示的完整节点名称：
-
-```javascript
-function main(config) {
-  const names = ["你的稳定节点完整名称"];
-  const stable = config["proxy-groups"].find(group => group.name === "稳定节点");
-  if (!stable) throw new Error("当前模式没有「稳定节点」组，请使用故障转移版或混合版");
-  const escape = text => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  stable.use = ["nodes"];
-  stable.proxies = [];
-  stable.filter = "^(?:" + names.map(escape).join("|") + ")$";
-  stable["include-all-providers"] = false;
-  stable["empty-fallback"] = "REJECT";
-  return config;
-}
-```
-
-保存并重新加载，检查「稳定节点」组只包含选定节点，AI / Google 仍指向稳定节点。名称不匹配时拒绝请求。可以在 names 中增加候选，但**筛选只决定成员，不决定顺序**；顺序来自 provider。需要固定主备优先级时，应维护有序节点配置，不能把脚本数组或正则顺序当作优先级保证。
-
-</details>
-
-### 4. 检查实际运行
-
-启用规则模式，检查最终生效配置、规则 provider 加载状态和服务组成员。在连接／日志页查看实际访问域名命中的规则、策略、节点，再测试目标 App。
-
-客户端可能接管 IPv6、运行模式、DNS、端口和 TUN。导入 YAML 不会自动开启系统代理或 TUN，也不表示应用设置已与配置一致。旁路由使用相同 Mihomo 语法，但下载、节点注入和重载由网关管理，不使用桌面唤起协议。
-
-## 规则覆盖与网络设置
-
-服务分组仅在故障转移版、混合版存在，包括 AI、Google、YouTube、Telegram、Twitter、Facebook、TikTok，以及上述默认直连服务。游戏分类保留并直接使用 DIRECT，不显示 Game 分组。Netflix、Disney+、Max 不设置独立分组或专属规则：请求继续匹配其余规则，未命中的最终使用 PROXY；命中国内规则仍直连。宽泛海外分类和末尾规则使用 PROXY；更靠前的服务、局域网和国内规则优先匹配。
-
-规则优先级为：STUN / UDP 3478 拒绝 → 基础广告拦截 → AI/Google UDP 443 拒绝 → 国内 UDP 443 直连 → 其余 UDP 443 拒绝 → 两个精确域名直连 → 显式自定义规则 → 局域网 → CN 域名直连 → 各服务分类 → 专门服务 IP → CN IP 直连 → 普通海外分类与最终 PROXY。CN 域名与 CN IP 是独立规则集，均直接使用 DIRECT，不额外建立 CN 策略组。命中 CN 域名时优先直连，包括与 Google、Apple、Microsoft、AI 等分类重叠的域名；这些请求不会再进入对应服务组。确需代理的个别域名应放入更靠前的显式自定义规则。
-
-基础广告拦截使用 MetaCubeX 完整版 `category-ads-all`，小火箭通过远程规则集、Mihomo 通过 HTTP provider 加载，匹配后直接 REJECT，不新增广告策略组。广告规则优先于 CN 和服务规则。它不需要证书、HTTPS 解密或脚本，不能保证删除与正常内容共用域名的开屏广告、视频广告。
-
-小火箭不能原样表达上游的一条测速广告正则，因此仅对 `speed.coe.ad.*.prod.hosts.ooklaserver.net` 和 `speed.open.ad.*.prod.hosts.ooklaserver.net` 使用通配替代；相较正则，允许不符合 2–6 位小写字母限制的中间标签，差异写入 manifest。普通测速域名不因这条替代被整体封锁。Mihomo 保留原正则。若出现疑似误拦截，应查看实际命中的广告域名，再审查规则；不要直接关闭所有分流。
-
-AI 分类包含 Anthropic / Claude、OpenAI、Gemini、GitHub Copilot、Cursor 等。Dia 的 `diabrowser.engineering`、Claude 的 `claude.dev`，以及 Cursor 的 `cursor.com`、`cursor.sh`、`cursorapi.com`、`cursor-cdn.com` 均由上游分类覆盖，根域及子域使用 AI；不再重复内嵌规则。上游尚未覆盖的 `cursorvm.com` 与 `claude.app` 保留显式 AI 规则；后者覆盖 Claude 桌面端的 `*.livepreview.claude.app`，依据 [官方网络要求](https://code.claude.com/docs/en/desktop#network-access-requirements)。命中 AI 不代表地区限制已解除。
-
-`kimi.ai`、`moonshot.ai`、`minimax.io` 及其子域默认直连，由前置 CN 域名规则判定，无需额外直连例外；需要代理的具体接口可单独调整。地区组排在服务组之后，作为 PROXY 等组的候选并方便手动选择地区；展示顺序不改变候选顺序或分流规则优先级。
-
-两客户端共享以下网络策略，具体语法分别适配：
-
-- 关闭 IPv6；国内分类、国内 IP 与两个精确抖音接口域名的 UDP 443（QUIC）允许直连。AI、Google 和其余 UDP 443 仍拒绝，支持回退的应用使用 TCP。广告拒绝先于国内放行，不放行整个 `snssdk.com`。
-- 拒绝域名包含 stun 的请求及 UDP 3478；这不是完整 STUN 协议识别，语音、直播连麦等可能受影响。
-- Mihomo 不配置独立 DIRECT DNS：国内分类使用阿里 DoT（`tls://223.5.5.5:853`）与腾讯 DoH（`https://doh.pub/dns-query`），其他域名使用 Cloudflare / Google DoH；DIRECT 出口复用普通解析结果。小火箭保留 `direct-dns-server`，命中 DIRECT 域名规则时使用国内 DNS；主 DNS 与备用 DNS 使用 Cloudflare / Google DoH `#proxy`。DIRECT 域名规则包括部分国外服务的直连例外，并不等同于中国域名集合。两端代理节点域名仍由国内加密 DNS 解析，避免代理启动循环依赖。
-- `ecomuser.snssdk.com`、`is.snssdk.com` 精确直连；Mihomo 同时指定国内域名 DNS 策略。小火箭 QUIC 由规则控制，配置模式下国内放行有效；客户端全局代理／直连模式或额外模块覆盖规则时，需按客户端实际设置判断。DNS 选项不能保证所有客户端故障时都不会回退系统 DNS，需另行验证客户端实际行为。
-- 局域网、时间同步及 Windows 连通性检测等保留真实 IP 例外；应用自身设置仍需核对。
-
-地区组测试周期为 600 秒，切换公差为 50 毫秒；fallback 不使用该公差。测试访问 gstatic 的 HTTP 连通性地址，不是 ICMP ping、带宽测速或 Claude / 流媒体可用性检测。两次测试之间可能发生故障，切换不保证即时完成。
-
-## 更新时保留自己的设置
-
-**主配置、分类规则和节点订阅是三件事。** 更新节点不更新分流，更新规则不添加节点。
-
-| 更新内容 | 小火箭 | Mihomo |
-| --- | --- | --- |
-| 主配置、分组结构与内嵌补充规则 | 下载／更新整份 conf | 更新远程 YAML |
-| 分类规则 | 使用配置／编译配置重新拉取 | rule-provider 刷新，当前间隔 24 小时 |
-| 节点及认证信息 | 更新自己的节点订阅 | 更新自己的 proxy-provider；示例间隔 24 小时 |
-
-### 小火箭的本地修改
-
-主文件没有 update-url，但 URL 导入可能补回下载来源，不能仅凭远程文件没有该字段就认定不会覆盖。准备编辑「稳定节点」组、服务组或规则前：
-
-1. 在配置编辑页复制一份，给副本改一个易识别的名称，后续使用副本。
-2. 如果采用手动维护副本，进入「设置」→ 更新中的「配置」，关闭自动后台更新。**这是全局开关**，影响其他配置及其引用资源的后台更新；节点订阅设置独立。
-3. 不对自定义副本执行整份更新或重新导入覆盖。刷新规则用「使用配置／编译配置」；新版改变分组结构时，另行导入并重新设置成员。
-
-复制、改名本身不保证防覆盖；按实际版本检查本地更新地址和开关。更新行为可查阅上方社区手册。
-
-### Mihomo 的本地修改
-
-节点绑定和稳定候选放在持久扩展／覆写中，主 YAML 更新后核对合并结果。Clash Verge Rev 的列表字段整体替换；应用全局设置也可能覆盖配置。不要把节点凭据写入公开文件，不靠临时运行配置保存长期设置。
-
-主文件更新间隔由客户端管理，GitHub Raw 没有本项目专用的客户端自动更新响应头。provider 的 24 小时周期不能替代主文件更新。
-
-### 仓库版本与缓存
-
-MetaCubeX 规则在构建时固定版本，经完整性和适配检查后生成本仓库的分类文件，客户端不直接读取不兼容的上游格式。规则快照定期校验，通用产物通过验证后自动发布；校验或发布失败时继续使用最后已发布版本。定期拉取不会让尚未发布的上游变更自动出现。
-
-Raw 或客户端缓存可能返回旧内容。`manifest.json` 记录来源提交和规则 SHA-256；只更新分类时，主文件更新时间不一定变化。旧设备的配置地址不会自动迁移到这里。
-
-## 常见问题
-
-| 现象 | 先检查 |
+| 目录 | 内容 |
 | --- | --- |
-| 下载失败、规则一直加载 | Raw 是否可访问，下载日志和规则资源加载数；Mihomo 规则经 DIRECT 下载 |
-| 导入后没有节点 | 小火箭检查首页订阅；Mihomo 检查持久扩展 provider，而非另一份订阅卡片 |
-| AI / Google 被拒绝 | 「稳定节点」组是否仍为 REJECT 或为空，节点名称是否匹配 |
-| 地区组／「自动切换」组为空 | 备注是否匹配关键词，订阅是否加载；只带旗帜的备注未必匹配 |
-| 首页换节点，服务出口没变 | 先确认使用 select；fallback／hybrid 仍由显式分组控制出口 |
-| 延迟正常，Claude 仍报地区不可用 | 规则命中、实际出口 IP 和服务限制；通用连通性不代表目标服务可用 |
-| 自己添加的成员消失 | 是否覆盖了主配置，设置是否放在持久副本／扩展中 |
-| 切换模式后设置不见 | 每份主配置独立设置，检查当前文件与对应扩展 |
-| 想让一个服务走指定地区 | 先把地区组加入服务候选，再选择；不能直接选未声明的候选 |
-| 语音、直播或部分 App 不通 | UDP 443、STUN 限制及节点 UDP 能力，依据连接日志判断 |
+| [data/services](data/services) | 全量服务、公司及服务子集，如 [Netflix](data/services/netflix)、[Google](data/services/google)、[IBKR](data/services/ibkr)、[BBAE](data/services/bbae) |
+| [data/groups](data/groups) | 上游分类、通用集合与项目聚合组，如 [金融](data/groups/category-finance)、[AI](data/groups/ai) |
+| [rule/Mihomo](rule/Mihomo) | 服务、聚合和配置专用的 YAML 规则 |
+| [rule/Shadowrocket](rule/Shadowrocket) | 服务、聚合和配置专用的 RULE-SET 文件 |
+| [config/Mihomo](config/Mihomo) | 完整配置和导入链接 |
+| [config/Shadowrocket](config/Shadowrocket) | 完整配置 |
 
-## 来源、兼容性与验证
+完整配置直接引用 `rule/` 链接。内容一致时共用服务或聚合规则，过滤广告属性、DNS 专用格式及已审阅的正则转换等差异版本放在相应客户端的 `variants/`，使用的格式、规则数及文件摘要记录在构建清单中。
 
-唯一直接规则上游为 [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) 完整版，使用完整 geosite classical 与 geoip 分类，不使用 geo-lite。MetaCubeX 聚合多份社区数据，来源和许可见 [第三方说明](THIRD_PARTY_NOTICES.md)。配置策略由本项目维护。
+聚合文件通过 `include:` 引用成员，路径以 `data/` 为起点，例如 `include:services/ibkr`。上游分类继承成员关系和属性筛选，成员引用解析到同一份服务数据及其本地增补。上游直接定义且归属未确认的规则保留在原组。客户端产物在构建时展开并去重。具体匹配规则每行一条，普通域名表示后缀匹配，`full:` 表示精确域名，`keyword:` 和 `regexp:` 分别表示关键词和正则，`@` 保留上游属性。项目服务也可以定义 `ip-cidr:`、`ip-cidr6:` 和 `ip-asn:`，聚合组继承成员的全部匹配条件。完整配置分别决定出口、顺序和 `no-resolve`。独立规则集含 ASN 时，Mihomo 需要可用的 ASN 数据库。Shadowrocket 独立规则集遇到未经验证的域名正则时，索引和清单标为不可用，对应规则仍完整保存在纯文本和 Mihomo 产物中。
 
-Mihomo 保留原生域名正则；小火箭使用明确列出的客户端适配，少数通配替代范围更宽。来源版本、完整性与差异见 [manifest.json](manifest.json)，未知规则或未审查的适配会阻止构建，不静默删规则。
-
-已有验证覆盖生成、规则完整性、Mihomo 原生加载、无缓存域名解析／HTTP 下载及测试节点绑定。小火箭真机导入、Clash 一键唤起和持久扩展界面、实际 App 访问仍需设备验收。
+[构建清单](manifest.json)记录上游版本、规则摘要、补充条目和与 MetaCubeX 的差异。[第三方来源与许可](THIRD_PARTY_NOTICES.md)记录数据归属。可把规则 URL 中的 `main` 换成公开仓库的完整提交 SHA，以固定规则版本。

@@ -1,0 +1,15 @@
+include:services/comodo
+include:services/drweb
+include:services/eset
+include:services/kaspersky
+include:services/symantec
+
+avast.com
+avg.com
+avira.com
+bitdefender.com
+clamwin.com
+f-secure.com
+mcafee.com
+norton.com
+pandasecurity.com

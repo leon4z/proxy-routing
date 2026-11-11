@@ -1,0 +1,10 @@
+include:services/autoru
+include:services/avito
+include:services/cian
+include:services/flowwow
+include:services/funpay
+include:services/ozon
+include:services/wildberries
+
+drom.ru
+rdrom.ru

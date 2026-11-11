@@ -1,0 +1,34 @@
+include:groups/category-ads
+include:services/addthis
+include:services/adjust
+include:services/clearbit
+include:services/growingio
+include:services/ogury
+include:services/openx
+include:services/pubmatic
+include:services/segment
+include:services/sentry
+include:services/supersonic
+include:services/taboola
+
+1rx.io @ads
+7box.vip @ads
+ad-delivery.net @ads
+adcolony.com @ads
+adinplay.com @ads
+adnxs.com @ads
+advertserve.com @ads
+adview.cn @ads
+casalemedia.com @ads
+contextual.media.net @ads
+cpmstar.com @ads
+httpool.com @ads
+lijit.com @ads
+mfadsrvr.com @ads
+mgid.com @ads
+ns1p.net @ads
+sigmob.cn @ads
+sigmob.com @ads
+spotxchange.com @ads
+unimhk.com @ads
+upapi.net @ads

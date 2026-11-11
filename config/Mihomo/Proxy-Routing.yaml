@@ -1,0 +1,786 @@
+"mixed-port": 7890
+"allow-lan": false
+"mode": "rule"
+"ipv6": false
+"log-level": "info"
+"dns":
+  "enable": true
+  "listen": "127.0.0.1:1053"
+  "ipv6": false
+  "enhanced-mode": "fake-ip"
+  "fake-ip-range": "198.18.0.1/16"
+  "respect-rules": true
+  "default-nameserver":
+    - "223.5.5.5"
+    - "119.29.29.29"
+  "proxy-server-nameserver":
+    - "tls://223.5.5.5:853"
+    - "https://doh.pub/dns-query"
+  "nameserver":
+    - "https://1.1.1.1/dns-query"
+    - "https://8.8.8.8/dns-query"
+  "nameserver-policy":
+    "rule-set:dns-site-cn,dns-site-private":
+      - "tls://223.5.5.5:853"
+      - "https://doh.pub/dns-query"
+    "ecomuser.snssdk.com":
+      - "tls://223.5.5.5:853"
+      - "https://doh.pub/dns-query"
+    "is.snssdk.com":
+      - "tls://223.5.5.5:853"
+      - "https://doh.pub/dns-query"
+  "fake-ip-filter":
+    - "*.lan"
+    - "*.local"
+    - "localhost"
+    - "+.pool.ntp.org"
+    - "time.*.com"
+    - "ntp.*.com"
+    - "msftconnecttest.com"
+    - "msftncsi.com"
+"proxy-providers": {}
+"proxies": []
+"proxy-groups":
+  -
+    "name": "默认代理"
+    "type": "select"
+    "proxies":
+      - "全部节点"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "韩国节点"
+      - "美国节点"
+      - "其他地区"
+      - "REJECT"
+    "default-selected": "全部节点"
+  -
+    "name": "AI"
+    "type": "select"
+    "proxies":
+      - "默认代理"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "韩国节点"
+      - "美国节点"
+      - "其他地区"
+      - "全部节点"
+      - "DIRECT"
+      - "REJECT"
+    "default-selected": "默认代理"
+  -
+    "name": "OpenAI"
+    "type": "select"
+    "proxies":
+      - "AI"
+      - "默认代理"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "韩国节点"
+      - "美国节点"
+      - "其他地区"
+      - "全部节点"
+      - "DIRECT"
+      - "REJECT"
+    "default-selected": "AI"
+  -
+    "name": "Claude"
+    "type": "select"
+    "proxies":
+      - "AI"
+      - "默认代理"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "韩国节点"
+      - "美国节点"
+      - "其他地区"
+      - "全部节点"
+      - "DIRECT"
+      - "REJECT"
+    "default-selected": "AI"
+  -
+    "name": "Google"
+    "type": "select"
+    "proxies":
+      - "默认代理"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "韩国节点"
+      - "美国节点"
+      - "其他地区"
+      - "全部节点"
+      - "DIRECT"
+      - "REJECT"
+    "default-selected": "默认代理"
+  -
+    "name": "影音社交"
+    "type": "select"
+    "proxies":
+      - "默认代理"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "韩国节点"
+      - "美国节点"
+      - "其他地区"
+      - "全部节点"
+      - "DIRECT"
+      - "REJECT"
+    "default-selected": "默认代理"
+  -
+    "name": "金融"
+    "type": "select"
+    "proxies":
+      - "DIRECT"
+      - "默认代理"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "韩国节点"
+      - "美国节点"
+      - "其他地区"
+      - "全部节点"
+      - "REJECT"
+    "default-selected": "DIRECT"
+  -
+    "name": "兜底"
+    "type": "select"
+    "proxies":
+      - "默认代理"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "韩国节点"
+      - "美国节点"
+      - "其他地区"
+      - "全部节点"
+      - "DIRECT"
+      - "REJECT"
+    "default-selected": "默认代理"
+  -
+    "name": "香港节点"
+    "type": "select"
+    "filter": "(?i)香港|Hong[ -]?Kong|🇭🇰|(?:^|[^a-z])(?:HK|HKG)(?:[^a-z]|$)"
+    "empty-fallback": "REJECT"
+    "include-all": true
+    "proxies":
+      - "REJECT"
+  -
+    "name": "台湾节点"
+    "type": "select"
+    "filter": "(?i)台湾|台灣|臺灣|台北|臺北|台中|臺中|新北|彰化|Taiwan|Taipei|Taichung|🇹🇼|(?:^|[^a-z])(?:TW|TWN)(?:[^a-z]|$)"
+    "empty-fallback": "REJECT"
+    "include-all": true
+    "proxies":
+      - "REJECT"
+  -
+    "name": "日本节点"
+    "type": "select"
+    "filter": "(?i)日本|东京|東京|大阪|Japan|Tokyo|Osaka|🇯🇵|(?:^|[^a-z])(?:JP|JPN)(?:[^a-z]|$)"
+    "empty-fallback": "REJECT"
+    "include-all": true
+    "proxies":
+      - "REJECT"
+  -
+    "name": "新加坡节点"
+    "type": "select"
+    "filter": "(?i)新加坡|狮城|獅城|Singapore|🇸🇬|(?:^|[^a-z])(?:SG|SGP)(?:[^a-z]|$)"
+    "empty-fallback": "REJECT"
+    "include-all": true
+    "proxies":
+      - "REJECT"
+  -
+    "name": "韩国节点"
+    "type": "select"
+    "filter": "(?i)韩国|韓國|首尔|首爾|春川|Korea|Seoul|Chuncheon|🇰🇷|(?:^|[^a-z])(?:KR|KOR)(?:[^a-z]|$)"
+    "empty-fallback": "REJECT"
+    "include-all": true
+    "proxies":
+      - "REJECT"
+  -
+    "name": "美国节点"
+    "type": "select"
+    "filter": "(?i)美国|美國|美西|美东|美東|洛杉矶|洛杉磯|西雅图|西雅圖|纽约|紐約|芝加哥|凤凰城|鳳凰城|圣何塞|聖荷西|United[ -]?States|Los[ -]?Angeles|San[ -]?Jose|Seattle|New[ -]?York|Chicago|Phoenix|🇺🇸|(?:^|[^a-z])USA?(?:[^a-z]|$)"
+    "empty-fallback": "REJECT"
+    "include-all": true
+    "proxies":
+      - "REJECT"
+  -
+    "name": "其他地区"
+    "type": "select"
+    "filter": ".*"
+    "empty-fallback": "REJECT"
+    "include-all": true
+    "proxies":
+      - "REJECT"
+    "exclude-filter": "(?i)香港|Hong[ -]?Kong|🇭🇰|(?:^|[^a-z])(?:HK|HKG)(?:[^a-z]|$)|台湾|台灣|臺灣|台北|臺北|台中|臺中|新北|彰化|Taiwan|Taipei|Taichung|🇹🇼|(?:^|[^a-z])(?:TW|TWN)(?:[^a-z]|$)|日本|东京|東京|大阪|Japan|Tokyo|Osaka|🇯🇵|(?:^|[^a-z])(?:JP|JPN)(?:[^a-z]|$)|新加坡|狮城|獅城|Singapore|🇸🇬|(?:^|[^a-z])(?:SG|SGP)(?:[^a-z]|$)|韩国|韓國|首尔|首爾|春川|Korea|Seoul|Chuncheon|🇰🇷|(?:^|[^a-z])(?:KR|KOR)(?:[^a-z]|$)|美国|美國|美西|美东|美東|洛杉矶|洛杉磯|西雅图|西雅圖|纽约|紐約|芝加哥|凤凰城|鳳凰城|圣何塞|聖荷西|United[ -]?States|Los[ -]?Angeles|San[ -]?Jose|Seattle|New[ -]?York|Chicago|Phoenix|🇺🇸|(?:^|[^a-z])USA?(?:[^a-z]|$)"
+  -
+    "name": "全部节点"
+    "type": "select"
+    "filter": ".*"
+    "empty-fallback": "REJECT"
+    "include-all": true
+    "proxies":
+      - "REJECT"
+"rule-providers":
+  "site-category-ads-all":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-category-ads-all.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-ads-all.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-private":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-private.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-private.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "ip-private":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-private.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-private.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-claude":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-claude.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/service-claude.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-openai":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-openai.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/service-openai.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "category-finance":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/category-finance.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/category-finance.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-cn":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-oracle":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-oracle.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-oracle.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "category-ai":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/category-ai.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/category-ai.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-category-ai-!cn":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-category-ai-!cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-ai-!cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-anthropic":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-anthropic.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-anthropic.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-openai":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-openai.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-openai.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-google-gemini":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-google-gemini.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-google-gemini.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-github-copilot":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-github-copilot.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-github-copilot.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-cursor":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-cursor.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/cursor.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-youtube":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-youtube.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-youtube.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-netflix":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-netflix.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-netflix.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-disney":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-disney.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-disney.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-hbo":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-hbo.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-hbo.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-spotify":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-spotify.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-spotify.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-telegram":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-telegram.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/telegram.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-paypal":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-paypal.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-paypal.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-twitter":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-twitter.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-twitter.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-facebook":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-facebook.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-facebook.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-amazon":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-amazon.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-amazon.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-sony":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-sony.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-sony.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-nintendo":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-nintendo.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-nintendo.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-epicgames":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-epicgames.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-epicgames.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-steam@cn":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-steam@cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-steam@cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-steam":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-steam.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-steam.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-category-games":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-category-games.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-games.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-github":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-github.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-github.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-microsoft":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-microsoft.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-microsoft.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-google":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-google.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-google.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-apple":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-apple.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-apple.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-bilibili":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-bilibili.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-bilibili.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-netease":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-netease.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-netease.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-baidu":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-baidu.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-baidu.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-douban":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-douban.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/douban.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-tencent":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-tencent.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-tencent.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-sina":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-sina.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-sina.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-zhihu":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-zhihu.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/zhihu.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-xiaohongshu":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-xiaohongshu.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-xiaohongshu.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-douyin":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-douyin.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-douyin.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-tiktok":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-tiktok.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/tiktok.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "ip-telegram":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-telegram.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-telegram.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "ip-facebook":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-facebook.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-facebook.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "ip-twitter":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-twitter.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-twitter.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "ip-google":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-google.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-google.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "ip-cn":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-gemini":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-gemini.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/gemini.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-copilot":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-copilot.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/copilot.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-cursor":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-cursor.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/cursor.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-ibkr":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-ibkr.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/ibkr.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-bbae":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-bbae.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/bbae.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-geolocation-!cn":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-geolocation-!cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-geolocation-!cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "dns-site-cn":
+    "type": "http"
+    "behavior": "domain"
+    "format": "yaml"
+    "path": "./rules/dns-site-cn.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/dns-site-cn.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "dns-site-private":
+    "type": "http"
+    "behavior": "domain"
+    "format": "yaml"
+    "path": "./rules/dns-site-private.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/dns-site-private.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+"rules":
+  - "DOMAIN-KEYWORD,stun,REJECT"
+  - "AND,((NETWORK,udp),(DST-PORT,3478)),REJECT"
+  - "RULE-SET,site-category-ads-all,REJECT"
+  - "AND,((NETWORK,udp),(DST-PORT,443),(OR,((RULE-SET,service-claude),(RULE-SET,category-ai),(RULE-SET,site-google),(RULE-SET,ip-google,no-resolve),(DOMAIN-SUFFIX,claude.app),(DOMAIN-SUFFIX,cursorvm.com)))),REJECT"
+  - "AND,((NETWORK,udp),(DST-PORT,443),(OR,((DOMAIN,ecomuser.snssdk.com),(DOMAIN,is.snssdk.com),(RULE-SET,site-cn),(RULE-SET,site-bilibili),(RULE-SET,site-netease),(RULE-SET,site-baidu),(RULE-SET,site-douban),(RULE-SET,site-tencent),(RULE-SET,site-sina),(RULE-SET,site-zhihu),(RULE-SET,site-xiaohongshu),(RULE-SET,site-douyin),(RULE-SET,ip-cn)))),DIRECT"
+  - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
+  - "DOMAIN,ecomuser.snssdk.com,DIRECT"
+  - "DOMAIN,is.snssdk.com,DIRECT"
+  - "DOMAIN-SUFFIX,cursorvm.com,AI"
+  - "DOMAIN-SUFFIX,oraclecloudapps.com,DIRECT"
+  - "DOMAIN,oracle.sc.omtrdc.net,DIRECT"
+  - "DOMAIN-SUFFIX,duolingo.com,DIRECT"
+  - "DOMAIN-SUFFIX,duolingo.cn,DIRECT"
+  - "RULE-SET,site-private,DIRECT"
+  - "RULE-SET,ip-private,DIRECT,no-resolve"
+  - "RULE-SET,service-claude,Claude"
+  - "IP-CIDR,160.79.104.0/21,Claude,no-resolve"
+  - "IP-CIDR6,2607:6bc0::/32,Claude,no-resolve"
+  - "IP-ASN,399358,Claude,no-resolve"
+  - "RULE-SET,service-openai,OpenAI"
+  - "RULE-SET,category-finance,金融"
+  - "RULE-SET,site-cn,DIRECT"
+  - "RULE-SET,site-oracle,DIRECT"
+  - "RULE-SET,category-ai,AI"
+  - "IP-CIDR,160.79.104.0/21,AI,no-resolve"
+  - "IP-CIDR6,2607:6bc0::/32,AI,no-resolve"
+  - "IP-ASN,399358,AI,no-resolve"
+  - "RULE-SET,site-youtube,影音社交"
+  - "RULE-SET,site-netflix,影音社交"
+  - "RULE-SET,site-disney,影音社交"
+  - "RULE-SET,site-hbo,影音社交"
+  - "RULE-SET,site-spotify,影音社交"
+  - "RULE-SET,site-telegram,影音社交"
+  - "RULE-SET,site-paypal,DIRECT"
+  - "RULE-SET,site-twitter,影音社交"
+  - "RULE-SET,site-facebook,影音社交"
+  - "RULE-SET,site-amazon,DIRECT"
+  - "RULE-SET,site-sony,DIRECT"
+  - "RULE-SET,site-nintendo,DIRECT"
+  - "RULE-SET,site-epicgames,DIRECT"
+  - "RULE-SET,site-steam@cn,DIRECT"
+  - "RULE-SET,site-steam,DIRECT"
+  - "RULE-SET,site-category-games,DIRECT"
+  - "RULE-SET,site-github,默认代理"
+  - "RULE-SET,site-microsoft,DIRECT"
+  - "RULE-SET,site-google,Google"
+  - "RULE-SET,site-apple,DIRECT"
+  - "RULE-SET,site-bilibili,DIRECT"
+  - "RULE-SET,site-netease,DIRECT"
+  - "RULE-SET,site-baidu,DIRECT"
+  - "RULE-SET,site-douban,DIRECT"
+  - "RULE-SET,site-tencent,DIRECT"
+  - "RULE-SET,site-sina,DIRECT"
+  - "RULE-SET,site-zhihu,DIRECT"
+  - "RULE-SET,site-xiaohongshu,DIRECT"
+  - "RULE-SET,site-douyin,DIRECT"
+  - "RULE-SET,site-tiktok,影音社交"
+  - "RULE-SET,ip-telegram,影音社交,no-resolve"
+  - "RULE-SET,ip-facebook,影音社交,no-resolve"
+  - "RULE-SET,ip-twitter,影音社交,no-resolve"
+  - "RULE-SET,ip-google,Google,no-resolve"
+  - "RULE-SET,ip-cn,DIRECT"
+  - "RULE-SET,site-geolocation-!cn,兜底"
+  - "MATCH,兜底"
+"profile":
+  "store-selected": true
+  "store-fake-ip": true
+"sniffer":
+  "enable": true
+  "override-destination": false
+  "force-dns-mapping": true
+  "parse-pure-ip": true
+  "sniff":
+    "HTTP":
+      "ports":
+        - 80
+        - "8080-8880"
+    "TLS":
+      "ports":
+        - 443
+        - "8443"
+    "QUIC":
+      "ports":
+        - 443
