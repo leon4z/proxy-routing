@@ -15,9 +15,9 @@ include:services/standardchartered
 include:services/stripe
 include:services/wise
 include:services/bbae
+include:services/tradingview
+include:services/mql5
 
 firstrade.com
 fxcorporate.com
 jivara.global
-mql5.com
-tradingview.com

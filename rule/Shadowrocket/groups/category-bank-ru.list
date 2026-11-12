@@ -197,7 +197,6 @@ DOMAIN-SUFFIX,sbibankllc.ru
 DOMAIN-SUFFIX,sdm.ru
 DOMAIN-SUFFIX,seb.ru
 DOMAIN-SUFFIX,selkombank.ru
-DOMAIN-SUFFIX,sevnb.ru
 DOMAIN-SUFFIX,sibsoc.ru
 DOMAIN-SUFFIX,sinara.ru
 DOMAIN-SUFFIX,slavbank.ru
@@ -214,7 +213,6 @@ DOMAIN-SUFFIX,timerbank.ru
 DOMAIN-SUFFIX,toyota-bank.ru
 DOMAIN-SUFFIX,ubrr.ru
 DOMAIN-SUFFIX,united.ru
-DOMAIN-SUFFIX,uralfd.ru
 DOMAIN-SUFFIX,uralprombank.ru
 DOMAIN-SUFFIX,uralsib.ru
 DOMAIN-SUFFIX,vbrr.ru
@@ -354,3 +352,5 @@ DOMAIN-SUFFIX,prodcontest.com
 DOMAIN-SUFFIX,tinkoff-edu.ru
 DOMAIN,edu.tinkoff.ru
 DOMAIN,education.tbank.ru
+DOMAIN-SUFFIX,sevnb.ru
+DOMAIN-SUFFIX,uralfd.ru

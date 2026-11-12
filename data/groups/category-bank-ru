@@ -1,5 +1,7 @@
 include:services/sberbank
 include:services/tbank-ru
+include:services/sevnb
+include:services/uralfd
 
 alfa.me
 alfabank.ru
@@ -200,7 +202,6 @@ sbibankllc.ru
 sdm.ru
 seb.ru
 selkombank.ru
-sevnb.ru
 sibsoc.ru
 sinara.ru
 slavbank.ru
@@ -217,7 +218,6 @@ timerbank.ru
 toyota-bank.ru
 ubrr.ru
 united.ru
-uralfd.ru
 uralprombank.ru
 uralsib.ru
 vbrr.ru

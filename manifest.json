@@ -15,14 +15,17 @@
     "claudemcpcontent.com": "Claude",
     "chatgpt.com": "OpenAI",
     "gemini.google.com": "AI",
-    "ibkr.com.cn": "金融",
-    "bbae.com": "金融",
-    "futunn.com": "金融"
+    "ibkr.com.cn": "金融·直连",
+    "bbae.com": "金融·直连",
+    "futunn.com": "金融·直连",
+    "moomoo.com": "金融·代理",
+    "futusg.com": "金融·代理",
+    "api-gl.lbkrs.com": "金融·代理"
   },
   "outputs": {
     "config/Mihomo": {
-      "rules": 165621,
-      "groups": 17,
+      "rules": 165689,
+      "groups": 18,
       "inventory_bound": false,
       "regex": 174,
       "remote_rule_sets": [
@@ -75,10 +78,18 @@
           "rules": 21
         },
         {
+          "id": "category-finance-proxy",
+          "path": "rule/Mihomo/groups/finance-proxy.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/groups/finance-proxy.yaml",
+          "sha256": "ae3b3587f3659296787796cc12397fa3d2118df6c572c3f13142bdca3149b6c1",
+          "behavior": "classical",
+          "rules": 31
+        },
+        {
           "id": "category-finance",
           "path": "rule/Mihomo/variants/category-finance.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/category-finance.yaml",
-          "sha256": "6dc6328cb298aeef245def9dd1d462a809468cd319d66d13bbcc20fc119f5f8d",
+          "sha256": "02e78e1a72b01f9e796dac20bdd907cc6c66e33a49c436ebe66bc630f8c81e3e",
           "behavior": "classical",
           "rules": 663
         },
@@ -515,6 +526,78 @@
           "rules": 27
         },
         {
+          "id": "service-futu-niuniu",
+          "path": "rule/Mihomo/services/futu-niuniu.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/futu-niuniu.yaml",
+          "sha256": "fc25b3acebf6a61f9aae205f37e068d004dfbcbfe5c7dac07007a3ecd9bb8ac0",
+          "behavior": "classical",
+          "rules": 6
+        },
+        {
+          "id": "service-moomoo",
+          "path": "rule/Mihomo/services/moomoo.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/moomoo.yaml",
+          "sha256": "83b4955811deccec0630c8b04c7651268b15838019113252947a1cab3fee1a9d",
+          "behavior": "classical",
+          "rules": 5
+        },
+        {
+          "id": "service-tradingview",
+          "path": "rule/Mihomo/services/tradingview.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/tradingview.yaml",
+          "sha256": "aaedb65a6551a2d3cb984492a74aaa764851712cd6bb05225a990da5e9c0d498",
+          "behavior": "classical",
+          "rules": 1
+        },
+        {
+          "id": "service-mql5",
+          "path": "rule/Mihomo/services/mql5.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/mql5.yaml",
+          "sha256": "e9cf9aa8b5b11bf3d4725d640f9b158071924923da9c53c883608a658b3d3034",
+          "behavior": "classical",
+          "rules": 1
+        },
+        {
+          "id": "service-ayabank",
+          "path": "rule/Mihomo/services/ayabank.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/ayabank.yaml",
+          "sha256": "0a26c36071571140163a0c2b5e4d724e0423189736812f82734f711538c7df1f",
+          "behavior": "classical",
+          "rules": 1
+        },
+        {
+          "id": "service-sevnb",
+          "path": "rule/Mihomo/services/sevnb.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/sevnb.yaml",
+          "sha256": "1860d074716c2ddc156e17c630ac5da5225e774d974498bf21cf8a27d171e203",
+          "behavior": "classical",
+          "rules": 1
+        },
+        {
+          "id": "service-uralfd",
+          "path": "rule/Mihomo/services/uralfd.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/uralfd.yaml",
+          "sha256": "64df9169c0e41d81399045b862094d67870c7fe06d5088ed36782dae058b3801",
+          "behavior": "classical",
+          "rules": 1
+        },
+        {
+          "id": "service-longbridge",
+          "path": "rule/Mihomo/services/longbridge.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/longbridge.yaml",
+          "sha256": "17fb140ea892978780cfb0192721d9bc5fa2bf3e76b333e54f3788fbaee47aa6",
+          "behavior": "classical",
+          "rules": 12
+        },
+        {
+          "id": "service-itiger",
+          "path": "rule/Mihomo/services/itiger.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/itiger.yaml",
+          "sha256": "773ee5f02d270b8d73432cd90e18dcedb33efcd263ed7df23cdb41631734de59",
+          "behavior": "classical",
+          "rules": 9
+        },
+        {
           "id": "site-geolocation-!cn",
           "path": "rule/Mihomo/variants/site-geolocation-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-geolocation-!cn.yaml",
@@ -540,12 +623,12 @@
         }
       ],
       "config_path": "config/Mihomo/Proxy-Routing.yaml",
-      "config_sha256": "6bf861abefbc122a65aef87ee89350255f179158021646b794d8240ce7079fec"
+      "config_sha256": "4c7ab75e9fc2e8e2d427f5a2dda21de6c3d84eac0499aa9e1261b03415307be9"
     },
     "config/Shadowrocket": {
-      "rules": 166527,
-      "config_rules": 67,
-      "groups": 17,
+      "rules": 166595,
+      "config_rules": 68,
+      "groups": 18,
       "remote_rule_sets": [
         {
           "id": "site-category-ads-all",
@@ -596,11 +679,19 @@
           "rules": 21
         },
         {
+          "id": "category-finance-proxy",
+          "path": "rule/Shadowrocket/groups/finance-proxy.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/groups/finance-proxy.list",
+          "sha256": "2a711c850b353c6cdc507fe00c660abf1a5178343f20848a820048d6432fa30b",
+          "policy": "金融·代理",
+          "rules": 31
+        },
+        {
           "id": "category-finance",
           "path": "rule/Shadowrocket/variants/category-finance.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/category-finance.list",
-          "sha256": "9f2507ef90d9445a44f910af1279b68bf24675e8df74b1e4e17e1f44439dfafe",
-          "policy": "金融",
+          "sha256": "af9f498e9da7dc9d371fbfea49b33ca5de740e90da81dec9b6ed2597ac284008",
+          "policy": "金融·直连",
           "rules": 663
         },
         {
@@ -1034,6 +1125,78 @@
           "sha256": "316ad4be828ccca83993acbcdf483024fa6210c30d882bf9236581c8908eac2e",
           "policy": "默认代理",
           "rules": 27
+        },
+        {
+          "id": "service-futu-niuniu",
+          "path": "rule/Shadowrocket/services/futu-niuniu.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/futu-niuniu.list",
+          "sha256": "ecd379252c9ea7e39278eacba2e89640c77c4236d8a5133ed6883d24061c8049",
+          "policy": "默认代理",
+          "rules": 6
+        },
+        {
+          "id": "service-moomoo",
+          "path": "rule/Shadowrocket/services/moomoo.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/moomoo.list",
+          "sha256": "ed685fa30a2a9b2387743c3e983167999a9c529d45bb0b4440f6edf7741fc6b0",
+          "policy": "默认代理",
+          "rules": 5
+        },
+        {
+          "id": "service-tradingview",
+          "path": "rule/Shadowrocket/services/tradingview.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/tradingview.list",
+          "sha256": "0aac0d3a6e2a0b3f8a15e830ce01d4e8eed618ed25257e3dbcf54bfc3752c6f9",
+          "policy": "默认代理",
+          "rules": 1
+        },
+        {
+          "id": "service-mql5",
+          "path": "rule/Shadowrocket/services/mql5.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/mql5.list",
+          "sha256": "c43e2d117d97d958fa4f468b7f6f41e77c2ed1fd0eebbf903f2c6934c28df8b2",
+          "policy": "默认代理",
+          "rules": 1
+        },
+        {
+          "id": "service-ayabank",
+          "path": "rule/Shadowrocket/services/ayabank.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/ayabank.list",
+          "sha256": "efa5cd466e80eb1e6139467aa5c9a3eb1968b082fa370231ffe1f7a9c3108883",
+          "policy": "默认代理",
+          "rules": 1
+        },
+        {
+          "id": "service-sevnb",
+          "path": "rule/Shadowrocket/services/sevnb.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/sevnb.list",
+          "sha256": "8088abd091c20d10eb0979382022f28b36c02f260c52a87b326a4de343d5f0b9",
+          "policy": "默认代理",
+          "rules": 1
+        },
+        {
+          "id": "service-uralfd",
+          "path": "rule/Shadowrocket/services/uralfd.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/uralfd.list",
+          "sha256": "f7ec201b331421ebf41dad98729cfb528c876c8326d4dc7c2bc7dfc7f026b1c5",
+          "policy": "默认代理",
+          "rules": 1
+        },
+        {
+          "id": "service-longbridge",
+          "path": "rule/Shadowrocket/services/longbridge.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/longbridge.list",
+          "sha256": "7b67fb7bf12d4112c6acb6b358fcd69cdc179966fe2b40542e1b527e09fdb090",
+          "policy": "默认代理",
+          "rules": 12
+        },
+        {
+          "id": "service-itiger",
+          "path": "rule/Shadowrocket/services/itiger.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/itiger.list",
+          "sha256": "3a74fd474f4769594459bd71ca161b184ec42107741e581cbc7f614249cbd03f",
+          "policy": "默认代理",
+          "rules": 9
         },
         {
           "id": "site-geolocation-!cn",
@@ -3043,7 +3206,7 @@
         }
       ],
       "config_path": "config/Shadowrocket/Proxy-Routing.conf",
-      "config_sha256": "b12fee2a3c618e997460ec1238c33cd6782800005a11358756b265c5b806b5de"
+      "config_sha256": "cc8d5e0fe3163b1af555ffb913d6287bb1ade50cca32dbc13cce14e485ea17cb"
     }
   },
   "service_rules": {
@@ -3352,6 +3515,161 @@
         "library_key": "services/oracle",
         "rules": 27
       },
+      "service-futu-niuniu": {
+        "upstream": "futu",
+        "select": [
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "futunn.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Futu Securities block; https://www.futuhk.com/en/products/funds"
+          },
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "futuniuniu.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Futu Securities block; https://www.futuhk.com/en/products/funds"
+          },
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "futuhk.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Futu Securities block; https://www.futuhk.com/en/products/funds"
+          },
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "futuhk1.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Futu Securities block; https://www.futuhk.com/en/products/funds"
+          },
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "futuhk2.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Futu Securities block; https://www.futuhk.com/en/products/funds"
+          },
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "futuhkapp.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Futu Securities block; https://www.futuhk.com/en/products/funds"
+          }
+        ],
+        "library_key": "services/futu-niuniu",
+        "rules": 6
+      },
+      "service-moomoo": {
+        "upstream": "futu",
+        "select": [
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "moomoo.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Moomoo block; https://www.moomoo.com/community/feed/106418952929285 ; https://www.moomoo.com/au/hant/support/topic6_450"
+          },
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "moomooequity.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Moomoo block; https://www.moomoo.com/community/feed/106418952929285 ; https://www.moomoo.com/au/hant/support/topic6_450"
+          },
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "moomootrustee.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Moomoo block; https://www.moomoo.com/community/feed/106418952929285 ; https://www.moomoo.com/au/hant/support/topic6_450"
+          },
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "futusg.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Moomoo block; https://www.moomoo.com/community/feed/106418952929285 ; https://www.moomoo.com/au/hant/support/topic6_450"
+          },
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "futuau.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly Moomoo block; https://www.moomoo.com/community/feed/106418952929285 ; https://www.moomoo.com/au/hant/support/topic6_450"
+          }
+        ],
+        "library_key": "services/moomoo",
+        "rules": 5
+      },
+      "service-tradingview": {
+        "upstream": "category-finance",
+        "select": [
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "tradingview.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly category-finance direct entry; reviewed finance connectivity audit 2026-11-12"
+          }
+        ],
+        "library_key": "services/tradingview",
+        "rules": 1
+      },
+      "service-mql5": {
+        "upstream": "category-finance",
+        "select": [
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "mql5.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly category-finance direct entry; reviewed finance connectivity audit 2026-11-12"
+          }
+        ],
+        "library_key": "services/mql5",
+        "rules": 1
+      },
+      "service-ayabank": {
+        "upstream": "category-bank-mm",
+        "select": [
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "ayabank.com",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly category-bank-mm direct entry; reviewed finance connectivity audit 2026-11-12"
+          }
+        ],
+        "library_key": "services/ayabank",
+        "rules": 1
+      },
+      "service-sevnb": {
+        "upstream": "category-bank-ru",
+        "select": [
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "sevnb.ru",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly category-bank-ru direct entry; reviewed finance connectivity audit 2026-11-12"
+          }
+        ],
+        "library_key": "services/sevnb",
+        "rules": 1
+      },
+      "service-uralfd": {
+        "upstream": "category-bank-ru",
+        "select": [
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "uralfd.ru",
+            "reason": "Extract confirmed product/service ownership while preserving the upstream parent through include references.",
+            "source": "Pinned V2Fly category-bank-ru direct entry; reviewed finance connectivity audit 2026-11-12"
+          }
+        ],
+        "library_key": "services/uralfd",
+        "rules": 1
+      },
+      "service-longbridge": {
+        "upstream": "longbridge",
+        "library_key": "services/longbridge",
+        "rules": 12
+      },
+      "service-itiger": {
+        "upstream": "itiger",
+        "library_key": "services/itiger",
+        "rules": 9
+      },
       "category-ai": {
         "services": [
           "service-claude",
@@ -3427,6 +3745,20 @@
         ],
         "library_key": "groups/telemetry",
         "rules": 7
+      },
+      "category-finance-proxy": {
+        "services": [
+          "service-longbridge",
+          "service-itiger",
+          "service-moomoo",
+          "service-tradingview",
+          "service-mql5",
+          "service-ayabank",
+          "service-sevnb",
+          "service-uralfd"
+        ],
+        "library_key": "groups/finance-proxy",
+        "rules": 31
       }
     },
     "upstream_lists": {
@@ -6922,6 +7254,22 @@
             ]
           },
           "upstream": "aws-cn"
+        },
+        "ayabank": {
+          "data_path": "data/services/ayabank",
+          "data_sha256": "9fc2a9657976d7a6978ffaa5556b108dfd11f8fbb8612348f258ae478ce4cb9d",
+          "data_entries": 1,
+          "rules": 1,
+          "mihomo": {
+            "path": "rule/Mihomo/services/ayabank.yaml",
+            "sha256": "0a26c36071571140163a0c2b5e4d724e0423189736812f82734f711538c7df1f"
+          },
+          "shadowrocket": {
+            "status": "available",
+            "path": "rule/Shadowrocket/services/ayabank.list",
+            "sha256": "efa5cd466e80eb1e6139467aa5c9a3eb1968b082fa370231ffe1f7a9c3108883"
+          },
+          "project": "service-ayabank"
         },
         "azure": {
           "data_path": "data/services/azure",
@@ -12424,19 +12772,35 @@
         },
         "futu": {
           "data_path": "data/services/futu",
-          "data_sha256": "93089cc87f5c06cbc837a2d593b53d2d5b77c2dce244f5760f3876942d3bd78e",
+          "data_sha256": "5a5b64f059940cf5b464ef1de710752cdf15ad1911370d1ace226028e6f91603",
           "data_entries": 21,
           "rules": 21,
           "mihomo": {
             "path": "rule/Mihomo/services/futu.yaml",
-            "sha256": "4b0bd4b95025864d651dd22f6882f5b9b04461799c19fc14345890c658aea735"
+            "sha256": "3229bbdc6a1f74b68bb95fcf879baaba50aaaaf965c589742f8437746a7ae055"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/futu.list",
-            "sha256": "a528fbff3564ab539bced983253ae306a14b79fc8b07d1db7ea461cd4714efda"
+            "sha256": "909bb27aa952456c75ced5225ebe666b939a19d465a3894651a0adcfc8be9e7e"
           },
           "upstream": "futu"
+        },
+        "futu-niuniu": {
+          "data_path": "data/services/futu-niuniu",
+          "data_sha256": "5e4103bcdb6a5b99441937248ddc21667bd2c39787dc5d47dcea7f9df0933c98",
+          "data_entries": 6,
+          "rules": 6,
+          "mihomo": {
+            "path": "rule/Mihomo/services/futu-niuniu.yaml",
+            "sha256": "fc25b3acebf6a61f9aae205f37e068d004dfbcbfe5c7dac07007a3ecd9bb8ac0"
+          },
+          "shadowrocket": {
+            "status": "available",
+            "path": "rule/Shadowrocket/services/futu-niuniu.list",
+            "sha256": "ecd379252c9ea7e39278eacba2e89640c77c4236d8a5133ed6883d24061c8049"
+          },
+          "project": "service-futu-niuniu"
         },
         "fzdm": {
           "data_path": "data/services/fzdm",
@@ -15102,7 +15466,8 @@
             "path": "rule/Shadowrocket/services/itiger.list",
             "sha256": "3a74fd474f4769594459bd71ca161b184ec42107741e581cbc7f614249cbd03f"
           },
-          "upstream": "itiger"
+          "upstream": "itiger",
+          "project": "service-itiger"
         },
         "itunes": {
           "data_path": "data/services/itunes",
@@ -16962,7 +17327,8 @@
             "path": "rule/Shadowrocket/services/longbridge.list",
             "sha256": "7b67fb7bf12d4112c6acb6b358fcd69cdc179966fe2b40542e1b527e09fdb090"
           },
-          "upstream": "longbridge"
+          "upstream": "longbridge",
+          "project": "service-longbridge"
         },
         "louisvuitton": {
           "data_path": "data/services/louisvuitton",
@@ -18056,6 +18422,22 @@
           },
           "upstream": "monotype"
         },
+        "moomoo": {
+          "data_path": "data/services/moomoo",
+          "data_sha256": "41023c2120a8196177473f88862f968cf238137c7e3bfe7b7f7cb76067fa8cba",
+          "data_entries": 5,
+          "rules": 5,
+          "mihomo": {
+            "path": "rule/Mihomo/services/moomoo.yaml",
+            "sha256": "83b4955811deccec0630c8b04c7651268b15838019113252947a1cab3fee1a9d"
+          },
+          "shadowrocket": {
+            "status": "available",
+            "path": "rule/Shadowrocket/services/moomoo.list",
+            "sha256": "ed685fa30a2a9b2387743c3e983167999a9c529d45bb0b4440f6edf7741fc6b0"
+          },
+          "project": "service-moomoo"
+        },
         "moonvy": {
           "data_path": "data/services/moonvy",
           "data_sha256": "7a8a13e72ec5418c5e052576b2a9ae889cc2a2450bfe674fdedf02bdb270351d",
@@ -18183,6 +18565,22 @@
             "sha256": "393a1d1afb2a622cee1effb00f44df693ae86c908a11a02c50785e74654b11d1"
           },
           "upstream": "mozilla"
+        },
+        "mql5": {
+          "data_path": "data/services/mql5",
+          "data_sha256": "fdb60e154900c0d0cee0178c8c5df3cb2017638552ec8af2b125ea355ac9a59d",
+          "data_entries": 1,
+          "rules": 1,
+          "mihomo": {
+            "path": "rule/Mihomo/services/mql5.yaml",
+            "sha256": "e9cf9aa8b5b11bf3d4725d640f9b158071924923da9c53c883608a658b3d3034"
+          },
+          "shadowrocket": {
+            "status": "available",
+            "path": "rule/Shadowrocket/services/mql5.list",
+            "sha256": "c43e2d117d97d958fa4f468b7f6f41e77c2ed1fd0eebbf903f2c6934c28df8b2"
+          },
+          "project": "service-mql5"
         },
         "msi": {
           "data_path": "data/services/msi",
@@ -22327,6 +22725,22 @@
           },
           "upstream": "setn"
         },
+        "sevnb": {
+          "data_path": "data/services/sevnb",
+          "data_sha256": "ab6f47ffcc5816cf5dd4d3d672a674e25fa3e90e2d18af3a050e07f6ab8dafaa",
+          "data_entries": 1,
+          "rules": 1,
+          "mihomo": {
+            "path": "rule/Mihomo/services/sevnb.yaml",
+            "sha256": "1860d074716c2ddc156e17c630ac5da5225e774d974498bf21cf8a27d171e203"
+          },
+          "shadowrocket": {
+            "status": "available",
+            "path": "rule/Shadowrocket/services/sevnb.list",
+            "sha256": "8088abd091c20d10eb0979382022f28b36c02f260c52a87b326a4de343d5f0b9"
+          },
+          "project": "service-sevnb"
+        },
         "sf-express": {
           "data_path": "data/services/sf-express",
           "data_sha256": "5cbe8b0d77eecf43f46a7c75b9fd72f41f7efbdec3ac76c113df5cdb340902a2",
@@ -24809,6 +25223,22 @@
           },
           "upstream": "trackernetwork"
         },
+        "tradingview": {
+          "data_path": "data/services/tradingview",
+          "data_sha256": "b2da460a498ad1dd468cc61410deadf92eb7643effdfcbd408eaed041665138a",
+          "data_entries": 1,
+          "rules": 1,
+          "mihomo": {
+            "path": "rule/Mihomo/services/tradingview.yaml",
+            "sha256": "aaedb65a6551a2d3cb984492a74aaa764851712cd6bb05225a990da5e9c0d498"
+          },
+          "shadowrocket": {
+            "status": "available",
+            "path": "rule/Shadowrocket/services/tradingview.list",
+            "sha256": "0aac0d3a6e2a0b3f8a15e830ce01d4e8eed618ed25257e3dbcf54bfc3752c6f9"
+          },
+          "project": "service-tradingview"
+        },
         "trae": {
           "data_path": "data/services/trae",
           "data_sha256": "aed061780f2f676c321c7e0805cb0c3253a56ccd85ee2240718ca341d4f02d2e",
@@ -25448,6 +25878,22 @@
             "sha256": "816f27805e6bb103bd0c61211ccd2aef8721c31184d0a2124fb476fbcc0b97a7"
           },
           "upstream": "upai"
+        },
+        "uralfd": {
+          "data_path": "data/services/uralfd",
+          "data_sha256": "23395f25cb3a37875d8adea03a2e24832a2c2a889ff7a7fcec96fd58490d207c",
+          "data_entries": 1,
+          "rules": 1,
+          "mihomo": {
+            "path": "rule/Mihomo/services/uralfd.yaml",
+            "sha256": "64df9169c0e41d81399045b862094d67870c7fe06d5088ed36782dae058b3801"
+          },
+          "shadowrocket": {
+            "status": "available",
+            "path": "rule/Shadowrocket/services/uralfd.list",
+            "sha256": "f7ec201b331421ebf41dad98729cfb528c876c8326d4dc7c2bc7dfc7f026b1c5"
+          },
+          "project": "service-uralfd"
         },
         "usersdrive": {
           "data_path": "data/services/usersdrive",
@@ -28173,33 +28619,33 @@
         },
         "category-bank-mm": {
           "data_path": "data/groups/category-bank-mm",
-          "data_sha256": "d350750085ac9193776e0fce81824873d56a22a1d839471177f24dfc063c1a7a",
+          "data_sha256": "65583c9a3126fa61e15417a308539f72502efd29cebf7a6cb299d6d5240353dc",
           "data_entries": 30,
           "rules": 30,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-bank-mm.yaml",
-            "sha256": "c32290b8fbf5d5e24bf5bc5a3d2dceb183d2f87eb2ff162dd6c88d84b4c67d7c"
+            "sha256": "92b6ecb89886d5c07b31429c1aff3167714076991752e45e964b325ab010128f"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-bank-mm.list",
-            "sha256": "0aa8570c96866183a8c01229cb578633a7531c73cd89120c66c3f76c75c98d89"
+            "sha256": "bad0f827e00de76add772a00f96fe7828e83f6cbbab9b97aa52d9d0819963b01"
           },
           "upstream": "category-bank-mm"
         },
         "category-bank-ru": {
           "data_path": "data/groups/category-bank-ru",
-          "data_sha256": "6a923dad225bac7d36f5b6979adc18be51babc078207324f8f48eb44496522ad",
+          "data_sha256": "47900428f9154a74181a7cfe7ce09cddfa3aaa78f8645ea4fcfe8fdc35d19ff4",
           "data_entries": 356,
           "rules": 356,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-bank-ru.yaml",
-            "sha256": "8e8994b540dbb482613dbffcf5a9195db4a1abd21902ca7bbc0358e3a14b9885"
+            "sha256": "414999d74af1c64d94e67fd62a1993002004f736b581e3e7b7ae413076224213"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-bank-ru.list",
-            "sha256": "44d3d093382c6a1bb07e766ad0a9ca180100606a42bfa1f28e8eaca2cc7e5037"
+            "sha256": "9c8bb0ff90b1d415a551e63ff88527129da94d55fdcb8e292626bb80861b3ff2"
           },
           "upstream": "category-bank-ru"
         },
@@ -28709,17 +29155,17 @@
         },
         "category-finance": {
           "data_path": "data/groups/category-finance",
-          "data_sha256": "65e076e1e4eb401b0b4141f5f22d5bc4af77604b08acbd6750ac6e2197decaf5",
+          "data_sha256": "623aba28da6f754553a379e4b86dc8b19f661c8bb4c4e308da5309c07a1a2520",
           "data_entries": 666,
           "rules": 666,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-finance.yaml",
-            "sha256": "7e77ae4e87512441ace37f3a7e78c9102c795f3fb7547252fe7e2d9c5b3cd685"
+            "sha256": "6bca67990758fe3b7646f7dd4085df43f17c8d438c280d24aa39f2a35cbbfbec"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-finance.list",
-            "sha256": "23a0bdb2cbd3d7f6333daa744a49418a717868ecc2250ec4386c39a8af007569"
+            "sha256": "ab9fd0256cbfed14e74bfa3458eac41a473b78fdb9457036afc4ef0d6d732b32"
           },
           "upstream": "category-finance",
           "project": "category-finance"
@@ -29637,12 +30083,12 @@
           "rules": 2157,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ru.yaml",
-            "sha256": "bed402ae5fc27039f70417d0934b295cf489869e5b293fdf3ee1a3412bb5b55f"
+            "sha256": "92443b1261a97db7c91f5d7d6f289a13833b72b1f278b97b7e6e765295f38b02"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-ru.list",
-            "sha256": "9dd7cf3268997a27353e62cbf05fb87fa6d3ca7cd69e1178ceeca075b54d5f2f"
+            "sha256": "968e54547c9d16f1d1e852b294362d3f57380f764e2d1c84e18f106f47473381"
           },
           "upstream": "category-ru"
         },
@@ -30068,6 +30514,22 @@
           },
           "upstream": "connectivity-check"
         },
+        "finance-proxy": {
+          "data_path": "data/groups/finance-proxy",
+          "data_sha256": "6b010f0aefcb0030c5ca2278071e5ba04ca96556c1c0abe727baf8eca3c35b79",
+          "data_entries": 31,
+          "rules": 31,
+          "mihomo": {
+            "path": "rule/Mihomo/groups/finance-proxy.yaml",
+            "sha256": "ae3b3587f3659296787796cc12397fa3d2118df6c572c3f13142bdca3149b6c1"
+          },
+          "shadowrocket": {
+            "status": "available",
+            "path": "rule/Shadowrocket/groups/finance-proxy.list",
+            "sha256": "2a711c850b353c6cdc507fe00c660abf1a5178343f20848a820048d6432fa30b"
+          },
+          "project": "category-finance-proxy"
+        },
         "geolocation-!cn": {
           "data_path": "data/groups/geolocation-!cn",
           "data_sha256": "d2e7e691eb46b34585be88d2e9b422fb9f287b575d90bc970e5c0525eccca735",
@@ -30075,7 +30537,7 @@
           "rules": 26145,
           "mihomo": {
             "path": "rule/Mihomo/groups/geolocation-!cn.yaml",
-            "sha256": "a3cf95b08d5bffc663a044638fb35d83269c94133da2f312f9f613b8ad64d209"
+            "sha256": "ff99b831a5727b73b4c722d9a8f0a6a23e7e0bc86748f73914c3dc6e029d768a"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30461,7 +30923,7 @@
     },
     "index": {
       "path": "data/README.md",
-      "sha256": "9db255652a1239b9b2867708f6fbdc292f2292b808fb3396a1cfb637a1d4abdf"
+      "sha256": "07c3893db8ed54e9490f531745cf6c3f011bda10eb4f2e387e7653217d7a49fb"
     }
   }
 }

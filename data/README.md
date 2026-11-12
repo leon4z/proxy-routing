@@ -126,6 +126,7 @@
 | [services/awempire](services/awempire) | 5 | [YAML](../rule/Mihomo/services/awempire.yaml) | [LIST](../rule/Shadowrocket/services/awempire.list) |
 | [services/aws](services/aws) | 80 | [YAML](../rule/Mihomo/services/aws.yaml) | 域名正则待适配 |
 | [services/aws-cn](services/aws-cn) | 28 | [YAML](../rule/Mihomo/services/aws-cn.yaml) | 域名正则待适配 |
+| [services/ayabank](services/ayabank) | 1 | [YAML](../rule/Mihomo/services/ayabank.yaml) | [LIST](../rule/Shadowrocket/services/ayabank.list) |
 | [services/azure](services/azure) | 154 | [YAML](../rule/Mihomo/services/azure.yaml) | [LIST](../rule/Shadowrocket/services/azure.list) |
 | [services/b3log](services/b3log) | 4 | [YAML](../rule/Mihomo/services/b3log.yaml) | [LIST](../rule/Shadowrocket/services/b3log.list) |
 | [services/bahamut](services/bahamut) | 5 | [YAML](../rule/Mihomo/services/bahamut.yaml) | [LIST](../rule/Shadowrocket/services/bahamut.list) |
@@ -470,6 +471,7 @@
 | [services/ftv](services/ftv) | 3 | [YAML](../rule/Mihomo/services/ftv.yaml) | [LIST](../rule/Shadowrocket/services/ftv.list) |
 | [services/funpay](services/funpay) | 3 | [YAML](../rule/Mihomo/services/funpay.yaml) | [LIST](../rule/Shadowrocket/services/funpay.list) |
 | [services/futu](services/futu) | 21 | [YAML](../rule/Mihomo/services/futu.yaml) | [LIST](../rule/Shadowrocket/services/futu.list) |
+| [services/futu-niuniu](services/futu-niuniu) | 6 | [YAML](../rule/Mihomo/services/futu-niuniu.yaml) | [LIST](../rule/Shadowrocket/services/futu-niuniu.list) |
 | [services/fzdm](services/fzdm) | 2 | [YAML](../rule/Mihomo/services/fzdm.yaml) | [LIST](../rule/Shadowrocket/services/fzdm.list) |
 | [services/gaijin](services/gaijin) | 13 | [YAML](../rule/Mihomo/services/gaijin.yaml) | [LIST](../rule/Shadowrocket/services/gaijin.list) |
 | [services/gamersky](services/gamersky) | 6 | [YAML](../rule/Mihomo/services/gamersky.yaml) | [LIST](../rule/Shadowrocket/services/gamersky.list) |
@@ -820,6 +822,7 @@
 | [services/momo](services/momo) | 4 | [YAML](../rule/Mihomo/services/momo.yaml) | [LIST](../rule/Shadowrocket/services/momo.list) |
 | [services/mongodb](services/mongodb) | 2 | [YAML](../rule/Mihomo/services/mongodb.yaml) | [LIST](../rule/Shadowrocket/services/mongodb.list) |
 | [services/monotype](services/monotype) | 14 | [YAML](../rule/Mihomo/services/monotype.yaml) | [LIST](../rule/Shadowrocket/services/monotype.list) |
+| [services/moomoo](services/moomoo) | 5 | [YAML](../rule/Mihomo/services/moomoo.yaml) | [LIST](../rule/Shadowrocket/services/moomoo.list) |
 | [services/moonvy](services/moonvy) | 2 | [YAML](../rule/Mihomo/services/moonvy.yaml) | [LIST](../rule/Shadowrocket/services/moonvy.list) |
 | [services/morisawa](services/morisawa) | 2 | [YAML](../rule/Mihomo/services/morisawa.yaml) | [LIST](../rule/Shadowrocket/services/morisawa.list) |
 | [services/mortein](services/mortein) | 11 | [YAML](../rule/Mihomo/services/mortein.yaml) | [LIST](../rule/Shadowrocket/services/mortein.list) |
@@ -828,6 +831,7 @@
 | [services/movefree](services/movefree) | 7 | [YAML](../rule/Mihomo/services/movefree.yaml) | [LIST](../rule/Shadowrocket/services/movefree.list) |
 | [services/moxing](services/moxing) | 2 | [YAML](../rule/Mihomo/services/moxing.yaml) | [LIST](../rule/Shadowrocket/services/moxing.list) |
 | [services/mozilla](services/mozilla) | 77 | [YAML](../rule/Mihomo/services/mozilla.yaml) | [LIST](../rule/Shadowrocket/services/mozilla.list) |
+| [services/mql5](services/mql5) | 1 | [YAML](../rule/Mihomo/services/mql5.yaml) | [LIST](../rule/Shadowrocket/services/mql5.list) |
 | [services/msi](services/msi) | 2 | [YAML](../rule/Mihomo/services/msi.yaml) | [LIST](../rule/Shadowrocket/services/msi.list) |
 | [services/msn](services/msn) | 21 | [YAML](../rule/Mihomo/services/msn.yaml) | [LIST](../rule/Shadowrocket/services/msn.list) |
 | [services/mts-ru](services/mts-ru) | 13 | [YAML](../rule/Mihomo/services/mts-ru.yaml) | [LIST](../rule/Shadowrocket/services/mts-ru.list) |
@@ -1086,6 +1090,7 @@
 | [services/servicepipe](services/servicepipe) | 2 | [YAML](../rule/Mihomo/services/servicepipe.yaml) | [LIST](../rule/Shadowrocket/services/servicepipe.list) |
 | [services/setapp](services/setapp) | 1 | [YAML](../rule/Mihomo/services/setapp.yaml) | [LIST](../rule/Shadowrocket/services/setapp.list) |
 | [services/setn](services/setn) | 2 | [YAML](../rule/Mihomo/services/setn.yaml) | [LIST](../rule/Shadowrocket/services/setn.list) |
+| [services/sevnb](services/sevnb) | 1 | [YAML](../rule/Mihomo/services/sevnb.yaml) | [LIST](../rule/Shadowrocket/services/sevnb.list) |
 | [services/sf-express](services/sf-express) | 15 | [YAML](../rule/Mihomo/services/sf-express.yaml) | [LIST](../rule/Shadowrocket/services/sf-express.list) |
 | [services/shadowsockscom](services/shadowsockscom) | 2 | [YAML](../rule/Mihomo/services/shadowsockscom.yaml) | [LIST](../rule/Shadowrocket/services/shadowsockscom.list) |
 | [services/shanbay](services/shanbay) | 2 | [YAML](../rule/Mihomo/services/shanbay.yaml) | [LIST](../rule/Shadowrocket/services/shanbay.list) |
@@ -1241,6 +1246,7 @@
 | [services/tor](services/tor) | 3 | [YAML](../rule/Mihomo/services/tor.yaml) | [LIST](../rule/Shadowrocket/services/tor.list) |
 | [services/torproject](services/torproject) | 1 | [YAML](../rule/Mihomo/services/torproject.yaml) | [LIST](../rule/Shadowrocket/services/torproject.list) |
 | [services/trackernetwork](services/trackernetwork) | 3 | [YAML](../rule/Mihomo/services/trackernetwork.yaml) | [LIST](../rule/Shadowrocket/services/trackernetwork.list) |
+| [services/tradingview](services/tradingview) | 1 | [YAML](../rule/Mihomo/services/tradingview.yaml) | [LIST](../rule/Shadowrocket/services/tradingview.list) |
 | [services/trae](services/trae) | 12 | [YAML](../rule/Mihomo/services/trae.yaml) | [LIST](../rule/Shadowrocket/services/trae.list) |
 | [services/translatewiki](services/translatewiki) | 2 | [YAML](../rule/Mihomo/services/translatewiki.yaml) | [LIST](../rule/Shadowrocket/services/translatewiki.list) |
 | [services/trello](services/trello) | 2 | [YAML](../rule/Mihomo/services/trello.yaml) | [LIST](../rule/Shadowrocket/services/trello.list) |
@@ -1281,6 +1287,7 @@
 | [services/unitychina](services/unitychina) | 9 | [YAML](../rule/Mihomo/services/unitychina.yaml) | [LIST](../rule/Shadowrocket/services/unitychina.list) |
 | [services/uoliv](services/uoliv) | 4 | [YAML](../rule/Mihomo/services/uoliv.yaml) | [LIST](../rule/Shadowrocket/services/uoliv.list) |
 | [services/upai](services/upai) | 6 | [YAML](../rule/Mihomo/services/upai.yaml) | [LIST](../rule/Shadowrocket/services/upai.list) |
+| [services/uralfd](services/uralfd) | 1 | [YAML](../rule/Mihomo/services/uralfd.yaml) | [LIST](../rule/Shadowrocket/services/uralfd.list) |
 | [services/usersdrive](services/usersdrive) | 2 | [YAML](../rule/Mihomo/services/usersdrive.yaml) | [LIST](../rule/Shadowrocket/services/usersdrive.list) |
 | [services/uu-chat](services/uu-chat) | 22 | [YAML](../rule/Mihomo/services/uu-chat.yaml) | [LIST](../rule/Shadowrocket/services/uu-chat.list) |
 | [services/v2ray](services/v2ray) | 3 | [YAML](../rule/Mihomo/services/v2ray.yaml) | [LIST](../rule/Shadowrocket/services/v2ray.list) |
@@ -1557,6 +1564,7 @@
 | [groups/category-wiki-cn](groups/category-wiki-cn) | 15 | [YAML](../rule/Mihomo/groups/category-wiki-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-wiki-cn.list) |
 | [groups/cn](groups/cn) | 8522 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
 | [groups/connectivity-check](groups/connectivity-check) | 28 | [YAML](../rule/Mihomo/groups/connectivity-check.yaml) | [LIST](../rule/Shadowrocket/groups/connectivity-check.list) |
+| [groups/finance-proxy](groups/finance-proxy) | 31 | [YAML](../rule/Mihomo/groups/finance-proxy.yaml) | [LIST](../rule/Shadowrocket/groups/finance-proxy.list) |
 | [groups/geolocation-!cn](groups/geolocation-!cn) | 26149 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
 | [groups/geolocation-cn](groups/geolocation-cn) | 8491 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
 | [groups/google-registry-tld](groups/google-registry-tld) | 20 | [YAML](../rule/Mihomo/groups/google-registry-tld.yaml) | [LIST](../rule/Shadowrocket/groups/google-registry-tld.list) |

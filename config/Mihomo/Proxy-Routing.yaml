@@ -138,7 +138,7 @@
       - "REJECT"
     "default-selected": "默认代理"
   -
-    "name": "金融"
+    "name": "金融·直连"
     "type": "select"
     "proxies":
       - "DIRECT"
@@ -153,6 +153,22 @@
       - "全部节点"
       - "REJECT"
     "default-selected": "DIRECT"
+  -
+    "name": "金融·代理"
+    "type": "select"
+    "proxies":
+      - "默认代理"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "韩国节点"
+      - "美国节点"
+      - "其他地区"
+      - "全部节点"
+      - "DIRECT"
+      - "REJECT"
+    "default-selected": "默认代理"
   -
     "name": "兜底"
     "type": "select"
@@ -296,6 +312,14 @@
     "format": "yaml"
     "path": "./rules/service-openai.yaml"
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/service-openai.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "category-finance-proxy":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/category-finance-proxy.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/groups/finance-proxy.yaml"
     "interval": 86400
     "proxy": "DIRECT"
   "category-finance":
@@ -738,6 +762,78 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/oracle.yaml"
     "interval": 86400
     "proxy": "DIRECT"
+  "service-futu-niuniu":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-futu-niuniu.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/futu-niuniu.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-moomoo":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-moomoo.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/moomoo.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-tradingview":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-tradingview.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/tradingview.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-mql5":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-mql5.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/mql5.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-ayabank":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-ayabank.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/ayabank.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-sevnb":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-sevnb.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/sevnb.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-uralfd":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-uralfd.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/uralfd.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-longbridge":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-longbridge.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/longbridge.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-itiger":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-itiger.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/itiger.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-geolocation-!cn":
     "type": "http"
     "behavior": "classical"
@@ -786,7 +882,8 @@
   - "IP-CIDR6,2607:6bc0::/32,Claude,no-resolve"
   - "IP-ASN,399358,Claude,no-resolve"
   - "RULE-SET,service-openai,OpenAI"
-  - "RULE-SET,category-finance,金融"
+  - "RULE-SET,category-finance-proxy,金融·代理"
+  - "RULE-SET,category-finance,金融·直连"
   - "RULE-SET,site-cn,DIRECT"
   - "RULE-SET,site-oracle,DIRECT"
   - "RULE-SET,category-ai,AI"
