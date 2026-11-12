@@ -1,0 +1,8 @@
+"payload":
+  - "DOMAIN,browser-intake-datadoghq.com"
+  - "DOMAIN,rum.browser-intake-datadoghq.com"
+  - "DOMAIN,http-intake.logs.us5.datadoghq.com"
+  - "DOMAIN,browser-intake-us5-datadoghq.com"
+  - "DOMAIN,o33249.ingest.sentry.io"
+  - "DOMAIN,o33249.ingest.us.sentry.io"
+  - "DOMAIN,openai.qualtrics.com"

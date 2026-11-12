@@ -12,6 +12,8 @@ Mihomo 默认开启 HTTP、TLS 和 QUIC 域名嗅探，辅助缺少域名的连�
 
 Mihomo 启用 `profile.store-selected` 和 `profile.store-fake-ip`，保存手选与 Fake-IP 映射缓存。
 
+确认的共享遥测和反馈入口由[遥测聚合](data/groups/telemetry)统一维护，优先于广告拦截和普通业务规则，HTTPS 放行并经过隐藏的「共享遥测」手选出口。该出口只引用代理节点组，初始跟随全部节点，不包含 DIRECT 或首页 PROXY；其他服务改为直连不改变这些入口的处理。UDP 明确拒绝，代理失效不回落直连。可在支持显示隐藏分组的客户端选择遥测出口。清单仅包含已确认入口，并不放行整个广告分类或供应商所有域名。共享遥测与业务可使用不同出口；主动直连的业务网站仍能看到本机公网 IP。
+
 从旧版三模式配置迁移时，请重新导入上述新入口；现在每个客户端只提供一份完整配置。迁移前可导出自己的旧配置及节点，个人编辑不会自动合并到新模板。
 
 [全量规则索引](data/README.md)按用途归类，来源和项目补充记录在构建清单中。规则库与完整配置分开交付。完整配置只加载其分流策略引用的规则集。
@@ -19,7 +21,7 @@ Mihomo 启用 `profile.store-selected` 和 `profile.store-fake-ip`，保存手�
 | 目录 | 内容 |
 | --- | --- |
 | [data/services](data/services) | 全量服务、公司及服务子集，如 [Netflix](data/services/netflix)、[Google](data/services/google)、[IBKR](data/services/ibkr)、[BBAE](data/services/bbae) |
-| [data/groups](data/groups) | 上游分类、通用集合与项目聚合组，如 [金融](data/groups/category-finance)、[AI](data/groups/ai) |
+| [data/groups](data/groups) | 上游分类、通用集合与项目聚合组，如 [金融](data/groups/category-finance)、[AI](data/groups/ai)、[共享遥测](data/groups/telemetry) |
 | [rule/Mihomo](rule/Mihomo) | 服务、聚合和配置专用的 YAML 规则 |
 | [rule/Shadowrocket](rule/Shadowrocket) | 服务、聚合和配置专用的 RULE-SET 文件 |
 | [config/Mihomo](config/Mihomo) | 完整配置和导入链接 |

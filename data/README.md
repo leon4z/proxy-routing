@@ -315,6 +315,7 @@
 | [services/dandanzan](services/dandanzan) | 2 | [YAML](../rule/Mihomo/services/dandanzan.yaml) | [LIST](../rule/Shadowrocket/services/dandanzan.list) |
 | [services/dangdang](services/dangdang) | 2 | [YAML](../rule/Mihomo/services/dangdang.yaml) | [LIST](../rule/Shadowrocket/services/dangdang.list) |
 | [services/dart](services/dart) | 3 | [YAML](../rule/Mihomo/services/dart.yaml) | [LIST](../rule/Shadowrocket/services/dart.list) |
+| [services/datadog-telemetry](services/datadog-telemetry) | 4 | [YAML](../rule/Mihomo/services/datadog-telemetry.yaml) | [LIST](../rule/Shadowrocket/services/datadog-telemetry.list) |
 | [services/dazn](services/dazn) | 8 | [YAML](../rule/Mihomo/services/dazn.yaml) | [LIST](../rule/Shadowrocket/services/dazn.list) |
 | [services/dcard](services/dcard) | 4 | [YAML](../rule/Mihomo/services/dcard.yaml) | [LIST](../rule/Shadowrocket/services/dcard.list) |
 | [services/ddmaicai](services/ddmaicai) | 9 | [YAML](../rule/Mihomo/services/ddmaicai.yaml) | [LIST](../rule/Shadowrocket/services/ddmaicai.list) |
@@ -570,7 +571,7 @@
 | [services/hoyoverse](services/hoyoverse) | 9 | [YAML](../rule/Mihomo/services/hoyoverse.yaml) | [LIST](../rule/Shadowrocket/services/hoyoverse.list) |
 | [services/hp](services/hp) | 158 | [YAML](../rule/Mihomo/services/hp.yaml) | [LIST](../rule/Shadowrocket/services/hp.list) |
 | [services/hpe](services/hpe) | 16 | [YAML](../rule/Mihomo/services/hpe.yaml) | [LIST](../rule/Shadowrocket/services/hpe.list) |
-| [services/hsbc](services/hsbc) | 48 | [YAML](../rule/Mihomo/services/hsbc.yaml) | [LIST](../rule/Shadowrocket/services/hsbc.list) |
+| [services/hsbc](services/hsbc) | 50 | [YAML](../rule/Mihomo/services/hsbc.yaml) | [LIST](../rule/Shadowrocket/services/hsbc.list) |
 | [services/hsbc-cn](services/hsbc-cn) | 3 | [YAML](../rule/Mihomo/services/hsbc-cn.yaml) | [LIST](../rule/Shadowrocket/services/hsbc-cn.list) |
 | [services/huanghuagang](services/huanghuagang) | 1 | [YAML](../rule/Mihomo/services/huanghuagang.yaml) | [LIST](../rule/Shadowrocket/services/huanghuagang.list) |
 | [services/huawei](services/huawei) | 345 | [YAML](../rule/Mihomo/services/huawei.yaml) | [LIST](../rule/Shadowrocket/services/huawei.list) |
@@ -920,7 +921,7 @@
 | [services/openwrt](services/openwrt) | 2 | [YAML](../rule/Mihomo/services/openwrt.yaml) | [LIST](../rule/Shadowrocket/services/openwrt.list) |
 | [services/openx](services/openx) | 5 | [YAML](../rule/Mihomo/services/openx.yaml) | [LIST](../rule/Shadowrocket/services/openx.list) |
 | [services/oppo](services/oppo) | 46 | [YAML](../rule/Mihomo/services/oppo.yaml) | [LIST](../rule/Shadowrocket/services/oppo.list) |
-| [services/oracle](services/oracle) | 19 | [YAML](../rule/Mihomo/services/oracle.yaml) | [LIST](../rule/Shadowrocket/services/oracle.list) |
+| [services/oracle](services/oracle) | 27 | [YAML](../rule/Mihomo/services/oracle.yaml) | [LIST](../rule/Shadowrocket/services/oracle.list) |
 | [services/oreilly](services/oreilly) | 6 | [YAML](../rule/Mihomo/services/oreilly.yaml) | [LIST](../rule/Shadowrocket/services/oreilly.list) |
 | [services/organicmaps](services/organicmaps) | 2 | [YAML](../rule/Mihomo/services/organicmaps.yaml) | [LIST](../rule/Shadowrocket/services/organicmaps.list) |
 | [services/origin](services/origin) | 9 | [YAML](../rule/Mihomo/services/origin.yaml) | [LIST](../rule/Shadowrocket/services/origin.list) |
@@ -1007,6 +1008,7 @@
 | [services/qnap](services/qnap) | 8 | [YAML](../rule/Mihomo/services/qnap.yaml) | [LIST](../rule/Shadowrocket/services/qnap.list) |
 | [services/qt](services/qt) | 2 | [YAML](../rule/Mihomo/services/qt.yaml) | [LIST](../rule/Shadowrocket/services/qt.list) |
 | [services/qualcomm](services/qualcomm) | 49 | [YAML](../rule/Mihomo/services/qualcomm.yaml) | [LIST](../rule/Shadowrocket/services/qualcomm.list) |
+| [services/qualtrics-feedback](services/qualtrics-feedback) | 1 | [YAML](../rule/Mihomo/services/qualtrics-feedback.yaml) | [LIST](../rule/Shadowrocket/services/qualtrics-feedback.list) |
 | [services/quantil](services/quantil) | 1 | [YAML](../rule/Mihomo/services/quantil.yaml) | [LIST](../rule/Shadowrocket/services/quantil.list) |
 | [services/quip](services/quip) | 3 | [YAML](../rule/Mihomo/services/quip.yaml) | [LIST](../rule/Shadowrocket/services/quip.list) |
 | [services/quora](services/quora) | 6 | [YAML](../rule/Mihomo/services/quora.yaml) | [LIST](../rule/Shadowrocket/services/quora.list) |
@@ -1080,6 +1082,7 @@
 | [services/sehuatang](services/sehuatang) | 2 | [YAML](../rule/Mihomo/services/sehuatang.yaml) | [LIST](../rule/Shadowrocket/services/sehuatang.list) |
 | [services/selectel](services/selectel) | 24 | [YAML](../rule/Mihomo/services/selectel.yaml) | [LIST](../rule/Shadowrocket/services/selectel.list) |
 | [services/sentry](services/sentry) | 4 | [YAML](../rule/Mihomo/services/sentry.yaml) | [LIST](../rule/Shadowrocket/services/sentry.list) |
+| [services/sentry-telemetry](services/sentry-telemetry) | 2 | [YAML](../rule/Mihomo/services/sentry-telemetry.yaml) | [LIST](../rule/Shadowrocket/services/sentry-telemetry.list) |
 | [services/servicepipe](services/servicepipe) | 2 | [YAML](../rule/Mihomo/services/servicepipe.yaml) | [LIST](../rule/Shadowrocket/services/servicepipe.list) |
 | [services/setapp](services/setapp) | 1 | [YAML](../rule/Mihomo/services/setapp.yaml) | [LIST](../rule/Shadowrocket/services/setapp.list) |
 | [services/setn](services/setn) | 2 | [YAML](../rule/Mihomo/services/setn.yaml) | [LIST](../rule/Shadowrocket/services/setn.list) |
@@ -1458,7 +1461,7 @@
 | [groups/category-cdn-cn](groups/category-cdn-cn) | 93 | [YAML](../rule/Mihomo/groups/category-cdn-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-cdn-cn.list) |
 | [groups/category-collaborate-cn](groups/category-collaborate-cn) | 26 | [YAML](../rule/Mihomo/groups/category-collaborate-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-collaborate-cn.list) |
 | [groups/category-communication](groups/category-communication) | 160 | [YAML](../rule/Mihomo/groups/category-communication.yaml) | [LIST](../rule/Shadowrocket/groups/category-communication.list) |
-| [groups/category-companies](groups/category-companies) | 8789 | [YAML](../rule/Mihomo/groups/category-companies.yaml) | 域名正则待适配 |
+| [groups/category-companies](groups/category-companies) | 8797 | [YAML](../rule/Mihomo/groups/category-companies.yaml) | 域名正则待适配 |
 | [groups/category-consent-management](groups/category-consent-management) | 14 | [YAML](../rule/Mihomo/groups/category-consent-management.yaml) | [LIST](../rule/Shadowrocket/groups/category-consent-management.list) |
 | [groups/category-container](groups/category-container) | 10 | [YAML](../rule/Mihomo/groups/category-container.yaml) | 域名正则待适配 |
 | [groups/category-cryptocurrency](groups/category-cryptocurrency) | 240 | [YAML](../rule/Mihomo/groups/category-cryptocurrency.yaml) | [LIST](../rule/Shadowrocket/groups/category-cryptocurrency.list) |
@@ -1479,7 +1482,7 @@
 | [groups/category-entertainment](groups/category-entertainment) | 2180 | [YAML](../rule/Mihomo/groups/category-entertainment.yaml) | 域名正则待适配 |
 | [groups/category-entertainment-cn](groups/category-entertainment-cn) | 927 | [YAML](../rule/Mihomo/groups/category-entertainment-cn.yaml) | 域名正则待适配 |
 | [groups/category-entertainment-ru](groups/category-entertainment-ru) | 35 | [YAML](../rule/Mihomo/groups/category-entertainment-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-entertainment-ru.list) |
-| [groups/category-finance](groups/category-finance) | 664 | [YAML](../rule/Mihomo/groups/category-finance.yaml) | [LIST](../rule/Shadowrocket/groups/category-finance.list) |
+| [groups/category-finance](groups/category-finance) | 666 | [YAML](../rule/Mihomo/groups/category-finance.yaml) | [LIST](../rule/Shadowrocket/groups/category-finance.list) |
 | [groups/category-flight-simulator](groups/category-flight-simulator) | 79 | [YAML](../rule/Mihomo/groups/category-flight-simulator.yaml) | [LIST](../rule/Shadowrocket/groups/category-flight-simulator.list) |
 | [groups/category-food-cn](groups/category-food-cn) | 66 | [YAML](../rule/Mihomo/groups/category-food-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-food-cn.list) |
 | [groups/category-forums](groups/category-forums) | 114 | [YAML](../rule/Mihomo/groups/category-forums.yaml) | [LIST](../rule/Shadowrocket/groups/category-forums.list) |
@@ -1554,13 +1557,14 @@
 | [groups/category-wiki-cn](groups/category-wiki-cn) | 15 | [YAML](../rule/Mihomo/groups/category-wiki-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-wiki-cn.list) |
 | [groups/cn](groups/cn) | 8522 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
 | [groups/connectivity-check](groups/connectivity-check) | 28 | [YAML](../rule/Mihomo/groups/connectivity-check.yaml) | [LIST](../rule/Shadowrocket/groups/connectivity-check.list) |
-| [groups/geolocation-!cn](groups/geolocation-!cn) | 26139 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
+| [groups/geolocation-!cn](groups/geolocation-!cn) | 26149 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
 | [groups/geolocation-cn](groups/geolocation-cn) | 8491 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
 | [groups/google-registry-tld](groups/google-registry-tld) | 20 | [YAML](../rule/Mihomo/groups/google-registry-tld.yaml) | [LIST](../rule/Shadowrocket/groups/google-registry-tld.list) |
 | [groups/goproxy](groups/goproxy) | 2 | [YAML](../rule/Mihomo/groups/goproxy.yaml) | [LIST](../rule/Shadowrocket/groups/goproxy.list) |
 | [groups/misskey-universe](groups/misskey-universe) | 32 | [YAML](../rule/Mihomo/groups/misskey-universe.yaml) | [LIST](../rule/Shadowrocket/groups/misskey-universe.list) |
 | [groups/private](groups/private) | 133 | [YAML](../rule/Mihomo/groups/private.yaml) | 域名正则待适配 |
 | [groups/rsshub-3rd](groups/rsshub-3rd) | 19 | [YAML](../rule/Mihomo/groups/rsshub-3rd.yaml) | [LIST](../rule/Shadowrocket/groups/rsshub-3rd.list) |
+| [groups/telemetry](groups/telemetry) | 7 | [YAML](../rule/Mihomo/groups/telemetry.yaml) | [LIST](../rule/Shadowrocket/groups/telemetry.list) |
 | [groups/test](groups/test) | 1 | [YAML](../rule/Mihomo/groups/test.yaml) | [LIST](../rule/Shadowrocket/groups/test.list) |
 | [groups/test-ipv6](groups/test-ipv6) | 36 | [YAML](../rule/Mihomo/groups/test-ipv6.yaml) | [LIST](../rule/Shadowrocket/groups/test-ipv6.list) |
 | [groups/tld-!cn](groups/tld-!cn) | 829 | [YAML](../rule/Mihomo/groups/tld-!cn.yaml) | [LIST](../rule/Shadowrocket/groups/tld-!cn.list) |

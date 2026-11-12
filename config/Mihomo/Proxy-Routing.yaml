@@ -170,6 +170,21 @@
       - "REJECT"
     "default-selected": "默认代理"
   -
+    "name": "共享遥测"
+    "type": "select"
+    "hidden": true
+    "proxies":
+      - "全部节点"
+      - "香港节点"
+      - "台湾节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "韩国节点"
+      - "美国节点"
+      - "其他地区"
+      - "REJECT"
+    "default-selected": "全部节点"
+  -
     "name": "香港节点"
     "type": "select"
     "filter": "(?i)香港|Hong[ -]?Kong|🇭🇰|(?:^|[^a-z])(?:HK|HKG)(?:[^a-z]|$)"
@@ -257,6 +272,14 @@
     "format": "yaml"
     "path": "./rules/ip-private.yaml"
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-private.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "category-telemetry":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/category-telemetry.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/groups/telemetry.yaml"
     "interval": 86400
     "proxy": "DIRECT"
   "service-claude":
@@ -675,6 +698,46 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/bbae.yaml"
     "interval": 86400
     "proxy": "DIRECT"
+  "service-datadog-telemetry":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-datadog-telemetry.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/datadog-telemetry.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-sentry-telemetry":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-sentry-telemetry.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/sentry-telemetry.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-qualtrics-feedback":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-qualtrics-feedback.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/qualtrics-feedback.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-hsbc":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-hsbc.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/hsbc.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "service-oracle":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-oracle.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/oracle.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-geolocation-!cn":
     "type": "http"
     "behavior": "classical"
@@ -702,6 +765,8 @@
 "rules":
   - "DOMAIN-KEYWORD,stun,REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,3478)),REJECT"
+  - "AND,((NETWORK,udp),(RULE-SET,category-telemetry)),REJECT"
+  - "RULE-SET,category-telemetry,共享遥测"
   - "RULE-SET,site-category-ads-all,REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,443),(OR,((RULE-SET,service-claude),(RULE-SET,category-ai),(RULE-SET,site-google),(RULE-SET,ip-google,no-resolve),(DOMAIN-SUFFIX,claude.app),(DOMAIN-SUFFIX,cursorvm.com)))),REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,443),(OR,((DOMAIN,ecomuser.snssdk.com),(DOMAIN,is.snssdk.com),(RULE-SET,site-cn),(RULE-SET,site-bilibili),(RULE-SET,site-netease),(RULE-SET,site-baidu),(RULE-SET,site-douban),(RULE-SET,site-tencent),(RULE-SET,site-sina),(RULE-SET,site-zhihu),(RULE-SET,site-xiaohongshu),(RULE-SET,site-douyin),(RULE-SET,ip-cn)))),DIRECT"
@@ -715,6 +780,7 @@
   - "DOMAIN-SUFFIX,duolingo.cn,DIRECT"
   - "RULE-SET,site-private,DIRECT"
   - "RULE-SET,ip-private,DIRECT,no-resolve"
+  - "RULE-SET,category-telemetry,共享遥测"
   - "RULE-SET,service-claude,Claude"
   - "IP-CIDR,160.79.104.0/21,Claude,no-resolve"
   - "IP-CIDR6,2607:6bc0::/32,Claude,no-resolve"
