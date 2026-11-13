@@ -1,6 +1,6 @@
 # 规则库索引
 
-固定上游版本 `20261110034535`。
+固定上游版本 `20261112220449`。
 
 服务归入 services，聚合组与通用匹配集合归入 groups。聚合文件的 include 路径以 data/ 为起点。来源与本地补充记录在 manifest.json。
 
@@ -522,7 +522,7 @@
 | [services/grafanalabs](services/grafanalabs) | 2 | [YAML](../rule/Mihomo/services/grafanalabs.yaml) | [LIST](../rule/Shadowrocket/services/grafanalabs.list) |
 | [services/grapheneos](services/grapheneos) | 16 | [YAML](../rule/Mihomo/services/grapheneos.yaml) | [LIST](../rule/Shadowrocket/services/grapheneos.list) |
 | [services/gravatar](services/gravatar) | 1 | [YAML](../rule/Mihomo/services/gravatar.yaml) | [LIST](../rule/Shadowrocket/services/gravatar.list) |
-| [services/greatfire](services/greatfire) | 11 | [YAML](../rule/Mihomo/services/greatfire.yaml) | [LIST](../rule/Shadowrocket/services/greatfire.list) |
+| [services/greatfire](services/greatfire) | 12 | [YAML](../rule/Mihomo/services/greatfire.yaml) | [LIST](../rule/Shadowrocket/services/greatfire.list) |
 | [services/gree](services/gree) | 7 | [YAML](../rule/Mihomo/services/gree.yaml) | [LIST](../rule/Shadowrocket/services/gree.list) |
 | [services/groq](services/groq) | 1 | [YAML](../rule/Mihomo/services/groq.yaml) | [LIST](../rule/Shadowrocket/services/groq.list) |
 | [services/group-ib](services/group-ib) | 30 | [YAML](../rule/Mihomo/services/group-ib.yaml) | [LIST](../rule/Shadowrocket/services/group-ib.list) |
@@ -1451,7 +1451,7 @@
 | [groups/category-ai-cn](groups/category-ai-cn) | 129 | [YAML](../rule/Mihomo/groups/category-ai-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-ai-cn.list) |
 | [groups/category-ai-ru](groups/category-ai-ru) | 12 | [YAML](../rule/Mihomo/groups/category-ai-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-ai-ru.list) |
 | [groups/category-android-app-download](groups/category-android-app-download) | 11 | [YAML](../rule/Mihomo/groups/category-android-app-download.yaml) | [LIST](../rule/Shadowrocket/groups/category-android-app-download.list) |
-| [groups/category-anticensorship](groups/category-anticensorship) | 126 | [YAML](../rule/Mihomo/groups/category-anticensorship.yaml) | [LIST](../rule/Shadowrocket/groups/category-anticensorship.list) |
+| [groups/category-anticensorship](groups/category-anticensorship) | 127 | [YAML](../rule/Mihomo/groups/category-anticensorship.yaml) | [LIST](../rule/Shadowrocket/groups/category-anticensorship.list) |
 | [groups/category-antivirus](groups/category-antivirus) | 166 | [YAML](../rule/Mihomo/groups/category-antivirus.yaml) | [LIST](../rule/Shadowrocket/groups/category-antivirus.list) |
 | [groups/category-automobile-cn](groups/category-automobile-cn) | 51 | [YAML](../rule/Mihomo/groups/category-automobile-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-automobile-cn.list) |
 | [groups/category-bank-cn](groups/category-bank-cn) | 140 | [YAML](../rule/Mihomo/groups/category-bank-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-bank-cn.list) |
@@ -1565,7 +1565,7 @@
 | [groups/cn](groups/cn) | 8522 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
 | [groups/connectivity-check](groups/connectivity-check) | 28 | [YAML](../rule/Mihomo/groups/connectivity-check.yaml) | [LIST](../rule/Shadowrocket/groups/connectivity-check.list) |
 | [groups/finance-proxy](groups/finance-proxy) | 31 | [YAML](../rule/Mihomo/groups/finance-proxy.yaml) | [LIST](../rule/Shadowrocket/groups/finance-proxy.list) |
-| [groups/geolocation-!cn](groups/geolocation-!cn) | 26149 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
+| [groups/geolocation-!cn](groups/geolocation-!cn) | 26150 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
 | [groups/geolocation-cn](groups/geolocation-cn) | 8491 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
 | [groups/google-registry-tld](groups/google-registry-tld) | 20 | [YAML](../rule/Mihomo/groups/google-registry-tld.yaml) | [LIST](../rule/Shadowrocket/groups/google-registry-tld.list) |
 | [groups/goproxy](groups/goproxy) | 2 | [YAML](../rule/Mihomo/groups/goproxy.yaml) | [LIST](../rule/Shadowrocket/groups/goproxy.list) |
