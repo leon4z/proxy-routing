@@ -1,6 +1,6 @@
 # 规则库索引
 
-固定上游版本 `20261112220449`。
+固定上游版本 `20261115005626`。
 
 服务归入 services，聚合组与通用匹配集合归入 groups。聚合文件的 include 路径以 data/ 为起点。来源与本地补充记录在 manifest.json。
 
@@ -1537,7 +1537,7 @@
 | [groups/category-public-tracker](groups/category-public-tracker) | 437 | [YAML](../rule/Mihomo/groups/category-public-tracker.yaml) | [LIST](../rule/Shadowrocket/groups/category-public-tracker.list) |
 | [groups/category-remote-control](groups/category-remote-control) | 8 | [YAML](../rule/Mihomo/groups/category-remote-control.yaml) | [LIST](../rule/Shadowrocket/groups/category-remote-control.list) |
 | [groups/category-retail-ru](groups/category-retail-ru) | 82 | [YAML](../rule/Mihomo/groups/category-retail-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-retail-ru.list) |
-| [groups/category-ru](groups/category-ru) | 2157 | [YAML](../rule/Mihomo/groups/category-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-ru.list) |
+| [groups/category-ru](groups/category-ru) | 2158 | [YAML](../rule/Mihomo/groups/category-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-ru.list) |
 | [groups/category-scholar-!cn](groups/category-scholar-!cn) | 485 | [YAML](../rule/Mihomo/groups/category-scholar-!cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-scholar-!cn.list) |
 | [groups/category-scholar-cn](groups/category-scholar-cn) | 96 | [YAML](../rule/Mihomo/groups/category-scholar-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-scholar-cn.list) |
 | [groups/category-scholar-hk](groups/category-scholar-hk) | 33 | [YAML](../rule/Mihomo/groups/category-scholar-hk.yaml) | [LIST](../rule/Shadowrocket/groups/category-scholar-hk.list) |
