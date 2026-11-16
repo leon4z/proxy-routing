@@ -5,6 +5,7 @@ include:services/bluepoch-games
 include:services/changyou
 include:services/cowlevel
 include:services/herogame
+include:services/hypergryph @-!cn
 include:services/kurogames @-!cn
 include:services/mihoyo-cn
 include:services/seasun

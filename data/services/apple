@@ -682,11 +682,13 @@ full:apple.com.akadns.net
 full:configuration-lb.ls-apple.com.akadns.net
 full:push-apple.com.akadns.net
 courier-push-apple.com.akadns.net
+captive.apple.com @cn
 full:amp-api-edge.apps.apple.com @cn
 full:amp-api-search-edge.apps.apple.com @cn
 full:amp-api.apps.apple.com @cn
 full:api-edge.apps.apple.com @cn
 full:communities.apple.com @cn
+full:configuration.ls.apple.com @cn
 full:discussionschinese.apple.com @cn
 full:fides-pol.apple.com @cn
 full:gspe12-cn-ssl.ls.apple.com @cn
@@ -1799,8 +1801,10 @@ full:inappcheck.itunes.apple.com @cn
 full:init.itunes.apple.com @cn
 full:iosapps.itunes.apple.com @cn
 full:misc-assets.itunes.apple.com @cn
+full:musicstatus.itunes.apple.com @cn
 full:mvod.itunes.apple.com @cn
 full:myapp.itunes.apple.com @cn
+full:mzstorekit.itunes.apple.com @cn
 full:np-edge.itunes.apple.com @cn
 full:osxapps.itunes.apple.com @cn
 full:pd-nk.itunes.apple.com @cn

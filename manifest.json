@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "audience": "public",
-  "source_commit": "f181fff77f5f243f69bfc12b45e0fa10bed899fc",
-  "sources_sha256": "a7997625e07617c925e0d4e678c1e5808739c4328b13d2a489f8e84e3ee82ba2",
+  "source_commit": "c50286e52b8f6497af083871747d4b49a4bb77a2",
+  "sources_sha256": "1c377e5cec4688373ca917414e75dc1eab18d5dfd10b8a09640800b3e99cc853",
   "coverage": {
     "claude.com": "Claude",
     "api.claude.com": "Claude",
@@ -24,7 +24,7 @@
   },
   "outputs": {
     "config/Mihomo": {
-      "rules": 165690,
+      "rules": 165704,
       "groups": 18,
       "inventory_bound": false,
       "regex": 174,
@@ -33,7 +33,7 @@
           "id": "site-category-ads-all",
           "path": "rule/Mihomo/variants/site-category-ads-all.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-ads-all.yaml",
-          "sha256": "4840ad89c75fb7e0ef15873dbb8c3b29ac46b701ed7b8070aa2ed62f24cc5ecb",
+          "sha256": "5159f4665070947f92facf7cbd32114c1f96c0f6054f8b10e64e6e9c6765ce65",
           "behavior": "classical",
           "rules": 909
         },
@@ -89,9 +89,9 @@
           "id": "category-finance",
           "path": "rule/Mihomo/variants/category-finance.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/category-finance.yaml",
-          "sha256": "02e78e1a72b01f9e796dac20bdd907cc6c66e33a49c436ebe66bc630f8c81e3e",
+          "sha256": "eb46cbbddb02205f5d89d81acba10bb071144900d01227f4aba741784fe52b0f",
           "behavior": "classical",
-          "rules": 663
+          "rules": 665
         },
         {
           "id": "site-cn",
@@ -121,7 +121,7 @@
           "id": "site-category-ai-!cn",
           "path": "rule/Mihomo/variants/site-category-ai-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-ai-!cn.yaml",
-          "sha256": "7ce45eee7cde2aedd1baa1473ab7efbdf243606b9cd830803c6fec85926eb65d",
+          "sha256": "779deaa1300ee70a2a55756c268e411b0d44275180b9516cfbb79ce35b6bbcdc",
           "behavior": "classical",
           "rules": 218
         },
@@ -185,7 +185,7 @@
           "id": "site-disney",
           "path": "rule/Mihomo/variants/site-disney.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-disney.yaml",
-          "sha256": "b73e7deb002af3799f3fdd61de8e1d4be59c61156b85167a4dcf29121db8de8f",
+          "sha256": "03cdd8372ec303e94d3e99ee9499f1cedf27fa6d81379fac38f9626b98af16ed",
           "behavior": "classical",
           "rules": 225
         },
@@ -241,7 +241,7 @@
           "id": "site-amazon",
           "path": "rule/Mihomo/variants/site-amazon.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-amazon.yaml",
-          "sha256": "4c9dce6efcb835876c75cb4f08702d37f540312cf22fe1ef4973e236d39c8e9c",
+          "sha256": "d85ce3494600fbcee70fb3cb66547805001213a01484f52f4b03abe0ee247fbf",
           "behavior": "classical",
           "rules": 250
         },
@@ -249,7 +249,7 @@
           "id": "site-sony",
           "path": "rule/Mihomo/variants/site-sony.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-sony.yaml",
-          "sha256": "b256736e64d53e3acdea441bd1035e606ed512931617c7d3317653f889018cbd",
+          "sha256": "8380ab95104554a492c5f8c6b9ae7640a2a0d9dc00ff8b80ce6f089549e2fe1b",
           "behavior": "classical",
           "rules": 120
         },
@@ -289,7 +289,7 @@
           "id": "site-category-games",
           "path": "rule/Mihomo/variants/site-category-games.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-games.yaml",
-          "sha256": "104b9abd5d139dfef9cb223631e16368c42d6c7e6e382b5d6f33b8e821d817e2",
+          "sha256": "c7adfb388e88c3c2dafdfaaf19cf44c954b25ba339e09e0e0075c48a0c463687",
           "behavior": "classical",
           "rules": 1063
         },
@@ -297,7 +297,7 @@
           "id": "site-github",
           "path": "rule/Mihomo/variants/site-github.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-github.yaml",
-          "sha256": "48108d261734f4b2c21db26f16d080cc727b5b7d2f1af3c1320f6f72fefebf31",
+          "sha256": "8ac6342b9bb0a3bc3f0969334a428896f6f8f390f321ee40060e0cd4425686a9",
           "behavior": "classical",
           "rules": 66
         },
@@ -305,15 +305,15 @@
           "id": "site-microsoft",
           "path": "rule/Mihomo/variants/site-microsoft.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-microsoft.yaml",
-          "sha256": "ef2642c465d8554f931b6dc8aece0aa28096705ecaad81ddf70d0f15bbc69466",
+          "sha256": "78a468d69de1b352386797f62d7cd17499cb9fb8f4f376429081fb56bd530620",
           "behavior": "classical",
-          "rules": 759
+          "rules": 762
         },
         {
           "id": "site-google",
           "path": "rule/Mihomo/variants/site-google.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-google.yaml",
-          "sha256": "9e0a2ece9581e81d1a0ff74a8932741549c9904141ba3737b05a1b2c875b0f65",
+          "sha256": "198b1bc449af5fd48a8b7253687429bf5b6ea0cbcf647de192190cae6964627d",
           "behavior": "classical",
           "rules": 1080
         },
@@ -321,9 +321,9 @@
           "id": "site-apple",
           "path": "rule/Mihomo/variants/site-apple.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-apple.yaml",
-          "sha256": "d247b8046aad0d620fa6a899c1aa1b212624871e642863a2a3cbed681df55836",
+          "sha256": "b4476779a197899970d0fe993580c5c844f1c9a809ca3f2967c42018846bb69c",
           "behavior": "classical",
-          "rules": 1794
+          "rules": 1798
         },
         {
           "id": "site-bilibili",
@@ -601,9 +601,9 @@
           "id": "site-geolocation-!cn",
           "path": "rule/Mihomo/variants/site-geolocation-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-geolocation-!cn.yaml",
-          "sha256": "1900cbc3711a3aac09702db2597748c082152c6a230bbb760103d593b08eaee3",
+          "sha256": "e7f17ef816cf5c70264ac2961e9ad58e5dabca2c53dfc23763e1209be10654c8",
           "behavior": "classical",
-          "rules": 27459
+          "rules": 27464
         },
         {
           "id": "dns-site-cn",
@@ -626,7 +626,7 @@
       "config_sha256": "4c7ab75e9fc2e8e2d427f5a2dda21de6c3d84eac0499aa9e1261b03415307be9"
     },
     "config/Shadowrocket": {
-      "rules": 166596,
+      "rules": 166610,
       "config_rules": 68,
       "groups": 18,
       "remote_rule_sets": [
@@ -634,7 +634,7 @@
           "id": "site-category-ads-all",
           "path": "rule/Shadowrocket/variants/site-category-ads-all.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-category-ads-all.list",
-          "sha256": "75edb447e71ea003d80e4993cd086d8be7d5b0e14bd0f0297e4cbdfdab34b917",
+          "sha256": "3769ba8b2239ec78bedb0f8dd931716279d703b398e576c33e73367a0f89e8c7",
           "policy": "REJECT",
           "rules": 910
         },
@@ -690,9 +690,9 @@
           "id": "category-finance",
           "path": "rule/Shadowrocket/variants/category-finance.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/category-finance.list",
-          "sha256": "af9f498e9da7dc9d371fbfea49b33ca5de740e90da81dec9b6ed2597ac284008",
+          "sha256": "95bea434dbe3870afd6135a7c27434d8607db39d9fa471e2c9473ec09b9a26af",
           "policy": "金融·直连",
-          "rules": 663
+          "rules": 665
         },
         {
           "id": "site-cn",
@@ -722,7 +722,7 @@
           "id": "site-category-ai-!cn",
           "path": "rule/Shadowrocket/variants/site-category-ai-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-category-ai-!cn.list",
-          "sha256": "9c28b7af1bb5d13b79e94f43b784443bf1d4cc982baae53e995d228751d1d1af",
+          "sha256": "166d9310698855e09569a6af007ef65608e0269123c985a422b3f86cf508e135",
           "policy": "AI",
           "rules": 218
         },
@@ -786,7 +786,7 @@
           "id": "site-disney",
           "path": "rule/Shadowrocket/variants/site-disney.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-disney.list",
-          "sha256": "5c1eac459075b984d456de54f2a0ac1e522dd24a84538cb373e6e5a5d685c450",
+          "sha256": "5cd5e07d1eceee1d0b74aa7c448a92611bf4020ad30bbd9f42f38badc8a4516a",
           "policy": "影音社交",
           "rules": 232
         },
@@ -842,7 +842,7 @@
           "id": "site-amazon",
           "path": "rule/Shadowrocket/variants/site-amazon.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-amazon.list",
-          "sha256": "29ebacc0caea188afd4ba824ed0b5874b7dde3e99f006fc385b5835d73c85a32",
+          "sha256": "8b82578f09a7d91444d4d64f94e3e33ab6276f142831413da0df0e15efd5e133",
           "policy": "DIRECT",
           "rules": 1197
         },
@@ -850,7 +850,7 @@
           "id": "site-sony",
           "path": "rule/Shadowrocket/variants/site-sony.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-sony.list",
-          "sha256": "a93e59a088c2018344a1f0973680af9ec89214b53a5b965465eeb5088eb8f85a",
+          "sha256": "833708f00fc804757bc295fac478ddf40a1f694cd07bd891ccc3146dc1518e98",
           "policy": "DIRECT",
           "rules": 120
         },
@@ -890,7 +890,7 @@
           "id": "site-category-games",
           "path": "rule/Shadowrocket/variants/site-category-games.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-category-games.list",
-          "sha256": "de207f907ce11b4c86af340b829ded3939f8a934197ede1048d2ce6aa56d8724",
+          "sha256": "df8f58757431fcad5a29673952ddab13780386f0161361c7cf56062b6edab7d3",
           "policy": "DIRECT",
           "rules": 1090
         },
@@ -898,7 +898,7 @@
           "id": "site-github",
           "path": "rule/Shadowrocket/variants/site-github.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-github.list",
-          "sha256": "09c796e4964dcdd6e6fbec2cbd33c50de7467f412e55a5db69027776d66ddc2b",
+          "sha256": "6d492b515f984c65de2e404e2378d25b0fb7b1a13e655dbb540422102c71fe4d",
           "policy": "默认代理",
           "rules": 66
         },
@@ -906,15 +906,15 @@
           "id": "site-microsoft",
           "path": "rule/Shadowrocket/variants/site-microsoft.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-microsoft.list",
-          "sha256": "c91b154ceab52738d5be0dc294f640c59380904b8621479ee888c2970b26311d",
+          "sha256": "bd2064963292b7b8cb108bf9c24fd0881da052d1949e2924fe24002249ba3208",
           "policy": "DIRECT",
-          "rules": 759
+          "rules": 762
         },
         {
           "id": "site-google",
           "path": "rule/Shadowrocket/variants/site-google.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-google.list",
-          "sha256": "c75c6b9348f7b36cd7284c9767b6554f5fefb38a5577e514ae1a56f3bbe23e01",
+          "sha256": "cc1117f72e67a89fc53fe619024f3440f6d5d916852c3ecfd54915bcf6a50091",
           "policy": "Google",
           "rules": 1078
         },
@@ -922,9 +922,9 @@
           "id": "site-apple",
           "path": "rule/Shadowrocket/variants/site-apple.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-apple.list",
-          "sha256": "bd17eecd78b83bba2785e33f2335bcc1aefbe918d622b5f6ee9fdda9bb52363b",
+          "sha256": "6f887ee0dbfa0b996b0f568d1f929d0dc5bd758bb41a44888bbd5cb9df2b3651",
           "policy": "DIRECT",
-          "rules": 1794
+          "rules": 1798
         },
         {
           "id": "site-bilibili",
@@ -1202,9 +1202,9 @@
           "id": "site-geolocation-!cn",
           "path": "rule/Shadowrocket/variants/site-geolocation-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-geolocation-!cn.list",
-          "sha256": "3bd860a0fc4877a2ca6e3b3523804bc38946f2fa578c3c7802d9bfb18d16142b",
+          "sha256": "dafa5503ce5539163810748dcf0bb3c7bf48c89fefc9e85ef743de2f8b613fa2",
           "policy": "兜底",
-          "rules": 27308
+          "rules": 27313
         }
       ],
       "adaptations": [
@@ -3212,9 +3212,9 @@
   "service_rules": {
     "v2fly": {
       "repository": "v2fly/domain-list-community",
-      "release": "20261115005626",
-      "commit": "3e5a6807b0f31268e96b321440564fc809996b22",
-      "sha256": "c3bd5569b0eb5245a300e81a7408703a0cace0b05db9d1ebd9b04a5e6a4c1d98"
+      "release": "20261116043813",
+      "commit": "41504eae2a11f305fe88cfc605cf6c105a80bf5a",
+      "sha256": "f1b947f40dbf892166c8673cbcbce0c038ef6c2119e1defdedc7739e99f0a891"
     },
     "routing_excluded_upstream_attributes": [
       "ads"
@@ -3735,7 +3735,7 @@
           "service-bbae"
         ],
         "library_key": "groups/category-finance",
-        "rules": 663
+        "rules": 665
       },
       "category-telemetry": {
         "services": [
@@ -4469,6 +4469,7 @@
       "hupun": "services/hupun",
       "hurricaneelectric": "services/hurricaneelectric",
       "huya": "services/huya",
+      "hypergryph": "services/hypergryph",
       "ibkr": "services/ibkr",
       "ibm": "services/ibm",
       "icable": "services/icable",
@@ -6690,17 +6691,17 @@
         },
         "apple": {
           "data_path": "data/services/apple",
-          "data_sha256": "2f235c0fa65bfc1ae46aac460c245b7ae7883ccbd2449844b97c4dcd60664003",
-          "data_entries": 1829,
-          "rules": 1827,
+          "data_sha256": "f05f0db0330a29b2a7a7211f0eb7c0846ebd429a194a246e95eed0fa769b9786",
+          "data_entries": 1833,
+          "rules": 1831,
           "mihomo": {
             "path": "rule/Mihomo/services/apple.yaml",
-            "sha256": "3bd4f193e7aa81976abb27a45812196477c10418a547ea56f65a70885606f323"
+            "sha256": "a7985df7a1e7e652e6fa707c0305911c72cab4c3a9cfb4f5d708005278a1d692"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/apple.list",
-            "sha256": "fc73b8f0cb43866d0bde32e4dafe93f31892c11c0a3353b2f9080258a48847e7"
+            "sha256": "121f4336f67fd108300d40c7526c6035211f2062e440640e03e4bb759b48e55a"
           },
           "upstream": "apple"
         },
@@ -10174,17 +10175,17 @@
         },
         "cygames": {
           "data_path": "data/services/cygames",
-          "data_sha256": "be37b33e5c29cbb11d3980fa8b02c1e8d3bbf0bd73b69ad4b67a2b7bd550c27b",
-          "data_entries": 5,
-          "rules": 5,
+          "data_sha256": "972ea87f54ba274ba86d0d00792ed0244224d7cdeefb895f80945a3ffaaa7894",
+          "data_entries": 6,
+          "rules": 6,
           "mihomo": {
             "path": "rule/Mihomo/services/cygames.yaml",
-            "sha256": "6b607cec0f5da81316333da2b1486b002a69c2203d9ad14864afffd01f7e67e5"
+            "sha256": "2ddcef5c8bd80f664a7bde344b7a4613f3c3bda4df7b8fd408a4ce3e60b0e656"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/cygames.list",
-            "sha256": "43246c319ce7ed5c4ab0a1f0322670ac948f5f1fddcb6a216ff7d2f10a485473"
+            "sha256": "ac21a10289680868d8db1a2a189233d5a43de727b6a89e27828fa477602cd541"
           },
           "upstream": "cygames"
         },
@@ -14731,6 +14732,22 @@
           },
           "upstream": "huya"
         },
+        "hypergryph": {
+          "data_path": "data/services/hypergryph",
+          "data_sha256": "5db29be9a51a01bb7344c08bac918d207dc7a105f440d63d6132f8b29bd8301c",
+          "data_entries": 18,
+          "rules": 18,
+          "mihomo": {
+            "path": "rule/Mihomo/services/hypergryph.yaml",
+            "sha256": "955d04f73b46b8c5fb2ca08c609e72dfefbb4dbbd940513558fe7aff54c505ef"
+          },
+          "shadowrocket": {
+            "status": "available",
+            "path": "rule/Shadowrocket/services/hypergryph.list",
+            "sha256": "f3ce0569176890ad6db8d867cbc1f2bdda3c3bf0655b05f8eb027170ee263776"
+          },
+          "upstream": "hypergryph"
+        },
         "ibkr": {
           "data_path": "data/services/ibkr",
           "data_sha256": "44731750f40b5cd6db8994d44a729b068ffa5a2c2b1dcb90db957822594aeaee",
@@ -15471,17 +15488,17 @@
         },
         "itunes": {
           "data_path": "data/services/itunes",
-          "data_sha256": "9811eda83fd6126e209a3caf29aadb7f97ad27782139a342e41d4edf15e3d259",
-          "data_entries": 99,
-          "rules": 99,
+          "data_sha256": "414eda50511b1f0ec10c85ecf77f475fb12978b13f7d71652c6413aa3a1fc436",
+          "data_entries": 101,
+          "rules": 101,
           "mihomo": {
             "path": "rule/Mihomo/services/itunes.yaml",
-            "sha256": "c97f1686b44b45abd339dac4ff3a59bbd33744e13365dff9208fdb120083e709"
+            "sha256": "86c87ec9c7b74930e3a8832d07075006303186437b1eef7f1a7eb853d42072fa"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/itunes.list",
-            "sha256": "5c16b03f283333327656fe6c5242916a0b6ea91ecb0476297fe0a5bd5b5eafc8"
+            "sha256": "b9282dbaa5beac85285b15e5df3afa7c7650d7db5b28ea3dc7d94a45c374e244"
           },
           "upstream": "itunes"
         },
@@ -18004,33 +18021,33 @@
         },
         "microsoft": {
           "data_path": "data/services/microsoft",
-          "data_sha256": "41e51ec3199c8d8ed648308bbe3235a9f48301c97369a2aeb5f40bbdcf8f2273",
-          "data_entries": 762,
-          "rules": 761,
+          "data_sha256": "15b39166f1eadef933c5d4f83cb6e6250bb97a9b7f213b9a5fc512a8a76a205a",
+          "data_entries": 765,
+          "rules": 764,
           "mihomo": {
             "path": "rule/Mihomo/services/microsoft.yaml",
-            "sha256": "e3c60950f8e09126cfd289e53873ee77070d4b0654f6e748ed4ab09f5b8955aa"
+            "sha256": "5e96d0ed4960b926d1bd5910c69c4e4ad877f75012e5062e9fde17e0f667243c"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/microsoft.list",
-            "sha256": "2352dcf8074f926695646598cc9978f1b70ae1177ae8c65adea3854186a2bc93"
+            "sha256": "b7236cfecf779c046706acfba2d1e28f93dc744ee236725f763689c538c131e1"
           },
           "upstream": "microsoft"
         },
         "microsoft-dev": {
           "data_path": "data/services/microsoft-dev",
-          "data_sha256": "70c02e7723ad1dafb85c2e909bce94a8a852b60608489a73313e4aec0fddd5a1",
-          "data_entries": 76,
-          "rules": 76,
+          "data_sha256": "fc59d9746da81b75be0c90fce7f053dd7f14901f15c2e477db649d7b2ea4a0d1",
+          "data_entries": 80,
+          "rules": 80,
           "mihomo": {
             "path": "rule/Mihomo/services/microsoft-dev.yaml",
-            "sha256": "93d05298ffd816410d147e8d98edff7318931049cf7b76d7b9838be608fa21dd"
+            "sha256": "402cc356046dca1d37c4f93b0f25bcdd5729b42b32397a05d3b32b9a012fad52"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/microsoft-dev.list",
-            "sha256": "b51c58ad5d607d1f7e75e03f1b3d8f4f066b846c880c0f9e7499e8637b41a5e7"
+            "sha256": "58de73394aae054d60f20cb6843647469ae72e0602287fe957befd887b2eb4fa"
           },
           "upstream": "microsoft-dev"
         },
@@ -21879,17 +21896,17 @@
         },
         "remnawave": {
           "data_path": "data/services/remnawave",
-          "data_sha256": "f792bec9757abbdafb57cf610b0c5c416a407e06df3b9311e51607eed05938c8",
-          "data_entries": 4,
-          "rules": 4,
+          "data_sha256": "1a65498ec0b93fbef9612c10e84635b49ed6e7e712a352718008dd98e1143815",
+          "data_entries": 5,
+          "rules": 5,
           "mihomo": {
             "path": "rule/Mihomo/services/remnawave.yaml",
-            "sha256": "6e4acdcc9793ee5ad807286131ee85245bfe8cab6e32908fa8fcd51cb058535d"
+            "sha256": "3a35c29c81b0fad348b5061e75384f0704a448b368d42d8132038e3672780bc6"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/remnawave.list",
-            "sha256": "01e36aab677d313d7abcb638164f50b7921113772a1ec47f69b8559d7604ce31"
+            "sha256": "6884a6ada4ddd0d99009e8812b2abde1a8ee497c31c5e8d935ba6b9f996d356f"
           },
           "upstream": "remnawave"
         },
@@ -27581,17 +27598,17 @@
         },
         "yandex": {
           "data_path": "data/services/yandex",
-          "data_sha256": "2723e6caa3ada244a345cb831607fce916b3b03ba5f362754e8abef26652ad02",
-          "data_entries": 157,
-          "rules": 157,
+          "data_sha256": "11be2d3efec232ab5b40d80506abef2a30b2967d42dece81864edc048fb3ebd0",
+          "data_entries": 158,
+          "rules": 158,
           "mihomo": {
             "path": "rule/Mihomo/services/yandex.yaml",
-            "sha256": "a7f6610bebd39bd83dc6a9c0eeef93a3e84723c760f42d1c3791e9d0171a0c4b"
+            "sha256": "42a8f9483bb26ed97456cc2808ea2980b350ae55d64ea8664bd277478ffe1174"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/yandex.list",
-            "sha256": "d3e9e5fc554fa60ef814afc6be9ed36b79724424f0e4ea03952adb19eae83f4b"
+            "sha256": "9190388be3e77e7ce53ce191097a45d37f2efce2983420a6c3fcc925c7c85137"
           },
           "upstream": "yandex"
         },
@@ -28524,16 +28541,16 @@
         "category-anticensorship": {
           "data_path": "data/groups/category-anticensorship",
           "data_sha256": "152919779b3484fd74953b44e1bf5fd8e51edad6337b1de5e45d4e7497e3b8fb",
-          "data_entries": 127,
-          "rules": 127,
+          "data_entries": 128,
+          "rules": 128,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-anticensorship.yaml",
-            "sha256": "03c2cb6b10d114e7e1a48ed6a85310bf27d902dba2eefec6ee5e767cdeca8254"
+            "sha256": "13cfa08d709a431531e1f03f54938bd053a3afc7f2ebe314791ecf97ed208a01"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-anticensorship.list",
-            "sha256": "903f623c4077f26ebfb4901e180702e5ac38ac23ac044f188f586ce63cb4c2c6"
+            "sha256": "6edd525f82bc9a3f3539946345672af772e470781a303be05e9b90a97d25ef9c"
           },
           "upstream": "category-anticensorship"
         },
@@ -28635,17 +28652,17 @@
         },
         "category-bank-ru": {
           "data_path": "data/groups/category-bank-ru",
-          "data_sha256": "47900428f9154a74181a7cfe7ce09cddfa3aaa78f8645ea4fcfe8fdc35d19ff4",
-          "data_entries": 356,
-          "rules": 356,
+          "data_sha256": "e827d94e1ff5e7147f5256bb548c3b9acbb044d08442d67d689793b65f3e9488",
+          "data_entries": 358,
+          "rules": 358,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-bank-ru.yaml",
-            "sha256": "414999d74af1c64d94e67fd62a1993002004f736b581e3e7b7ae413076224213"
+            "sha256": "b4a43c12664fa2130259c95e791d2be63d082b2d448b28c70bbad498bdc5bc31"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-bank-ru.list",
-            "sha256": "9c8bb0ff90b1d415a551e63ff88527129da94d55fdcb8e292626bb80861b3ff2"
+            "sha256": "6baa85addc21f271dc468c2a13179b347198107279be07e91131bc16e1ad84c5"
           },
           "upstream": "category-bank-ru"
         },
@@ -28796,11 +28813,11 @@
         "category-companies": {
           "data_path": "data/groups/category-companies",
           "data_sha256": "06570c574c79ea1b4fadaf3413b6a961b0c872a65e8e63340da5f504f7166b5b",
-          "data_entries": 8797,
-          "rules": 8794,
+          "data_entries": 8805,
+          "rules": 8802,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-companies.yaml",
-            "sha256": "0a277c067d1c14ebcaceb9e5c50547de14ebde6f8ecfe79c6e83c39efa8c2e03"
+            "sha256": "7369a917c39dfbc92ffef0e21ad7997ab7f801056ecf34ae7ee81bd55403b7ba"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28852,17 +28869,17 @@
         },
         "category-cryptocurrency": {
           "data_path": "data/groups/category-cryptocurrency",
-          "data_sha256": "39b47443734fb9d4f53ff1bfd0f896fa98daf22606735b40cac3ca23b43b47fd",
-          "data_entries": 240,
-          "rules": 240,
+          "data_sha256": "89306223b5958d90e9fc81adc608e81075df037445e45dc4064da6e6df305c48",
+          "data_entries": 241,
+          "rules": 241,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-cryptocurrency.yaml",
-            "sha256": "d972c7d7f63887c285d348ef53a4fef61f1370d5b7b9263bc09b162b7d5b62f2"
+            "sha256": "4deb15843197c4792d5272c556d442676cf0ca2999b29d2b8f0794333f047c21"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-cryptocurrency.list",
-            "sha256": "2b61ebe864a5114f67d66319fb062d17193f31348f42a6573f7495b814d63b67"
+            "sha256": "d2d75e54c43e880e3c058fe387da115f913bf68195c04f92e8bb62c14a94463a"
           },
           "upstream": "category-cryptocurrency"
         },
@@ -28885,11 +28902,11 @@
         "category-dev": {
           "data_path": "data/groups/category-dev",
           "data_sha256": "adbf92e81a7f5db2927e966f5793a557467e93ab7e6ffdde8151715ef09024e9",
-          "data_entries": 696,
-          "rules": 696,
+          "data_entries": 700,
+          "rules": 700,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-dev.yaml",
-            "sha256": "6c80246944032af510b7bc47e19ba1d9cacce7be5c1f835f57f4210f866e0506"
+            "sha256": "19275b3c788fc9bce86bf883d077df431b00ce215d905dca1b95991f53b34359"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29095,11 +29112,11 @@
         "category-entertainment": {
           "data_path": "data/groups/category-entertainment",
           "data_sha256": "a36e40497e89fac12bec30f0d3b5ee8f9a173cd7ca3e5b0f87e75622fee42bde",
-          "data_entries": 2180,
-          "rules": 2178,
+          "data_entries": 2183,
+          "rules": 2181,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-entertainment.yaml",
-            "sha256": "21d6eccc018489b98af6673cf9c2264c33972c216f387c3f28e2328ff1a0a19c"
+            "sha256": "5c1ec3c21f95a5182098db0750eab5fed7c1bc78ef8047633bb5ef300a829469"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29122,11 +29139,11 @@
         "category-entertainment-cn": {
           "data_path": "data/groups/category-entertainment-cn",
           "data_sha256": "a5c35e6eb3e3afb321187e23cb916bb0d57736e1aa1847389cb14126fa39c00c",
-          "data_entries": 927,
-          "rules": 927,
+          "data_entries": 939,
+          "rules": 939,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-entertainment-cn.yaml",
-            "sha256": "09681514d0f0456dc1252898b1a152727da6414e238fb8b58f66199ce4d3606f"
+            "sha256": "baeb38cda547f37780d3e7d41f488d6f0703d9e2c13c6ff419eef3a5047bc6d2"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29156,16 +29173,16 @@
         "category-finance": {
           "data_path": "data/groups/category-finance",
           "data_sha256": "623aba28da6f754553a379e4b86dc8b19f661c8bb4c4e308da5309c07a1a2520",
-          "data_entries": 666,
-          "rules": 666,
+          "data_entries": 668,
+          "rules": 668,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-finance.yaml",
-            "sha256": "6bca67990758fe3b7646f7dd4085df43f17c8d438c280d24aa39f2a35cbbfbec"
+            "sha256": "89861d3d38c688fb5504c5281e5ea9fec8207c21a6e4939ec3bcd718e1f69240"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-finance.list",
-            "sha256": "ab9fd0256cbfed14e74bfa3458eac41a473b78fdb9457036afc4ef0d6d732b32"
+            "sha256": "b612ed87e653330734396ddf1185ee26f852bfc8e47ed66c543d5b959680257f"
           },
           "upstream": "category-finance",
           "project": "category-finance"
@@ -29285,11 +29302,11 @@
         "category-games": {
           "data_path": "data/groups/category-games",
           "data_sha256": "7da381d8def05719d8f98e9c20dc5d2316f188cf31004c6c977c79d05f722d7b",
-          "data_entries": 1169,
-          "rules": 1169,
+          "data_entries": 1182,
+          "rules": 1182,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-games.yaml",
-            "sha256": "3568894d06d7354e03ae721f53a0b70159afb2264bd736c541a953b2f99be74f"
+            "sha256": "280ba2de02b5df071c73a4279bcd50d30a418b73ae2f7b5355ad72fc58349411"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29306,11 +29323,11 @@
         "category-games-!cn": {
           "data_path": "data/groups/category-games-!cn",
           "data_sha256": "7e94aab369a691853f21736e789b83c2426268829bf33862a694ffe4a3d2c614",
-          "data_entries": 887,
-          "rules": 887,
+          "data_entries": 888,
+          "rules": 888,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-games-!cn.yaml",
-            "sha256": "b53dfc0f29c02454aca3efe8d2ec79ca959a9e3a640319914b914554ed6ef258"
+            "sha256": "a7a12a780bca7ac33e35d0de9f40169b9b1aea795c7ec1fc0561f82657717693"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29325,12 +29342,12 @@
         },
         "category-games-cn": {
           "data_path": "data/groups/category-games-cn",
-          "data_sha256": "a07b1bc884cd3221085783316399b92b12846ffd459990f1226ed6edba6cfbbe",
-          "data_entries": 282,
-          "rules": 282,
+          "data_sha256": "f4259e53bb8df6cae15b3d3ee07cfd2c3b6e2cb41e95571a2e8f81193c08f569",
+          "data_entries": 294,
+          "rules": 294,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-games-cn.yaml",
-            "sha256": "6007022be17009f26853731ccfa6fa71bf3ee16310181c8d90349db23f783fbf"
+            "sha256": "c67aebf48a244c1d82520c0f1d3e2866510c2f7040c40bb9daf7f8bc6a6082d2"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30079,16 +30096,16 @@
         "category-ru": {
           "data_path": "data/groups/category-ru",
           "data_sha256": "4838111d591d6911f7424f14a451ed8859e187567be8306b6586a20acb108773",
-          "data_entries": 2158,
-          "rules": 2158,
+          "data_entries": 2159,
+          "rules": 2159,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ru.yaml",
-            "sha256": "9d3d10042133dd96b2f157f470bb1815a1e045cf459724b9e9c8cdeded6f13ad"
+            "sha256": "43ebdb99c3ea665bf4f1d3a2b6e016c43789d8eb0b394f4d3fd1def6e3d16f7a"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-ru.list",
-            "sha256": "4607accc5fb9e65b440756f4c7dcb88476593805f43cac7ba32b8d41b6cd5906"
+            "sha256": "39ca0f870effa109c8218d923daa56bcebc9927d2b6113c01df1268f23c927e7"
           },
           "upstream": "category-ru"
         },
@@ -30481,11 +30498,11 @@
         "cn": {
           "data_path": "data/groups/cn",
           "data_sha256": "cde2f966d1e460ebb29dd1704c3b27bbead70f1c808a944e86a763604935dab2",
-          "data_entries": 8522,
-          "rules": 8522,
+          "data_entries": 8534,
+          "rules": 8534,
           "mihomo": {
             "path": "rule/Mihomo/groups/cn.yaml",
-            "sha256": "cefa65aa1b7901b733d64eb0feb142ae58187dab0d7ebab9a8a6bdd0d5721de9"
+            "sha256": "4f9558a8347d070bf61742bb71ab0d2c1566b805ccb7c6be4150301a3ceab0ac"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30533,11 +30550,11 @@
         "geolocation-!cn": {
           "data_path": "data/groups/geolocation-!cn",
           "data_sha256": "d2e7e691eb46b34585be88d2e9b422fb9f287b575d90bc970e5c0525eccca735",
-          "data_entries": 26150,
-          "rules": 26146,
+          "data_entries": 26161,
+          "rules": 26157,
           "mihomo": {
             "path": "rule/Mihomo/groups/geolocation-!cn.yaml",
-            "sha256": "f055a3906618a6b60ad63057b13611254704ad1160ae22b01b27d7b9cf8a567d"
+            "sha256": "78ab8638c1251e3fd0933bef290c16cd7ae9a08ea7f4eb79efee56b460e59683"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30708,11 +30725,11 @@
         "geolocation-cn": {
           "data_path": "data/groups/geolocation-cn",
           "data_sha256": "453503736eef89695ad82214cf6a06fd1f4bba63d87f4ee0e39e1c7f382bd15c",
-          "data_entries": 8491,
-          "rules": 8491,
+          "data_entries": 8503,
+          "rules": 8503,
           "mihomo": {
             "path": "rule/Mihomo/groups/geolocation-cn.yaml",
-            "sha256": "567dca89ef8397077e17c098548606fa3f0a546c9869b491c03591255f2cbad0"
+            "sha256": "c37fb8887dd1c7da359facb03632e5416fb3457ca89548f484b89ab7a3c88eb2"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30923,7 +30940,7 @@
     },
     "index": {
       "path": "data/README.md",
-      "sha256": "c334d6923b116adad0e51d4a5f77b1065b3a19079495472f71f6389155467faa"
+      "sha256": "aba30ac98324dad44336c038037e4dc23c95a36adb8de8085ca7a6fffca2464c"
     }
   }
 }
