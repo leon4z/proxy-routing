@@ -25,7 +25,7 @@
   "outputs": {
     "config/Mihomo": {
       "rules": 165707,
-      "groups": 18,
+      "groups": 19,
       "inventory_bound": false,
       "regex": 174,
       "remote_rule_sets": [
@@ -54,14 +54,6 @@
           "rules": 28
         },
         {
-          "id": "category-telemetry",
-          "path": "rule/Mihomo/groups/telemetry.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/groups/telemetry.yaml",
-          "sha256": "3553db775532335a077bbd3cdb080140481648012c38487a61024d9d0db5d086",
-          "behavior": "classical",
-          "rules": 7
-        },
-        {
           "id": "service-claude",
           "path": "rule/Mihomo/variants/service-claude.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/service-claude.yaml",
@@ -84,6 +76,38 @@
           "sha256": "ae3b3587f3659296787796cc12397fa3d2118df6c572c3f13142bdca3149b6c1",
           "behavior": "classical",
           "rules": 31
+        },
+        {
+          "id": "site-paypal",
+          "path": "rule/Mihomo/variants/site-paypal.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-paypal.yaml",
+          "sha256": "13f380f7cb39db2230c56a4a4e8781abb91115bfe72d518cf81526746bc099cd",
+          "behavior": "classical",
+          "rules": 245
+        },
+        {
+          "id": "site-telegram",
+          "path": "rule/Mihomo/services/telegram.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/telegram.yaml",
+          "sha256": "f4365e8764667c43157c946a34a9bcdff8051ede208ce7f292b7591c991947b7",
+          "behavior": "classical",
+          "rules": 21
+        },
+        {
+          "id": "ip-telegram",
+          "path": "rule/Mihomo/variants/ip-telegram.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-telegram.yaml",
+          "sha256": "5c7a086ad7ad93882d47c6425f005de11582b7c5392ee3e2f407f885fd1f6c70",
+          "behavior": "classical",
+          "rules": 12
+        },
+        {
+          "id": "site-apple",
+          "path": "rule/Mihomo/variants/site-apple.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-apple.yaml",
+          "sha256": "a3fed99a3ec9c6f25518bca1b2f7c42692358d9464787ed42d5ec4fe04de2d26",
+          "behavior": "classical",
+          "rules": 1798
         },
         {
           "id": "category-finance",
@@ -206,22 +230,6 @@
           "rules": 28
         },
         {
-          "id": "site-telegram",
-          "path": "rule/Mihomo/services/telegram.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/telegram.yaml",
-          "sha256": "f4365e8764667c43157c946a34a9bcdff8051ede208ce7f292b7591c991947b7",
-          "behavior": "classical",
-          "rules": 21
-        },
-        {
-          "id": "site-paypal",
-          "path": "rule/Mihomo/variants/site-paypal.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-paypal.yaml",
-          "sha256": "13f380f7cb39db2230c56a4a4e8781abb91115bfe72d518cf81526746bc099cd",
-          "behavior": "classical",
-          "rules": 245
-        },
-        {
           "id": "site-twitter",
           "path": "rule/Mihomo/variants/site-twitter.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-twitter.yaml",
@@ -318,14 +326,6 @@
           "rules": 1080
         },
         {
-          "id": "site-apple",
-          "path": "rule/Mihomo/variants/site-apple.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-apple.yaml",
-          "sha256": "a3fed99a3ec9c6f25518bca1b2f7c42692358d9464787ed42d5ec4fe04de2d26",
-          "behavior": "classical",
-          "rules": 1798
-        },
-        {
           "id": "site-bilibili",
           "path": "rule/Mihomo/variants/site-bilibili.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-bilibili.yaml",
@@ -404,14 +404,6 @@
           "sha256": "45825f031de3a00610edaf74ede2053805600978b17247ff88991654ee2e3928",
           "behavior": "classical",
           "rules": 40
-        },
-        {
-          "id": "ip-telegram",
-          "path": "rule/Mihomo/variants/ip-telegram.yaml",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-telegram.yaml",
-          "sha256": "5c7a086ad7ad93882d47c6425f005de11582b7c5392ee3e2f407f885fd1f6c70",
-          "behavior": "classical",
-          "rules": 12
         },
         {
           "id": "ip-facebook",
@@ -598,6 +590,14 @@
           "rules": 9
         },
         {
+          "id": "category-telemetry",
+          "path": "rule/Mihomo/groups/telemetry.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/groups/telemetry.yaml",
+          "sha256": "3553db775532335a077bbd3cdb080140481648012c38487a61024d9d0db5d086",
+          "behavior": "classical",
+          "rules": 7
+        },
+        {
           "id": "site-geolocation-!cn",
           "path": "rule/Mihomo/variants/site-geolocation-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-geolocation-!cn.yaml",
@@ -623,11 +623,11 @@
         }
       ],
       "config_path": "config/Mihomo/Proxy-Routing.yaml",
-      "config_sha256": "4c7ab75e9fc2e8e2d427f5a2dda21de6c3d84eac0499aa9e1261b03415307be9"
+      "config_sha256": "7d39f5a8adda7076e9f90aad21e4f86759e9fece21998e5b0dee3d17262dfb99"
     },
     "config/Shadowrocket": {
-      "rules": 166613,
-      "config_rules": 68,
+      "rules": 166631,
+      "config_rules": 85,
       "groups": 18,
       "remote_rule_sets": [
         {
@@ -655,14 +655,6 @@
           "rules": 28
         },
         {
-          "id": "category-telemetry",
-          "path": "rule/Shadowrocket/groups/telemetry.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/groups/telemetry.list",
-          "sha256": "b72db99f662c26b8a9fa858b55859b1ae9162c66861c09690b6a155ed4f511a1",
-          "policy": "共享遥测",
-          "rules": 7
-        },
-        {
           "id": "service-claude",
           "path": "rule/Shadowrocket/variants/service-claude.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/service-claude.list",
@@ -685,6 +677,38 @@
           "sha256": "2a711c850b353c6cdc507fe00c660abf1a5178343f20848a820048d6432fa30b",
           "policy": "金融·代理",
           "rules": 31
+        },
+        {
+          "id": "site-paypal",
+          "path": "rule/Shadowrocket/variants/site-paypal.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-paypal.list",
+          "sha256": "135ae59122a6271822a6d95a2a2e63f331166f1231989adbaf6dcd5aa0bc1f7a",
+          "policy": "金融·代理",
+          "rules": 245
+        },
+        {
+          "id": "site-telegram",
+          "path": "rule/Shadowrocket/services/telegram.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/telegram.list",
+          "sha256": "a1a39e45b89ce8da3def2ed862bdeef0fa67acb9ca50ea3cb017b9a2dd4623d8",
+          "policy": "影音社交",
+          "rules": 21
+        },
+        {
+          "id": "ip-telegram",
+          "path": "rule/Shadowrocket/variants/ip-telegram.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/ip-telegram.list",
+          "sha256": "fa1a676cc3741cc0158ba430ef1e2dd635972cc38fa020fb282f99e3a04dceed",
+          "policy": "影音社交",
+          "rules": 12
+        },
+        {
+          "id": "site-apple",
+          "path": "rule/Shadowrocket/variants/site-apple.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-apple.list",
+          "sha256": "29be9a7f8aa89ed8c74b3e73100cbc408988a7188f399d94fe4d640f34dbb30d",
+          "policy": "Apple",
+          "rules": 1798
         },
         {
           "id": "category-finance",
@@ -807,22 +831,6 @@
           "rules": 28
         },
         {
-          "id": "site-telegram",
-          "path": "rule/Shadowrocket/services/telegram.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/telegram.list",
-          "sha256": "a1a39e45b89ce8da3def2ed862bdeef0fa67acb9ca50ea3cb017b9a2dd4623d8",
-          "policy": "影音社交",
-          "rules": 21
-        },
-        {
-          "id": "site-paypal",
-          "path": "rule/Shadowrocket/variants/site-paypal.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-paypal.list",
-          "sha256": "135ae59122a6271822a6d95a2a2e63f331166f1231989adbaf6dcd5aa0bc1f7a",
-          "policy": "DIRECT",
-          "rules": 245
-        },
-        {
           "id": "site-twitter",
           "path": "rule/Shadowrocket/variants/site-twitter.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-twitter.list",
@@ -919,14 +927,6 @@
           "rules": 1078
         },
         {
-          "id": "site-apple",
-          "path": "rule/Shadowrocket/variants/site-apple.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-apple.list",
-          "sha256": "29be9a7f8aa89ed8c74b3e73100cbc408988a7188f399d94fe4d640f34dbb30d",
-          "policy": "DIRECT",
-          "rules": 1798
-        },
-        {
           "id": "site-bilibili",
           "path": "rule/Shadowrocket/variants/site-bilibili.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-bilibili.list",
@@ -1005,14 +1005,6 @@
           "sha256": "ff942386b9264fa0c96a4684511535390678b0a79ead31dd05761513195e3f7c",
           "policy": "影音社交",
           "rules": 40
-        },
-        {
-          "id": "ip-telegram",
-          "path": "rule/Shadowrocket/variants/ip-telegram.list",
-          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/ip-telegram.list",
-          "sha256": "fa1a676cc3741cc0158ba430ef1e2dd635972cc38fa020fb282f99e3a04dceed",
-          "policy": "影音社交",
-          "rules": 12
         },
         {
           "id": "ip-facebook",
@@ -1197,6 +1189,14 @@
           "sha256": "3a74fd474f4769594459bd71ca161b184ec42107741e581cbc7f614249cbd03f",
           "policy": "默认代理",
           "rules": 9
+        },
+        {
+          "id": "category-telemetry",
+          "path": "rule/Shadowrocket/groups/telemetry.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/groups/telemetry.list",
+          "sha256": "b72db99f662c26b8a9fa858b55859b1ae9162c66861c09690b6a155ed4f511a1",
+          "policy": "默认代理",
+          "rules": 7
         },
         {
           "id": "site-geolocation-!cn",
@@ -3206,7 +3206,7 @@
         }
       ],
       "config_path": "config/Shadowrocket/Proxy-Routing.conf",
-      "config_sha256": "cc8d5e0fe3163b1af555ffb913d6287bb1ade50cca32dbc13cce14e485ea17cb"
+      "config_sha256": "0898d2bfdc0fe787d75621a1987fc5e9239ef2607eb2c81a8f76d2205592cd26"
     }
   },
   "service_rules": {

@@ -1,0 +1,5 @@
+#!name=广告拦截
+#!desc=Proxy Routing 广告规则。关闭后按原有配置分流。
+
+[Rule]
+AND,((RULE-SET,https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-category-ads-all.list),(NOT,((OR,((DOMAIN,browser-intake-datadoghq.com),(DOMAIN,rum.browser-intake-datadoghq.com),(DOMAIN,o33249.ingest.sentry.io),(DOMAIN,o33249.ingest.us.sentry.io),(DOMAIN,openai.qualtrics.com),(DOMAIN,browser-intake-us5-datadoghq.com),(DOMAIN,http-intake.logs.us5.datadoghq.com)))))),REJECT

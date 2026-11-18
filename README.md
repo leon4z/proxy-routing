@@ -2,6 +2,10 @@
 
 同一套公开分流策略提供 [Mihomo 配置](config/Mihomo/Proxy-Routing.yaml) 和 [Shadowrocket 配置](config/Shadowrocket/Proxy-Routing.conf)。配置内没有节点或订阅凭据。Mihomo 通过客户端覆写添加自己的节点订阅，Shadowrocket 使用客户端中已导入的节点。
 
+广告拦截默认关闭。Mihomo 的「广告拦截」组初始选择 `PASS`，遇到广告规则会继续按原有规则分流，切到 `REJECT` 即开启拦截。小火箭可在「配置 → 模块 → 添加」导入 [广告拦截模块](https://raw.githubusercontent.com/leon4z/proxy-routing/main/config/Shadowrocket/Ad-Blocking.sgmodule)。导入后可在模块页面启停。两种客户端使用同源广告名单，并保留已审阅的精确服务例外。
+
+Apple 默认直连，用户可以手动切代理。Telegram 走「影音社交」，PayPal 走「金融·代理」。已审阅的精确遥测入口分别跟随 OpenAI 和 Claude。
+
 AI、Google、影音社交和兜底默认跟随默认代理；金融初始选择 DIRECT，保留代理出口供手选，直连失败不自动切换，已有有效手选不因初始默认值变化而重置；OpenAI 和 Claude 默认跟随 AI，也可以独立选出口。IBKR、BBAE、富途等服务命中金融。券商不单独设组。通用境外分类和最终未命中流量进入兜底，以保持 Shadowrocket 既有终结正则适配的语义。
 
 默认代理和各服务组可以选择香港、台湾、日本、新加坡、韩国、美国、其他地区或全部节点。地区组按名称筛选节点，全部节点包含未识别地区的节点。所有组都是手选，不自动测速切换。引用同一地区组的服务共享该组手选。公开配置不按 VPS、机场或住宅分类。Shadowrocket 默认代理初始跟随首页 PROXY，Mihomo 初次导入需手选可用节点；有效手选随客户端更新保留。
@@ -12,7 +16,7 @@ Mihomo 默认开启 HTTP、TLS 和 QUIC 域名嗅探，辅助缺少域名的连�
 
 Mihomo 启用 `profile.store-selected` 和 `profile.store-fake-ip`，保存手选与 Fake-IP 映射缓存。
 
-确认的共享遥测和反馈入口由[遥测聚合](data/groups/telemetry)统一维护，优先于广告拦截和普通业务规则，HTTPS 放行并经过隐藏的「共享遥测」手选出口。该出口只引用代理节点组，初始跟随全部节点，不包含 DIRECT 或首页 PROXY；其他服务改为直连不改变这些入口的处理。UDP 明确拒绝，代理失效不回落直连。可在支持显示隐藏分组的客户端选择遥测出口。清单仅包含已确认入口，并不放行整个广告分类或供应商所有域名。共享遥测与业务可使用不同出口；主动直连的业务网站仍能看到本机公网 IP。
+已审阅的七个精确遥测和反馈域名优先于广告。UDP 明确拒绝，其余流量随对应的 OpenAI 或 Claude 组出口。规则匹配以域名为准，同一入口被其他应用使用时也会命中。[遥测聚合](data/groups/telemetry)
 
 从旧版三模式配置迁移时，请重新导入上述新入口；现在每个客户端只提供一份完整配置。迁移前可导出自己的旧配置及节点，个人编辑不会自动合并到新模板。
 
@@ -25,7 +29,7 @@ Mihomo 启用 `profile.store-selected` 和 `profile.store-fake-ip`，保存手�
 | [rule/Mihomo](rule/Mihomo) | 服务、聚合和配置专用的 YAML 规则 |
 | [rule/Shadowrocket](rule/Shadowrocket) | 服务、聚合和配置专用的 RULE-SET 文件 |
 | [config/Mihomo](config/Mihomo) | 完整配置和导入链接 |
-| [config/Shadowrocket](config/Shadowrocket) | 完整配置 |
+| [config/Shadowrocket](config/Shadowrocket) | 完整配置和可选广告拦截模块 |
 
 完整配置直接引用 `rule/` 链接。内容一致时共用服务或聚合规则，过滤广告属性、DNS 专用格式及已审阅的正则转换等差异版本放在相应客户端的 `variants/`，使用的格式、规则数及文件摘要记录在构建清单中。
 

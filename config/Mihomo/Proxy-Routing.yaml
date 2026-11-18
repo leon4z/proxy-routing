@@ -186,11 +186,11 @@
       - "REJECT"
     "default-selected": "默认代理"
   -
-    "name": "共享遥测"
+    "name": "Apple"
     "type": "select"
-    "hidden": true
     "proxies":
-      - "全部节点"
+      - "DIRECT"
+      - "默认代理"
       - "香港节点"
       - "台湾节点"
       - "日本节点"
@@ -198,8 +198,16 @@
       - "韩国节点"
       - "美国节点"
       - "其他地区"
+      - "全部节点"
       - "REJECT"
-    "default-selected": "全部节点"
+    "default-selected": "DIRECT"
+  -
+    "name": "广告拦截"
+    "type": "select"
+    "proxies":
+      - "PASS"
+      - "REJECT"
+    "default-selected": "PASS"
   -
     "name": "香港节点"
     "type": "select"
@@ -290,14 +298,6 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-private.yaml"
     "interval": 86400
     "proxy": "DIRECT"
-  "category-telemetry":
-    "type": "http"
-    "behavior": "classical"
-    "format": "yaml"
-    "path": "./rules/category-telemetry.yaml"
-    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/groups/telemetry.yaml"
-    "interval": 86400
-    "proxy": "DIRECT"
   "service-claude":
     "type": "http"
     "behavior": "classical"
@@ -320,6 +320,38 @@
     "format": "yaml"
     "path": "./rules/category-finance-proxy.yaml"
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/groups/finance-proxy.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-paypal":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-paypal.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-paypal.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-telegram":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-telegram.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/telegram.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "ip-telegram":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/ip-telegram.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-telegram.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
+  "site-apple":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/site-apple.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-apple.yaml"
     "interval": 86400
     "proxy": "DIRECT"
   "category-finance":
@@ -442,22 +474,6 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-spotify.yaml"
     "interval": 86400
     "proxy": "DIRECT"
-  "site-telegram":
-    "type": "http"
-    "behavior": "classical"
-    "format": "yaml"
-    "path": "./rules/site-telegram.yaml"
-    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/telegram.yaml"
-    "interval": 86400
-    "proxy": "DIRECT"
-  "site-paypal":
-    "type": "http"
-    "behavior": "classical"
-    "format": "yaml"
-    "path": "./rules/site-paypal.yaml"
-    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-paypal.yaml"
-    "interval": 86400
-    "proxy": "DIRECT"
   "site-twitter":
     "type": "http"
     "behavior": "classical"
@@ -554,14 +570,6 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-google.yaml"
     "interval": 86400
     "proxy": "DIRECT"
-  "site-apple":
-    "type": "http"
-    "behavior": "classical"
-    "format": "yaml"
-    "path": "./rules/site-apple.yaml"
-    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-apple.yaml"
-    "interval": 86400
-    "proxy": "DIRECT"
   "site-bilibili":
     "type": "http"
     "behavior": "classical"
@@ -640,14 +648,6 @@
     "format": "yaml"
     "path": "./rules/site-tiktok.yaml"
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/tiktok.yaml"
-    "interval": 86400
-    "proxy": "DIRECT"
-  "ip-telegram":
-    "type": "http"
-    "behavior": "classical"
-    "format": "yaml"
-    "path": "./rules/ip-telegram.yaml"
-    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-telegram.yaml"
     "interval": 86400
     "proxy": "DIRECT"
   "ip-facebook":
@@ -834,6 +834,14 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/itiger.yaml"
     "interval": 86400
     "proxy": "DIRECT"
+  "category-telemetry":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/category-telemetry.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/groups/telemetry.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "site-geolocation-!cn":
     "type": "http"
     "behavior": "classical"
@@ -861,9 +869,35 @@
 "rules":
   - "DOMAIN-KEYWORD,stun,REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,3478)),REJECT"
-  - "AND,((NETWORK,udp),(RULE-SET,category-telemetry)),REJECT"
-  - "RULE-SET,category-telemetry,共享遥测"
-  - "RULE-SET,site-category-ads-all,REJECT"
+  - "AND,((NETWORK,udp),(DOMAIN,browser-intake-datadoghq.com)),REJECT"
+  - "DOMAIN,browser-intake-datadoghq.com,OpenAI"
+  - "AND,((NETWORK,udp),(DOMAIN,rum.browser-intake-datadoghq.com)),REJECT"
+  - "DOMAIN,rum.browser-intake-datadoghq.com,OpenAI"
+  - "AND,((NETWORK,udp),(DOMAIN,o33249.ingest.sentry.io)),REJECT"
+  - "DOMAIN,o33249.ingest.sentry.io,OpenAI"
+  - "AND,((NETWORK,udp),(DOMAIN,o33249.ingest.us.sentry.io)),REJECT"
+  - "DOMAIN,o33249.ingest.us.sentry.io,OpenAI"
+  - "AND,((NETWORK,udp),(DOMAIN,openai.qualtrics.com)),REJECT"
+  - "DOMAIN,openai.qualtrics.com,OpenAI"
+  - "AND,((NETWORK,udp),(DOMAIN,browser-intake-us5-datadoghq.com)),REJECT"
+  - "DOMAIN,browser-intake-us5-datadoghq.com,Claude"
+  - "AND,((NETWORK,udp),(DOMAIN,http-intake.logs.us5.datadoghq.com)),REJECT"
+  - "DOMAIN,http-intake.logs.us5.datadoghq.com,Claude"
+  - "RULE-SET,site-category-ads-all,广告拦截"
+  - "DOMAIN,mask.icloud.com,Apple"
+  - "AND,((NETWORK,udp),(DOMAIN,mask.icloud.com)),REJECT"
+  - "DOMAIN,mask-h2.icloud.com,Apple"
+  - "AND,((NETWORK,udp),(DOMAIN,mask-h2.icloud.com)),REJECT"
+  - "DOMAIN,mask-api.icloud.com,Apple"
+  - "AND,((NETWORK,udp),(DOMAIN,mask-api.icloud.com)),REJECT"
+  - "DOMAIN,apple-relay.cloudflare.com,Apple"
+  - "AND,((NETWORK,udp),(DOMAIN,apple-relay.cloudflare.com)),REJECT"
+  - "DOMAIN,apple-relay.fastly-edge.com,Apple"
+  - "AND,((NETWORK,udp),(DOMAIN,apple-relay.fastly-edge.com)),REJECT"
+  - "DOMAIN,cp4.cloudflare.com,Apple"
+  - "AND,((NETWORK,udp),(DOMAIN,cp4.cloudflare.com)),REJECT"
+  - "DOMAIN,apple-relay.apple.com,Apple"
+  - "AND,((NETWORK,udp),(DOMAIN,apple-relay.apple.com)),REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,443),(OR,((RULE-SET,service-claude),(RULE-SET,category-ai),(RULE-SET,site-google),(RULE-SET,ip-google,no-resolve),(DOMAIN-SUFFIX,claude.app),(DOMAIN-SUFFIX,cursorvm.com)))),REJECT"
   - "AND,((NETWORK,udp),(DST-PORT,443),(OR,((DOMAIN,ecomuser.snssdk.com),(DOMAIN,is.snssdk.com),(RULE-SET,site-cn),(RULE-SET,site-bilibili),(RULE-SET,site-netease),(RULE-SET,site-baidu),(RULE-SET,site-douban),(RULE-SET,site-tencent),(RULE-SET,site-sina),(RULE-SET,site-zhihu),(RULE-SET,site-xiaohongshu),(RULE-SET,site-douyin),(RULE-SET,ip-cn)))),DIRECT"
   - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
@@ -876,13 +910,16 @@
   - "DOMAIN-SUFFIX,duolingo.cn,DIRECT"
   - "RULE-SET,site-private,DIRECT"
   - "RULE-SET,ip-private,DIRECT,no-resolve"
-  - "RULE-SET,category-telemetry,共享遥测"
   - "RULE-SET,service-claude,Claude"
   - "IP-CIDR,160.79.104.0/21,Claude,no-resolve"
   - "IP-CIDR6,2607:6bc0::/32,Claude,no-resolve"
   - "IP-ASN,399358,Claude,no-resolve"
   - "RULE-SET,service-openai,OpenAI"
   - "RULE-SET,category-finance-proxy,金融·代理"
+  - "RULE-SET,site-paypal,金融·代理"
+  - "RULE-SET,site-telegram,影音社交"
+  - "RULE-SET,ip-telegram,影音社交,no-resolve"
+  - "RULE-SET,site-apple,Apple"
   - "RULE-SET,category-finance,金融·直连"
   - "RULE-SET,site-cn,DIRECT"
   - "RULE-SET,site-oracle,DIRECT"
@@ -895,8 +932,6 @@
   - "RULE-SET,site-disney,影音社交"
   - "RULE-SET,site-hbo,影音社交"
   - "RULE-SET,site-spotify,影音社交"
-  - "RULE-SET,site-telegram,影音社交"
-  - "RULE-SET,site-paypal,DIRECT"
   - "RULE-SET,site-twitter,影音社交"
   - "RULE-SET,site-facebook,影音社交"
   - "RULE-SET,site-amazon,DIRECT"
@@ -909,7 +944,6 @@
   - "RULE-SET,site-github,默认代理"
   - "RULE-SET,site-microsoft,DIRECT"
   - "RULE-SET,site-google,Google"
-  - "RULE-SET,site-apple,DIRECT"
   - "RULE-SET,site-bilibili,DIRECT"
   - "RULE-SET,site-netease,DIRECT"
   - "RULE-SET,site-baidu,DIRECT"
@@ -920,7 +954,6 @@
   - "RULE-SET,site-xiaohongshu,DIRECT"
   - "RULE-SET,site-douyin,DIRECT"
   - "RULE-SET,site-tiktok,影音社交"
-  - "RULE-SET,ip-telegram,影音社交,no-resolve"
   - "RULE-SET,ip-facebook,影音社交,no-resolve"
   - "RULE-SET,ip-twitter,影音社交,no-resolve"
   - "RULE-SET,ip-google,Google,no-resolve"
