@@ -1,6 +1,6 @@
 # 规则库索引
 
-固定上游版本 `20261116043813`。
+固定上游版本 `20261118141523`。
 
 服务归入 services，聚合组与通用匹配集合归入 groups。聚合文件的 include 路径以 data/ 为起点。来源与本地补充记录在 manifest.json。
 
@@ -21,7 +21,7 @@
 | [services/4plebs](services/4plebs) | 2 | [YAML](../rule/Mihomo/services/4plebs.yaml) | [LIST](../rule/Shadowrocket/services/4plebs.list) |
 | [services/51job](services/51job) | 5 | [YAML](../rule/Mihomo/services/51job.yaml) | [LIST](../rule/Shadowrocket/services/51job.list) |
 | [services/54647](services/54647) | 4 | [YAML](../rule/Mihomo/services/54647.yaml) | [LIST](../rule/Shadowrocket/services/54647.list) |
-| [services/58tongcheng](services/58tongcheng) | 42 | [YAML](../rule/Mihomo/services/58tongcheng.yaml) | [LIST](../rule/Shadowrocket/services/58tongcheng.list) |
+| [services/58tongcheng](services/58tongcheng) | 47 | [YAML](../rule/Mihomo/services/58tongcheng.yaml) | [LIST](../rule/Shadowrocket/services/58tongcheng.list) |
 | [services/5ch](services/5ch) | 3 | [YAML](../rule/Mihomo/services/5ch.yaml) | [LIST](../rule/Shadowrocket/services/5ch.list) |
 | [services/6park](services/6park) | 7 | [YAML](../rule/Mihomo/services/6park.yaml) | [LIST](../rule/Shadowrocket/services/6park.list) |
 | [services/7tv](services/7tv) | 2 | [YAML](../rule/Mihomo/services/7tv.yaml) | [LIST](../rule/Shadowrocket/services/7tv.list) |
@@ -61,10 +61,10 @@
 | [services/aixcoder](services/aixcoder) | 2 | [YAML](../rule/Mihomo/services/aixcoder.yaml) | [LIST](../rule/Shadowrocket/services/aixcoder.list) |
 | [services/akamai](services/akamai) | 81 | [YAML](../rule/Mihomo/services/akamai.yaml) | [LIST](../rule/Shadowrocket/services/akamai.list) |
 | [services/akiko](services/akiko) | 3 | [YAML](../rule/Mihomo/services/akiko.yaml) | [LIST](../rule/Shadowrocket/services/akiko.list) |
-| [services/alibaba](services/alibaba) | 467 | [YAML](../rule/Mihomo/services/alibaba.yaml) | [LIST](../rule/Shadowrocket/services/alibaba.list) |
+| [services/alibaba](services/alibaba) | 468 | [YAML](../rule/Mihomo/services/alibaba.yaml) | [LIST](../rule/Shadowrocket/services/alibaba.list) |
 | [services/alibabacloud](services/alibabacloud) | 12 | [YAML](../rule/Mihomo/services/alibabacloud.yaml) | [LIST](../rule/Shadowrocket/services/alibabacloud.list) |
 | [services/aligames](services/aligames) | 5 | [YAML](../rule/Mihomo/services/aligames.yaml) | [LIST](../rule/Shadowrocket/services/aligames.list) |
-| [services/aliyun](services/aliyun) | 88 | [YAML](../rule/Mihomo/services/aliyun.yaml) | [LIST](../rule/Shadowrocket/services/aliyun.list) |
+| [services/aliyun](services/aliyun) | 89 | [YAML](../rule/Mihomo/services/aliyun.yaml) | [LIST](../rule/Shadowrocket/services/aliyun.list) |
 | [services/aliyun-drive](services/aliyun-drive) | 6 | [YAML](../rule/Mihomo/services/aliyun-drive.yaml) | [LIST](../rule/Shadowrocket/services/aliyun-drive.list) |
 | [services/aljazeera](services/aljazeera) | 7 | [YAML](../rule/Mihomo/services/aljazeera.yaml) | [LIST](../rule/Shadowrocket/services/aljazeera.list) |
 | [services/alphabet](services/alphabet) | 1135 | [YAML](../rule/Mihomo/services/alphabet.yaml) | 域名正则待适配 |
@@ -131,7 +131,7 @@
 | [services/b3log](services/b3log) | 4 | [YAML](../rule/Mihomo/services/b3log.yaml) | [LIST](../rule/Shadowrocket/services/b3log.list) |
 | [services/bahamut](services/bahamut) | 5 | [YAML](../rule/Mihomo/services/bahamut.yaml) | [LIST](../rule/Shadowrocket/services/bahamut.list) |
 | [services/baidu](services/baidu) | 132 | [YAML](../rule/Mihomo/services/baidu.yaml) | [LIST](../rule/Shadowrocket/services/baidu.list) |
-| [services/baishancloud](services/baishancloud) | 3 | [YAML](../rule/Mihomo/services/baishancloud.yaml) | [LIST](../rule/Shadowrocket/services/baishancloud.list) |
+| [services/baishancloud](services/baishancloud) | 9 | [YAML](../rule/Mihomo/services/baishancloud.yaml) | [LIST](../rule/Shadowrocket/services/baishancloud.list) |
 | [services/baltamatica](services/baltamatica) | 4 | [YAML](../rule/Mihomo/services/baltamatica.yaml) | [LIST](../rule/Shadowrocket/services/baltamatica.list) |
 | [services/bamtech](services/bamtech) | 3 | [YAML](../rule/Mihomo/services/bamtech.yaml) | [LIST](../rule/Shadowrocket/services/bamtech.list) |
 | [services/bandcamp](services/bandcamp) | 2 | [YAML](../rule/Mihomo/services/bandcamp.yaml) | [LIST](../rule/Shadowrocket/services/bandcamp.list) |
@@ -227,7 +227,7 @@
 | [services/cern](services/cern) | 7 | [YAML](../rule/Mihomo/services/cern.yaml) | [LIST](../rule/Shadowrocket/services/cern.list) |
 | [services/certinomis](services/certinomis) | 2 | [YAML](../rule/Mihomo/services/certinomis.yaml) | [LIST](../rule/Shadowrocket/services/certinomis.list) |
 | [services/certum](services/certum) | 3 | [YAML](../rule/Mihomo/services/certum.yaml) | [LIST](../rule/Shadowrocket/services/certum.list) |
-| [services/changyou](services/changyou) | 7 | [YAML](../rule/Mihomo/services/changyou.yaml) | [LIST](../rule/Shadowrocket/services/changyou.list) |
+| [services/changyou](services/changyou) | 9 | [YAML](../rule/Mihomo/services/changyou.yaml) | [LIST](../rule/Shadowrocket/services/changyou.list) |
 | [services/chaoxing](services/chaoxing) | 35 | [YAML](../rule/Mihomo/services/chaoxing.yaml) | [LIST](../rule/Shadowrocket/services/chaoxing.list) |
 | [services/chatango](services/chatango) | 1 | [YAML](../rule/Mihomo/services/chatango.yaml) | [LIST](../rule/Shadowrocket/services/chatango.list) |
 | [services/chatwhores](services/chatwhores) | 5 | [YAML](../rule/Mihomo/services/chatwhores.yaml) | [LIST](../rule/Shadowrocket/services/chatwhores.list) |
@@ -391,7 +391,7 @@
 | [services/ehentai](services/ehentai) | 8 | [YAML](../rule/Mihomo/services/ehentai.yaml) | [LIST](../rule/Shadowrocket/services/ehentai.list) |
 | [services/electron](services/electron) | 1 | [YAML](../rule/Mihomo/services/electron.yaml) | [LIST](../rule/Shadowrocket/services/electron.list) |
 | [services/eleme](services/eleme) | 12 | [YAML](../rule/Mihomo/services/eleme.yaml) | [LIST](../rule/Shadowrocket/services/eleme.list) |
-| [services/elevenlabs](services/elevenlabs) | 2 | [YAML](../rule/Mihomo/services/elevenlabs.yaml) | [LIST](../rule/Shadowrocket/services/elevenlabs.list) |
+| [services/elevenlabs](services/elevenlabs) | 3 | [YAML](../rule/Mihomo/services/elevenlabs.yaml) | [LIST](../rule/Shadowrocket/services/elevenlabs.list) |
 | [services/elsevier](services/elsevier) | 14 | [YAML](../rule/Mihomo/services/elsevier.yaml) | [LIST](../rule/Shadowrocket/services/elsevier.list) |
 | [services/embark](services/embark) | 4 | [YAML](../rule/Mihomo/services/embark.yaml) | [LIST](../rule/Shadowrocket/services/embark.list) |
 | [services/embedly](services/embedly) | 3 | [YAML](../rule/Mihomo/services/embedly.yaml) | [LIST](../rule/Shadowrocket/services/embedly.list) |
@@ -722,7 +722,7 @@
 | [services/launchpad](services/launchpad) | 5 | [YAML](../rule/Mihomo/services/launchpad.yaml) | [LIST](../rule/Shadowrocket/services/launchpad.list) |
 | [services/lavteam](services/lavteam) | 1 | [YAML](../rule/Mihomo/services/lavteam.yaml) | [LIST](../rule/Shadowrocket/services/lavteam.list) |
 | [services/le](services/le) | 13 | [YAML](../rule/Mihomo/services/le.yaml) | [LIST](../rule/Shadowrocket/services/le.list) |
-| [services/lenovo](services/lenovo) | 58 | [YAML](../rule/Mihomo/services/lenovo.yaml) | [LIST](../rule/Shadowrocket/services/lenovo.list) |
+| [services/lenovo](services/lenovo) | 61 | [YAML](../rule/Mihomo/services/lenovo.yaml) | [LIST](../rule/Shadowrocket/services/lenovo.list) |
 | [services/lethalhardcore](services/lethalhardcore) | 2 | [YAML](../rule/Mihomo/services/lethalhardcore.yaml) | [LIST](../rule/Shadowrocket/services/lethalhardcore.list) |
 | [services/letsencrypt](services/letsencrypt) | 3 | [YAML](../rule/Mihomo/services/letsencrypt.yaml) | [LIST](../rule/Shadowrocket/services/letsencrypt.list) |
 | [services/lg](services/lg) | 10 | [YAML](../rule/Mihomo/services/lg.yaml) | [LIST](../rule/Shadowrocket/services/lg.list) |
@@ -960,7 +960,7 @@
 | [services/picsee](services/picsee) | 6 | [YAML](../rule/Mihomo/services/picsee.yaml) | [LIST](../rule/Shadowrocket/services/picsee.list) |
 | [services/pikpak](services/pikpak) | 7 | [YAML](../rule/Mihomo/services/pikpak.yaml) | [LIST](../rule/Shadowrocket/services/pikpak.list) |
 | [services/pinduoduo](services/pinduoduo) | 7 | [YAML](../rule/Mihomo/services/pinduoduo.yaml) | [LIST](../rule/Shadowrocket/services/pinduoduo.list) |
-| [services/pingan](services/pingan) | 4 | [YAML](../rule/Mihomo/services/pingan.yaml) | [LIST](../rule/Shadowrocket/services/pingan.list) |
+| [services/pingan](services/pingan) | 19 | [YAML](../rule/Mihomo/services/pingan.yaml) | [LIST](../rule/Shadowrocket/services/pingan.list) |
 | [services/pingcap](services/pingcap) | 7 | [YAML](../rule/Mihomo/services/pingcap.yaml) | [LIST](../rule/Shadowrocket/services/pingcap.list) |
 | [services/pinggy](services/pinggy) | 2 | [YAML](../rule/Mihomo/services/pinggy.yaml) | [LIST](../rule/Shadowrocket/services/pinggy.list) |
 | [services/pingpe](services/pingpe) | 1 | [YAML](../rule/Mihomo/services/pingpe.yaml) | [LIST](../rule/Shadowrocket/services/pingpe.list) |
@@ -1126,7 +1126,7 @@
 | [services/softbank](services/softbank) | 20 | [YAML](../rule/Mihomo/services/softbank.yaml) | [LIST](../rule/Shadowrocket/services/softbank.list) |
 | [services/softether](services/softether) | 2 | [YAML](../rule/Mihomo/services/softether.yaml) | [LIST](../rule/Shadowrocket/services/softether.list) |
 | [services/sogou](services/sogou) | 40 | [YAML](../rule/Mihomo/services/sogou.yaml) | [LIST](../rule/Shadowrocket/services/sogou.list) |
-| [services/sohu](services/sohu) | 32 | [YAML](../rule/Mihomo/services/sohu.yaml) | [LIST](../rule/Shadowrocket/services/sohu.list) |
+| [services/sohu](services/sohu) | 34 | [YAML](../rule/Mihomo/services/sohu.yaml) | [LIST](../rule/Shadowrocket/services/sohu.list) |
 | [services/sokolov](services/sokolov) | 2 | [YAML](../rule/Mihomo/services/sokolov.yaml) | [LIST](../rule/Shadowrocket/services/sokolov.list) |
 | [services/sonemic](services/sonemic) | 6 | [YAML](../rule/Mihomo/services/sonemic.yaml) | [LIST](../rule/Shadowrocket/services/sonemic.list) |
 | [services/sony](services/sony) | 120 | [YAML](../rule/Mihomo/services/sony.yaml) | [LIST](../rule/Shadowrocket/services/sony.list) |
@@ -1208,7 +1208,7 @@
 | [services/telegram](services/telegram) | 21 | [YAML](../rule/Mihomo/services/telegram.yaml) | [LIST](../rule/Shadowrocket/services/telegram.list) |
 | [services/telekom](services/telekom) | 3 | [YAML](../rule/Mihomo/services/telekom.yaml) | [LIST](../rule/Shadowrocket/services/telekom.list) |
 | [services/temp-mail](services/temp-mail) | 1 | [YAML](../rule/Mihomo/services/temp-mail.yaml) | [LIST](../rule/Shadowrocket/services/temp-mail.list) |
-| [services/tencent](services/tencent) | 705 | [YAML](../rule/Mihomo/services/tencent.yaml) | [LIST](../rule/Shadowrocket/services/tencent.list) |
+| [services/tencent](services/tencent) | 706 | [YAML](../rule/Mihomo/services/tencent.yaml) | [LIST](../rule/Shadowrocket/services/tencent.list) |
 | [services/tencent-dev](services/tencent-dev) | 16 | [YAML](../rule/Mihomo/services/tencent-dev.yaml) | [LIST](../rule/Shadowrocket/services/tencent-dev.list) |
 | [services/tencent-games](services/tencent-games) | 87 | [YAML](../rule/Mihomo/services/tencent-games.yaml) | [LIST](../rule/Shadowrocket/services/tencent-games.list) |
 | [services/tencent-tme](services/tencent-tme) | 45 | [YAML](../rule/Mihomo/services/tencent-tme.yaml) | [LIST](../rule/Shadowrocket/services/tencent-tme.list) |
@@ -1315,7 +1315,7 @@
 | [services/vmware](services/vmware) | 104 | [YAML](../rule/Mihomo/services/vmware.yaml) | [LIST](../rule/Shadowrocket/services/vmware.list) |
 | [services/voanews](services/voanews) | 48 | [YAML](../rule/Mihomo/services/voanews.yaml) | [LIST](../rule/Shadowrocket/services/voanews.list) |
 | [services/vodafone](services/vodafone) | 11 | [YAML](../rule/Mihomo/services/vodafone.yaml) | [LIST](../rule/Shadowrocket/services/vodafone.list) |
-| [services/vokino](services/vokino) | 25 | [YAML](../rule/Mihomo/services/vokino.yaml) | [LIST](../rule/Shadowrocket/services/vokino.list) |
+| [services/vokino](services/vokino) | 27 | [YAML](../rule/Mihomo/services/vokino.yaml) | [LIST](../rule/Shadowrocket/services/vokino.list) |
 | [services/volcengine](services/volcengine) | 279 | [YAML](../rule/Mihomo/services/volcengine.yaml) | [LIST](../rule/Shadowrocket/services/volcengine.list) |
 | [services/volmoe](services/volmoe) | 2 | [YAML](../rule/Mihomo/services/volmoe.yaml) | [LIST](../rule/Shadowrocket/services/volmoe.list) |
 | [services/volvo](services/volvo) | 211 | [YAML](../rule/Mihomo/services/volvo.yaml) | [LIST](../rule/Shadowrocket/services/volvo.list) |
@@ -1380,7 +1380,7 @@
 | [services/xhamster](services/xhamster) | 19 | [YAML](../rule/Mihomo/services/xhamster.yaml) | [LIST](../rule/Shadowrocket/services/xhamster.list) |
 | [services/xiaoheihe](services/xiaoheihe) | 8 | [YAML](../rule/Mihomo/services/xiaoheihe.yaml) | [LIST](../rule/Shadowrocket/services/xiaoheihe.list) |
 | [services/xiaohongshu](services/xiaohongshu) | 12 | [YAML](../rule/Mihomo/services/xiaohongshu.yaml) | [LIST](../rule/Shadowrocket/services/xiaohongshu.list) |
-| [services/xiaomi](services/xiaomi) | 76 | [YAML](../rule/Mihomo/services/xiaomi.yaml) | [LIST](../rule/Shadowrocket/services/xiaomi.list) |
+| [services/xiaomi](services/xiaomi) | 75 | [YAML](../rule/Mihomo/services/xiaomi.yaml) | [LIST](../rule/Shadowrocket/services/xiaomi.list) |
 | [services/xiaomi-ai](services/xiaomi-ai) | 3 | [YAML](../rule/Mihomo/services/xiaomi-ai.yaml) | [LIST](../rule/Shadowrocket/services/xiaomi-ai.list) |
 | [services/xiaomi-iot](services/xiaomi-iot) | 4 | [YAML](../rule/Mihomo/services/xiaomi-iot.yaml) | [LIST](../rule/Shadowrocket/services/xiaomi-iot.list) |
 | [services/xiaoyuzhou](services/xiaoyuzhou) | 5 | [YAML](../rule/Mihomo/services/xiaoyuzhou.yaml) | [LIST](../rule/Shadowrocket/services/xiaoyuzhou.list) |
@@ -1394,7 +1394,7 @@
 | [services/xunlei](services/xunlei) | 13 | [YAML](../rule/Mihomo/services/xunlei.yaml) | [LIST](../rule/Shadowrocket/services/xunlei.list) |
 | [services/xvideos](services/xvideos) | 5 | [YAML](../rule/Mihomo/services/xvideos.yaml) | [LIST](../rule/Shadowrocket/services/xvideos.list) |
 | [services/yahoo](services/yahoo) | 178 | [YAML](../rule/Mihomo/services/yahoo.yaml) | [LIST](../rule/Shadowrocket/services/yahoo.list) |
-| [services/yandex](services/yandex) | 158 | [YAML](../rule/Mihomo/services/yandex.yaml) | [LIST](../rule/Shadowrocket/services/yandex.list) |
+| [services/yandex](services/yandex) | 157 | [YAML](../rule/Mihomo/services/yandex.yaml) | [LIST](../rule/Shadowrocket/services/yandex.list) |
 | [services/ycombinator](services/ycombinator) | 2 | [YAML](../rule/Mihomo/services/ycombinator.yaml) | [LIST](../rule/Shadowrocket/services/ycombinator.list) |
 | [services/ymtc](services/ymtc) | 3 | [YAML](../rule/Mihomo/services/ymtc.yaml) | [LIST](../rule/Shadowrocket/services/ymtc.list) |
 | [services/ynet](services/ynet) | 3 | [YAML](../rule/Mihomo/services/ynet.yaml) | [LIST](../rule/Shadowrocket/services/ynet.list) |
@@ -1440,15 +1440,15 @@
 | [services/zto-express](services/zto-express) | 13 | [YAML](../rule/Mihomo/services/zto-express.yaml) | [LIST](../rule/Shadowrocket/services/zto-express.list) |
 | [services/zuoyebang](services/zuoyebang) | 5 | [YAML](../rule/Mihomo/services/zuoyebang.yaml) | [LIST](../rule/Shadowrocket/services/zuoyebang.list) |
 | [services/zynga](services/zynga) | 3 | [YAML](../rule/Mihomo/services/zynga.yaml) | [LIST](../rule/Shadowrocket/services/zynga.list) |
-| [groups/ai](groups/ai) | 224 | [YAML](../rule/Mihomo/groups/ai.yaml) | 域名正则待适配 |
+| [groups/ai](groups/ai) | 225 | [YAML](../rule/Mihomo/groups/ai.yaml) | 域名正则待适配 |
 | [groups/anime](groups/anime) | 21 | [YAML](../rule/Mihomo/groups/anime.yaml) | [LIST](../rule/Shadowrocket/groups/anime.list) |
 | [groups/category-acg](groups/category-acg) | 9 | [YAML](../rule/Mihomo/groups/category-acg.yaml) | [LIST](../rule/Shadowrocket/groups/category-acg.list) |
-| [groups/category-ads](groups/category-ads) | 849 | [YAML](../rule/Mihomo/groups/category-ads.yaml) | 域名正则待适配 |
-| [groups/category-ads-all](groups/category-ads-all) | 909 | [YAML](../rule/Mihomo/groups/category-ads-all.yaml) | 域名正则待适配 |
-| [groups/category-ads-and-telemetry](groups/category-ads-and-telemetry) | 890 | [YAML](../rule/Mihomo/groups/category-ads-and-telemetry.yaml) | 域名正则待适配 |
+| [groups/category-ads](groups/category-ads) | 850 | [YAML](../rule/Mihomo/groups/category-ads.yaml) | 域名正则待适配 |
+| [groups/category-ads-all](groups/category-ads-all) | 910 | [YAML](../rule/Mihomo/groups/category-ads-all.yaml) | 域名正则待适配 |
+| [groups/category-ads-and-telemetry](groups/category-ads-and-telemetry) | 891 | [YAML](../rule/Mihomo/groups/category-ads-and-telemetry.yaml) | 域名正则待适配 |
 | [groups/category-ads-ir](groups/category-ads-ir) | 7 | [YAML](../rule/Mihomo/groups/category-ads-ir.yaml) | [LIST](../rule/Shadowrocket/groups/category-ads-ir.list) |
-| [groups/category-ai-!cn](groups/category-ai-!cn) | 218 | [YAML](../rule/Mihomo/groups/category-ai-!cn.yaml) | 域名正则待适配 |
-| [groups/category-ai-chat-!cn](groups/category-ai-chat-!cn) | 218 | [YAML](../rule/Mihomo/groups/category-ai-chat-!cn.yaml) | 域名正则待适配 |
+| [groups/category-ai-!cn](groups/category-ai-!cn) | 219 | [YAML](../rule/Mihomo/groups/category-ai-!cn.yaml) | 域名正则待适配 |
+| [groups/category-ai-chat-!cn](groups/category-ai-chat-!cn) | 219 | [YAML](../rule/Mihomo/groups/category-ai-chat-!cn.yaml) | 域名正则待适配 |
 | [groups/category-ai-cn](groups/category-ai-cn) | 129 | [YAML](../rule/Mihomo/groups/category-ai-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-ai-cn.list) |
 | [groups/category-ai-ru](groups/category-ai-ru) | 12 | [YAML](../rule/Mihomo/groups/category-ai-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-ai-ru.list) |
 | [groups/category-android-app-download](groups/category-android-app-download) | 11 | [YAML](../rule/Mihomo/groups/category-android-app-download.yaml) | [LIST](../rule/Shadowrocket/groups/category-android-app-download.list) |
@@ -1466,10 +1466,10 @@
 | [groups/category-browser-!cn](groups/category-browser-!cn) | 37 | [YAML](../rule/Mihomo/groups/category-browser-!cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-browser-!cn.list) |
 | [groups/category-cas](groups/category-cas) | 259 | [YAML](../rule/Mihomo/groups/category-cas.yaml) | [LIST](../rule/Shadowrocket/groups/category-cas.list) |
 | [groups/category-cdn-!cn](groups/category-cdn-!cn) | 195 | [YAML](../rule/Mihomo/groups/category-cdn-!cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-cdn-!cn.list) |
-| [groups/category-cdn-cn](groups/category-cdn-cn) | 93 | [YAML](../rule/Mihomo/groups/category-cdn-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-cdn-cn.list) |
+| [groups/category-cdn-cn](groups/category-cdn-cn) | 99 | [YAML](../rule/Mihomo/groups/category-cdn-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-cdn-cn.list) |
 | [groups/category-collaborate-cn](groups/category-collaborate-cn) | 26 | [YAML](../rule/Mihomo/groups/category-collaborate-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-collaborate-cn.list) |
 | [groups/category-communication](groups/category-communication) | 160 | [YAML](../rule/Mihomo/groups/category-communication.yaml) | [LIST](../rule/Shadowrocket/groups/category-communication.list) |
-| [groups/category-companies](groups/category-companies) | 8805 | [YAML](../rule/Mihomo/groups/category-companies.yaml) | 域名正则待适配 |
+| [groups/category-companies](groups/category-companies) | 8804 | [YAML](../rule/Mihomo/groups/category-companies.yaml) | 域名正则待适配 |
 | [groups/category-consent-management](groups/category-consent-management) | 14 | [YAML](../rule/Mihomo/groups/category-consent-management.yaml) | [LIST](../rule/Shadowrocket/groups/category-consent-management.list) |
 | [groups/category-container](groups/category-container) | 10 | [YAML](../rule/Mihomo/groups/category-container.yaml) | 域名正则待适配 |
 | [groups/category-cryptocurrency](groups/category-cryptocurrency) | 241 | [YAML](../rule/Mihomo/groups/category-cryptocurrency.yaml) | [LIST](../rule/Shadowrocket/groups/category-cryptocurrency.list) |
@@ -1488,7 +1488,7 @@
 | [groups/category-enhance-gaming](groups/category-enhance-gaming) | 18 | [YAML](../rule/Mihomo/groups/category-enhance-gaming.yaml) | [LIST](../rule/Shadowrocket/groups/category-enhance-gaming.list) |
 | [groups/category-enterprise-query-platform-cn](groups/category-enterprise-query-platform-cn) | 13 | [YAML](../rule/Mihomo/groups/category-enterprise-query-platform-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-enterprise-query-platform-cn.list) |
 | [groups/category-entertainment](groups/category-entertainment) | 2183 | [YAML](../rule/Mihomo/groups/category-entertainment.yaml) | 域名正则待适配 |
-| [groups/category-entertainment-cn](groups/category-entertainment-cn) | 939 | [YAML](../rule/Mihomo/groups/category-entertainment-cn.yaml) | 域名正则待适配 |
+| [groups/category-entertainment-cn](groups/category-entertainment-cn) | 941 | [YAML](../rule/Mihomo/groups/category-entertainment-cn.yaml) | 域名正则待适配 |
 | [groups/category-entertainment-ru](groups/category-entertainment-ru) | 35 | [YAML](../rule/Mihomo/groups/category-entertainment-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-entertainment-ru.list) |
 | [groups/category-finance](groups/category-finance) | 668 | [YAML](../rule/Mihomo/groups/category-finance.yaml) | [LIST](../rule/Shadowrocket/groups/category-finance.list) |
 | [groups/category-flight-simulator](groups/category-flight-simulator) | 79 | [YAML](../rule/Mihomo/groups/category-flight-simulator.yaml) | [LIST](../rule/Shadowrocket/groups/category-flight-simulator.list) |
@@ -1498,9 +1498,9 @@
 | [groups/category-forums-ru](groups/category-forums-ru) | 11 | [YAML](../rule/Mihomo/groups/category-forums-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-forums-ru.list) |
 | [groups/category-game-accelerator-cn](groups/category-game-accelerator-cn) | 45 | [YAML](../rule/Mihomo/groups/category-game-accelerator-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-game-accelerator-cn.list) |
 | [groups/category-game-platforms-download](groups/category-game-platforms-download) | 491 | [YAML](../rule/Mihomo/groups/category-game-platforms-download.yaml) | [LIST](../rule/Shadowrocket/groups/category-game-platforms-download.list) |
-| [groups/category-games](groups/category-games) | 1182 | [YAML](../rule/Mihomo/groups/category-games.yaml) | 域名正则待适配 |
+| [groups/category-games](groups/category-games) | 1184 | [YAML](../rule/Mihomo/groups/category-games.yaml) | 域名正则待适配 |
 | [groups/category-games-!cn](groups/category-games-!cn) | 888 | [YAML](../rule/Mihomo/groups/category-games-!cn.yaml) | 域名正则待适配 |
-| [groups/category-games-cn](groups/category-games-cn) | 294 | [YAML](../rule/Mihomo/groups/category-games-cn.yaml) | 域名正则待适配 |
+| [groups/category-games-cn](groups/category-games-cn) | 296 | [YAML](../rule/Mihomo/groups/category-games-cn.yaml) | 域名正则待适配 |
 | [groups/category-gov-ir](groups/category-gov-ir) | 29 | [YAML](../rule/Mihomo/groups/category-gov-ir.yaml) | [LIST](../rule/Shadowrocket/groups/category-gov-ir.list) |
 | [groups/category-gov-ru](groups/category-gov-ru) | 145 | [YAML](../rule/Mihomo/groups/category-gov-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-gov-ru.list) |
 | [groups/category-hospital-cn](groups/category-hospital-cn) | 11 | [YAML](../rule/Mihomo/groups/category-hospital-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-hospital-cn.list) |
@@ -1511,7 +1511,7 @@
 | [groups/category-ir](groups/category-ir) | 384 | [YAML](../rule/Mihomo/groups/category-ir.yaml) | [LIST](../rule/Shadowrocket/groups/category-ir.list) |
 | [groups/category-logistics-cn](groups/category-logistics-cn) | 158 | [YAML](../rule/Mihomo/groups/category-logistics-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-logistics-cn.list) |
 | [groups/category-media](groups/category-media) | 1581 | [YAML](../rule/Mihomo/groups/category-media.yaml) | [LIST](../rule/Shadowrocket/groups/category-media.list) |
-| [groups/category-media-cn](groups/category-media-cn) | 459 | [YAML](../rule/Mihomo/groups/category-media-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-media-cn.list) |
+| [groups/category-media-cn](groups/category-media-cn) | 461 | [YAML](../rule/Mihomo/groups/category-media-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-media-cn.list) |
 | [groups/category-media-ir](groups/category-media-ir) | 28 | [YAML](../rule/Mihomo/groups/category-media-ir.yaml) | [LIST](../rule/Shadowrocket/groups/category-media-ir.list) |
 | [groups/category-media-ru](groups/category-media-ru) | 149 | [YAML](../rule/Mihomo/groups/category-media-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-media-ru.list) |
 | [groups/category-media-ru-blocked](groups/category-media-ru-blocked) | 132 | [YAML](../rule/Mihomo/groups/category-media-ru-blocked.yaml) | [LIST](../rule/Shadowrocket/groups/category-media-ru-blocked.list) |
@@ -1538,7 +1538,7 @@
 | [groups/category-public-tracker](groups/category-public-tracker) | 437 | [YAML](../rule/Mihomo/groups/category-public-tracker.yaml) | [LIST](../rule/Shadowrocket/groups/category-public-tracker.list) |
 | [groups/category-remote-control](groups/category-remote-control) | 8 | [YAML](../rule/Mihomo/groups/category-remote-control.yaml) | [LIST](../rule/Shadowrocket/groups/category-remote-control.list) |
 | [groups/category-retail-ru](groups/category-retail-ru) | 82 | [YAML](../rule/Mihomo/groups/category-retail-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-retail-ru.list) |
-| [groups/category-ru](groups/category-ru) | 2159 | [YAML](../rule/Mihomo/groups/category-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-ru.list) |
+| [groups/category-ru](groups/category-ru) | 2158 | [YAML](../rule/Mihomo/groups/category-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-ru.list) |
 | [groups/category-scholar-!cn](groups/category-scholar-!cn) | 485 | [YAML](../rule/Mihomo/groups/category-scholar-!cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-scholar-!cn.list) |
 | [groups/category-scholar-cn](groups/category-scholar-cn) | 96 | [YAML](../rule/Mihomo/groups/category-scholar-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-scholar-cn.list) |
 | [groups/category-scholar-hk](groups/category-scholar-hk) | 33 | [YAML](../rule/Mihomo/groups/category-scholar-hk.yaml) | [LIST](../rule/Shadowrocket/groups/category-scholar-hk.list) |
@@ -1563,11 +1563,11 @@
 | [groups/category-vpnservices](groups/category-vpnservices) | 69 | [YAML](../rule/Mihomo/groups/category-vpnservices.yaml) | [LIST](../rule/Shadowrocket/groups/category-vpnservices.list) |
 | [groups/category-web-archive](groups/category-web-archive) | 18 | [YAML](../rule/Mihomo/groups/category-web-archive.yaml) | [LIST](../rule/Shadowrocket/groups/category-web-archive.list) |
 | [groups/category-wiki-cn](groups/category-wiki-cn) | 15 | [YAML](../rule/Mihomo/groups/category-wiki-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-wiki-cn.list) |
-| [groups/cn](groups/cn) | 8534 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
+| [groups/cn](groups/cn) | 8562 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
 | [groups/connectivity-check](groups/connectivity-check) | 28 | [YAML](../rule/Mihomo/groups/connectivity-check.yaml) | [LIST](../rule/Shadowrocket/groups/connectivity-check.list) |
 | [groups/finance-proxy](groups/finance-proxy) | 31 | [YAML](../rule/Mihomo/groups/finance-proxy.yaml) | [LIST](../rule/Shadowrocket/groups/finance-proxy.list) |
 | [groups/geolocation-!cn](groups/geolocation-!cn) | 26161 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
-| [groups/geolocation-cn](groups/geolocation-cn) | 8503 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
+| [groups/geolocation-cn](groups/geolocation-cn) | 8531 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
 | [groups/google-registry-tld](groups/google-registry-tld) | 20 | [YAML](../rule/Mihomo/groups/google-registry-tld.yaml) | [LIST](../rule/Shadowrocket/groups/google-registry-tld.list) |
 | [groups/goproxy](groups/goproxy) | 2 | [YAML](../rule/Mihomo/groups/goproxy.yaml) | [LIST](../rule/Shadowrocket/groups/goproxy.list) |
 | [groups/misskey-universe](groups/misskey-universe) | 32 | [YAML](../rule/Mihomo/groups/misskey-universe.yaml) | [LIST](../rule/Shadowrocket/groups/misskey-universe.list) |

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "audience": "public",
-  "source_commit": "1916b151c3661fc74f709ac69c271ff9ae912027",
-  "sources_sha256": "ddf45e31c76ea5575c546a68982bc098ea3a7f6dd0b325380e344ae3d27b965a",
+  "source_commit": "21a0aeef70681851c15d4741381dda538c9e8700",
+  "sources_sha256": "8a857d5126b2377a582f9b070a4f7d11db580a1c04545b4ff6a50b3576db442a",
   "coverage": {
     "claude.com": "Claude",
     "api.claude.com": "Claude",
@@ -24,7 +24,7 @@
   },
   "outputs": {
     "config/Mihomo": {
-      "rules": 165707,
+      "rules": 164849,
       "groups": 19,
       "inventory_bound": false,
       "regex": 174,
@@ -33,9 +33,9 @@
           "id": "site-category-ads-all",
           "path": "rule/Mihomo/variants/site-category-ads-all.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-ads-all.yaml",
-          "sha256": "b656d30c0416997ab672497b7a075af404b4a36be9e94503d61d172d663417b6",
+          "sha256": "ead5452293852c93e1341d0655494909a2191a79e787d074e141404ab5c5288b",
           "behavior": "classical",
-          "rules": 909
+          "rules": 910
         },
         {
           "id": "site-private",
@@ -105,7 +105,7 @@
           "id": "site-apple",
           "path": "rule/Mihomo/variants/site-apple.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-apple.yaml",
-          "sha256": "a3fed99a3ec9c6f25518bca1b2f7c42692358d9464787ed42d5ec4fe04de2d26",
+          "sha256": "2c6d61ee7effac55de08765c62e6554ddf31acf70a55b322a4d5197223c67df7",
           "behavior": "classical",
           "rules": 1798
         },
@@ -129,7 +129,7 @@
           "id": "site-oracle",
           "path": "rule/Mihomo/variants/site-oracle.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-oracle.yaml",
-          "sha256": "41039795ef78022c361acdd23edebdf48dda4bac2748b189ffd3a67f94699bee",
+          "sha256": "8df43abd41b7a2d8eb58aeb2a22be2453fc18f325b494a47a6e51d4cbf746ef6",
           "behavior": "classical",
           "rules": 19
         },
@@ -137,17 +137,17 @@
           "id": "category-ai",
           "path": "rule/Mihomo/variants/category-ai.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/category-ai.yaml",
-          "sha256": "9387b845484848f9544e2073d4ba5033ae4f187221db57b17afc879f6d74c605",
+          "sha256": "aab0d8e7da58f6083e3b6a26ea07e305d57c486f5676cd95f008d413e089d53a",
           "behavior": "classical",
-          "rules": 217
+          "rules": 218
         },
         {
           "id": "site-category-ai-!cn",
           "path": "rule/Mihomo/variants/site-category-ai-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-ai-!cn.yaml",
-          "sha256": "d2eaf6aefd4b9f73d971fadb9e465083dd613bc458c5c8b7facbec00e3c9ec1a",
+          "sha256": "fafda279a661385b0b973a5215da237d18c068a933dde4eaaf79ac3630424182",
           "behavior": "classical",
-          "rules": 218
+          "rules": 219
         },
         {
           "id": "site-anthropic",
@@ -209,7 +209,7 @@
           "id": "site-disney",
           "path": "rule/Mihomo/variants/site-disney.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-disney.yaml",
-          "sha256": "aae694432f424776a50fc782e4c59f69c08e8b36b642b3a93bcedc9f99fd9ba2",
+          "sha256": "03cdd8372ec303e94d3e99ee9499f1cedf27fa6d81379fac38f9626b98af16ed",
           "behavior": "classical",
           "rules": 225
         },
@@ -249,7 +249,7 @@
           "id": "site-amazon",
           "path": "rule/Mihomo/variants/site-amazon.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-amazon.yaml",
-          "sha256": "a5bace1c72bf7490fa9ec47c711ab85268664d956b7465dcee728ca149691dee",
+          "sha256": "bfa2f18d8fea027dd56a1f4c7393af21618d18e66b5dcc26a3d06122486257ee",
           "behavior": "classical",
           "rules": 250
         },
@@ -297,9 +297,9 @@
           "id": "site-category-games",
           "path": "rule/Mihomo/variants/site-category-games.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-games.yaml",
-          "sha256": "40bf11306c2b2449ca4a585c44022b20874c2ab48f00de6addf469a24c525361",
+          "sha256": "1a6197d5954f85d64c77592854068f54caa46ea49bb40c1f1e602976e1023c2c",
           "behavior": "classical",
-          "rules": 1064
+          "rules": 1066
         },
         {
           "id": "site-github",
@@ -313,7 +313,7 @@
           "id": "site-microsoft",
           "path": "rule/Mihomo/variants/site-microsoft.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-microsoft.yaml",
-          "sha256": "2749f37fc0ddce5c8d73ceabaef3c7c634cce16b2652fe4c5833b4b4d0bd9d40",
+          "sha256": "94b15848fbe866617a52466b95b1986dfb12a632ac556b7e547fab90f2aa06b8",
           "behavior": "classical",
           "rules": 762
         },
@@ -321,7 +321,7 @@
           "id": "site-google",
           "path": "rule/Mihomo/variants/site-google.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-google.yaml",
-          "sha256": "7661d885724255f536e75e44406ecb03e68b510203cc7dbb96b064d359514e39",
+          "sha256": "1fa21f18a134a6ebfe8200edd1f37c754067826d012ba0061d7ec0017d315fac",
           "behavior": "classical",
           "rules": 1080
         },
@@ -361,9 +361,9 @@
           "id": "site-tencent",
           "path": "rule/Mihomo/variants/site-tencent.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-tencent.yaml",
-          "sha256": "7daf406811258bd3dd6315cedee95a071c34de22373ce38677e2b904908f594f",
+          "sha256": "da085ab61fbcaff0beca132369b1f83da8747edf9dbd73215f1a96b091618a3f",
           "behavior": "classical",
-          "rules": 688
+          "rules": 689
         },
         {
           "id": "site-sina",
@@ -425,17 +425,17 @@
           "id": "ip-google",
           "path": "rule/Mihomo/variants/ip-google.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-google.yaml",
-          "sha256": "82cc6cc1854210e498d5bb8a8339ab02834772aa042675106e7fa934ece64d71",
+          "sha256": "7512ff6acdcbcefb7e5d3b72ce6cab4b0464256a6dc98244b7e81f12e90c0713",
           "behavior": "classical",
-          "rules": 7979
+          "rules": 7090
         },
         {
           "id": "ip-cn",
           "path": "rule/Mihomo/variants/ip-cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/ip-cn.yaml",
-          "sha256": "0cf144c19b950b8a29f51248a1f8c2f8d0c1e7bce25d7d9581e9b5aeead0477e",
+          "sha256": "d3abc4184e3a4206602b43ca2c123e9a0b8c1282263b130d8f0b5ed3cf788e41",
           "behavior": "classical",
-          "rules": 9640
+          "rules": 9665
         },
         {
           "id": "service-gemini",
@@ -601,7 +601,7 @@
           "id": "site-geolocation-!cn",
           "path": "rule/Mihomo/variants/site-geolocation-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-geolocation-!cn.yaml",
-          "sha256": "790d90d1933db99309ac1c84f4187e50436c506dad668c92b4211d8d48a52b2a",
+          "sha256": "9bdf1673831594d6103a1c50a9155a17ef56cfca26ec49ea349fbf332565a081",
           "behavior": "classical",
           "rules": 27466
         },
@@ -626,7 +626,7 @@
       "config_sha256": "7d39f5a8adda7076e9f90aad21e4f86759e9fece21998e5b0dee3d17262dfb99"
     },
     "config/Shadowrocket": {
-      "rules": 166631,
+      "rules": 165773,
       "config_rules": 85,
       "groups": 18,
       "remote_rule_sets": [
@@ -634,9 +634,9 @@
           "id": "site-category-ads-all",
           "path": "rule/Shadowrocket/variants/site-category-ads-all.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-category-ads-all.list",
-          "sha256": "608b78b9d04ecfba1bdd3c6da812d75865e0617b4554abfb60f9fb1d2456d7be",
+          "sha256": "c420c8365cce06f73884587c4c823a436bc87b2ae75eccacc3dbb9880b106ad4",
           "policy": "REJECT",
-          "rules": 910
+          "rules": 911
         },
         {
           "id": "site-private",
@@ -706,7 +706,7 @@
           "id": "site-apple",
           "path": "rule/Shadowrocket/variants/site-apple.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-apple.list",
-          "sha256": "29be9a7f8aa89ed8c74b3e73100cbc408988a7188f399d94fe4d640f34dbb30d",
+          "sha256": "055a79157b6203d5b436c7eb81566eccd534d2fff51baa90e806dd6ef5d5cb10",
           "policy": "Apple",
           "rules": 1798
         },
@@ -730,7 +730,7 @@
           "id": "site-oracle",
           "path": "rule/Shadowrocket/variants/site-oracle.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-oracle.list",
-          "sha256": "90cbecc4507c4ca08784520ea578aa27ecad9bf23aab8bec576fb1645eb520fc",
+          "sha256": "59e147b990f0450ccbe62bf3a3c1a26e6cd3f10357f0a7044a0b85a61f694ed0",
           "policy": "DIRECT",
           "rules": 19
         },
@@ -738,17 +738,17 @@
           "id": "category-ai",
           "path": "rule/Shadowrocket/variants/category-ai.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/category-ai.list",
-          "sha256": "e2abf537481ea667debcbf2c880c54b13e741e8bcccb71efc3372cd395ce9d9f",
+          "sha256": "badb4c11eb05469a28474b535eb8071cd780ef1dfc3e4fcfeabc7e6bb961deb3",
           "policy": "AI",
-          "rules": 217
+          "rules": 218
         },
         {
           "id": "site-category-ai-!cn",
           "path": "rule/Shadowrocket/variants/site-category-ai-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-category-ai-!cn.list",
-          "sha256": "3cdcc0f8b07eaefa8643e617e6010e043a861771c825b1f9fec21094594f4a2c",
+          "sha256": "5c01328117eb4957dc24d46ce804112c4d61938417668ac4268df2dd3fac622b",
           "policy": "AI",
-          "rules": 218
+          "rules": 219
         },
         {
           "id": "site-anthropic",
@@ -810,7 +810,7 @@
           "id": "site-disney",
           "path": "rule/Shadowrocket/variants/site-disney.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-disney.list",
-          "sha256": "03ef754f3c9084d1e2710d55bc13d811b3c86dfb034bd1a3b4b99d8049157cdb",
+          "sha256": "5cd5e07d1eceee1d0b74aa7c448a92611bf4020ad30bbd9f42f38badc8a4516a",
           "policy": "影音社交",
           "rules": 232
         },
@@ -850,7 +850,7 @@
           "id": "site-amazon",
           "path": "rule/Shadowrocket/variants/site-amazon.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-amazon.list",
-          "sha256": "8c8a8af29b02f06fb3f0207e3270b347f9b37c33e6285da1f410546181bc61fd",
+          "sha256": "ab6acaf49252c671af73f88ffdf9691ffd7b40a5230b427dd3f883cc24e480ac",
           "policy": "DIRECT",
           "rules": 1197
         },
@@ -898,9 +898,9 @@
           "id": "site-category-games",
           "path": "rule/Shadowrocket/variants/site-category-games.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-category-games.list",
-          "sha256": "840b15bd7ec1ccbc65abfed9c0429d9ed0ab04b018927dd209b88475ae06df75",
+          "sha256": "2ff9835554480356a59a1435d14acfab2f5b4b12883d42ff82c2e7d52094fcd7",
           "policy": "DIRECT",
-          "rules": 1091
+          "rules": 1093
         },
         {
           "id": "site-github",
@@ -914,7 +914,7 @@
           "id": "site-microsoft",
           "path": "rule/Shadowrocket/variants/site-microsoft.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-microsoft.list",
-          "sha256": "c8d6d4c60a03d4412e5905c95194b1d5e138125dc7a2bd647fb593138718e4bf",
+          "sha256": "f77bfe93b883ec3c474a84fac1f612d498f0d0f1a0a85630b78eb1c3dbb497f0",
           "policy": "DIRECT",
           "rules": 762
         },
@@ -922,7 +922,7 @@
           "id": "site-google",
           "path": "rule/Shadowrocket/variants/site-google.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-google.list",
-          "sha256": "ffea198c7904c1fa03982257f990f186e2daa31d5162e5180b4e7c83f5a9adfd",
+          "sha256": "5f5decf1a225056450ba6bba2c05568726ed1240f3008a172a2a9ac2f688f5eb",
           "policy": "Google",
           "rules": 1078
         },
@@ -962,9 +962,9 @@
           "id": "site-tencent",
           "path": "rule/Shadowrocket/variants/site-tencent.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-tencent.list",
-          "sha256": "442968fa9cfd0ee6e7d9544fafbc95e0ce5c417a8f893ecaec2e6362c99b8e90",
+          "sha256": "b595b94edc933ec2784431d0e50d7a36b8bd0e143bc04b64b9552e985f6b97e2",
           "policy": "DIRECT",
-          "rules": 688
+          "rules": 689
         },
         {
           "id": "site-sina",
@@ -1026,17 +1026,17 @@
           "id": "ip-google",
           "path": "rule/Shadowrocket/variants/ip-google.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/ip-google.list",
-          "sha256": "29d6cefab1e217f07e57840dd7ec536295642d020261639ccf2d41c35ae974f6",
+          "sha256": "b6a2d17a4b94acc2cc781a17f420d3c1a91183795634365ad54fbf438cb12be1",
           "policy": "Google",
-          "rules": 7979
+          "rules": 7090
         },
         {
           "id": "ip-cn",
           "path": "rule/Shadowrocket/variants/ip-cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/ip-cn.list",
-          "sha256": "0f676442307c8c8c26be612599679f58c63ba4d3f234c4195be023562b7ccde3",
+          "sha256": "aae6b9a6dc8851a58fc70948c7e30cc66c5e35e85da273e46ef1d09fa85c0264",
           "policy": "DIRECT",
-          "rules": 9640
+          "rules": 9665
         },
         {
           "id": "service-gemini",
@@ -1202,7 +1202,7 @@
           "id": "site-geolocation-!cn",
           "path": "rule/Shadowrocket/variants/site-geolocation-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-geolocation-!cn.list",
-          "sha256": "6281574cf118b3bbf7d6bb2ca3aab7db9c0662099a22a53ce8af99c4bafaa7a2",
+          "sha256": "9e87acf65a47b3d40362ed07900f3f0413b5f220f2d03cc9d1ae8e68b8aa4ff5",
           "policy": "兜底",
           "rules": 27315
         }
@@ -3212,9 +3212,9 @@
   "service_rules": {
     "v2fly": {
       "repository": "v2fly/domain-list-community",
-      "release": "20261116043813",
-      "commit": "41504eae2a11f305fe88cfc605cf6c105a80bf5a",
-      "sha256": "f1b947f40dbf892166c8673cbcbce0c038ef6c2119e1defdedc7739e99f0a891"
+      "release": "20261118141523",
+      "commit": "bc3a8f5e24792303cf82bfff33b1ff164a0e4b3c",
+      "sha256": "e5c2895fd4de4f197f2483bd5f75f0c1efcae9d7beb47da0badd1bc2b7b351df"
     },
     "routing_excluded_upstream_attributes": [
       "ads"
@@ -3680,7 +3680,7 @@
         ],
         "upstream": "category-ai-!cn",
         "library_key": "groups/ai",
-        "rules": 220,
+        "rules": 221,
         "metacubex_comparison": {
           "id": "site-category-ai-!cn",
           "added": [
@@ -5564,17 +5564,17 @@
         },
         "58tongcheng": {
           "data_path": "data/services/58tongcheng",
-          "data_sha256": "b6069a359a5747d921ce7fa2bcb8be75f76899d01037ed3ed35cf3d2256bf9bd",
-          "data_entries": 42,
-          "rules": 42,
+          "data_sha256": "5ba87ade62629ae4b03898a8c6b70412522a494c135536d0eba7137565c4f296",
+          "data_entries": 47,
+          "rules": 47,
           "mihomo": {
             "path": "rule/Mihomo/services/58tongcheng.yaml",
-            "sha256": "de92f8fe91b199785829eb6b8c1c7cf214f45a581707aea627349f3ed5d76847"
+            "sha256": "35624aa19544bec1ac783a4ea810766304443c5822e221157655c7537bf9d6ef"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/58tongcheng.list",
-            "sha256": "82eb4d99a0b690ad7a04205144d0884c9b154def30636d065d031f402a98c30f"
+            "sha256": "448eb174faa321739cb7a3ae24740cf0db46292365500ed368a7bcfe3f7ebe33"
           },
           "upstream": "58tongcheng"
         },
@@ -6204,17 +6204,17 @@
         },
         "alibaba": {
           "data_path": "data/services/alibaba",
-          "data_sha256": "abc04da181d500f9647b8286444ed7ba9076261bdbc696a8e4a9489796dbbfdc",
-          "data_entries": 467,
-          "rules": 467,
+          "data_sha256": "9db527b1d2d730fe4ab16e7b28bfdbb53f694569602e841186de6a38f8b39db2",
+          "data_entries": 468,
+          "rules": 468,
           "mihomo": {
             "path": "rule/Mihomo/services/alibaba.yaml",
-            "sha256": "3de8ffdaaf64a9ad36898d4d8d056f0b08867c2dd385e27595e38f674d254f0d"
+            "sha256": "b59e02443639983b12314d268ff292a0c7de02f61a542f4ec7f2050609666aa8"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/alibaba.list",
-            "sha256": "899c7318ca420b7158f95f779a7c8b72dbab2a403d50dea0e6cbeb2cb44f8f0a"
+            "sha256": "f02f8bdd23b59d299bfbf6a195c58dbd686feeae1c308483669466f0a4bcfae5"
           },
           "upstream": "alibaba"
         },
@@ -6252,17 +6252,17 @@
         },
         "aliyun": {
           "data_path": "data/services/aliyun",
-          "data_sha256": "bb7be8bd86a15303402b48efccaa6ac6d77ccda9c09ca2e909f24c70ef0841c2",
-          "data_entries": 88,
-          "rules": 88,
+          "data_sha256": "e479d9bf10878968249d13e5d2c967c968ff7d4a0e1830a02b104df35341c8f8",
+          "data_entries": 89,
+          "rules": 89,
           "mihomo": {
             "path": "rule/Mihomo/services/aliyun.yaml",
-            "sha256": "5ab6a4162cb077e19c4e65c3ef83893f7b248afc1be47cf464c0cf47d5ee28d7"
+            "sha256": "599cabbd3993a7abfd52337895e6b40ea6d40f4c31515b470e21830928f86ec0"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/aliyun.list",
-            "sha256": "23e2426085eefbebb751ded4286475450829a48c90ce70ff1b3a134b109a4e2f"
+            "sha256": "5980a1cae90ecdbf89d168afbfbd6d07363949006af94ff201ecdd550d2519e7"
           },
           "upstream": "aliyun"
         },
@@ -7338,17 +7338,17 @@
         },
         "baishancloud": {
           "data_path": "data/services/baishancloud",
-          "data_sha256": "52439b022bf5465d032371fb6068f55ee2c0e3c3a03abb11af635c2aebb7c01c",
-          "data_entries": 3,
-          "rules": 3,
+          "data_sha256": "23705ee71e606bb667de7184987ef7d0c518eac8ce930ed6f0818ac67d9ebb31",
+          "data_entries": 9,
+          "rules": 9,
           "mihomo": {
             "path": "rule/Mihomo/services/baishancloud.yaml",
-            "sha256": "113d9dc13c519c99d6ade3d52f189f69c3d2015641fce2c4835a0fd7065a32ed"
+            "sha256": "afcc324d65f1d7c56ef152de9edd77cc35c9ab72d1f7bca1f8f6a4091fcc9e2f"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/baishancloud.list",
-            "sha256": "2ac4094cfd4dbefe31a3f245ce6adce91b0c4c21c54f24204c0fddb6698bdcbf"
+            "sha256": "1f213ecf8cd969b7475c0569d5b2b694baa37cdb310e186ae980e5d71274345c"
           },
           "upstream": "baishancloud"
         },
@@ -8878,17 +8878,17 @@
         },
         "changyou": {
           "data_path": "data/services/changyou",
-          "data_sha256": "4a8ad39849a010a3baa24b8e981c7198bd2cbaba2d1b4f30cada61d5a2715157",
-          "data_entries": 7,
-          "rules": 7,
+          "data_sha256": "3ff9f04c1ad20b2cdd59222643b4e41216788a1dc1d869405e93921bd866b8bf",
+          "data_entries": 9,
+          "rules": 9,
           "mihomo": {
             "path": "rule/Mihomo/services/changyou.yaml",
-            "sha256": "529a91e332e6179b2fec016230c97ed9f5efb95e2ccb142ff2650e0623d60f82"
+            "sha256": "8d1ca0a650720df60217f7816001ef669dbe11e556175fb0575149c7bb030e8e"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/changyou.list",
-            "sha256": "940d6ea8d181c3e20a22f4dcae6d705df6cba439b08aff9b8791188ec28e75a8"
+            "sha256": "af2c9cd8f86551ca842888e10887f0acfb9e0444a0b2c9f4fc31b40cb6093ed1"
           },
           "upstream": "changyou"
         },
@@ -11505,17 +11505,17 @@
         },
         "elevenlabs": {
           "data_path": "data/services/elevenlabs",
-          "data_sha256": "4c284a7e5947f4a40d40c9dc8fedf3e9e3091db0c7680b913b2b19db36ebd561",
-          "data_entries": 2,
-          "rules": 2,
+          "data_sha256": "88f3412837a17af32533013ab039b988a6c26a519d73846f728b84a19e26487f",
+          "data_entries": 3,
+          "rules": 3,
           "mihomo": {
             "path": "rule/Mihomo/services/elevenlabs.yaml",
-            "sha256": "adf9760b955c60379895df0d823ee7a43f3c40685be908bdb19cff8e4f9a12f9"
+            "sha256": "55f374f460ecece01b94178b89105373da06936506b4c7169eaeecad4145a74a"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/elevenlabs.list",
-            "sha256": "a0d591e381eb56c87a80e11ef818f17b4d3dc7edefca30470dd1d9c35b170346"
+            "sha256": "00dea556b827bfa9891ccf789d0bcc7cc3189e9a15a1c6b81a0f763e1b049a2b"
           },
           "upstream": "elevenlabs"
         },
@@ -16820,17 +16820,17 @@
         },
         "lenovo": {
           "data_path": "data/services/lenovo",
-          "data_sha256": "ec31bf217d6224161783c99bf39b1dcb3d9a6624613ba90111144371c2dc937c",
-          "data_entries": 58,
-          "rules": 58,
+          "data_sha256": "e2f4942212d8d446543975ce94f99fdd07db190b99a0844049620e1edcdb6799",
+          "data_entries": 61,
+          "rules": 61,
           "mihomo": {
             "path": "rule/Mihomo/services/lenovo.yaml",
-            "sha256": "176cb9f6ff60faa8c7de656e4a6f13cd467d5a096f4543d004c82adf8f8ed779"
+            "sha256": "766c270c4bae736f837816f6547da69d91e932d12997bacbfe9e7c618a8aac8f"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/lenovo.list",
-            "sha256": "098e0393d5f10a03295082d76f39f14fd3c838dd167dfea13c3b33984a62121f"
+            "sha256": "daa48f2ef0c5666f2494b7dfe91d782bf606cf20a29b3d42c8f4d1eb9a2d66c1"
           },
           "upstream": "lenovo"
         },
@@ -20648,17 +20648,17 @@
         },
         "pingan": {
           "data_path": "data/services/pingan",
-          "data_sha256": "b83fa8de819d00a6af6549effaf212755f886564638af699ab9133d66367393c",
-          "data_entries": 4,
-          "rules": 4,
+          "data_sha256": "85433770cd524022d6900cde0b62ea5271544d821977be7dafb39369c6bb00f5",
+          "data_entries": 19,
+          "rules": 19,
           "mihomo": {
             "path": "rule/Mihomo/services/pingan.yaml",
-            "sha256": "c50c57e1a485bf206dc5dd629a731a4ff1684af5c2415cc51896aaa8b1acfd4e"
+            "sha256": "95681540c4257e1025377aa31ae354a5a8403c61f1e5e4a39a2ba52f74034f54"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/pingan.list",
-            "sha256": "74730d9d4aad1a7b4d0b11cc58dbce3e90f4a8f080ed9cd1d4b4a3b349e0eb1e"
+            "sha256": "fc60e956fd3b9220ea9e4a71e1515a15610c513ea3c653a70ca63ba810e56b90"
           },
           "upstream": "pingan"
         },
@@ -23304,17 +23304,17 @@
         },
         "sohu": {
           "data_path": "data/services/sohu",
-          "data_sha256": "a9df01e16fc60ab117074e47b258146dee1145eeafe6e882e625cddd9ed6f633",
-          "data_entries": 32,
-          "rules": 32,
+          "data_sha256": "a6d4336a31b9b8c0645918a66f7840a3b06bd15ad79db46931f3755f72f5316b",
+          "data_entries": 34,
+          "rules": 34,
           "mihomo": {
             "path": "rule/Mihomo/services/sohu.yaml",
-            "sha256": "9e8f009498b10495d0a787e3bb1613ca7af5c9189287c31701fbe4c65f58abff"
+            "sha256": "11ff4c936091b99751283fa28e3e85886aedd3ab5d78a101f79fa7982728c3b4"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/sohu.list",
-            "sha256": "6c8d2c0ac3bc69483868afc154262b37073c81b1c3a3e268968fd5a4cd1ecabc"
+            "sha256": "5d854929dcdadcf715fb91c746c9ef7464d767487a96de9a7f121820051b11aa"
           },
           "upstream": "sohu"
         },
@@ -24618,17 +24618,17 @@
         },
         "tencent": {
           "data_path": "data/services/tencent",
-          "data_sha256": "845d16b6475b361d7c04654ed92888093871037f01e56e109ba2eb95c746ec9d",
-          "data_entries": 705,
-          "rules": 705,
+          "data_sha256": "3c8fcf4910d1d979885a32422be4ffa99007e44d3d268514dd1581e2d9e2a4c2",
+          "data_entries": 706,
+          "rules": 706,
           "mihomo": {
             "path": "rule/Mihomo/services/tencent.yaml",
-            "sha256": "63b157c67608115f81377fce3eb235038fd487183f6e583a981e46bed9207ba5"
+            "sha256": "aa4262b084de2858ba3933ffcda64efaae1acb1a03c41afa8e5ec214970c1949"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/tencent.list",
-            "sha256": "cd44bdc1967b5ba2b5f36d47152a4f4725daf0df6c374ae7dee7002c195ba654"
+            "sha256": "703efc48410bb1f3fa1c91b110fc9ef1c1e72639c8c40af9ee3c703eba24e335"
           },
           "upstream": "tencent"
         },
@@ -26334,17 +26334,17 @@
         },
         "vokino": {
           "data_path": "data/services/vokino",
-          "data_sha256": "aa42bce90a152b221ad395b1fd29051b44829d534a7633b0bcff53183452d360",
-          "data_entries": 25,
-          "rules": 25,
+          "data_sha256": "0a086e5f8bcb7b29513a4f28b44e85dbdf639162c6db74e6134e636548ee1f44",
+          "data_entries": 27,
+          "rules": 27,
           "mihomo": {
             "path": "rule/Mihomo/services/vokino.yaml",
-            "sha256": "af8f84305a4135fdb5fab966a7cfe30f41870b7508eceecbbf720499b244334a"
+            "sha256": "aaef8df14aaf81a2535b4bfb4543b0d0c3ca21dbc0f2f421785949dae5a851b4"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/vokino.list",
-            "sha256": "196eeacda5e8df9460701732a18a6713fa6141c1602b20ba0b88fa3a0afe0d9b"
+            "sha256": "6e58bca2674aef52e26267252d05ab58187f0867bfcfa17b62e1b5596dd638d5"
           },
           "upstream": "vokino"
         },
@@ -27374,17 +27374,17 @@
         },
         "xiaomi": {
           "data_path": "data/services/xiaomi",
-          "data_sha256": "90082fd616dc15950471842cdfed6ad3b78d6f900abd4d2d472b40f3276e780d",
-          "data_entries": 76,
-          "rules": 76,
+          "data_sha256": "5ded22aad7d5c6c9d23bde332ffb4f2ef4dc1bcdeae61acd6b9ac0e72adcbe7e",
+          "data_entries": 75,
+          "rules": 75,
           "mihomo": {
             "path": "rule/Mihomo/services/xiaomi.yaml",
-            "sha256": "2901bcdfbc43846ffb55b7829e5abc2430613ab3788fc551460a10f8ed79f75b"
+            "sha256": "12677d0f0a3e0fd3e9f0ed84bcc0be40b1f25adeb05e89649b2b081b0c108ff7"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/xiaomi.list",
-            "sha256": "dacaac0da8875a780821b34d5731f79ce44d02f741974adcd748bdd262ec133b"
+            "sha256": "f64ea7a47c0e9556bc87fc6442fd0d6a40bd64d1b83457a0ce9184a6de128558"
           },
           "upstream": "xiaomi"
         },
@@ -27598,17 +27598,17 @@
         },
         "yandex": {
           "data_path": "data/services/yandex",
-          "data_sha256": "11be2d3efec232ab5b40d80506abef2a30b2967d42dece81864edc048fb3ebd0",
-          "data_entries": 158,
-          "rules": 158,
+          "data_sha256": "2fcae68397e7c180bdb804f77a1909855da563efe104c71bf18d482c15b79640",
+          "data_entries": 157,
+          "rules": 157,
           "mihomo": {
             "path": "rule/Mihomo/services/yandex.yaml",
-            "sha256": "42a8f9483bb26ed97456cc2808ea2980b350ae55d64ea8664bd277478ffe1174"
+            "sha256": "ac643243ceacb9fc3384dafb5b9fe1afbeb22a424d254a911a0e6e69139fac36"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/yandex.list",
-            "sha256": "9190388be3e77e7ce53ce191097a45d37f2efce2983420a6c3fcc925c7c85137"
+            "sha256": "653b7608aaeb2c1dfd9d4655fd089d22ab7ca5f2c38dbb3c1a9525bb8c834ff8"
           },
           "upstream": "yandex"
         },
@@ -28337,11 +28337,11 @@
         "ai": {
           "data_path": "data/groups/ai",
           "data_sha256": "b6da69fbae29e7516e233f97354d2d59261c95f64801489541d400f31ef5ca52",
-          "data_entries": 224,
-          "rules": 224,
+          "data_entries": 225,
+          "rules": 225,
           "mihomo": {
             "path": "rule/Mihomo/groups/ai.yaml",
-            "sha256": "daa8a393e8b00db216193cbea1611c5100fb9d88a072841d672e79045fe815dc"
+            "sha256": "0406feb0faff15b7e453b17741ce7ca39c38df04c8d1fe9f54cbf1db984d7459"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28387,11 +28387,11 @@
         "category-ads": {
           "data_path": "data/groups/category-ads",
           "data_sha256": "3782b4c4b00a8a5db54f73cdc1d9e8342f7b10804a314ffa6e55d4c29e307936",
-          "data_entries": 849,
-          "rules": 849,
+          "data_entries": 850,
+          "rules": 850,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ads.yaml",
-            "sha256": "110f9f14e3077c5e43b7c61b7810501302f971a08e73b5dc4109b460d49cc58b"
+            "sha256": "77a291705952b69a10c4e534169ca9ab746ab260a77b9cb5dd2b6921f7b71093"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28405,11 +28405,11 @@
         "category-ads-all": {
           "data_path": "data/groups/category-ads-all",
           "data_sha256": "92ae612149ae8370e3d0b481e17d4d94cb1d3cdd3e3923ca756073efe3d36397",
-          "data_entries": 909,
-          "rules": 909,
+          "data_entries": 910,
+          "rules": 910,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ads-all.yaml",
-            "sha256": "3ed48c03284a2b5c539c872c89554793f5a0b5881b4366eaa41c56d04946ca6b"
+            "sha256": "0a1480bdece0c855919466f5f9d53c1f94f4944702b4c85baf4d01a516a2137a"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28423,11 +28423,11 @@
         "category-ads-and-telemetry": {
           "data_path": "data/groups/category-ads-and-telemetry",
           "data_sha256": "a9e5ae501dfc15136148b299f9489b9cefdf4657166bc7a2cd9c84f39a2bb8f7",
-          "data_entries": 890,
-          "rules": 890,
+          "data_entries": 891,
+          "rules": 891,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ads-and-telemetry.yaml",
-            "sha256": "58b3ea627c0d3c8c8a85389a073feed88023d7c6807e55e266c4193f680b731a"
+            "sha256": "ec6d66eab860f2dd3048797cb867ad3b0aad50b6c2b07370d347e318dd8bdb1f"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28457,11 +28457,11 @@
         "category-ai-!cn": {
           "data_path": "data/groups/category-ai-!cn",
           "data_sha256": "f336cceb70722beb557cfccb28531aa6051f1446d6d8f115c42cfec3039d4591",
-          "data_entries": 218,
-          "rules": 218,
+          "data_entries": 219,
+          "rules": 219,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ai-!cn.yaml",
-            "sha256": "c77503b0b441b9d76bf083ab6b25feeab0d809e89926d0f1432c9b765da9dfab"
+            "sha256": "408a8ff8176905205960171dab6e1070da11bba848c87bdee99c3026dc5f49e5"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28475,11 +28475,11 @@
         "category-ai-chat-!cn": {
           "data_path": "data/groups/category-ai-chat-!cn",
           "data_sha256": "7b1537613130588bdad1a419cf8fe1b0a3f03de9b2d7c3ee089093b1f02a3889",
-          "data_entries": 218,
-          "rules": 218,
+          "data_entries": 219,
+          "rules": 219,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ai-chat-!cn.yaml",
-            "sha256": "c77503b0b441b9d76bf083ab6b25feeab0d809e89926d0f1432c9b765da9dfab"
+            "sha256": "408a8ff8176905205960171dab6e1070da11bba848c87bdee99c3026dc5f49e5"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28765,16 +28765,16 @@
         "category-cdn-cn": {
           "data_path": "data/groups/category-cdn-cn",
           "data_sha256": "15c42c4404957a2bf13b7c20c6de20f9dc73a5fad9bd735fed71dedbb7a4e62e",
-          "data_entries": 93,
-          "rules": 93,
+          "data_entries": 99,
+          "rules": 99,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-cdn-cn.yaml",
-            "sha256": "2260eb2c3fc9eb1d16591c8e64e4eb2daa40216372c5a6bfb1c9b7a12ea1b5a1"
+            "sha256": "9dce6d38d52e0ed71b7465ee6e1c2e72c2d870d9034a6ff63a9c25c64b1d9eb7"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-cdn-cn.list",
-            "sha256": "8712bbd8e9d5f65c74e19598fbea082f7ba5a84cca27e5759deba0bf9d38ef20"
+            "sha256": "9c526cac954583584995ceb48f8672b5e09e471afea336adda5fd39abff17e6a"
           },
           "upstream": "category-cdn-cn"
         },
@@ -28813,11 +28813,11 @@
         "category-companies": {
           "data_path": "data/groups/category-companies",
           "data_sha256": "06570c574c79ea1b4fadaf3413b6a961b0c872a65e8e63340da5f504f7166b5b",
-          "data_entries": 8805,
-          "rules": 8802,
+          "data_entries": 8804,
+          "rules": 8801,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-companies.yaml",
-            "sha256": "7369a917c39dfbc92ffef0e21ad7997ab7f801056ecf34ae7ee81bd55403b7ba"
+            "sha256": "26f380c1e1569fe81c173bf2389c97b5a839593a8a58ab55b61eb8b16889313d"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29139,11 +29139,11 @@
         "category-entertainment-cn": {
           "data_path": "data/groups/category-entertainment-cn",
           "data_sha256": "a5c35e6eb3e3afb321187e23cb916bb0d57736e1aa1847389cb14126fa39c00c",
-          "data_entries": 939,
-          "rules": 939,
+          "data_entries": 941,
+          "rules": 941,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-entertainment-cn.yaml",
-            "sha256": "baeb38cda547f37780d3e7d41f488d6f0703d9e2c13c6ff419eef3a5047bc6d2"
+            "sha256": "03cd79adc0051f0de9061ba371560e6faa8cb2723375b9df36a5a4e51fdf70d5"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29302,11 +29302,11 @@
         "category-games": {
           "data_path": "data/groups/category-games",
           "data_sha256": "7da381d8def05719d8f98e9c20dc5d2316f188cf31004c6c977c79d05f722d7b",
-          "data_entries": 1182,
-          "rules": 1182,
+          "data_entries": 1184,
+          "rules": 1184,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-games.yaml",
-            "sha256": "280ba2de02b5df071c73a4279bcd50d30a418b73ae2f7b5355ad72fc58349411"
+            "sha256": "0e083abc12219f35569c8ff87bcc5ea3f201bb635531ac4bca1e2fb7cc32ed48"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29343,11 +29343,11 @@
         "category-games-cn": {
           "data_path": "data/groups/category-games-cn",
           "data_sha256": "f4259e53bb8df6cae15b3d3ee07cfd2c3b6e2cb41e95571a2e8f81193c08f569",
-          "data_entries": 294,
-          "rules": 294,
+          "data_entries": 296,
+          "rules": 296,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-games-cn.yaml",
-            "sha256": "c67aebf48a244c1d82520c0f1d3e2866510c2f7040c40bb9daf7f8bc6a6082d2"
+            "sha256": "1177c9feb4725bb805ca7738a2f41c4149e37bd74e2ceb130d4dd723397bdd90"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29521,16 +29521,16 @@
         "category-media-cn": {
           "data_path": "data/groups/category-media-cn",
           "data_sha256": "5391105b3d9b835a5822d8ebf2a4dd8d59fd8ffa042d46b1455ad2ad179f8e62",
-          "data_entries": 459,
-          "rules": 459,
+          "data_entries": 461,
+          "rules": 461,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-media-cn.yaml",
-            "sha256": "6e00ed437d7e0dec8b56c6a7ee7c91e6379878b61bcf6bb3e747e76c3a4eb44a"
+            "sha256": "4306d9af888f94de3f69a736cecc0df7b79de1c8c9ac19d7183e10c10dfc76ce"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-media-cn.list",
-            "sha256": "989f853a8547459bac370d8dd3b4aa8482a827339618c893be9090ed1ea60bd0"
+            "sha256": "044553cc777a943f6f6d9c11f10d9cc66d74d08bec9dcf41cd469af21243f268"
           },
           "upstream": "category-media-cn"
         },
@@ -30096,16 +30096,16 @@
         "category-ru": {
           "data_path": "data/groups/category-ru",
           "data_sha256": "4838111d591d6911f7424f14a451ed8859e187567be8306b6586a20acb108773",
-          "data_entries": 2159,
-          "rules": 2159,
+          "data_entries": 2158,
+          "rules": 2158,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ru.yaml",
-            "sha256": "43ebdb99c3ea665bf4f1d3a2b6e016c43789d8eb0b394f4d3fd1def6e3d16f7a"
+            "sha256": "aa14241201051c709756c0c97c696868d499459da179a8a949a06bc804ae0d08"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-ru.list",
-            "sha256": "39ca0f870effa109c8218d923daa56bcebc9927d2b6113c01df1268f23c927e7"
+            "sha256": "36ea7eb877137681ab0d0a2aebe768b494253c38bdd07ad14dc57b003ac1b972"
           },
           "upstream": "category-ru"
         },
@@ -30498,11 +30498,11 @@
         "cn": {
           "data_path": "data/groups/cn",
           "data_sha256": "cde2f966d1e460ebb29dd1704c3b27bbead70f1c808a944e86a763604935dab2",
-          "data_entries": 8534,
-          "rules": 8534,
+          "data_entries": 8562,
+          "rules": 8562,
           "mihomo": {
             "path": "rule/Mihomo/groups/cn.yaml",
-            "sha256": "4f9558a8347d070bf61742bb71ab0d2c1566b805ccb7c6be4150301a3ceab0ac"
+            "sha256": "b76b7a6a475f07159432c57bf01e2f0eee3143543cf006ccc5d168120ff9b99d"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30554,7 +30554,7 @@
           "rules": 26157,
           "mihomo": {
             "path": "rule/Mihomo/groups/geolocation-!cn.yaml",
-            "sha256": "78ab8638c1251e3fd0933bef290c16cd7ae9a08ea7f4eb79efee56b460e59683"
+            "sha256": "565b6b974075ce1fefc3ac76b3675dd4448e39fcc1bc3c72af70aa2a9dc88b38"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30724,12 +30724,12 @@
         },
         "geolocation-cn": {
           "data_path": "data/groups/geolocation-cn",
-          "data_sha256": "453503736eef89695ad82214cf6a06fd1f4bba63d87f4ee0e39e1c7f382bd15c",
-          "data_entries": 8503,
-          "rules": 8503,
+          "data_sha256": "413f1d18f962827be2c493407c68b492376968d2f7b9f0f9867ee413134821ed",
+          "data_entries": 8531,
+          "rules": 8531,
           "mihomo": {
             "path": "rule/Mihomo/groups/geolocation-cn.yaml",
-            "sha256": "c37fb8887dd1c7da359facb03632e5416fb3457ca89548f484b89ab7a3c88eb2"
+            "sha256": "cfc8c6685ff1381048a0fc2cb1b5d51c9c5bd8555c61595c68f8c81e4cf08747"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30940,7 +30940,7 @@
     },
     "index": {
       "path": "data/README.md",
-      "sha256": "aba30ac98324dad44336c038037e4dc23c95a36adb8de8085ca7a6fffca2464c"
+      "sha256": "bec7ac2d47152df8fb588445e62a0deaee417b9068e47a557ebf15a770b00626"
     }
   }
 }
