@@ -25,7 +25,7 @@
   "outputs": {
     "config/Mihomo": {
       "rules": 164849,
-      "groups": 19,
+      "groups": 25,
       "inventory_bound": false,
       "regex": 174,
       "remote_rule_sets": [
@@ -623,12 +623,12 @@
         }
       ],
       "config_path": "config/Mihomo/Proxy-Routing.yaml",
-      "config_sha256": "7d39f5a8adda7076e9f90aad21e4f86759e9fece21998e5b0dee3d17262dfb99"
+      "config_sha256": "c6456d350194b7ed39891162163b399880a641d79454695c279fe2df5c317af4"
     },
     "config/Shadowrocket": {
       "rules": 165773,
       "config_rules": 85,
-      "groups": 18,
+      "groups": 24,
       "remote_rule_sets": [
         {
           "id": "site-category-ads-all",
@@ -3206,7 +3206,7 @@
         }
       ],
       "config_path": "config/Shadowrocket/Proxy-Routing.conf",
-      "config_sha256": "0898d2bfdc0fe787d75621a1987fc5e9239ef2607eb2c81a8f76d2205592cd26"
+      "config_sha256": "b9cfe92660a5d95fb48240f323a74689fa369a07ff1bb160bfb59e06390a9b01"
     }
   },
   "service_rules": {
