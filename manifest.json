@@ -623,7 +623,7 @@
         }
       ],
       "config_path": "config/Mihomo/Proxy-Routing.yaml",
-      "config_sha256": "c6456d350194b7ed39891162163b399880a641d79454695c279fe2df5c317af4"
+      "config_sha256": "ef22d5a00177c032fd3aa9c8041c8527861c98ad48dd132e0319dae94d0447df"
     },
     "config/Shadowrocket": {
       "rules": 165773,

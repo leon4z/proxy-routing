@@ -220,6 +220,7 @@
   -
     "name": "香港节点 · 自动切换"
     "type": "fallback"
+    "hidden": true
     "filter": "(?i)香港|Hong[ -]?Kong|🇭🇰|(?:^|[^a-z])(?:HK|HKG)(?:[^a-z]|$)"
     "empty-fallback": "REJECT"
     "include-all": true
@@ -238,6 +239,7 @@
   -
     "name": "台湾节点 · 自动切换"
     "type": "fallback"
+    "hidden": true
     "filter": "(?i)台湾|台灣|臺灣|台北|臺北|台中|臺中|新北|彰化|Taiwan|Taipei|Taichung|🇹🇼|(?:^|[^a-z])(?:TW|TWN)(?:[^a-z]|$)"
     "empty-fallback": "REJECT"
     "include-all": true
@@ -256,6 +258,7 @@
   -
     "name": "日本节点 · 自动切换"
     "type": "fallback"
+    "hidden": true
     "filter": "(?i)日本|东京|東京|大阪|Japan|Tokyo|Osaka|🇯🇵|(?:^|[^a-z])(?:JP|JPN)(?:[^a-z]|$)"
     "empty-fallback": "REJECT"
     "include-all": true
@@ -274,6 +277,7 @@
   -
     "name": "新加坡节点 · 自动切换"
     "type": "fallback"
+    "hidden": true
     "filter": "(?i)新加坡|狮城|獅城|Singapore|🇸🇬|(?:^|[^a-z])(?:SG|SGP)(?:[^a-z]|$)"
     "empty-fallback": "REJECT"
     "include-all": true
@@ -292,6 +296,7 @@
   -
     "name": "韩国节点 · 自动切换"
     "type": "fallback"
+    "hidden": true
     "filter": "(?i)韩国|韓國|首尔|首爾|春川|Korea|Seoul|Chuncheon|🇰🇷|(?:^|[^a-z])(?:KR|KOR)(?:[^a-z]|$)"
     "empty-fallback": "REJECT"
     "include-all": true
@@ -310,6 +315,7 @@
   -
     "name": "美国节点 · 自动切换"
     "type": "fallback"
+    "hidden": true
     "filter": "(?i)美国|美國|美西|美东|美東|洛杉矶|洛杉磯|西雅图|西雅圖|纽约|紐約|芝加哥|凤凰城|鳳凰城|圣何塞|聖荷西|United[ -]?States|Los[ -]?Angeles|San[ -]?Jose|Seattle|New[ -]?York|Chicago|Phoenix|🇺🇸|(?:^|[^a-z])USA?(?:[^a-z]|$)"
     "empty-fallback": "REJECT"
     "include-all": true
