@@ -25,7 +25,7 @@
   "outputs": {
     "config/Mihomo": {
       "rules": 164849,
-      "groups": 25,
+      "groups": 19,
       "inventory_bound": false,
       "regex": 174,
       "remote_rule_sets": [
@@ -623,7 +623,7 @@
         }
       ],
       "config_path": "config/Mihomo/Proxy-Routing.yaml",
-      "config_sha256": "ef22d5a00177c032fd3aa9c8041c8527861c98ad48dd132e0319dae94d0447df"
+      "config_sha256": "0dc1b1296c279e96ad662999e5d0bfd0a051674e45d2492c31df5600d12de06f"
     },
     "config/Shadowrocket": {
       "rules": 165773,
