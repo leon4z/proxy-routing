@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "audience": "public",
-  "source_commit": "21a0aeef70681851c15d4741381dda538c9e8700",
-  "sources_sha256": "8a857d5126b2377a582f9b070a4f7d11db580a1c04545b4ff6a50b3576db442a",
+  "source_commit": "f7119625e8e225d0e5a06b137465e0c10cb906f8",
+  "sources_sha256": "03bf69be37968aca5e8ea14af21395fb6cd52fba410fed8782e98193caf9b606",
   "coverage": {
     "claude.com": "Claude",
     "api.claude.com": "Claude",
@@ -24,7 +24,7 @@
   },
   "outputs": {
     "config/Mihomo": {
-      "rules": 164849,
+      "rules": 164608,
       "groups": 19,
       "inventory_bound": false,
       "regex": 174,
@@ -33,7 +33,7 @@
           "id": "site-category-ads-all",
           "path": "rule/Mihomo/variants/site-category-ads-all.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-ads-all.yaml",
-          "sha256": "ead5452293852c93e1341d0655494909a2191a79e787d074e141404ab5c5288b",
+          "sha256": "6f72617cb646320ed7b0d35dc399e65ccf2bf3773fc81421ff920ba4aac483b1",
           "behavior": "classical",
           "rules": 910
         },
@@ -105,9 +105,9 @@
           "id": "site-apple",
           "path": "rule/Mihomo/variants/site-apple.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-apple.yaml",
-          "sha256": "2c6d61ee7effac55de08765c62e6554ddf31acf70a55b322a4d5197223c67df7",
+          "sha256": "c3b7aff56716a7b13e65170625286c35850ea2ff4cbb40515130f6dc5de8d05b",
           "behavior": "classical",
-          "rules": 1798
+          "rules": 1668
         },
         {
           "id": "category-finance",
@@ -145,7 +145,7 @@
           "id": "site-category-ai-!cn",
           "path": "rule/Mihomo/variants/site-category-ai-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-ai-!cn.yaml",
-          "sha256": "fafda279a661385b0b973a5215da237d18c068a933dde4eaaf79ac3630424182",
+          "sha256": "1c8cf9a91c9b930c69a9d724abd3b3682035318b35b681b9d1cac45bf890bb51",
           "behavior": "classical",
           "rules": 219
         },
@@ -209,7 +209,7 @@
           "id": "site-disney",
           "path": "rule/Mihomo/variants/site-disney.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-disney.yaml",
-          "sha256": "03cdd8372ec303e94d3e99ee9499f1cedf27fa6d81379fac38f9626b98af16ed",
+          "sha256": "9f5c7482ef3f55a971bb38196ebf5c5e820b388fba20bf9d230175daae4b6bd2",
           "behavior": "classical",
           "rules": 225
         },
@@ -249,7 +249,7 @@
           "id": "site-amazon",
           "path": "rule/Mihomo/variants/site-amazon.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-amazon.yaml",
-          "sha256": "bfa2f18d8fea027dd56a1f4c7393af21618d18e66b5dcc26a3d06122486257ee",
+          "sha256": "a5bace1c72bf7490fa9ec47c711ab85268664d956b7465dcee728ca149691dee",
           "behavior": "classical",
           "rules": 250
         },
@@ -297,7 +297,7 @@
           "id": "site-category-games",
           "path": "rule/Mihomo/variants/site-category-games.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-category-games.yaml",
-          "sha256": "1a6197d5954f85d64c77592854068f54caa46ea49bb40c1f1e602976e1023c2c",
+          "sha256": "fc0e48654074f6fa36d80615e6f51e0a6606a5ceae59a4002f5892d6a112a7cb",
           "behavior": "classical",
           "rules": 1066
         },
@@ -305,7 +305,7 @@
           "id": "site-github",
           "path": "rule/Mihomo/variants/site-github.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-github.yaml",
-          "sha256": "8ac6342b9bb0a3bc3f0969334a428896f6f8f390f321ee40060e0cd4425686a9",
+          "sha256": "48108d261734f4b2c21db26f16d080cc727b5b7d2f1af3c1320f6f72fefebf31",
           "behavior": "classical",
           "rules": 66
         },
@@ -313,7 +313,7 @@
           "id": "site-microsoft",
           "path": "rule/Mihomo/variants/site-microsoft.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-microsoft.yaml",
-          "sha256": "94b15848fbe866617a52466b95b1986dfb12a632ac556b7e547fab90f2aa06b8",
+          "sha256": "238a0910cd7532963cf6305866b4e8badefc8fd5ec6dbbb6b5ad3b59054f6b7f",
           "behavior": "classical",
           "rules": 762
         },
@@ -321,7 +321,7 @@
           "id": "site-google",
           "path": "rule/Mihomo/variants/site-google.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-google.yaml",
-          "sha256": "1fa21f18a134a6ebfe8200edd1f37c754067826d012ba0061d7ec0017d315fac",
+          "sha256": "a7838c0e8d365ac898df4631fddda31077cd562b30715ed9d2e08055106f331c",
           "behavior": "classical",
           "rules": 1080
         },
@@ -361,7 +361,7 @@
           "id": "site-tencent",
           "path": "rule/Mihomo/variants/site-tencent.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-tencent.yaml",
-          "sha256": "da085ab61fbcaff0beca132369b1f83da8747edf9dbd73215f1a96b091618a3f",
+          "sha256": "f15d1ca36538e0feda28eafe1152307cfc62dec39d3894e198a8516fa75741dc",
           "behavior": "classical",
           "rules": 689
         },
@@ -601,9 +601,9 @@
           "id": "site-geolocation-!cn",
           "path": "rule/Mihomo/variants/site-geolocation-!cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-geolocation-!cn.yaml",
-          "sha256": "9bdf1673831594d6103a1c50a9155a17ef56cfca26ec49ea349fbf332565a081",
+          "sha256": "26f44099b2f6fff71f635f08eb39400e1781e765c83e29d3fdd57b95796e5c80",
           "behavior": "classical",
-          "rules": 27466
+          "rules": 27355
         },
         {
           "id": "dns-site-cn",
@@ -626,7 +626,7 @@
       "config_sha256": "0dc1b1296c279e96ad662999e5d0bfd0a051674e45d2492c31df5600d12de06f"
     },
     "config/Shadowrocket": {
-      "rules": 165773,
+      "rules": 165532,
       "config_rules": 85,
       "groups": 24,
       "remote_rule_sets": [
@@ -634,7 +634,7 @@
           "id": "site-category-ads-all",
           "path": "rule/Shadowrocket/variants/site-category-ads-all.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-category-ads-all.list",
-          "sha256": "c420c8365cce06f73884587c4c823a436bc87b2ae75eccacc3dbb9880b106ad4",
+          "sha256": "eab4f6f8aa4238108914012ecd2dd1425ad1c6eb658a163f97fb7c1379d75693",
           "policy": "REJECT",
           "rules": 911
         },
@@ -706,9 +706,9 @@
           "id": "site-apple",
           "path": "rule/Shadowrocket/variants/site-apple.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-apple.list",
-          "sha256": "055a79157b6203d5b436c7eb81566eccd534d2fff51baa90e806dd6ef5d5cb10",
+          "sha256": "d91820475c0e49995a05d9fe6040f9e8393a01760781834d58b8dd7599ea1a2e",
           "policy": "Apple",
-          "rules": 1798
+          "rules": 1668
         },
         {
           "id": "category-finance",
@@ -746,7 +746,7 @@
           "id": "site-category-ai-!cn",
           "path": "rule/Shadowrocket/variants/site-category-ai-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-category-ai-!cn.list",
-          "sha256": "5c01328117eb4957dc24d46ce804112c4d61938417668ac4268df2dd3fac622b",
+          "sha256": "284faff5042db2e2a92aa31d29a121b390b29e7a10f6eb294c635a793fdce7d9",
           "policy": "AI",
           "rules": 219
         },
@@ -810,7 +810,7 @@
           "id": "site-disney",
           "path": "rule/Shadowrocket/variants/site-disney.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-disney.list",
-          "sha256": "5cd5e07d1eceee1d0b74aa7c448a92611bf4020ad30bbd9f42f38badc8a4516a",
+          "sha256": "f8f76833aa458326ab799f2397c0ea807de6fe3d8ed67771b95389ac56b15762",
           "policy": "影音社交",
           "rules": 232
         },
@@ -850,7 +850,7 @@
           "id": "site-amazon",
           "path": "rule/Shadowrocket/variants/site-amazon.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-amazon.list",
-          "sha256": "ab6acaf49252c671af73f88ffdf9691ffd7b40a5230b427dd3f883cc24e480ac",
+          "sha256": "8c8a8af29b02f06fb3f0207e3270b347f9b37c33e6285da1f410546181bc61fd",
           "policy": "DIRECT",
           "rules": 1197
         },
@@ -898,7 +898,7 @@
           "id": "site-category-games",
           "path": "rule/Shadowrocket/variants/site-category-games.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-category-games.list",
-          "sha256": "2ff9835554480356a59a1435d14acfab2f5b4b12883d42ff82c2e7d52094fcd7",
+          "sha256": "5afb2dfbe6708041e9c0f9fa9451b0ddfece224fc66360b6064cfd11d524fc59",
           "policy": "DIRECT",
           "rules": 1093
         },
@@ -906,7 +906,7 @@
           "id": "site-github",
           "path": "rule/Shadowrocket/variants/site-github.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-github.list",
-          "sha256": "6d492b515f984c65de2e404e2378d25b0fb7b1a13e655dbb540422102c71fe4d",
+          "sha256": "09c796e4964dcdd6e6fbec2cbd33c50de7467f412e55a5db69027776d66ddc2b",
           "policy": "默认代理",
           "rules": 66
         },
@@ -914,7 +914,7 @@
           "id": "site-microsoft",
           "path": "rule/Shadowrocket/variants/site-microsoft.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-microsoft.list",
-          "sha256": "f77bfe93b883ec3c474a84fac1f612d498f0d0f1a0a85630b78eb1c3dbb497f0",
+          "sha256": "d45299768ff1cb8e583eac16d0672687ecfe9272cff73cf4e54bf500cc800991",
           "policy": "DIRECT",
           "rules": 762
         },
@@ -922,7 +922,7 @@
           "id": "site-google",
           "path": "rule/Shadowrocket/variants/site-google.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-google.list",
-          "sha256": "5f5decf1a225056450ba6bba2c05568726ed1240f3008a172a2a9ac2f688f5eb",
+          "sha256": "8e68df5a4dd50b1f9b22e1ea0ca4d2d6466c78933f39b45e6b448b67eb5be7e3",
           "policy": "Google",
           "rules": 1078
         },
@@ -962,7 +962,7 @@
           "id": "site-tencent",
           "path": "rule/Shadowrocket/variants/site-tencent.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-tencent.list",
-          "sha256": "b595b94edc933ec2784431d0e50d7a36b8bd0e143bc04b64b9552e985f6b97e2",
+          "sha256": "9c8c06f2a0ceaad53a5ee3598e26120c1c9973d8881be8df8a2a2877f813a9de",
           "policy": "DIRECT",
           "rules": 689
         },
@@ -1202,9 +1202,9 @@
           "id": "site-geolocation-!cn",
           "path": "rule/Shadowrocket/variants/site-geolocation-!cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-geolocation-!cn.list",
-          "sha256": "9e87acf65a47b3d40362ed07900f3f0413b5f220f2d03cc9d1ae8e68b8aa4ff5",
+          "sha256": "2ab979c85838cadd40dae7f6e8aded85afa48d36d2885717c8e88db21b93d881",
           "policy": "兜底",
-          "rules": 27315
+          "rules": 27204
         }
       ],
       "adaptations": [
@@ -3212,9 +3212,9 @@
   "service_rules": {
     "v2fly": {
       "repository": "v2fly/domain-list-community",
-      "release": "20261118141523",
-      "commit": "bc3a8f5e24792303cf82bfff33b1ff164a0e4b3c",
-      "sha256": "e5c2895fd4de4f197f2483bd5f75f0c1efcae9d7beb47da0badd1bc2b7b351df"
+      "release": "20261121130529",
+      "commit": "9c1420eb3dffce67d2d8e9cbe1f9026ae0d949b6",
+      "sha256": "ca09f5817b8669f1dfde10874bc9806378e922368ee2f111d57dad10ebd7e130"
     },
     "routing_excluded_upstream_attributes": [
       "ads"
@@ -6691,17 +6691,17 @@
         },
         "apple": {
           "data_path": "data/services/apple",
-          "data_sha256": "f05f0db0330a29b2a7a7211f0eb7c0846ebd429a194a246e95eed0fa769b9786",
-          "data_entries": 1833,
-          "rules": 1831,
+          "data_sha256": "bbb24768d832c689d71d96f32047d62b293893800fcaebec89257341b4dd189e",
+          "data_entries": 1703,
+          "rules": 1701,
           "mihomo": {
             "path": "rule/Mihomo/services/apple.yaml",
-            "sha256": "a7985df7a1e7e652e6fa707c0305911c72cab4c3a9cfb4f5d708005278a1d692"
+            "sha256": "ea6fda1f1aa5ab9821cb658cfe143d189e43a2df6b4ee5778e54a38e3c038e74"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/apple.list",
-            "sha256": "121f4336f67fd108300d40c7526c6035211f2062e440640e03e4bb759b48e55a"
+            "sha256": "2067554d9180574fc1dd239cd31d9c4faee7a0e381ae6e2c2fa5e130bb5294ad"
           },
           "upstream": "apple"
         },
@@ -7498,17 +7498,17 @@
         },
         "beats": {
           "data_path": "data/services/beats",
-          "data_sha256": "0db600fcb144cb7258fc280ae6d74301731f83134756629a9f3c9ab3ab123c3a",
-          "data_entries": 716,
-          "rules": 716,
+          "data_sha256": "0725c5b25fa7af76c9c0526db84b941ef29b60a9d2a17838370dfbd0734ad2e2",
+          "data_entries": 588,
+          "rules": 588,
           "mihomo": {
             "path": "rule/Mihomo/services/beats.yaml",
-            "sha256": "1c606fcf873a8a3dc025af5fe685c149076afb057618e71a264bce782ba36627"
+            "sha256": "ff2a9de28853cb7093ba4fdf2556d2d5e9ec4097edfdd348cabcf9da45389ce5"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/beats.list",
-            "sha256": "36dbffe6c4356ae802195c70818a3736f844403e20a8719209a3a89de4c2203f"
+            "sha256": "aca64f48166e9b4e1103b5fef7dce013f73e15bf3fd3a472a3627832a73e63e1"
           },
           "upstream": "beats"
         },
@@ -9502,17 +9502,17 @@
         },
         "cnbc": {
           "data_path": "data/services/cnbc",
-          "data_sha256": "882e6f75a9d78baf2ca791c81687f8eb800bbe0288659ebddfc0163545ab0be8",
-          "data_entries": 4,
-          "rules": 4,
+          "data_sha256": "0644ed9747bcf212c13f0bc377edea95621e1f2e136e346a35f511152a02af38",
+          "data_entries": 3,
+          "rules": 3,
           "mihomo": {
             "path": "rule/Mihomo/services/cnbc.yaml",
-            "sha256": "7230680dfdf29ac62895ef965900f0b3b2271701aef637d2aaa265bb724b5f11"
+            "sha256": "1851ed3dc700715ed64b5ce473843fe9026763564c3fc9f3f71ab04c6ced94e0"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/cnbc.list",
-            "sha256": "6ce9ffa94066a75c4b2822bdfddc9762b54e9b29d22f6e6637fc8f28288d745f"
+            "sha256": "a20614cba1a00196946f2d24818a755aa33dc8a2a900645b8c66c50267b4b546"
           },
           "upstream": "cnbc"
         },
@@ -10849,33 +10849,33 @@
         },
         "dmm": {
           "data_path": "data/services/dmm",
-          "data_sha256": "beaf4661b6dbd2e2917bae876b9cbbc8f3354fbdbdc7858947f8516b082ce271",
-          "data_entries": 17,
-          "rules": 17,
+          "data_sha256": "8978a0d67da9a2f99c6f55a87da8e666a67b005b2cfbf8f9134bb36c9c3a214e",
+          "data_entries": 18,
+          "rules": 18,
           "mihomo": {
             "path": "rule/Mihomo/services/dmm.yaml",
-            "sha256": "01b2e7c5e083c318f72acfcaa76b16ccdbcfa4c59685eda9c5a414db9591e626"
+            "sha256": "6b22927ca8d1eec930fd9131e5228f3f17ca2108fc67c91d1f6fdae6ae09d76f"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/dmm.list",
-            "sha256": "afb044361157305ae49dbcf16a231ebcc4c9ce11cb4057b022181d5787889281"
+            "sha256": "35ecb8e7bd5efad0301d7454ef1a5b0a21d8a720e43d123789b1496d198751b1"
           },
           "upstream": "dmm"
         },
         "dmm-porn": {
           "data_path": "data/services/dmm-porn",
-          "data_sha256": "8ff1aa0142fe9e4cc63f03a1c59a1f4a6dd37dbb3b271fe3511277509bfd43ff",
-          "data_entries": 2,
-          "rules": 2,
+          "data_sha256": "f0224b7e56495d12727744e2cf065d99f0a537a5e9a6c92c1ee4fe5ddae28381",
+          "data_entries": 3,
+          "rules": 3,
           "mihomo": {
             "path": "rule/Mihomo/services/dmm-porn.yaml",
-            "sha256": "8a4a1fbca6d319254f6c996e382f5e950d86fcb1be30d12a5e60161d0141b01b"
+            "sha256": "b9850084a0a89106803493d537756b38c54caaf9d31d9431160eb4a787efdc59"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/dmm-porn.list",
-            "sha256": "d711ea254d36ee3cb203798b5774441cfd1e0b4d3cdd03328beeca2b3e27292f"
+            "sha256": "92aa5a465bb590e9db8ea87cc2c1ee5c5c857adfba43e5a493a631d6cf37976e"
           },
           "upstream": "dmm-porn"
         },
@@ -13707,17 +13707,17 @@
         },
         "guo": {
           "data_path": "data/services/guo",
-          "data_sha256": "c66f3ac49b9b57adfd1307f473eab3523e7b47bcc0a4f2e212a11a8321229ad9",
+          "data_sha256": "0121bb8901bc16f07f393a2cac3b68216fe65ab48f9db1bb56379b9c0905225a",
           "data_entries": 21,
           "rules": 21,
           "mihomo": {
             "path": "rule/Mihomo/services/guo.yaml",
-            "sha256": "c36a78605b875e944b5703feaf3f1e1e59119d2174bd3f6c54ea2ae4272925ee"
+            "sha256": "826f5e83da93c72c6b3272dde39a11ad781674ee669dbf285d6c379afb808a49"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/guo.list",
-            "sha256": "44041dcd497af5f055303157b4556080f765a868fec1cef3de8e01d6808caca4"
+            "sha256": "051cc7f033b6b29d0c4dba2f5ab2cfbea065571341acd031689c0da02f6624fa"
           },
           "upstream": "guo"
         },
@@ -14219,17 +14219,17 @@
         },
         "hkt": {
           "data_path": "data/services/hkt",
-          "data_sha256": "c3b596e4c18084305c2231be59d14a331433682e849fd68f3a25a1a51e4b645e",
-          "data_entries": 12,
-          "rules": 12,
+          "data_sha256": "8b4910c98103fe378088c94190c1ef9c137db85271bac63f2e2c6389baab3aa0",
+          "data_entries": 13,
+          "rules": 13,
           "mihomo": {
             "path": "rule/Mihomo/services/hkt.yaml",
-            "sha256": "2d202989d7185e7c6cea21d07667153fce0b28d956d9b4e7ff9acf49e9e4b1bc"
+            "sha256": "3225325ee2f9ad2ea98b7ec79e2ba877083e03f3c3fc26ac0194b205da00bf3f"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/hkt.list",
-            "sha256": "ed19ccda46389db2403e5381f4b0c78b9b285e3f5d07f860243971224089ba98"
+            "sha256": "03e88c37951ec9ab1648e8643aa12df0a8a3bc879687ca1ff1ca56d2dadee530"
           },
           "upstream": "hkt"
         },
@@ -18937,17 +18937,17 @@
         },
         "nbcuniversal": {
           "data_path": "data/services/nbcuniversal",
-          "data_sha256": "e0e2d9bad14f335b30ca05b5a9307c4e282be71523fbc0609553302ffb0992a3",
-          "data_entries": 17,
-          "rules": 17,
+          "data_sha256": "1f64cfc573e3de71dcff8381064c185b5bc3831f295604cfdba7fa9d79375f74",
+          "data_entries": 33,
+          "rules": 33,
           "mihomo": {
             "path": "rule/Mihomo/services/nbcuniversal.yaml",
-            "sha256": "46e60eb3a90d2520aff90bece2a3ff3fc3bc1184b0db158fe5703ddc11fb1511"
+            "sha256": "6d8a690e8fb5bbf4ab5e3bf140abf556b0b93b288f81c19082a501a1a3ca6730"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/nbcuniversal.list",
-            "sha256": "cb1f32696cd94603de3974b288172134d34b9fa641399a78a15b3f905d7e9495"
+            "sha256": "b40840a907e934bdefecf7bc2e97cafe825b382520677baa306b3776934cc93f"
           },
           "upstream": "nbcuniversal"
         },
@@ -20438,12 +20438,12 @@
         },
         "pccw": {
           "data_path": "data/services/pccw",
-          "data_sha256": "9759f1879088da781e6d368060286dd5c5ba62d34625378e86f215f54362eafd",
-          "data_entries": 29,
-          "rules": 29,
+          "data_sha256": "4ab9b16f028e336cd32b897daf9f8dc94d43df304058f6251ec7a7eb958f36e0",
+          "data_entries": 31,
+          "rules": 31,
           "mihomo": {
             "path": "rule/Mihomo/services/pccw.yaml",
-            "sha256": "60fd247409cdea98f5228e778d48e24154a3ae7db84ada89ea942994c94801cc"
+            "sha256": "fa8b68c159f553876b3fd216b42dbed355fe0ccfebac775397851cfae1c3382e"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -20824,17 +20824,17 @@
         },
         "playboy": {
           "data_path": "data/services/playboy",
-          "data_sha256": "342a22285e1b774c77f00990ce8fce2a10774f31c585b73c0404d05872e71693",
-          "data_entries": 2,
-          "rules": 2,
+          "data_sha256": "3237eb39dc58806d8c85ced1c0ea4807c3d909ae4664d4bbdc56f1f2145cb262",
+          "data_entries": 3,
+          "rules": 3,
           "mihomo": {
             "path": "rule/Mihomo/services/playboy.yaml",
-            "sha256": "1c85900791aacf2e63bdc2536710c3103ac72df3c2d21350cfc7ae3f8cfb01c6"
+            "sha256": "c622419e506155d8470aac597a0c38d35a0859f70d5abbb95b1cc35de3acf9b8"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/playboy.list",
-            "sha256": "7d39efbdc5a5dc3df6d5b565ddb271df612885907a58139935817fb4bdbb02c9"
+            "sha256": "b1cfe19c8c724d827c51d51365c6efabf144dc73b3b6a393be13f14093640182"
           },
           "upstream": "playboy"
         },
@@ -28572,17 +28572,17 @@
         },
         "category-automobile-cn": {
           "data_path": "data/groups/category-automobile-cn",
-          "data_sha256": "2fc70f028c8bcb31682bd0ad7ccf56989fcbfe101d8c3603ea607c57c38f7978",
-          "data_entries": 51,
-          "rules": 51,
+          "data_sha256": "5f0cf3a0265492dae75f9fb42f68fd5f8f5a9c6eb8111e5906dcebad4982166c",
+          "data_entries": 52,
+          "rules": 52,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-automobile-cn.yaml",
-            "sha256": "d90fb12cd767f6790c7ad007c517300d01ce0afee29bea2ac62a28db940f6ba3"
+            "sha256": "0638ec6b5e1026ba56c26a07eb70876f370acff3224b830910ad77735185f839"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-automobile-cn.list",
-            "sha256": "8583562a5d857ba5bbe3057d5db395c9c44c188b4806aa1fbae52912d566b535"
+            "sha256": "160763c0aa24b779db12d4d9cc984c72884c5ed1f592d2509c77e442c31731fd"
           },
           "upstream": "category-automobile-cn"
         },
@@ -28813,11 +28813,11 @@
         "category-companies": {
           "data_path": "data/groups/category-companies",
           "data_sha256": "06570c574c79ea1b4fadaf3413b6a961b0c872a65e8e63340da5f504f7166b5b",
-          "data_entries": 8804,
-          "rules": 8801,
+          "data_entries": 8676,
+          "rules": 8673,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-companies.yaml",
-            "sha256": "26f380c1e1569fe81c173bf2389c97b5a839593a8a58ab55b61eb8b16889313d"
+            "sha256": "52ca635e9a2b57a27726f5dad5937d6a8b72a034fcfda43da9866094c7107c86"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28901,12 +28901,12 @@
         },
         "category-dev": {
           "data_path": "data/groups/category-dev",
-          "data_sha256": "adbf92e81a7f5db2927e966f5793a557467e93ab7e6ffdde8151715ef09024e9",
-          "data_entries": 700,
-          "rules": 700,
+          "data_sha256": "5085d9d8b734c73abcd0adcc59b2a20d6270b7142c6c7281df1975fbece62da8",
+          "data_entries": 702,
+          "rules": 702,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-dev.yaml",
-            "sha256": "19275b3c788fc9bce86bf883d077df431b00ce215d905dca1b95991f53b34359"
+            "sha256": "b7a52c95afac0d05a2a0e37da96cc88c0d3bf4774b3021a70cfbf6a3b5792427"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28968,16 +28968,16 @@
         "category-ecommerce": {
           "data_path": "data/groups/category-ecommerce",
           "data_sha256": "992902ea33b94b15f5bb56eb04517dc19dc68d8a8dfe7a0949eb0b0ec71d55af",
-          "data_entries": 1330,
-          "rules": 1330,
+          "data_entries": 1331,
+          "rules": 1331,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ecommerce.yaml",
-            "sha256": "6d60dfc6e156cf620e922d4e3bd96514979133331345925f790260cce9aadd77"
+            "sha256": "9929b4fd447ae40389f1ba844f01632b8a12db9201e9a6b401cf8efaec817145"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-ecommerce.list",
-            "sha256": "e7928461e1896e3711699a5a3b739b50cde404e8500feeeac2f9b5081b688284"
+            "sha256": "4d1f02bf3e9902647245c98395b4fe9d3f6b361e9b4bc062d27d16143fc21fdb"
           },
           "upstream": "category-ecommerce"
         },
@@ -29505,16 +29505,16 @@
         "category-media": {
           "data_path": "data/groups/category-media",
           "data_sha256": "65aabebd076e720d14b50a65d870508248af3091163802db1649d7db9f6e6ae4",
-          "data_entries": 1581,
-          "rules": 1581,
+          "data_entries": 1599,
+          "rules": 1599,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-media.yaml",
-            "sha256": "faea57e614420dd5f0e76ef2f00632a10788401ea9fcfa042fc6767e1612b789"
+            "sha256": "6cade774fb2bea4f349114acdd4f2907b7e5a102f7b3565995b84e027589d4b5"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-media.list",
-            "sha256": "67a19a19d51964e3b09c325d521c94aa14df0b3e5e079f86253761a87ce76f2e"
+            "sha256": "93be385f2bf5e8d7513246b710d07446b037a1387047a3f8ad5036c864bfb269"
           },
           "upstream": "category-media"
         },
@@ -29858,12 +29858,12 @@
         },
         "category-porn": {
           "data_path": "data/groups/category-porn",
-          "data_sha256": "06b3a389e4bcc846e68727091979e25baa0f96b43501628756bfbf0dbcaf6b40",
+          "data_sha256": "c7f56cfef616c250e90379d7b3ccee77ba91db41f17ec7746455e06a9ab69d0b",
           "data_entries": 6665,
           "rules": 6665,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-porn.yaml",
-            "sha256": "2c373f2fc4b5e95de371659d28890797afa6363c36ca2a041e1ff5ec4102971e"
+            "sha256": "b9a4924b8f7bf501513a8825ccda6ee72f72636385cf4a452e2d630d6bcdf9dc"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30498,11 +30498,11 @@
         "cn": {
           "data_path": "data/groups/cn",
           "data_sha256": "cde2f966d1e460ebb29dd1704c3b27bbead70f1c808a944e86a763604935dab2",
-          "data_entries": 8562,
-          "rules": 8562,
+          "data_entries": 8566,
+          "rules": 8566,
           "mihomo": {
             "path": "rule/Mihomo/groups/cn.yaml",
-            "sha256": "b76b7a6a475f07159432c57bf01e2f0eee3143543cf006ccc5d168120ff9b99d"
+            "sha256": "7c34c8a9826c29fe1fbc93e56547a4f0e6be7ca0db7e1854057ce30f9e6579a5"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30550,11 +30550,11 @@
         "geolocation-!cn": {
           "data_path": "data/groups/geolocation-!cn",
           "data_sha256": "d2e7e691eb46b34585be88d2e9b422fb9f287b575d90bc970e5c0525eccca735",
-          "data_entries": 26161,
-          "rules": 26157,
+          "data_entries": 26055,
+          "rules": 26051,
           "mihomo": {
             "path": "rule/Mihomo/groups/geolocation-!cn.yaml",
-            "sha256": "565b6b974075ce1fefc3ac76b3675dd4448e39fcc1bc3c72af70aa2a9dc88b38"
+            "sha256": "037ac13bac9d20a6fc9752e5433b210e5bdfc213fff18daaf94f011f47814842"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30724,12 +30724,12 @@
         },
         "geolocation-cn": {
           "data_path": "data/groups/geolocation-cn",
-          "data_sha256": "413f1d18f962827be2c493407c68b492376968d2f7b9f0f9867ee413134821ed",
-          "data_entries": 8531,
-          "rules": 8531,
+          "data_sha256": "96e0cf778e8d6315672584bd8ed1856fe704388b61d423295d2ceec7a92e442c",
+          "data_entries": 8535,
+          "rules": 8535,
           "mihomo": {
             "path": "rule/Mihomo/groups/geolocation-cn.yaml",
-            "sha256": "cfc8c6685ff1381048a0fc2cb1b5d51c9c5bd8555c61595c68f8c81e4cf08747"
+            "sha256": "22c8f3255e58126f2f7e2fbc4045732d170b4c6101133e581e3b1d86e60105f7"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30940,7 +30940,7 @@
     },
     "index": {
       "path": "data/README.md",
-      "sha256": "bec7ac2d47152df8fb588445e62a0deaee417b9068e47a557ebf15a770b00626"
+      "sha256": "cc3cd7909e4a86efd16e0b0b83650330d110f49ef603b0230f5e059bf006b0dd"
     }
   }
 }
