@@ -24,7 +24,7 @@
   },
   "outputs": {
     "config/Mihomo": {
-      "rules": 164631,
+      "rules": 164630,
       "groups": 19,
       "inventory_bound": false,
       "regex": 174,
@@ -121,9 +121,9 @@
           "id": "site-cn",
           "path": "rule/Mihomo/variants/site-cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/site-cn.yaml",
-          "sha256": "17d7d6a2425a173b5965e734b663ccdef9ec9217ee5e5ab9ffc2cf76c3e0707b",
+          "sha256": "0f90623bbce97fbee7b0083183880d42347ecce3535a9067a1896d3965f350f6",
           "behavior": "classical",
-          "rules": 110177
+          "rules": 110176
         },
         {
           "id": "site-oracle",
@@ -609,9 +609,9 @@
           "id": "dns-site-cn",
           "path": "rule/Mihomo/variants/dns-site-cn.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/dns-site-cn.yaml",
-          "sha256": "1c7b14062a9b7f8db8588dc4d81fb27f82e1f038c251766081c5edf3c8386c4b",
+          "sha256": "0de55a523b77cdcb087525b8329249ba1914c369ffa1facae759b62c734ca0e9",
           "behavior": "domain",
-          "rules": 110177
+          "rules": 110176
         },
         {
           "id": "dns-site-private",
@@ -623,11 +623,11 @@
         }
       ],
       "config_path": "config/Mihomo/Proxy-Routing.yaml",
-      "config_sha256": "0dc1b1296c279e96ad662999e5d0bfd0a051674e45d2492c31df5600d12de06f"
+      "config_sha256": "651b1e32255e802d915ca0a1a3a6aaba3f13cd279a60123742e86451ff3627e8"
     },
     "config/Shadowrocket": {
       "rules": 165555,
-      "config_rules": 85,
+      "config_rules": 86,
       "groups": 24,
       "remote_rule_sets": [
         {
@@ -722,9 +722,9 @@
           "id": "site-cn",
           "path": "rule/Shadowrocket/variants/site-cn.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/site-cn.list",
-          "sha256": "455f6b5f8877d49af4e374b8d8e661f25bc39ad8f689623bd9eee2fde74b2184",
+          "sha256": "524a347749d7edbfeef2bde32db15c99444a4183c2534a7302f1807d73fcca31",
           "policy": "DIRECT",
-          "rules": 110177
+          "rules": 110176
         },
         {
           "id": "site-oracle",
@@ -3206,7 +3206,7 @@
         }
       ],
       "config_path": "config/Shadowrocket/Proxy-Routing.conf",
-      "config_sha256": "b9cfe92660a5d95fb48240f323a74689fa369a07ff1bb160bfb59e06390a9b01"
+      "config_sha256": "ea18d23e84e339ac27f6d14c8accaccc08586fd41798e6ae6f0f4c4af86c64ac"
     }
   },
   "service_rules": {
