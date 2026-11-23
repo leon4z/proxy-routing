@@ -1,6 +1,6 @@
 # 规则库索引
 
-固定上游版本 `20261121130529`。
+固定上游版本 `20261122062944`。
 
 服务归入 services，聚合组与通用匹配集合归入 groups。聚合文件的 include 路径以 data/ 为起点。来源与本地补充记录在 manifest.json。
 
@@ -1563,11 +1563,11 @@
 | [groups/category-vpnservices](groups/category-vpnservices) | 69 | [YAML](../rule/Mihomo/groups/category-vpnservices.yaml) | [LIST](../rule/Shadowrocket/groups/category-vpnservices.list) |
 | [groups/category-web-archive](groups/category-web-archive) | 18 | [YAML](../rule/Mihomo/groups/category-web-archive.yaml) | [LIST](../rule/Shadowrocket/groups/category-web-archive.list) |
 | [groups/category-wiki-cn](groups/category-wiki-cn) | 15 | [YAML](../rule/Mihomo/groups/category-wiki-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-wiki-cn.list) |
-| [groups/cn](groups/cn) | 8566 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
+| [groups/cn](groups/cn) | 8567 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
 | [groups/connectivity-check](groups/connectivity-check) | 28 | [YAML](../rule/Mihomo/groups/connectivity-check.yaml) | [LIST](../rule/Shadowrocket/groups/connectivity-check.list) |
 | [groups/finance-proxy](groups/finance-proxy) | 31 | [YAML](../rule/Mihomo/groups/finance-proxy.yaml) | [LIST](../rule/Shadowrocket/groups/finance-proxy.list) |
 | [groups/geolocation-!cn](groups/geolocation-!cn) | 26055 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
-| [groups/geolocation-cn](groups/geolocation-cn) | 8535 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
+| [groups/geolocation-cn](groups/geolocation-cn) | 8536 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
 | [groups/google-registry-tld](groups/google-registry-tld) | 20 | [YAML](../rule/Mihomo/groups/google-registry-tld.yaml) | [LIST](../rule/Shadowrocket/groups/google-registry-tld.list) |
 | [groups/goproxy](groups/goproxy) | 2 | [YAML](../rule/Mihomo/groups/goproxy.yaml) | [LIST](../rule/Shadowrocket/groups/goproxy.list) |
 | [groups/misskey-universe](groups/misskey-universe) | 32 | [YAML](../rule/Mihomo/groups/misskey-universe.yaml) | [LIST](../rule/Shadowrocket/groups/misskey-universe.list) |
