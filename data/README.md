@@ -1,6 +1,6 @@
 # 规则库索引
 
-固定上游版本 `20261122062944`。
+固定上游版本 `20261123144211`。
 
 服务归入 services，聚合组与通用匹配集合归入 groups。聚合文件的 include 路径以 data/ 为起点。来源与本地补充记录在 manifest.json。
 
@@ -67,7 +67,7 @@
 | [services/aliyun](services/aliyun) | 89 | [YAML](../rule/Mihomo/services/aliyun.yaml) | [LIST](../rule/Shadowrocket/services/aliyun.list) |
 | [services/aliyun-drive](services/aliyun-drive) | 6 | [YAML](../rule/Mihomo/services/aliyun-drive.yaml) | [LIST](../rule/Shadowrocket/services/aliyun-drive.list) |
 | [services/aljazeera](services/aljazeera) | 7 | [YAML](../rule/Mihomo/services/aljazeera.yaml) | [LIST](../rule/Shadowrocket/services/aljazeera.list) |
-| [services/alphabet](services/alphabet) | 1135 | [YAML](../rule/Mihomo/services/alphabet.yaml) | 域名正则待适配 |
+| [services/alphabet](services/alphabet) | 1136 | [YAML](../rule/Mihomo/services/alphabet.yaml) | 域名正则待适配 |
 | [services/amap](services/amap) | 16 | [YAML](../rule/Mihomo/services/amap.yaml) | [LIST](../rule/Shadowrocket/services/amap.list) |
 | [services/amazon](services/amazon) | 253 | [YAML](../rule/Mihomo/services/amazon.yaml) | 域名正则待适配 |
 | [services/amazontrust](services/amazontrust) | 3 | [YAML](../rule/Mihomo/services/amazontrust.yaml) | [LIST](../rule/Shadowrocket/services/amazontrust.list) |
@@ -483,7 +483,7 @@
 | [services/gateio](services/gateio) | 8 | [YAML](../rule/Mihomo/services/gateio.yaml) | [LIST](../rule/Shadowrocket/services/gateio.list) |
 | [services/geetest](services/geetest) | 2 | [YAML](../rule/Mihomo/services/geetest.yaml) | [LIST](../rule/Shadowrocket/services/geetest.list) |
 | [services/gemfury](services/gemfury) | 6 | [YAML](../rule/Mihomo/services/gemfury.yaml) | [LIST](../rule/Shadowrocket/services/gemfury.list) |
-| [services/gemini](services/gemini) | 49 | [YAML](../rule/Mihomo/services/gemini.yaml) | [LIST](../rule/Shadowrocket/services/gemini.list) |
+| [services/gemini](services/gemini) | 50 | [YAML](../rule/Mihomo/services/gemini.yaml) | [LIST](../rule/Shadowrocket/services/gemini.list) |
 | [services/genotek-ru](services/genotek-ru) | 9 | [YAML](../rule/Mihomo/services/genotek-ru.yaml) | [LIST](../rule/Shadowrocket/services/genotek-ru.list) |
 | [services/gettyimages](services/gettyimages) | 25 | [YAML](../rule/Mihomo/services/gettyimages.yaml) | [LIST](../rule/Shadowrocket/services/gettyimages.list) |
 | [services/getui](services/getui) | 7 | [YAML](../rule/Mihomo/services/getui.yaml) | [LIST](../rule/Shadowrocket/services/getui.list) |
@@ -510,9 +510,9 @@
 | [services/gog](services/gog) | 8 | [YAML](../rule/Mihomo/services/gog.yaml) | [LIST](../rule/Shadowrocket/services/gog.list) |
 | [services/golang](services/golang) | 8 | [YAML](../rule/Mihomo/services/golang.yaml) | [LIST](../rule/Shadowrocket/services/golang.list) |
 | [services/goodreads](services/goodreads) | 2 | [YAML](../rule/Mihomo/services/goodreads.yaml) | [LIST](../rule/Shadowrocket/services/goodreads.list) |
-| [services/google](services/google) | 1125 | [YAML](../rule/Mihomo/services/google.yaml) | 域名正则待适配 |
-| [services/google-deepmind](services/google-deepmind) | 49 | [YAML](../rule/Mihomo/services/google-deepmind.yaml) | [LIST](../rule/Shadowrocket/services/google-deepmind.list) |
-| [services/google-gemini](services/google-gemini) | 49 | [YAML](../rule/Mihomo/services/google-gemini.yaml) | [LIST](../rule/Shadowrocket/services/google-gemini.list) |
+| [services/google](services/google) | 1126 | [YAML](../rule/Mihomo/services/google.yaml) | 域名正则待适配 |
+| [services/google-deepmind](services/google-deepmind) | 50 | [YAML](../rule/Mihomo/services/google-deepmind.yaml) | [LIST](../rule/Shadowrocket/services/google-deepmind.list) |
+| [services/google-gemini](services/google-gemini) | 50 | [YAML](../rule/Mihomo/services/google-gemini.yaml) | [LIST](../rule/Shadowrocket/services/google-gemini.list) |
 | [services/google-play](services/google-play) | 10 | [YAML](../rule/Mihomo/services/google-play.yaml) | 域名正则待适配 |
 | [services/google-registry](services/google-registry) | 13 | [YAML](../rule/Mihomo/services/google-registry.yaml) | [LIST](../rule/Shadowrocket/services/google-registry.list) |
 | [services/google-scholar](services/google-scholar) | 76 | [YAML](../rule/Mihomo/services/google-scholar.yaml) | [LIST](../rule/Shadowrocket/services/google-scholar.list) |
@@ -1440,15 +1440,15 @@
 | [services/zto-express](services/zto-express) | 13 | [YAML](../rule/Mihomo/services/zto-express.yaml) | [LIST](../rule/Shadowrocket/services/zto-express.list) |
 | [services/zuoyebang](services/zuoyebang) | 5 | [YAML](../rule/Mihomo/services/zuoyebang.yaml) | [LIST](../rule/Shadowrocket/services/zuoyebang.list) |
 | [services/zynga](services/zynga) | 3 | [YAML](../rule/Mihomo/services/zynga.yaml) | [LIST](../rule/Shadowrocket/services/zynga.list) |
-| [groups/ai](groups/ai) | 225 | [YAML](../rule/Mihomo/groups/ai.yaml) | 域名正则待适配 |
+| [groups/ai](groups/ai) | 226 | [YAML](../rule/Mihomo/groups/ai.yaml) | 域名正则待适配 |
 | [groups/anime](groups/anime) | 21 | [YAML](../rule/Mihomo/groups/anime.yaml) | [LIST](../rule/Shadowrocket/groups/anime.list) |
 | [groups/category-acg](groups/category-acg) | 9 | [YAML](../rule/Mihomo/groups/category-acg.yaml) | [LIST](../rule/Shadowrocket/groups/category-acg.list) |
 | [groups/category-ads](groups/category-ads) | 850 | [YAML](../rule/Mihomo/groups/category-ads.yaml) | 域名正则待适配 |
 | [groups/category-ads-all](groups/category-ads-all) | 910 | [YAML](../rule/Mihomo/groups/category-ads-all.yaml) | 域名正则待适配 |
 | [groups/category-ads-and-telemetry](groups/category-ads-and-telemetry) | 891 | [YAML](../rule/Mihomo/groups/category-ads-and-telemetry.yaml) | 域名正则待适配 |
 | [groups/category-ads-ir](groups/category-ads-ir) | 7 | [YAML](../rule/Mihomo/groups/category-ads-ir.yaml) | [LIST](../rule/Shadowrocket/groups/category-ads-ir.list) |
-| [groups/category-ai-!cn](groups/category-ai-!cn) | 219 | [YAML](../rule/Mihomo/groups/category-ai-!cn.yaml) | 域名正则待适配 |
-| [groups/category-ai-chat-!cn](groups/category-ai-chat-!cn) | 219 | [YAML](../rule/Mihomo/groups/category-ai-chat-!cn.yaml) | 域名正则待适配 |
+| [groups/category-ai-!cn](groups/category-ai-!cn) | 220 | [YAML](../rule/Mihomo/groups/category-ai-!cn.yaml) | 域名正则待适配 |
+| [groups/category-ai-chat-!cn](groups/category-ai-chat-!cn) | 220 | [YAML](../rule/Mihomo/groups/category-ai-chat-!cn.yaml) | 域名正则待适配 |
 | [groups/category-ai-cn](groups/category-ai-cn) | 129 | [YAML](../rule/Mihomo/groups/category-ai-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-ai-cn.list) |
 | [groups/category-ai-ru](groups/category-ai-ru) | 12 | [YAML](../rule/Mihomo/groups/category-ai-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-ai-ru.list) |
 | [groups/category-android-app-download](groups/category-android-app-download) | 11 | [YAML](../rule/Mihomo/groups/category-android-app-download.yaml) | [LIST](../rule/Shadowrocket/groups/category-android-app-download.list) |
@@ -1469,7 +1469,7 @@
 | [groups/category-cdn-cn](groups/category-cdn-cn) | 99 | [YAML](../rule/Mihomo/groups/category-cdn-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-cdn-cn.list) |
 | [groups/category-collaborate-cn](groups/category-collaborate-cn) | 26 | [YAML](../rule/Mihomo/groups/category-collaborate-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-collaborate-cn.list) |
 | [groups/category-communication](groups/category-communication) | 160 | [YAML](../rule/Mihomo/groups/category-communication.yaml) | [LIST](../rule/Shadowrocket/groups/category-communication.list) |
-| [groups/category-companies](groups/category-companies) | 8676 | [YAML](../rule/Mihomo/groups/category-companies.yaml) | 域名正则待适配 |
+| [groups/category-companies](groups/category-companies) | 8677 | [YAML](../rule/Mihomo/groups/category-companies.yaml) | 域名正则待适配 |
 | [groups/category-consent-management](groups/category-consent-management) | 14 | [YAML](../rule/Mihomo/groups/category-consent-management.yaml) | [LIST](../rule/Shadowrocket/groups/category-consent-management.list) |
 | [groups/category-container](groups/category-container) | 10 | [YAML](../rule/Mihomo/groups/category-container.yaml) | 域名正则待适配 |
 | [groups/category-cryptocurrency](groups/category-cryptocurrency) | 241 | [YAML](../rule/Mihomo/groups/category-cryptocurrency.yaml) | [LIST](../rule/Shadowrocket/groups/category-cryptocurrency.list) |
@@ -1488,7 +1488,7 @@
 | [groups/category-enhance-gaming](groups/category-enhance-gaming) | 18 | [YAML](../rule/Mihomo/groups/category-enhance-gaming.yaml) | [LIST](../rule/Shadowrocket/groups/category-enhance-gaming.list) |
 | [groups/category-enterprise-query-platform-cn](groups/category-enterprise-query-platform-cn) | 13 | [YAML](../rule/Mihomo/groups/category-enterprise-query-platform-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-enterprise-query-platform-cn.list) |
 | [groups/category-entertainment](groups/category-entertainment) | 2183 | [YAML](../rule/Mihomo/groups/category-entertainment.yaml) | 域名正则待适配 |
-| [groups/category-entertainment-cn](groups/category-entertainment-cn) | 941 | [YAML](../rule/Mihomo/groups/category-entertainment-cn.yaml) | 域名正则待适配 |
+| [groups/category-entertainment-cn](groups/category-entertainment-cn) | 945 | [YAML](../rule/Mihomo/groups/category-entertainment-cn.yaml) | 域名正则待适配 |
 | [groups/category-entertainment-ru](groups/category-entertainment-ru) | 35 | [YAML](../rule/Mihomo/groups/category-entertainment-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-entertainment-ru.list) |
 | [groups/category-finance](groups/category-finance) | 668 | [YAML](../rule/Mihomo/groups/category-finance.yaml) | [LIST](../rule/Shadowrocket/groups/category-finance.list) |
 | [groups/category-flight-simulator](groups/category-flight-simulator) | 79 | [YAML](../rule/Mihomo/groups/category-flight-simulator.yaml) | [LIST](../rule/Shadowrocket/groups/category-flight-simulator.list) |
@@ -1498,9 +1498,9 @@
 | [groups/category-forums-ru](groups/category-forums-ru) | 11 | [YAML](../rule/Mihomo/groups/category-forums-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-forums-ru.list) |
 | [groups/category-game-accelerator-cn](groups/category-game-accelerator-cn) | 45 | [YAML](../rule/Mihomo/groups/category-game-accelerator-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-game-accelerator-cn.list) |
 | [groups/category-game-platforms-download](groups/category-game-platforms-download) | 491 | [YAML](../rule/Mihomo/groups/category-game-platforms-download.yaml) | [LIST](../rule/Shadowrocket/groups/category-game-platforms-download.list) |
-| [groups/category-games](groups/category-games) | 1184 | [YAML](../rule/Mihomo/groups/category-games.yaml) | 域名正则待适配 |
+| [groups/category-games](groups/category-games) | 1188 | [YAML](../rule/Mihomo/groups/category-games.yaml) | 域名正则待适配 |
 | [groups/category-games-!cn](groups/category-games-!cn) | 888 | [YAML](../rule/Mihomo/groups/category-games-!cn.yaml) | 域名正则待适配 |
-| [groups/category-games-cn](groups/category-games-cn) | 296 | [YAML](../rule/Mihomo/groups/category-games-cn.yaml) | 域名正则待适配 |
+| [groups/category-games-cn](groups/category-games-cn) | 300 | [YAML](../rule/Mihomo/groups/category-games-cn.yaml) | 域名正则待适配 |
 | [groups/category-gov-ir](groups/category-gov-ir) | 29 | [YAML](../rule/Mihomo/groups/category-gov-ir.yaml) | [LIST](../rule/Shadowrocket/groups/category-gov-ir.list) |
 | [groups/category-gov-ru](groups/category-gov-ru) | 145 | [YAML](../rule/Mihomo/groups/category-gov-ru.yaml) | [LIST](../rule/Shadowrocket/groups/category-gov-ru.list) |
 | [groups/category-hospital-cn](groups/category-hospital-cn) | 11 | [YAML](../rule/Mihomo/groups/category-hospital-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-hospital-cn.list) |
@@ -1563,11 +1563,11 @@
 | [groups/category-vpnservices](groups/category-vpnservices) | 69 | [YAML](../rule/Mihomo/groups/category-vpnservices.yaml) | [LIST](../rule/Shadowrocket/groups/category-vpnservices.list) |
 | [groups/category-web-archive](groups/category-web-archive) | 18 | [YAML](../rule/Mihomo/groups/category-web-archive.yaml) | [LIST](../rule/Shadowrocket/groups/category-web-archive.list) |
 | [groups/category-wiki-cn](groups/category-wiki-cn) | 15 | [YAML](../rule/Mihomo/groups/category-wiki-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-wiki-cn.list) |
-| [groups/cn](groups/cn) | 8567 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
+| [groups/cn](groups/cn) | 8571 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
 | [groups/connectivity-check](groups/connectivity-check) | 28 | [YAML](../rule/Mihomo/groups/connectivity-check.yaml) | [LIST](../rule/Shadowrocket/groups/connectivity-check.list) |
 | [groups/finance-proxy](groups/finance-proxy) | 31 | [YAML](../rule/Mihomo/groups/finance-proxy.yaml) | [LIST](../rule/Shadowrocket/groups/finance-proxy.list) |
-| [groups/geolocation-!cn](groups/geolocation-!cn) | 26055 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
-| [groups/geolocation-cn](groups/geolocation-cn) | 8536 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
+| [groups/geolocation-!cn](groups/geolocation-!cn) | 26056 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
+| [groups/geolocation-cn](groups/geolocation-cn) | 8540 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
 | [groups/google-registry-tld](groups/google-registry-tld) | 20 | [YAML](../rule/Mihomo/groups/google-registry-tld.yaml) | [LIST](../rule/Shadowrocket/groups/google-registry-tld.list) |
 | [groups/goproxy](groups/goproxy) | 2 | [YAML](../rule/Mihomo/groups/goproxy.yaml) | [LIST](../rule/Shadowrocket/groups/goproxy.list) |
 | [groups/misskey-universe](groups/misskey-universe) | 32 | [YAML](../rule/Mihomo/groups/misskey-universe.yaml) | [LIST](../rule/Shadowrocket/groups/misskey-universe.list) |

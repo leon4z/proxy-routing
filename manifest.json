@@ -24,7 +24,7 @@
   },
   "outputs": {
     "config/Mihomo": {
-      "rules": 164630,
+      "rules": 164632,
       "groups": 19,
       "inventory_bound": false,
       "regex": 174,
@@ -137,9 +137,9 @@
           "id": "category-ai",
           "path": "rule/Mihomo/variants/category-ai.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/category-ai.yaml",
-          "sha256": "aab0d8e7da58f6083e3b6a26ea07e305d57c486f5676cd95f008d413e089d53a",
+          "sha256": "ffd720aa9b8758d05e0d32f7a6bbbcee1792ac1d7d9d8c4e0054886c119dcc72",
           "behavior": "classical",
-          "rules": 218
+          "rules": 219
         },
         {
           "id": "site-category-ai-!cn",
@@ -441,9 +441,9 @@
           "id": "service-gemini",
           "path": "rule/Mihomo/services/gemini.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/gemini.yaml",
-          "sha256": "4cfad807de2812664f0103853a3fa5eb5e725a6c56bf482df57b2e3dcc458323",
+          "sha256": "3047148793c7f60a69f167894b9e03528473d7d45c064205844f0a5588a8cf92",
           "behavior": "classical",
-          "rules": 49
+          "rules": 50
         },
         {
           "id": "service-copilot",
@@ -626,7 +626,7 @@
       "config_sha256": "651b1e32255e802d915ca0a1a3a6aaba3f13cd279a60123742e86451ff3627e8"
     },
     "config/Shadowrocket": {
-      "rules": 165555,
+      "rules": 165557,
       "config_rules": 86,
       "groups": 24,
       "remote_rule_sets": [
@@ -738,9 +738,9 @@
           "id": "category-ai",
           "path": "rule/Shadowrocket/variants/category-ai.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/category-ai.list",
-          "sha256": "badb4c11eb05469a28474b535eb8071cd780ef1dfc3e4fcfeabc7e6bb961deb3",
+          "sha256": "310494a8ec216fb7643d921996fb0b73a3a3d9044898903c6b81ade067ffff5c",
           "policy": "AI",
-          "rules": 218
+          "rules": 219
         },
         {
           "id": "site-category-ai-!cn",
@@ -1042,9 +1042,9 @@
           "id": "service-gemini",
           "path": "rule/Shadowrocket/services/gemini.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/gemini.list",
-          "sha256": "de19f4a55763b08b38e5364d7fe1223657748659e18014081e67a64cc4734c50",
+          "sha256": "1012c19d23f263b3d29826d61c134ec16abb07455d2cc228661bdc55c7962c21",
           "policy": "默认代理",
-          "rules": 49
+          "rules": 50
         },
         {
           "id": "service-copilot",
@@ -3212,9 +3212,9 @@
   "service_rules": {
     "v2fly": {
       "repository": "v2fly/domain-list-community",
-      "release": "20261122062944",
-      "commit": "810aa5258c883f5a2a6fd43cf058d01db0f06be5",
-      "sha256": "6a5d6a8a567bd6f6f361e4bd8c6bed989b60f8b675f5cc49a0ec9b097425ee00"
+      "release": "20261123144211",
+      "commit": "dfa5b1c2258289bdbee70d06352cca23b9bdac7f",
+      "sha256": "89bdf1d527a10c9591cba1761a9e981cd45fe374d45c1602e2494b06bdbf520d"
     },
     "routing_excluded_upstream_attributes": [
       "ads"
@@ -3323,10 +3323,15 @@
       "service-gemini": {
         "upstream": "google-gemini",
         "library_key": "services/gemini",
-        "rules": 49,
+        "rules": 50,
         "metacubex_comparison": {
           "id": "site-google-gemini",
-          "added": [],
+          "added": [
+            [
+              "DOMAIN-SUFFIX",
+              "gemma.ai"
+            ]
+          ],
           "removed": []
         }
       },
@@ -3680,7 +3685,7 @@
         ],
         "upstream": "category-ai-!cn",
         "library_key": "groups/ai",
-        "rules": 221,
+        "rules": 222,
         "metacubex_comparison": {
           "id": "site-category-ai-!cn",
           "added": [
@@ -3695,6 +3700,10 @@
             [
               "DOMAIN",
               "anthropic.com.cdn.cloudflare.net"
+            ],
+            [
+              "DOMAIN-SUFFIX",
+              "gemma.ai"
             ],
             [
               "IP-ASN",
@@ -6300,12 +6309,12 @@
         },
         "alphabet": {
           "data_path": "data/services/alphabet",
-          "data_sha256": "5b0d77a414caf3f97a6a3ce5a524a56d0f89110e12f8c0bddf3b4c707ab95ce7",
-          "data_entries": 1135,
-          "rules": 1135,
+          "data_sha256": "026687bed060f6f2f50cdc3e828058c5aaf349c2c5e400a567a24c3f35fd2d91",
+          "data_entries": 1136,
+          "rules": 1136,
           "mihomo": {
             "path": "rule/Mihomo/services/alphabet.yaml",
-            "sha256": "70123813d766377baaca13034ed76474b46444a2b55144d603c004b9e5346ba3"
+            "sha256": "9cc345e7a374696ba229ec104cc05fc35ba22c2302ababa9e698da8a8be2e48c"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -12981,17 +12990,17 @@
         },
         "gemini": {
           "data_path": "data/services/gemini",
-          "data_sha256": "85bcca087613bf412b9b311064798cdc7e22707abf7dc6c0bb073b8a72ba7405",
-          "data_entries": 49,
-          "rules": 49,
+          "data_sha256": "093f19320e07cac983edf91ab77627306b118d1f3b8675db1889e9270aef32d2",
+          "data_entries": 50,
+          "rules": 50,
           "mihomo": {
             "path": "rule/Mihomo/services/gemini.yaml",
-            "sha256": "4cfad807de2812664f0103853a3fa5eb5e725a6c56bf482df57b2e3dcc458323"
+            "sha256": "3047148793c7f60a69f167894b9e03528473d7d45c064205844f0a5588a8cf92"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/gemini.list",
-            "sha256": "de19f4a55763b08b38e5364d7fe1223657748659e18014081e67a64cc4734c50"
+            "sha256": "1012c19d23f263b3d29826d61c134ec16abb07455d2cc228661bdc55c7962c21"
           },
           "project": "service-gemini"
         },
@@ -13413,12 +13422,12 @@
         },
         "google": {
           "data_path": "data/services/google",
-          "data_sha256": "d03d097be06075c0a59f9a528e1cdcf88fc27321aa89737765dd376f9b00d697",
-          "data_entries": 1125,
-          "rules": 1125,
+          "data_sha256": "bd0ae360b5eb6f65e64e9f9079d62e20d0fec223c17dded958b679d3a9ee7814",
+          "data_entries": 1126,
+          "rules": 1126,
           "mihomo": {
             "path": "rule/Mihomo/services/google.yaml",
-            "sha256": "0c8ac3ab7ba00666d633303f7890b9521c8f67bc79fa3a043e9e82563ab050ea"
+            "sha256": "532d0c2c6119142e547e559fdec4614c3012f2aad71d763eb29796970154f07c"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -13432,33 +13441,33 @@
         },
         "google-deepmind": {
           "data_path": "data/services/google-deepmind",
-          "data_sha256": "85bcca087613bf412b9b311064798cdc7e22707abf7dc6c0bb073b8a72ba7405",
-          "data_entries": 49,
-          "rules": 49,
+          "data_sha256": "093f19320e07cac983edf91ab77627306b118d1f3b8675db1889e9270aef32d2",
+          "data_entries": 50,
+          "rules": 50,
           "mihomo": {
             "path": "rule/Mihomo/services/google-deepmind.yaml",
-            "sha256": "4cfad807de2812664f0103853a3fa5eb5e725a6c56bf482df57b2e3dcc458323"
+            "sha256": "3047148793c7f60a69f167894b9e03528473d7d45c064205844f0a5588a8cf92"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/google-deepmind.list",
-            "sha256": "de19f4a55763b08b38e5364d7fe1223657748659e18014081e67a64cc4734c50"
+            "sha256": "1012c19d23f263b3d29826d61c134ec16abb07455d2cc228661bdc55c7962c21"
           },
           "upstream": "google-deepmind"
         },
         "google-gemini": {
           "data_path": "data/services/google-gemini",
-          "data_sha256": "85bcca087613bf412b9b311064798cdc7e22707abf7dc6c0bb073b8a72ba7405",
-          "data_entries": 49,
-          "rules": 49,
+          "data_sha256": "093f19320e07cac983edf91ab77627306b118d1f3b8675db1889e9270aef32d2",
+          "data_entries": 50,
+          "rules": 50,
           "mihomo": {
             "path": "rule/Mihomo/services/google-gemini.yaml",
-            "sha256": "4cfad807de2812664f0103853a3fa5eb5e725a6c56bf482df57b2e3dcc458323"
+            "sha256": "3047148793c7f60a69f167894b9e03528473d7d45c064205844f0a5588a8cf92"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/google-gemini.list",
-            "sha256": "de19f4a55763b08b38e5364d7fe1223657748659e18014081e67a64cc4734c50"
+            "sha256": "1012c19d23f263b3d29826d61c134ec16abb07455d2cc228661bdc55c7962c21"
           },
           "upstream": "google-gemini"
         },
@@ -28337,11 +28346,11 @@
         "ai": {
           "data_path": "data/groups/ai",
           "data_sha256": "b6da69fbae29e7516e233f97354d2d59261c95f64801489541d400f31ef5ca52",
-          "data_entries": 225,
-          "rules": 225,
+          "data_entries": 226,
+          "rules": 226,
           "mihomo": {
             "path": "rule/Mihomo/groups/ai.yaml",
-            "sha256": "0406feb0faff15b7e453b17741ce7ca39c38df04c8d1fe9f54cbf1db984d7459"
+            "sha256": "f5080c944fbf0515416862579558258a4847543004278786f2146a55aa7fe11e"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28457,11 +28466,11 @@
         "category-ai-!cn": {
           "data_path": "data/groups/category-ai-!cn",
           "data_sha256": "f336cceb70722beb557cfccb28531aa6051f1446d6d8f115c42cfec3039d4591",
-          "data_entries": 219,
-          "rules": 219,
+          "data_entries": 220,
+          "rules": 220,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ai-!cn.yaml",
-            "sha256": "408a8ff8176905205960171dab6e1070da11bba848c87bdee99c3026dc5f49e5"
+            "sha256": "253e74afab3e25456de14554cee17e13e024cf7aefb0f0a019d8160e7902f559"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28475,11 +28484,11 @@
         "category-ai-chat-!cn": {
           "data_path": "data/groups/category-ai-chat-!cn",
           "data_sha256": "7b1537613130588bdad1a419cf8fe1b0a3f03de9b2d7c3ee089093b1f02a3889",
-          "data_entries": 219,
-          "rules": 219,
+          "data_entries": 220,
+          "rules": 220,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-ai-chat-!cn.yaml",
-            "sha256": "408a8ff8176905205960171dab6e1070da11bba848c87bdee99c3026dc5f49e5"
+            "sha256": "253e74afab3e25456de14554cee17e13e024cf7aefb0f0a019d8160e7902f559"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -28813,11 +28822,11 @@
         "category-companies": {
           "data_path": "data/groups/category-companies",
           "data_sha256": "06570c574c79ea1b4fadaf3413b6a961b0c872a65e8e63340da5f504f7166b5b",
-          "data_entries": 8676,
-          "rules": 8673,
+          "data_entries": 8677,
+          "rules": 8674,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-companies.yaml",
-            "sha256": "52ca635e9a2b57a27726f5dad5937d6a8b72a034fcfda43da9866094c7107c86"
+            "sha256": "2b337b9c590214c140b3daf2a7da47808c8a595c823ffe35ed22da9887a2de1f"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29139,11 +29148,11 @@
         "category-entertainment-cn": {
           "data_path": "data/groups/category-entertainment-cn",
           "data_sha256": "a5c35e6eb3e3afb321187e23cb916bb0d57736e1aa1847389cb14126fa39c00c",
-          "data_entries": 941,
-          "rules": 941,
+          "data_entries": 945,
+          "rules": 945,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-entertainment-cn.yaml",
-            "sha256": "03cd79adc0051f0de9061ba371560e6faa8cb2723375b9df36a5a4e51fdf70d5"
+            "sha256": "9c673499e9a677140fab6ab8e1838f8c29723b3ef6b457331f9725667673fb92"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29302,11 +29311,11 @@
         "category-games": {
           "data_path": "data/groups/category-games",
           "data_sha256": "7da381d8def05719d8f98e9c20dc5d2316f188cf31004c6c977c79d05f722d7b",
-          "data_entries": 1184,
-          "rules": 1184,
+          "data_entries": 1188,
+          "rules": 1188,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-games.yaml",
-            "sha256": "0e083abc12219f35569c8ff87bcc5ea3f201bb635531ac4bca1e2fb7cc32ed48"
+            "sha256": "2b8a557771a8bf8b688bd9529c83f7a478845bd6404f04ca7a6a6f5a2f0f0021"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -29342,12 +29351,12 @@
         },
         "category-games-cn": {
           "data_path": "data/groups/category-games-cn",
-          "data_sha256": "f4259e53bb8df6cae15b3d3ee07cfd2c3b6e2cb41e95571a2e8f81193c08f569",
-          "data_entries": 296,
-          "rules": 296,
+          "data_sha256": "5ac0e7af7d437523dff5e3334f06149cbc183d0a47dba23278167c65ff05428d",
+          "data_entries": 300,
+          "rules": 300,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-games-cn.yaml",
-            "sha256": "1177c9feb4725bb805ca7738a2f41c4149e37bd74e2ceb130d4dd723397bdd90"
+            "sha256": "4dfaad3dbb85c273a148f4f13e55eb96ecce0f07d3a400db14fce3274ba2c54c"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30498,11 +30507,11 @@
         "cn": {
           "data_path": "data/groups/cn",
           "data_sha256": "cde2f966d1e460ebb29dd1704c3b27bbead70f1c808a944e86a763604935dab2",
-          "data_entries": 8567,
-          "rules": 8567,
+          "data_entries": 8571,
+          "rules": 8571,
           "mihomo": {
             "path": "rule/Mihomo/groups/cn.yaml",
-            "sha256": "c2dde948277694732904adf02a3a98fa0e10c1b86722c6037a2ba00c1750edbe"
+            "sha256": "5a88514a5497917f027a92f8945eefda3a02e605db2d10e63476a6b9910c3260"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30550,11 +30559,11 @@
         "geolocation-!cn": {
           "data_path": "data/groups/geolocation-!cn",
           "data_sha256": "d2e7e691eb46b34585be88d2e9b422fb9f287b575d90bc970e5c0525eccca735",
-          "data_entries": 26055,
-          "rules": 26051,
+          "data_entries": 26056,
+          "rules": 26052,
           "mihomo": {
             "path": "rule/Mihomo/groups/geolocation-!cn.yaml",
-            "sha256": "037ac13bac9d20a6fc9752e5433b210e5bdfc213fff18daaf94f011f47814842"
+            "sha256": "e370dd65e102e2ed5d812f9c3f6f32f1370ead671c8b32b65fe8246a91fadc22"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30725,11 +30734,11 @@
         "geolocation-cn": {
           "data_path": "data/groups/geolocation-cn",
           "data_sha256": "9e09c0d8464d8c711399ef8927352097ac995bab51ed51f525454ff84d5b0db6",
-          "data_entries": 8536,
-          "rules": 8536,
+          "data_entries": 8540,
+          "rules": 8540,
           "mihomo": {
             "path": "rule/Mihomo/groups/geolocation-cn.yaml",
-            "sha256": "718bd2fb91ecd1f4e8d86597d2fb114448dc6cbc5994a6a598dfb12a31d3e2b3"
+            "sha256": "d2732030dfae961aa9e29a0bbe8e86a8d70b0c8dadb757635d18f5bb4e94c1b0"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30940,7 +30949,7 @@
     },
     "index": {
       "path": "data/README.md",
-      "sha256": "8d00d47db549f4f6f84223191fb23d5ae1fb002d0311e3dfc672c9946874feec"
+      "sha256": "2a16147ba080e2e7540072776abaf39f95a37ff6af7dc3e9906e95be4b25bfc1"
     }
   }
 }
