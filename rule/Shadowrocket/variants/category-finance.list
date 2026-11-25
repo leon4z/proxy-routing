@@ -549,7 +549,6 @@ DOMAIN-SUFFIX,hsbc.com.bd
 DOMAIN-SUFFIX,hsbc.com.bh
 DOMAIN-SUFFIX,hsbc.com.br
 DOMAIN-SUFFIX,hsbc.com.eg
-DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,hsbc.com.mo
 DOMAIN-SUFFIX,hsbc.com.mt
 DOMAIN-SUFFIX,hsbc.com.mx
@@ -574,6 +573,7 @@ DOMAIN-SUFFIX,vv1865.com
 DOMAIN-SUFFIX,hsbc.com.cn
 DOMAIN-SUFFIX,hsbcqh.com.cn
 DOMAIN-SUFFIX,hsbcinsurance.com.cn
+DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN,hsbc.edge.sdk.awswaf.com
 DOMAIN,c-hsbc.lytics.io
 DOMAIN-SUFFIX,ibkr.ca

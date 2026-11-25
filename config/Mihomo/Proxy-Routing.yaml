@@ -760,6 +760,14 @@
     "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/hsbc.yaml"
     "interval": 86400
     "proxy": "DIRECT"
+  "service-hsbc-hk":
+    "type": "http"
+    "behavior": "classical"
+    "format": "yaml"
+    "path": "./rules/service-hsbc-hk.yaml"
+    "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/hsbc-hk.yaml"
+    "interval": 86400
+    "proxy": "DIRECT"
   "service-oracle":
     "type": "http"
     "behavior": "classical"

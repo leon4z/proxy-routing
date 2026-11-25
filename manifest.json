@@ -24,7 +24,7 @@
   },
   "outputs": {
     "config/Mihomo": {
-      "rules": 164640,
+      "rules": 164646,
       "groups": 19,
       "inventory_bound": false,
       "regex": 174,
@@ -73,9 +73,9 @@
           "id": "category-finance-proxy",
           "path": "rule/Mihomo/groups/finance-proxy.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/groups/finance-proxy.yaml",
-          "sha256": "ae3b3587f3659296787796cc12397fa3d2118df6c572c3f13142bdca3149b6c1",
+          "sha256": "edac8141f2474ba1232cfb8372d81576533298aee706e7a0ea05e17eee4665f6",
           "behavior": "classical",
-          "rules": 31
+          "rules": 34
         },
         {
           "id": "site-paypal",
@@ -113,7 +113,7 @@
           "id": "category-finance",
           "path": "rule/Mihomo/variants/category-finance.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/variants/category-finance.yaml",
-          "sha256": "eb46cbbddb02205f5d89d81acba10bb071144900d01227f4aba741784fe52b0f",
+          "sha256": "b9b63a353665292024418f2c20f2703ad6096030b3c014e190af4091dc6a67ac",
           "behavior": "classical",
           "rules": 665
         },
@@ -505,9 +505,17 @@
           "id": "service-hsbc",
           "path": "rule/Mihomo/services/hsbc.yaml",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/hsbc.yaml",
-          "sha256": "a0104cfbaf2b04fd4812482e29a3aa91c21716b5bb244b86af1af8f7b5e73172",
+          "sha256": "c2d412a01e7e3797eba483328770334f41fba79a689e5c3c5296f041499d087c",
           "behavior": "classical",
           "rules": 50
+        },
+        {
+          "id": "service-hsbc-hk",
+          "path": "rule/Mihomo/services/hsbc-hk.yaml",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Mihomo/services/hsbc-hk.yaml",
+          "sha256": "c94e2f7507014d1ed8c33c7ae2048feb211aaf2f48834ed7002bde5ee32bfd72",
+          "behavior": "classical",
+          "rules": 3
         },
         {
           "id": "service-oracle",
@@ -623,10 +631,10 @@
         }
       ],
       "config_path": "config/Mihomo/Proxy-Routing.yaml",
-      "config_sha256": "651b1e32255e802d915ca0a1a3a6aaba3f13cd279a60123742e86451ff3627e8"
+      "config_sha256": "739292c3b703d840f8a28370533d20fb8b7a947533cbaf5f7399f8842860b2be"
     },
     "config/Shadowrocket": {
-      "rules": 165565,
+      "rules": 165571,
       "config_rules": 86,
       "groups": 24,
       "remote_rule_sets": [
@@ -674,9 +682,9 @@
           "id": "category-finance-proxy",
           "path": "rule/Shadowrocket/groups/finance-proxy.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/groups/finance-proxy.list",
-          "sha256": "2a711c850b353c6cdc507fe00c660abf1a5178343f20848a820048d6432fa30b",
+          "sha256": "43b1abb6200e4fa16e306bb63122aeaebd56c6df9cdd3c5bd9e1a0ff13356d25",
           "policy": "金融·代理",
-          "rules": 31
+          "rules": 34
         },
         {
           "id": "site-paypal",
@@ -714,7 +722,7 @@
           "id": "category-finance",
           "path": "rule/Shadowrocket/variants/category-finance.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/variants/category-finance.list",
-          "sha256": "95bea434dbe3870afd6135a7c27434d8607db39d9fa471e2c9473ec09b9a26af",
+          "sha256": "f11f14db00d8f35c9bad6acd3bb50bd246dc1f5796b17ea08b8fc6264795740b",
           "policy": "金融·直连",
           "rules": 665
         },
@@ -1106,9 +1114,17 @@
           "id": "service-hsbc",
           "path": "rule/Shadowrocket/services/hsbc.list",
           "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/hsbc.list",
-          "sha256": "791fbcdf1c8b15c0c3e1e8b21ed3df87138561b7a524046247db399f4086b2f0",
+          "sha256": "0a660465f9d94c5c1fb341047bfa10cf4148dd1e21b274d16758478962fa7b72",
           "policy": "默认代理",
           "rules": 50
+        },
+        {
+          "id": "service-hsbc-hk",
+          "path": "rule/Shadowrocket/services/hsbc-hk.list",
+          "url": "https://raw.githubusercontent.com/leon4z/proxy-routing/main/rule/Shadowrocket/services/hsbc-hk.list",
+          "sha256": "04bdbb6f8e8ba0b7284a41bfc47ab5f1d107b0b9a248ffa8fd8b0242654c439d",
+          "policy": "默认代理",
+          "rules": 3
         },
         {
           "id": "service-oracle",
@@ -3443,22 +3459,35 @@
       },
       "service-hsbc": {
         "upstream": "hsbc",
+        "library_key": "services/hsbc",
+        "rules": 50
+      },
+      "service-hsbc-hk": {
+        "upstream": "hsbc",
+        "select": [
+          {
+            "type": "DOMAIN-SUFFIX",
+            "value": "hsbc.com.hk",
+            "reason": "Extract HSBC Hong Kong from the parent HSBC service for the finance proxy category.",
+            "source": "Pinned V2Fly hsbc service; routing approved 2026-11-25"
+          }
+        ],
         "add": [
           {
             "type": "DOMAIN",
             "value": "hsbc.edge.sdk.awswaf.com",
-            "reason": "Preserve the existing HSBC dependency match; its exit belongs to the finance policy.",
-            "source": "reviewed personal/public service migration (2026-11-12)"
+            "reason": "Route the exact AWS WAF host observed on HSBC Hong Kong and Reward+ through the finance proxy.",
+            "source": "HSBC Hong Kong public page and Reward+ connection review (2026-11-25)"
           },
           {
             "type": "DOMAIN",
             "value": "c-hsbc.lytics.io",
-            "reason": "Preserve the existing HSBC dependency match; its exit belongs to the finance policy.",
-            "source": "reviewed personal/public service migration (2026-11-12)"
+            "reason": "Route the exact Lytics host observed with HSBC Hong Kong and Reward+ through the finance proxy.",
+            "source": "HSBC Hong Kong public page and Reward+ connection review (2026-11-25)"
           }
         ],
-        "library_key": "services/hsbc",
-        "rules": 50
+        "library_key": "services/hsbc-hk",
+        "rules": 3
       },
       "service-oracle": {
         "upstream": "oracle",
@@ -3755,10 +3784,11 @@
           "service-mql5",
           "service-ayabank",
           "service-sevnb",
-          "service-uralfd"
+          "service-uralfd",
+          "service-hsbc-hk"
         ],
         "library_key": "groups/finance-proxy",
-        "rules": 31
+        "rules": 34
       }
     },
     "upstream_lists": {
@@ -14429,17 +14459,17 @@
         },
         "hsbc": {
           "data_path": "data/services/hsbc",
-          "data_sha256": "376bcb16a1b56b56051b0bc7fa69af1b9c50e13d2a3f28eb0d86600385b60780",
+          "data_sha256": "bb6bc9cec27e12f7a9c587e6fe8baac8e78ec502b0707e2e1d82bc862684c04c",
           "data_entries": 50,
           "rules": 50,
           "mihomo": {
             "path": "rule/Mihomo/services/hsbc.yaml",
-            "sha256": "a0104cfbaf2b04fd4812482e29a3aa91c21716b5bb244b86af1af8f7b5e73172"
+            "sha256": "c2d412a01e7e3797eba483328770334f41fba79a689e5c3c5296f041499d087c"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/services/hsbc.list",
-            "sha256": "791fbcdf1c8b15c0c3e1e8b21ed3df87138561b7a524046247db399f4086b2f0"
+            "sha256": "0a660465f9d94c5c1fb341047bfa10cf4148dd1e21b274d16758478962fa7b72"
           },
           "upstream": "hsbc",
           "project": "service-hsbc"
@@ -14459,6 +14489,22 @@
             "sha256": "94573ab555f453a3c821a24eb8382067db75e6a67f89a617612bf932e9549cd0"
           },
           "upstream": "hsbc-cn"
+        },
+        "hsbc-hk": {
+          "data_path": "data/services/hsbc-hk",
+          "data_sha256": "dff48215af6bbcf800f7ac5399505afc581cde7d1844b1d7697567149dd3a30c",
+          "data_entries": 3,
+          "rules": 3,
+          "mihomo": {
+            "path": "rule/Mihomo/services/hsbc-hk.yaml",
+            "sha256": "c94e2f7507014d1ed8c33c7ae2048feb211aaf2f48834ed7002bde5ee32bfd72"
+          },
+          "shadowrocket": {
+            "status": "available",
+            "path": "rule/Shadowrocket/services/hsbc-hk.list",
+            "sha256": "04bdbb6f8e8ba0b7284a41bfc47ab5f1d107b0b9a248ffa8fd8b0242654c439d"
+          },
+          "project": "service-hsbc-hk"
         },
         "huanghuagang": {
           "data_path": "data/services/huanghuagang",
@@ -29177,12 +29223,12 @@
           "rules": 668,
           "mihomo": {
             "path": "rule/Mihomo/groups/category-finance.yaml",
-            "sha256": "89861d3d38c688fb5504c5281e5ea9fec8207c21a6e4939ec3bcd718e1f69240"
+            "sha256": "92cbf55f6d4462414d07e6829aa9de166dfb3f52ddbf9c1a738c70083f57c674"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/category-finance.list",
-            "sha256": "b612ed87e653330734396ddf1185ee26f852bfc8e47ed66c543d5b959680257f"
+            "sha256": "17e8dc6faf208aa0a6d94cbd95e4f01ef6223b6c0acae349d9e33ba6fad86da5"
           },
           "upstream": "category-finance",
           "project": "category-finance"
@@ -30533,17 +30579,17 @@
         },
         "finance-proxy": {
           "data_path": "data/groups/finance-proxy",
-          "data_sha256": "6b010f0aefcb0030c5ca2278071e5ba04ca96556c1c0abe727baf8eca3c35b79",
-          "data_entries": 31,
-          "rules": 31,
+          "data_sha256": "c5b93cb86b549810d9ee91307a12b0f1f7aa7d4341df2df4d3f8b3d352e930ac",
+          "data_entries": 34,
+          "rules": 34,
           "mihomo": {
             "path": "rule/Mihomo/groups/finance-proxy.yaml",
-            "sha256": "ae3b3587f3659296787796cc12397fa3d2118df6c572c3f13142bdca3149b6c1"
+            "sha256": "edac8141f2474ba1232cfb8372d81576533298aee706e7a0ea05e17eee4665f6"
           },
           "shadowrocket": {
             "status": "available",
             "path": "rule/Shadowrocket/groups/finance-proxy.list",
-            "sha256": "2a711c850b353c6cdc507fe00c660abf1a5178343f20848a820048d6432fa30b"
+            "sha256": "43b1abb6200e4fa16e306bb63122aeaebd56c6df9cdd3c5bd9e1a0ff13356d25"
           },
           "project": "category-finance-proxy"
         },
@@ -30554,7 +30600,7 @@
           "rules": 26058,
           "mihomo": {
             "path": "rule/Mihomo/groups/geolocation-!cn.yaml",
-            "sha256": "0f758ca98bb620416d8b463351807a7b46ddc6b56dcb0f52d9758034f26000c9"
+            "sha256": "e3c66c3c53234d16907c4c9f11ac76db56371b0de31452e593b30f4a45e22306"
           },
           "shadowrocket": {
             "status": "unavailable",
@@ -30940,7 +30986,7 @@
     },
     "index": {
       "path": "data/README.md",
-      "sha256": "9f1b4679353eb03eefc7f46420df454e3dc42b4c0367fbea853062513e04df43"
+      "sha256": "bcfb5141555c356b42f8c9064e82234eab9c2164a559b3860fc53a3a8191c5ad"
     }
   }
 }

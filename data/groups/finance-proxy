@@ -6,3 +6,4 @@ include:services/mql5
 include:services/ayabank
 include:services/sevnb
 include:services/uralfd
+include:services/hsbc-hk

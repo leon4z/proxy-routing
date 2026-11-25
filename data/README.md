@@ -575,6 +575,7 @@
 | [services/hpe](services/hpe) | 16 | [YAML](../rule/Mihomo/services/hpe.yaml) | [LIST](../rule/Shadowrocket/services/hpe.list) |
 | [services/hsbc](services/hsbc) | 50 | [YAML](../rule/Mihomo/services/hsbc.yaml) | [LIST](../rule/Shadowrocket/services/hsbc.list) |
 | [services/hsbc-cn](services/hsbc-cn) | 3 | [YAML](../rule/Mihomo/services/hsbc-cn.yaml) | [LIST](../rule/Shadowrocket/services/hsbc-cn.list) |
+| [services/hsbc-hk](services/hsbc-hk) | 3 | [YAML](../rule/Mihomo/services/hsbc-hk.yaml) | [LIST](../rule/Shadowrocket/services/hsbc-hk.list) |
 | [services/huanghuagang](services/huanghuagang) | 1 | [YAML](../rule/Mihomo/services/huanghuagang.yaml) | [LIST](../rule/Shadowrocket/services/huanghuagang.list) |
 | [services/huawei](services/huawei) | 345 | [YAML](../rule/Mihomo/services/huawei.yaml) | [LIST](../rule/Shadowrocket/services/huawei.list) |
 | [services/huawei-dev](services/huawei-dev) | 23 | [YAML](../rule/Mihomo/services/huawei-dev.yaml) | [LIST](../rule/Shadowrocket/services/huawei-dev.list) |
@@ -1565,7 +1566,7 @@
 | [groups/category-wiki-cn](groups/category-wiki-cn) | 15 | [YAML](../rule/Mihomo/groups/category-wiki-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-wiki-cn.list) |
 | [groups/cn](groups/cn) | 8571 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
 | [groups/connectivity-check](groups/connectivity-check) | 28 | [YAML](../rule/Mihomo/groups/connectivity-check.yaml) | [LIST](../rule/Shadowrocket/groups/connectivity-check.list) |
-| [groups/finance-proxy](groups/finance-proxy) | 31 | [YAML](../rule/Mihomo/groups/finance-proxy.yaml) | [LIST](../rule/Shadowrocket/groups/finance-proxy.list) |
+| [groups/finance-proxy](groups/finance-proxy) | 34 | [YAML](../rule/Mihomo/groups/finance-proxy.yaml) | [LIST](../rule/Shadowrocket/groups/finance-proxy.list) |
 | [groups/geolocation-!cn](groups/geolocation-!cn) | 26062 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
 | [groups/geolocation-cn](groups/geolocation-cn) | 8540 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
 | [groups/google-registry-tld](groups/google-registry-tld) | 20 | [YAML](../rule/Mihomo/groups/google-registry-tld.yaml) | [LIST](../rule/Shadowrocket/groups/google-registry-tld.list) |

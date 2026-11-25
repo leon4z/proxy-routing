@@ -1,3 +1,5 @@
+include:services/hsbc-hk
+
 hsbc
 hsbc.com
 hsbc.net
@@ -21,7 +23,6 @@ hsbc.com.bd
 hsbc.com.bh
 hsbc.com.br
 hsbc.com.eg
-hsbc.com.hk
 hsbc.com.mo
 hsbc.com.mt
 hsbc.com.mx
@@ -46,5 +47,3 @@ vv1865.com
 hsbc.com.cn
 hsbcqh.com.cn
 hsbcinsurance.com.cn
-full:hsbc.edge.sdk.awswaf.com
-full:c-hsbc.lytics.io

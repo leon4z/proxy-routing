@@ -30,3 +30,6 @@
   - "DOMAIN-SUFFIX,ayabank.com"
   - "DOMAIN-SUFFIX,sevnb.ru"
   - "DOMAIN-SUFFIX,uralfd.ru"
+  - "DOMAIN-SUFFIX,hsbc.com.hk"
+  - "DOMAIN,hsbc.edge.sdk.awswaf.com"
+  - "DOMAIN,c-hsbc.lytics.io"

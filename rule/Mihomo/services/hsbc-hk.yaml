@@ -1,0 +1,4 @@
+"payload":
+  - "DOMAIN-SUFFIX,hsbc.com.hk"
+  - "DOMAIN,hsbc.edge.sdk.awswaf.com"
+  - "DOMAIN,c-hsbc.lytics.io"
