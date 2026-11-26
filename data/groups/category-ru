@@ -48,6 +48,7 @@ include:services/megafon
 include:services/mts-ru
 include:services/rostelecom
 include:services/t2-ru
+include:services/transtelecom
 
 ru.com
 ru.net
@@ -67,7 +68,22 @@ netmonet.co
 tips.tips
 adygtelecom.com
 beeline.ru
+cnt.ru
 dom.ru
+goodline.info
+goodline.ru
+is74.ru
+letai.ru
+lovit.ru
+miranda-media.ru
+novotelecom.ru
+podryad.tv
+redcom.ru
+redcom.net
+sknt.ru
+skynet.ru
+tattelecom.ru
+vladlink.ru
 mcc250.pub.3gppnetwork.org
 3ebra.net
 apptrackpets.com
