@@ -1,6 +1,6 @@
 # 规则库索引
 
-固定上游版本 `20261125093047`。
+固定上游版本 `20261127013500`。
 
 服务归入 services，聚合组与通用匹配集合归入 groups。聚合文件的 include 路径以 data/ 为起点。来源与本地补充记录在 manifest.json。
 
@@ -798,7 +798,7 @@
 | [services/metacritic](services/metacritic) | 1 | [YAML](../rule/Mihomo/services/metacritic.yaml) | [LIST](../rule/Shadowrocket/services/metacritic.list) |
 | [services/metart](services/metart) | 5 | [YAML](../rule/Mihomo/services/metart.yaml) | [LIST](../rule/Shadowrocket/services/metart.list) |
 | [services/miaomiaozhe](services/miaomiaozhe) | 2 | [YAML](../rule/Mihomo/services/miaomiaozhe.yaml) | [LIST](../rule/Shadowrocket/services/miaomiaozhe.list) |
-| [services/microsoft](services/microsoft) | 765 | [YAML](../rule/Mihomo/services/microsoft.yaml) | [LIST](../rule/Shadowrocket/services/microsoft.list) |
+| [services/microsoft](services/microsoft) | 766 | [YAML](../rule/Mihomo/services/microsoft.yaml) | [LIST](../rule/Shadowrocket/services/microsoft.list) |
 | [services/microsoft-dev](services/microsoft-dev) | 80 | [YAML](../rule/Mihomo/services/microsoft-dev.yaml) | [LIST](../rule/Shadowrocket/services/microsoft-dev.list) |
 | [services/microsoft-pki](services/microsoft-pki) | 6 | [YAML](../rule/Mihomo/services/microsoft-pki.yaml) | [LIST](../rule/Shadowrocket/services/microsoft-pki.list) |
 | [services/midea](services/midea) | 10 | [YAML](../rule/Mihomo/services/midea.yaml) | [LIST](../rule/Shadowrocket/services/midea.list) |
@@ -1471,7 +1471,7 @@
 | [groups/category-cdn-cn](groups/category-cdn-cn) | 99 | [YAML](../rule/Mihomo/groups/category-cdn-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-cdn-cn.list) |
 | [groups/category-collaborate-cn](groups/category-collaborate-cn) | 26 | [YAML](../rule/Mihomo/groups/category-collaborate-cn.yaml) | [LIST](../rule/Shadowrocket/groups/category-collaborate-cn.list) |
 | [groups/category-communication](groups/category-communication) | 160 | [YAML](../rule/Mihomo/groups/category-communication.yaml) | [LIST](../rule/Shadowrocket/groups/category-communication.list) |
-| [groups/category-companies](groups/category-companies) | 8688 | [YAML](../rule/Mihomo/groups/category-companies.yaml) | 域名正则待适配 |
+| [groups/category-companies](groups/category-companies) | 8689 | [YAML](../rule/Mihomo/groups/category-companies.yaml) | 域名正则待适配 |
 | [groups/category-consent-management](groups/category-consent-management) | 14 | [YAML](../rule/Mihomo/groups/category-consent-management.yaml) | [LIST](../rule/Shadowrocket/groups/category-consent-management.list) |
 | [groups/category-container](groups/category-container) | 10 | [YAML](../rule/Mihomo/groups/category-container.yaml) | 域名正则待适配 |
 | [groups/category-cryptocurrency](groups/category-cryptocurrency) | 241 | [YAML](../rule/Mihomo/groups/category-cryptocurrency.yaml) | [LIST](../rule/Shadowrocket/groups/category-cryptocurrency.list) |
@@ -1568,7 +1568,7 @@
 | [groups/cn](groups/cn) | 8571 | [YAML](../rule/Mihomo/groups/cn.yaml) | 域名正则待适配 |
 | [groups/connectivity-check](groups/connectivity-check) | 28 | [YAML](../rule/Mihomo/groups/connectivity-check.yaml) | [LIST](../rule/Shadowrocket/groups/connectivity-check.list) |
 | [groups/finance-proxy](groups/finance-proxy) | 34 | [YAML](../rule/Mihomo/groups/finance-proxy.yaml) | [LIST](../rule/Shadowrocket/groups/finance-proxy.list) |
-| [groups/geolocation-!cn](groups/geolocation-!cn) | 26073 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
+| [groups/geolocation-!cn](groups/geolocation-!cn) | 26074 | [YAML](../rule/Mihomo/groups/geolocation-!cn.yaml) | 域名正则待适配 |
 | [groups/geolocation-cn](groups/geolocation-cn) | 8540 | [YAML](../rule/Mihomo/groups/geolocation-cn.yaml) | 域名正则待适配 |
 | [groups/google-registry-tld](groups/google-registry-tld) | 20 | [YAML](../rule/Mihomo/groups/google-registry-tld.yaml) | [LIST](../rule/Shadowrocket/groups/google-registry-tld.list) |
 | [groups/goproxy](groups/goproxy) | 2 | [YAML](../rule/Mihomo/groups/goproxy.yaml) | [LIST](../rule/Shadowrocket/groups/goproxy.list) |
